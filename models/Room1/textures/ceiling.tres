@@ -15,7 +15,6 @@ roughness_texture = ExtResource("5_mv2bb")
 normal_enabled = true
 normal_scale = 16.0
 normal_texture = ExtResource("4_fmfsv")
-ao_enabled = true
 ao_light_affect = 1.0
 ao_texture = ExtResource("2_6bup3")
 uv1_scale = Vector3(1.25, 1.25, 1.25)
