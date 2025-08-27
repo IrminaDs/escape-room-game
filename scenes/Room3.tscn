@@ -1,3 +1,94 @@
-[gd_scene format=3 uid="uid://de5gwyciigv2k"]
+[gd_scene load_steps=2 format=3 uid="uid://de5gwyciigv2k"]
+
+[sub_resource type="Environment" id="Environment_s1e02"]
+background_mode = 2
+ambient_light_source = 2
+ambient_light_color = Color(0.819608, 0.85098, 1, 1)
+ambient_light_energy = 0.4
 
 [node name="Room3" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_s1e02")
+
+[node name="SunLight" type="DirectionalLight3D" parent="."]
+visible = false
+
+[node name="MainRoom" type="Node3D" parent="."]
+
+[node name="Camera" type="Camera3D" parent="MainRoom"]
+transform = Transform3D(-0.654741, 0, -0.755853, 0, 1, 0, 0.755853, 0, -0.654741, -1.39977, 1.30033, -1.16425)
+
+[node name="Camera2" type="Camera3D" parent="MainRoom"]
+transform = Transform3D(0.821806, 9.42484e-11, -0.569767, 0.0714601, 0.992104, 0.103071, 0.565268, -0.12542, 0.815317, -2.5, 1.9, 2.3)
+fov = 73.4276
+
+[node name="RoomSkeleton" type="CSGCombiner3D" parent="MainRoom"]
+
+[node name="MainLight" type="OmniLight3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+light_color = Color(0.819608, 0.85098, 1, 1)
+light_energy = 2.0
+shadow_enabled = true
+omni_range = 6.598
+
+[node name="Floor" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 5, 0, 0.05, 0)
+
+[node name="GlassWall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 5, -2.95, 1.35, 0)
+
+[node name="MainDoorWall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 5, 2.95, 1.35, 0)
+
+[node name="MainDoorHole" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 0.9, 2.95, 1.1, 0)
+operation = 2
+
+[node name="SecretDoorWall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 0, 1.35, 2.45)
+
+[node name="SecretDoorHole" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(1.4, 0, 0, 0, 2.1, 0, 0, 0, 0.1, 0, 1.15, 2.45)
+operation = 2
+
+[node name="Wall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 0, 1.35, -2.45)
+
+[node name="Ceiling" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 5, 0, 2.65, 0)
+
+[node name="SecretRoom" type="Node3D" parent="."]
+
+[node name="Camera" type="Camera3D" parent="SecretRoom"]
+transform = Transform3D(-0.730317, 0, -0.683108, 0, 1, 0, 0.683108, 0, -0.730317, -2.682, 2.23456, 2.63116)
+fov = 64.6
+
+[node name="Camera2" type="Camera3D" parent="SecretRoom"]
+transform = Transform3D(-0.638244, 0, 0.769834, 0, 1, 0, -0.769834, 0, -0.638244, 2.6, 2.085, 2.6)
+fov = 87.3402
+
+[node name="Camera3" type="Camera3D" parent="SecretRoom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 6.2)
+fov = 64.6
+
+[node name="RoomSkeleton" type="CSGCombiner3D" parent="SecretRoom"]
+
+[node name="MainLight" type="OmniLight3D" parent="SecretRoom/RoomSkeleton"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 4.5)
+light_color = Color(1, 0.862745, 0.631373, 1)
+
+[node name="Floor" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 0.05, 4.5)
+
+[node name="Wall" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4, -2.95, 1.35, 4.5)
+
+[node name="Wall2" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4, 2.95, 1.35, 4.5)
+
+[node name="Wall3" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 0, 1.35, 6.45)
+
+[node name="Ceiling" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 2.65, 4.5)
