@@ -1,8 +1,8 @@
 [gd_scene load_steps=15 format=4 uid="uid://d2hnqwhnkrji4"]
 
-[ext_resource type="Texture2D" uid="uid://b1l8v5lkqru8m" path="res://models/Room1/objects/old_wood_door_free_0.png" id="1_5oa5i"]
-[ext_resource type="Texture2D" uid="uid://k50fgbj81edd" path="res://models/Room1/objects/old_wood_door_free_1.png" id="2_yadg4"]
-[ext_resource type="Texture2D" uid="uid://dnpafu621rbq6" path="res://models/Room1/objects/old_wood_door_free_2.png" id="3_j1ij1"]
+[ext_resource type="Texture2D" path="res://models/Room1/objects/old_wood_door_free_0.png" id="1_5oa5i"]
+[ext_resource type="Texture2D" path="res://models/Room1/objects/old_wood_door_free_1.png" id="2_yadg4"]
+[ext_resource type="Texture2D" path="res://models/Room1/objects/old_wood_door_free_2.png" id="3_j1ij1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pky02"]
 resource_name = "Scene_-_Root"

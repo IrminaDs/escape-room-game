@@ -68,8 +68,3 @@ size = Vector3(6, 3.5, 0.25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.355, -3.125)
 operation = 2
 size = Vector3(1, 2.2, 0.25)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
-
-[node name="Room" type="Node3D" parent="."]
