@@ -65,9 +65,9 @@ use_collision = true
 size = Vector3(6, 3.5, 0.25)
 
 [node name="Door" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, -3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.355, -3.125)
 operation = 2
-size = Vector3(1, 2, 0.25)
+size = Vector3(1, 2.2, 0.25)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
