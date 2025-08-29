@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1l8v5lkqru8m"
-path.s3tc="res://.godot/imported/old_wood_door_free_0.png-204a234cd3ad48332573fc918eb96c5d.s3tc.ctex"
+uid="uid://k50fgbj81edd"
+path.s3tc="res://.godot/imported/old_wood_door_free_1.png-e7cd67b8f892a79d730d2e1bad8d6309.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "3e2508c107474700c494d8a2388f0aac"
+"md5": "3b379f22deb451012caa4db9f4f84b72"
 }
 
 [deps]
 
-source_file="res://models/Room1/objects/old_wood_door_free_0.png"
-dest_files=["res://.godot/imported/old_wood_door_free_0.png-204a234cd3ad48332573fc918eb96c5d.s3tc.ctex"]
+source_file="res://models/Room1/objects/door/old_wood_door_free_1.png"
+dest_files=["res://.godot/imported/old_wood_door_free_1.png-e7cd67b8f892a79d730d2e1bad8d6309.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bhf46qfqix2kl"
-path="res://.godot/imported/old_wood_door_free.glb-b7b6e624f6e07e3723df7155a8c1b340.scn"
+path="res://.godot/imported/old_wood_door_free.glb-8c93c8c08d18e563d85e521b481f2ea2.scn"
 
 [deps]
 
-source_file="res://models/Room1/objects/old_wood_door_free.glb"
-dest_files=["res://.godot/imported/old_wood_door_free.glb-b7b6e624f6e07e3723df7155a8c1b340.scn"]
+source_file="res://models/Room1/objects/door/old_wood_door_free.glb"
+dest_files=["res://.godot/imported/old_wood_door_free.glb-8c93c8c08d18e563d85e521b481f2ea2.scn"]
 
 [params]
 
