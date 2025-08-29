@@ -28,7 +28,7 @@ uv1_offset = Vector3(0.86, 0.5, 0)
 environment = SubResource("Environment_2dtu0")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.707107, 0.241845, -0.664463, 0, 0.939692, 0.34202, 0.707107, 0.241845, -0.664463, -3.1, 2.75, -3.1)
+transform = Transform3D(0.683013, -0.00960594, -0.730343, 0.183013, 0.970267, 0.158391, 0.707107, -0.241845, 0.664463, -3.1, 2.75, 2.9)
 fov = 46.8255
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
