@@ -1,9 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvdp223xlqrkl"]
-
-[ext_resource type="Material" uid="uid://jralg3y3c48a" path="res://models/Room1/textures/ceiling.tres" id="1_jdjux"]
-[ext_resource type="Texture2D" uid="uid://damyvpj24hom1" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_diff_1k.jpg" id="2_yo7fj"]
-[ext_resource type="Texture2D" uid="uid://bnf74dl8xkd6l" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_nor_gl_1k.jpg" id="3_3qgkt"]
-[ext_resource type="Texture2D" uid="uid://c5th8nr867g5g" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_arm_1k.jpg" id="4_ht3nn"]
+[gd_scene load_steps=5 format=3 uid="uid://bvdp223xlqrkl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -18,14 +13,14 @@ sky = SubResource("Sky_um1ds")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t3n42"]
-albedo_color = Color(0.475386, 0.479205, 0.475386, 1)
-albedo_texture = ExtResource("2_yo7fj")
-roughness_texture = ExtResource("4_ht3nn")
-roughness_texture_channel = 1
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxic8"]
+metallic = 1.0
+metallic_texture_channel = 2
 normal_enabled = true
-normal_texture = ExtResource("3_3qgkt")
-uv1_scale = Vector3(3, 3, 3)
+normal_scale = 16.0
+ao_light_affect = 1.0
+uv1_scale = Vector3(1.25, 1.25, 1.25)
+uv1_offset = Vector3(0.86, 0.5, 0)
 
 [node name="Room1" type="Node3D"]
 
@@ -42,7 +37,7 @@ fov = 46.8255
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00862694, 3.38646, -0.00111389)
 use_collision = true
 size = Vector3(6, 0.25, 6)
-material = ExtResource("1_jdjux")
+material = SubResource("StandardMaterial3D_wxic8")
 
 [node name="WallWest" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 1.75, 0)
@@ -58,11 +53,9 @@ size = Vector3(6.5, 3.5, 0.25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
 use_collision = true
 size = Vector3(6, 0.25, 6)
-material = SubResource("StandardMaterial3D_t3n42")
 
 [node name="WallNorth" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, -3.125)
-visible = false
 use_collision = true
 size = Vector3(6, 3.5, 0.25)
 
