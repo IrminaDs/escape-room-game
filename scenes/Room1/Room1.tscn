@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=6 format=3 uid="uid://bvdp223xlqrkl"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -27,11 +29,8 @@ uv1_offset = Vector3(0.86, 0.5, 0)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2dtu0")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.683013, -0.00960594, -0.730343, 0.183013, 0.970267, 0.158391, 0.707107, -0.241845, 0.664463, -3.1, 2.75, 2.9)
-fov = 46.8255
-
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
 
 [node name="Ceiling" type="CSGBox3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00862694, 3.38646, -0.00111389)
@@ -68,3 +67,11 @@ size = Vector3(6, 3.5, 0.25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.355, -3.125)
 operation = 2
 size = Vector3(1, 2.2, 0.25)
+
+[node name="ProtoController" parent="." instance=ExtResource("1_jdjux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.751637, 0.359176, -0.852572)
+input_left = "move_left"
+input_right = "move_right"
+input_forward = "move_up"
+input_back = "move_down"
+input_jump = "jump"
