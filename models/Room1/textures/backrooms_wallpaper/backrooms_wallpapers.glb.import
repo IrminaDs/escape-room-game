@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b5eproirwx48g"
-path="res://.godot/imported/floor_tile.glb-0f2b43df92988bea2a2650d39aaf07ba.scn"
+uid="uid://bpp77bbhwee5w"
+path="res://.godot/imported/backrooms_wallpapers.glb-0c77b70bb448e17fc4fc48ba5ed51d8f.scn"
 
 [deps]
 
-source_file="res://models/Room1/objects/floor_tile.glb"
-dest_files=["res://.godot/imported/floor_tile.glb-0f2b43df92988bea2a2650d39aaf07ba.scn"]
+source_file="res://models/Room1/textures/backrooms_wallpaper/backrooms_wallpapers.glb"
+dest_files=["res://.godot/imported/backrooms_wallpapers.glb-0c77b70bb448e17fc4fc48ba5ed51d8f.scn"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5xuxqwcfom17"
-path.s3tc="res://.godot/imported/floor_tile_1.png-f4e36e0b618089633219a946bca9d339.s3tc.ctex"
+uid="uid://bcjbwd3un58xv"
+path.s3tc="res://.godot/imported/backrooms_wallpapers_7.jpg-a0421d610e31c9ac1b67ec7d9b9fc589.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "8f375e0d95c4b075e8810f4eed31f115"
+"md5": "673b91591dc9636d21bcfdf72beba075"
 }
 
 [deps]
 
-source_file="res://models/Room1/objects/floor_tile_1.png"
-dest_files=["res://.godot/imported/floor_tile_1.png-f4e36e0b618089633219a946bca9d339.s3tc.ctex"]
+source_file="res://models/Room1/textures/backrooms_wallpaper/backrooms_wallpapers_7.jpg"
+dest_files=["res://.godot/imported/backrooms_wallpapers_7.jpg-a0421d610e31c9ac1b67ec7d9b9fc589.s3tc.ctex"]
 
 [params]
 
@@ -27,8 +27,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=8
-roughness/src_normal="res://models/Room1/floor_tile_2.png"
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

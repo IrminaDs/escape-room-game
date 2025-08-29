@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m65a85kqq0e7"
-path.s3tc="res://.godot/imported/floor_tile_0.jpg-ca55a264650a284f008e792810f96ba9.s3tc.ctex"
+uid="uid://dnk1uxy0mtu3j"
+path.s3tc="res://.godot/imported/backrooms_wallpapers_1.jpg-4771dd49db446c6f7aa39ea52a893ee7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "221996876a1914107a42307652c76fe0"
+"md5": "3b464417c5e5d530d77b9e301a46c2d0"
 }
 
 [deps]
 
-source_file="res://models/Room1/objects/floor_tile_0.jpg"
-dest_files=["res://.godot/imported/floor_tile_0.jpg-ca55a264650a284f008e792810f96ba9.s3tc.ctex"]
+source_file="res://models/Room1/textures/backrooms_wallpaper/backrooms_wallpapers_1.jpg"
+dest_files=["res://.godot/imported/backrooms_wallpapers_1.jpg-4771dd49db446c6f7aa39ea52a893ee7.s3tc.ctex"]
 
 [params]
 
