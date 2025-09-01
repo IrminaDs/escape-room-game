@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcnjl4atqt0fq"]
+
+[ext_resource type="Texture2D" uid="uid://fcbdj3q6nhmq" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_diff_1k.jpg" id="1_ah2mo"]
+[ext_resource type="Texture2D" uid="uid://dgrb76itngtqs" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_arm_1k.jpg" id="3_ipfx7"]
+[ext_resource type="Texture2D" uid="uid://c7njki1i7y6t" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_nor_gl_1k.jpg" id="4_rxk5g"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_olh77"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dr4k6"]
+albedo_texture = ExtResource("1_ah2mo")
+metallic = 1.0
+metallic_texture = ExtResource("3_ipfx7")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("3_ipfx7")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("4_rxk5g")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_offset = Vector3(0.23, 0, 0)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(1, 0.25, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 8.74228e-08, 0, -4.37114e-08, -1, 0, 0, 0, 0.5, 0, -0.126, 0)
+mesh = SubResource("PlaneMesh_olh77")
+surface_material_override/0 = SubResource("StandardMaterial3D_dr4k6")
