@@ -65,16 +65,21 @@ mesh = SubResource("ArrayMesh_4uv3p")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03549, -8.62223, 8.25321)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03549, -7.15202, 8.25321)
+omni_range = 6.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.58335, -7.84093, -2.90405)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.58335, -7.03788, -2.90405)
+omni_range = 6.0
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.18941, -10.1061)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.96401, -10.1061)
+omni_range = 6.0
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.53535, -8.75505, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.53535, -6.96119, -3)
+omni_range = 6.0
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -8, 8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -6.95917, 8)
+omni_range = 6.0
