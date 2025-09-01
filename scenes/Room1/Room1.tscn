@@ -428,7 +428,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
 [node name="Objects" type="Node3D" parent="."]
 
 [node name="Lamp" parent="Objects" instance=ExtResource("6_ht3nn")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.25, -0.75, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.65, 0)
 
 [node name="Door" parent="Objects" instance=ExtResource("7_t3n42")]
 transform = Transform3D(-6.55671e-08, 0, 0.8, 0, 0.8, 0, -1.5, 0, -3.49691e-08, 0, 1.2, -3.1)
