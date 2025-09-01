@@ -361,7 +361,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, -3.125)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.25, -3.125)
 
 [node name="WallEast" type="Node3D" parent="Build/Walls"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, 0)
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 3.25, 0, 0)
 
 [node name="WallTile1" parent="Build/Walls/WallEast" instance=ExtResource("3_yo7fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 2.25, 0.125)
@@ -382,24 +382,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 0.125)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 0.125)
 
 [node name="WallSouth" type="Node3D" parent="Build/Walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 3.125)
 
 [node name="WallTile1" parent="Build/Walls/WallSouth" instance=ExtResource("3_yo7fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 2.25, 3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 2.25, 0)
 
 [node name="WallTile2" parent="Build/Walls/WallSouth" instance=ExtResource("3_yo7fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 2.25, 3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 2.25, 0)
 
 [node name="WallTile3" parent="Build/Walls/WallSouth" instance=ExtResource("3_yo7fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 2.25, 3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 2.25, 0)
 
 [node name="WallTile4" parent="Build/Walls/WallSouth" instance=ExtResource("3_yo7fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.25, 3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.25, 0)
 
 [node name="WallTile5" parent="Build/Walls/WallSouth" instance=ExtResource("3_yo7fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 0)
 
 [node name="WallTile6" parent="Build/Walls/WallSouth" instance=ExtResource("3_yo7fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 0)
 
 [node name="WallWest" type="Node3D" parent="Build/Walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.25, 0, 0)
