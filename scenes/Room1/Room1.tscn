@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=8 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
+[ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -33,7 +34,7 @@ environment = SubResource("Environment_2dtu0")
 [node name="Build" type="CSGCombiner3D" parent="."]
 use_collision = true
 
-[node name="Ceiling" type="CSGBox3D" parent="Build"]
+[node name="Ceiling1" type="CSGBox3D" parent="Build"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00862694, 3.38646, -0.00111389)
 visible = false
 use_collision = true
@@ -177,6 +178,117 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.125, 2.5)
 
 [node name="FloorTile37" parent="Build/Floor" instance=ExtResource("1_1tlri")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, -3.5)
+
+[node name="Ceiling" type="Node3D" parent="Build"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+
+[node name="CeilingTile1" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.25, -2.5)
+
+[node name="CeilingTile2" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, -2.5)
+
+[node name="CeilingTile3" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, -2.5)
+
+[node name="CeilingTile4" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, -2.5)
+
+[node name="CeilingTile5" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, -2.5)
+
+[node name="CeilingTile6" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.25, -2.5)
+
+[node name="CeilingTile7" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.25, -1.5)
+
+[node name="CeilingTile8" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, -1.5)
+
+[node name="CeilingTile9" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, -1.5)
+
+[node name="CeilingTile10" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, -1.5)
+
+[node name="CeilingTile11" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, -1.5)
+
+[node name="CeilingTile12" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.25, -1.5)
+
+[node name="CeilingTile13" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.25, -0.5)
+
+[node name="CeilingTile14" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, -0.5)
+
+[node name="CeilingTile15" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, -0.5)
+
+[node name="CeilingTile16" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, -0.5)
+
+[node name="CeilingTile17" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, -0.5)
+
+[node name="CeilingTile18" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.25, -0.5)
+
+[node name="CeilingTile19" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.25, 0.5)
+
+[node name="CeilingTile20" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, 0.5)
+
+[node name="CeilingTile21" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, 0.5)
+
+[node name="CeilingTile22" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, 0.5)
+
+[node name="CeilingTile23" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, 0.5)
+
+[node name="CeilingTile24" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.25, 0.5)
+
+[node name="CeilingTile25" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.25, 1.5)
+
+[node name="CeilingTile26" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, 1.5)
+
+[node name="CeilingTile27" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, 1.5)
+
+[node name="CeilingTile28" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, 1.5)
+
+[node name="CeilingTile29" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, 1.5)
+
+[node name="CeilingTile30" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.25, 1.5)
+
+[node name="CeilingTile31" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.25, 2.5)
+
+[node name="CeilingTile32" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, 2.5)
+
+[node name="CeilingTile33" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, 2.5)
+
+[node name="CeilingTile34" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, 2.5)
+
+[node name="CeilingTile35" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, 2.5)
+
+[node name="CeilingTile36" parent="Build/Ceiling" instance=ExtResource("2_kec3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.25, 2.5)
 
 [node name="ProtoController" parent="." instance=ExtResource("1_jdjux")]
 transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 1.75164, 0.359176, -1.9713)
