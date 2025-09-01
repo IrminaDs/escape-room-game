@@ -52,7 +52,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2ftgk")
 
-[node name="Node3D" type="Node3D"]
+[node name="CeilingLamp" type="Node3D"]
 
 [node name="lamp_1" type="Node3D" parent="."]
 transform = Transform3D(4.37114e-08, 4.37114e-08, 1, -6.61744e-24, 1, -4.37114e-08, -1, 1.91069e-15, 4.37114e-08, 0, 0, 0)

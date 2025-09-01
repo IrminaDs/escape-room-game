@@ -17,7 +17,7 @@ roughness_texture = ExtResource("4_snlsx")
 normal_texture = ExtResource("3_4qdjo")
 uv1_scale = Vector3(0.5, 0.5, 0.5)
 
-[node name="Node3D" type="Node3D"]
+[node name="WallTile" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
