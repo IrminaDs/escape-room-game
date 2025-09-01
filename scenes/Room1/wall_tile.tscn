@@ -11,6 +11,7 @@ albedo_texture = ExtResource("1_lu5gn")
 uv1_scale = Vector3(1, 4, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_765g1"]
+albedo_color = Color(0.697982, 0.810225, 0.809869, 1)
 albedo_texture = ExtResource("2_lu5gn")
 roughness_texture = ExtResource("4_snlsx")
 normal_texture = ExtResource("3_4qdjo")
@@ -27,4 +28,10 @@ material = SubResource("StandardMaterial3D_hw2bk")
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 0.84, 0, -1.75, 0)
 use_collision = true
 size = Vector3(0.5, 1, 0.4)
+material = SubResource("StandardMaterial3D_765g1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 0.84, 0, 2, 0)
+use_collision = true
+size = Vector3(0.2, 1, 0.4)
 material = SubResource("StandardMaterial3D_765g1")
