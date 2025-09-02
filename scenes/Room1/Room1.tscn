@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=18 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
+[ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
 [ext_resource type="PackedScene" uid="uid://bqh6qnke2e5oi" path="res://scenes/Room1/wall_with_door.tscn" id="4_3qgkt"]
 [ext_resource type="PackedScene" uid="uid://cavsvwbhkq8ku" path="res://scenes/Room1/ceiling_lamp.tscn" id="6_ht3nn"]
@@ -451,6 +452,9 @@ transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, -2.25, 1
 
 [node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
+
+[node name="Clock" parent="Objects" instance=ExtResource("3_75n1p")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.81035, 1.36174, -2.90445)
 
 [node name="DeskLamp" parent="." instance=ExtResource("12_s215m")]
 transform = Transform3D(0.00565685, 0, -0.00565685, 0, 0.008, 0, 0.00565685, 0, 0.00565685, -0.75, 1.325, 0.75)
