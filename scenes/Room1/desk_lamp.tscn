@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba2dr3g652whm"]
+
+[ext_resource type="PackedScene" uid="uid://c3eowqh2ixq22" path="res://models/Room1/objects/lamps/old_lamp.glb" id="1_g2ygj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g2ygj"]
+size = Vector3(1, 1.75, 0.5)
+
+[node name="DeskLamp" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="StaticBody3D" instance=ExtResource("1_g2ygj")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="StaticBody3D/Sketchfab_Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.6532, 63.0761, 0)
+omni_range = 17.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 22.5, 43, 0)
+shape = SubResource("BoxShape3D_g2ygj")

@@ -10,18 +10,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, 1)
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.285173, 8.0713, -0.968735)
 shadow_enabled = true
+omni_range = 8.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Sketchfab_Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.63994, 8.05289, -0.968735)
 shadow_enabled = true
+omni_range = 8.0
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="Sketchfab_Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.567168, 8.07464, -1.92395)
 shadow_enabled = true
+omni_range = 8.0
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="Sketchfab_Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625952, 8.10468, -0.0429153)
 shadow_enabled = true
+omni_range = 8.0
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="Sketchfab_Scene"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.622278, 8.64178, -1.0289)
