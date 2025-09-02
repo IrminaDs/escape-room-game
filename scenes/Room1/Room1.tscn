@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=15 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bb4gv22ydqjwc" path="res://scenes/Room1/chair.tscn" id="8_eh12f"]
 [ext_resource type="PackedScene" uid="uid://diqbe0b8v51us" path="res://scenes/Room1/desk.tscn" id="9_7bwvd"]
 [ext_resource type="PackedScene" uid="uid://dpkqptb18his1" path="res://scenes/Room1/bookshelf.tscn" id="10_0e1ws"]
+[ext_resource type="PackedScene" uid="uid://bwd5j6iwefaio" path="res://scenes/Room1/painting.tscn" id="11_mhhkb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -445,3 +446,6 @@ transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 2.25, 1.
 
 [node name="Bookshelf2" parent="Objects" instance=ExtResource("10_0e1ws")]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, -2.25, 1.5, 2.6)
+
+[node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
