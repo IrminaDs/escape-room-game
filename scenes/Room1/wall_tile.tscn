@@ -1,14 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dssfh1ecy3sn2"]
+[gd_scene load_steps=6 format=3 uid="uid://dssfh1ecy3sn2"]
 
-[ext_resource type="Texture2D" uid="uid://ch1h20sdye5rn" path="res://models/Room1/textures/backrooms_wallpaper/backrooms_wallpapers_0.jpg" id="1_lu5gn"]
+[ext_resource type="Material" uid="uid://cen58xckm7y3d" path="res://models/Room1/textures/wall_tile.tres" id="1_lu5gn"]
 [ext_resource type="Texture2D" uid="uid://qv1e6rooyxjj" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="2_lu5gn"]
 [ext_resource type="Texture2D" uid="uid://bp8jxqd4jcled" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_nor_gl_1k.jpg" id="3_4qdjo"]
 [ext_resource type="Texture2D" uid="uid://b11vkuruqwmyu" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_rough_1k.jpg" id="4_snlsx"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hw2bk"]
-albedo_color = Color(0.661944, 0.476647, 0.390698, 1)
-albedo_texture = ExtResource("1_lu5gn")
-uv1_scale = Vector3(1, 4, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_765g1"]
 albedo_color = Color(0.697982, 0.810225, 0.809869, 1)
@@ -17,12 +12,12 @@ roughness_texture = ExtResource("4_snlsx")
 normal_texture = ExtResource("3_4qdjo")
 uv1_scale = Vector3(0.5, 0.5, 0.5)
 
-[node name="Node3D" type="Node3D"]
+[node name="WallTile" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
 size = Vector3(1, 4, 0.25)
-material = SubResource("StandardMaterial3D_hw2bk")
+material = ExtResource("1_lu5gn")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 0.84, 0, -1.75, 0)

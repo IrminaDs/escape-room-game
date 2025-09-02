@@ -18,7 +18,7 @@ normal_texture = ExtResource("4_rxk5g")
 uv1_scale = Vector3(0.5, 0.5, 0.5)
 uv1_offset = Vector3(0.23, 0, 0)
 
-[node name="Node3D" type="Node3D"]
+[node name="CeilingTile" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true

@@ -14,7 +14,7 @@ roughness_texture_channel = 1
 normal_enabled = true
 normal_texture = ExtResource("2_txllk")
 
-[node name="Node3D" type="Node3D"]
+[node name="FloorTile" type="Node3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
