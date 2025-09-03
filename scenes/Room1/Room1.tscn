@@ -469,31 +469,31 @@ transform = Transform3D(0.00565685, 0, -0.00565685, 0, 0.008, 0, 0.00565685, 0, 
 transform = Transform3D(0.519615, 0, -0.3, 0, 0.6, 0, 0.3, 0, 0.519615, 1.95, 0.25, -1.9)
 
 [node name="Frame1" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2.25, 1.75)
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2, 1.75)
 
 [node name="Object_7" parent="Objects/Frame1/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
 surface_material_override/0 = ExtResource("16_4y5xy")
 
 [node name="Frame2" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2.25, -1.25)
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2, -1.25)
 
 [node name="Object_7" parent="Objects/Frame2/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
 surface_material_override/0 = ExtResource("17_e8ajp")
 
 [node name="Frame3" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2.25, 1.75)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2, 1.75)
 
 [node name="Object_7" parent="Objects/Frame3/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
 surface_material_override/0 = ExtResource("18_el76y")
 
 [node name="Frame4" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2.25, -1.25)
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2, -1.25)
 
 [node name="Object_7" parent="Objects/Frame4/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
 surface_material_override/0 = ExtResource("18_e8ajp")
 
 [node name="Map" parent="Objects" instance=ExtResource("20_el76y")]
-transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.975, 2.25, 0.25)
+transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.975, 2, 0.25)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
