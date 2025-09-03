@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://36s7ogb62k1j"]
+
+[ext_resource type="Texture2D" uid="uid://b5admxi63xntp" path="res://models/Room1/objects/paintings/hare.jpg" id="1_2fi8l"]
+[ext_resource type="Texture2D" uid="uid://bvvep161256pb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="2_8n72x"]
+[ext_resource type="Texture2D" uid="uid://0rfdky4tm1iy" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="3_vkg3q"]
+
+[resource]
+resource_name = "material_0"
+albedo_texture = ExtResource("1_2fi8l")
+metallic = 1.0
+metallic_texture = ExtResource("2_8n72x")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_8n72x")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_vkg3q")
+ao_enabled = true
+ao_texture = ExtResource("2_8n72x")

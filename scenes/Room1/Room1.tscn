@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=23 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
@@ -14,6 +14,11 @@
 [ext_resource type="PackedScene" uid="uid://bwd5j6iwefaio" path="res://scenes/Room1/painting.tscn" id="11_mhhkb"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
+[ext_resource type="PackedScene" uid="uid://dbn456rnxbbfb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb" id="15_cee2x"]
+[ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
+[ext_resource type="Material" uid="uid://b55daf63o185" path="res://models/Room1/objects/paintings/fox.tres" id="17_e8ajp"]
+[ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
+[ext_resource type="Material" uid="uid://cv6hu0xvk52oo" path="res://models/Room1/objects/paintings/deer.tres" id="18_el76y"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -461,3 +466,32 @@ transform = Transform3D(0.00565685, 0, -0.00565685, 0, 0.008, 0, 0.00565685, 0, 
 
 [node name="Chest" parent="Objects" instance=ExtResource("13_5da8r")]
 transform = Transform3D(0.519615, 0, -0.3, 0, 0.6, 0, 0.3, 0, 0.519615, 1.95, 0.25, -1.9)
+
+[node name="Frame1" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2.25, 1.75)
+
+[node name="Object_7" parent="Objects/Frame1/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("16_4y5xy")
+
+[node name="Frame2" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2.25, -1.25)
+
+[node name="Object_7" parent="Objects/Frame2/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("17_e8ajp")
+
+[node name="Frame3" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2.25, 1.75)
+
+[node name="Object_7" parent="Objects/Frame3/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_el76y")
+
+[node name="Frame4" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2.25, -1.25)
+
+[node name="Object_7" parent="Objects/Frame4/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_e8ajp")
+
+[editable path="Objects/Frame1"]
+[editable path="Objects/Frame2"]
+[editable path="Objects/Frame3"]
+[editable path="Objects/Frame4"]
