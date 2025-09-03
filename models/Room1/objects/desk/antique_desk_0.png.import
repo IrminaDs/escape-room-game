@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jrnsm2cqt87d"
+uid="uid://dlccgsl23i2nd"
 path.s3tc="res://.godot/imported/antique_desk_0.png-f76d9d1a6e88d64521a84a6532d78d11.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "54d2eaff542981b78ac6376de204e5cd"
 }
 
 [deps]
