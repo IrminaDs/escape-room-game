@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=25 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
@@ -20,6 +20,7 @@
 [ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
 [ext_resource type="Material" uid="uid://cv6hu0xvk52oo" path="res://models/Room1/objects/paintings/deer.tres" id="18_el76y"]
 [ext_resource type="PackedScene" uid="uid://0tvnoii853oi" path="res://scenes/Room1/map.tscn" id="20_el76y"]
+[ext_resource type="PackedScene" uid="uid://c07v6wee104gp" path="res://scenes/Room1/wall_shelf.tscn" id="21_20w1x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -494,6 +495,9 @@ surface_material_override/0 = ExtResource("18_e8ajp")
 
 [node name="Map" parent="Objects" instance=ExtResource("20_el76y")]
 transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.975, 2, 0.25)
+
+[node name="WallShelf" parent="Objects" instance=ExtResource("21_20w1x")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.125, 2, -2.75)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
