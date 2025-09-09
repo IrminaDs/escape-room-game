@@ -1,7 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
@@ -24,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
 [ext_resource type="Texture2D" uid="uid://bcflb7ant12oj" path="res://models/Room1/textures/boards/polibiusz.jpg" id="23_kacvt"]
 [ext_resource type="Texture2D" uid="uid://bdg0nfdbd4sih" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
+[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="25_quxoa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -68,14 +68,6 @@ metallic = 1.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2dtu0")
-
-[node name="ProtoController" parent="." instance=ExtResource("1_jdjux")]
-transform = Transform3D(-1, 0, -2.98023e-07, 0, 1, 0, 2.98023e-07, 0, -1, 0, 0.25, -2)
-input_left = "move_left"
-input_right = "move_right"
-input_forward = "move_up"
-input_back = "move_down"
-input_jump = "jump"
 
 [node name="Build" type="Node3D" parent="."]
 
@@ -550,6 +542,9 @@ transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 
 
 [node name="Carpet" parent="Objects" instance=ExtResource("22_0c67s")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
+
+[node name="Player" parent="." instance=ExtResource("25_quxoa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.25, 0)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
