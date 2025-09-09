@@ -545,6 +545,7 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.25, 0)
+speed = 5.0
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
