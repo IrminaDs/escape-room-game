@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=4 uid="uid://g52giiyj6f3h"]
+[gd_scene load_steps=17 format=4 uid="uid://g52giiyj6f3h"]
 
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
+[ext_resource type="Script" uid="uid://bx21x3dnermmp" path="res://scripts/lock_chest.gd" id="3_gy8cq"]
 [ext_resource type="Material" uid="uid://bnjt32daohc10" path="res://models/Room1/objects/chest/M_Chest_Wood.tres" id="7_3eabm"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gy8cq"]
@@ -86,28 +87,49 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_tsus3"]
 size = Vector3(2.5, 1.75, 1.25)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_westq"]
+albedo_color = Color(0.155963, 0.129898, 0.128068, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tsus3"]
+material = SubResource("StandardMaterial3D_westq")
+size = Vector3(0.4, 0.1, 0.05)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tsus3"]
+points = PackedVector3Array(-0.203175, -0.053164, -0.0281746, 0.203175, 0.0547513, 0.0289683, 0.203175, 0.0547513, -0.0281746, -0.203175, 0.0547513, 0.0289683, 0.203175, -0.053164, 0.0289683, 0.203175, -0.053164, -0.0281746, -0.203175, 0.0547513, -0.0281746, -0.203175, -0.053164, 0.0289683)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e16p2"]
+albedo_color = Color(0.000113828, 0.000113828, 0.000113828, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3eabm"]
+material = SubResource("StandardMaterial3D_e16p2")
+size = Vector3(0.05, 0.05, 0.05)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gy8cq"]
+radius = 0.005
+height = 0.025
+
 [node name="Chest" type="Node3D"]
 
-[node name="StaticBody3D" type="AnimatableBody3D" parent="."]
+[node name="Chest3D" type="AnimatableBody3D" parent="."]
 
-[node name="Sketchfab_Scene" type="Node3D" parent="StaticBody3D"]
+[node name="Sketchfab_Scene" type="Node3D" parent="Chest3D"]
 
-[node name="Sketchfab_model" type="Node3D" parent="StaticBody3D/Sketchfab_Scene"]
+[node name="Sketchfab_model" type="Node3D" parent="Chest3D/Sketchfab_Scene"]
 transform = Transform3D(-0.0124043, 1.08442e-09, -4.74013e-17, 0, -5.42208e-10, -0.0124043, -1.08442e-09, -0.0124043, 5.42208e-10, 0, 0, 0)
 
-[node name="Chest_fbx" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model"]
+[node name="Chest_fbx" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model"]
 transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0)
 
-[node name="Object_2" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx"]
+[node name="Object_2" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx"]
 
-[node name="RootNode" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2"]
+[node name="RootNode" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2"]
 
-[node name="Armature" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode"]
+[node name="Armature" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode"]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="Object_5" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature"]
+[node name="Object_5" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature"]
 
-[node name="Skeleton3D" type="Skeleton3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5"]
+[node name="Skeleton3D" type="Skeleton3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5"]
 bones/0/name = "_rootJoint"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -130,25 +152,67 @@ bones/2/position = Vector3(-2.02656e-05, 49.5, 85)
 bones/2/rotation = Quaternion(0.707107, -8.42937e-08, 8.42937e-08, 0.707107)
 bones/2/scale = Vector3(1, 1, 1)
 
-[node name="Object_10" type="MeshInstance3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
+[node name="Object_10" type="MeshInstance3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
 mesh = SubResource("ArrayMesh_gy8cq")
 skin = SubResource("Skin_bpvxt")
 
-[node name="Object_11" type="MeshInstance3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
+[node name="Object_11" type="MeshInstance3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
 mesh = SubResource("ArrayMesh_westq")
 skin = SubResource("Skin_bpvxt")
 
-[node name="Object_9" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5"]
+[node name="Object_9" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5"]
 transform = Transform3D(-1, -1.22465e-16, 0, 1.22465e-16, -1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="SM_Chest" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode"]
+[node name="SM_Chest" type="Node3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode"]
 transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D/Sketchfab_Scene"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Chest3D/Sketchfab_Scene"]
 libraries = {
 &"": SubResource("AnimationLibrary_6t2g5")
 }
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Chest3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.902814, 0)
 shape = SubResource("BoxShape3D_tsus3")
+
+[node name="Lock3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.993251, 0.64526)
+script = ExtResource("3_gy8cq")
+
+[node name="Lock" type="MeshInstance3D" parent="Lock3D"]
+mesh = SubResource("BoxMesh_tsus3")
+
+[node name="LockCollison" type="CollisionShape3D" parent="Lock3D"]
+shape = SubResource("ConvexPolygonShape3D_tsus3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0, 0.01)
+mesh = SubResource("BoxMesh_3eabm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lock3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.035, 0, 0.01)
+mesh = SubResource("BoxMesh_3eabm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Lock3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0.01)
+mesh = SubResource("BoxMesh_3eabm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Lock3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0, 0.01)
+mesh = SubResource("BoxMesh_3eabm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
