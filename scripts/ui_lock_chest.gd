@@ -49,7 +49,7 @@ func _highlight_selected():
 	for i in range(4):
 		var label = $Panel.get_node("Label%d" % (i+1))
 		if i == selected_letter:
-			label.modulate = Color(1, 1, 0)  # żółty
+			label.modulate = Color(0.1, 0.4, 0.7)  # żółty
 		else:
 			label.modulate = Color(1, 1, 1)  # biały
 

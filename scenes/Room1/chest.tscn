@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://g52giiyj6f3h"]
+[gd_scene load_steps=18 format=4 uid="uid://g52giiyj6f3h"]
 
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
 [ext_resource type="Script" uid="uid://bx21x3dnermmp" path="res://scripts/lock_chest.gd" id="3_gy8cq"]
@@ -96,9 +96,6 @@ roughness = 0.1
 material = SubResource("StandardMaterial3D_westq")
 size = Vector3(0.4, 0.1, 0.05)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tsus3"]
-points = PackedVector3Array(-0.203175, -0.053164, -0.0281746, 0.203175, 0.0547513, 0.0289683, 0.203175, 0.0547513, -0.0281746, -0.203175, 0.0547513, 0.0289683, 0.203175, -0.053164, 0.0289683, 0.203175, -0.053164, -0.0281746, -0.203175, 0.0547513, -0.0281746, -0.203175, -0.053164, 0.0289683)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e16p2"]
 albedo_color = Color(0.000113828, 0.000113828, 0.000113828, 1)
 
@@ -109,6 +106,12 @@ size = Vector3(0.05, 0.05, 0.05)
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_gy8cq"]
 radius = 0.005
 height = 0.025
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gy8cq"]
+size = Vector3(0.4, 0.15, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bpvxt"]
+size = Vector3(2, 0.5, 0.75)
 
 [node name="Chest" type="Node3D"]
 
@@ -179,42 +182,52 @@ shape = SubResource("BoxShape3D_tsus3")
 
 [node name="Lock3D" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.993251, 0.64526)
-script = ExtResource("3_gy8cq")
 
 [node name="Lock" type="MeshInstance3D" parent="Lock3D"]
 mesh = SubResource("BoxMesh_tsus3")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/Lock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0, 0.00199997)
+mesh = SubResource("BoxMesh_3eabm")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/Lock/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lock3D/Lock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.035, 0, 0.00199997)
+mesh = SubResource("BoxMesh_3eabm")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/Lock/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Lock3D/Lock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0.00199997)
+mesh = SubResource("BoxMesh_3eabm")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/Lock/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Lock3D/Lock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0, 0.00199997)
+mesh = SubResource("BoxMesh_3eabm")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/Lock/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
+mesh = SubResource("CapsuleMesh_gy8cq")
+
 [node name="LockCollison" type="CollisionShape3D" parent="Lock3D"]
-shape = SubResource("ConvexPolygonShape3D_tsus3")
+shape = SubResource("BoxShape3D_gy8cq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0, 0.002)
-mesh = SubResource("BoxMesh_3eabm")
+[node name="InteractionZone" type="Area3D" parent="."]
+script = ExtResource("3_gy8cq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
-mesh = SubResource("CapsuleMesh_gy8cq")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.035, 0, 0.002)
-mesh = SubResource("BoxMesh_3eabm")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
-mesh = SubResource("CapsuleMesh_gy8cq")
-
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0.002)
-mesh = SubResource("BoxMesh_3eabm")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
-mesh = SubResource("CapsuleMesh_gy8cq")
-
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0, 0.002)
-mesh = SubResource("BoxMesh_3eabm")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
-mesh = SubResource("CapsuleMesh_gy8cq")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.75)
+shape = SubResource("BoxShape3D_bpvxt")

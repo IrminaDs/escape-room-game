@@ -1,65 +1,79 @@
-[gd_scene load_steps=11 format=3 uid="uid://dyqkrr88xjnwt"]
+[gd_scene load_steps=15 format=3 uid="uid://dyqkrr88xjnwt"]
 
 [ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/ui_lock_chest.gd" id="1_gsxl3"]
+[ext_resource type="FontFile" uid="uid://bmgcq1evjoolc" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_poyqd"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gsxl3"]
-bg_color = Color(0.537255, 0.537255, 0.537255, 0.72549)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 25
-corner_radius_top_right = 25
-corner_radius_bottom_right = 25
-corner_radius_bottom_left = 25
+[sub_resource type="Gradient" id="Gradient_poyqd"]
+offsets = PackedFloat32Array(0.0152672, 0.0610687, 0.129771, 0.282443, 0.572519, 0.763359, 0.877863, 0.977099)
+colors = PackedColorArray(0.204084, 0.210273, 0.245394, 1, 0.633299, 0.73819, 0.881105, 1, 0.37494, 0.378045, 0.456768, 1, 0.0880552, 0.117345, 0.156033, 1, 0.205652, 0.219871, 0.250827, 1, 0.44917, 0.477022, 0.51577, 1, 0.77433, 0.804255, 0.842502, 1, 0.220803, 0.25177, 0.2911, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jvode"]
+gradient = SubResource("Gradient_poyqd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_htnk8"]
+texture = SubResource("GradientTexture2D_jvode")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_poyqd"]
-bg_color = Color(0.105882, 0.105882, 0.105882, 1)
+bg_color = Color(0.051971, 0.051971, 0.051971, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvode"]
-bg_color = Color(0.105882, 0.105882, 0.105882, 1)
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htnk8"]
-bg_color = Color(0.105882, 0.105882, 0.105882, 1)
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f4uu3"]
-bg_color = Color(0.10748, 0.10748, 0.10748, 1)
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m546d"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.0964538, 0.0993988, 0.171727, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_poyqd"]
+font = ExtResource("2_poyqd")
 font_size = 100
 
 [sub_resource type="LabelSettings" id="LabelSettings_jvode"]
+font = ExtResource("2_poyqd")
 font_size = 100
 
 [sub_resource type="LabelSettings" id="LabelSettings_htnk8"]
+font = ExtResource("2_poyqd")
 font_size = 100
 
 [sub_resource type="LabelSettings" id="LabelSettings_f4uu3"]
+font = ExtResource("2_poyqd")
 font_size = 100
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_gsxl3")
 
 [node name="Panel" type="Panel" parent="."]
-offset_right = 1152.0
-offset_bottom = 648.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="Panel"]
 layout_mode = 0
@@ -67,7 +81,7 @@ offset_left = 256.0
 offset_top = 192.0
 offset_right = 896.0
 offset_bottom = 448.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_gsxl3")
+theme_override_styles/panel = SubResource("StyleBoxTexture_htnk8")
 
 [node name="Panel" type="Panel" parent="Panel/Panel"]
 layout_mode = 0
@@ -100,6 +114,12 @@ offset_top = 56.0
 offset_right = 568.0
 offset_bottom = 200.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_f4uu3")
+
+[node name="Panel5" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 256.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m546d")
 
 [node name="Label1" type="Label" parent="Panel"]
 layout_mode = 0
