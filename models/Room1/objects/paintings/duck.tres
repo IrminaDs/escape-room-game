@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bmuy7cso70jxk"]
+
+[ext_resource type="Texture2D" uid="uid://he57flk237dg" path="res://models/Room1/objects/paintings/duck.jpg" id="1_73cvi"]
+[ext_resource type="Texture2D" uid="uid://bvvep161256pb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="2_tkk2m"]
+[ext_resource type="Texture2D" uid="uid://0rfdky4tm1iy" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="3_0hnop"]
+
+[resource]
+resource_name = "material_0"
+albedo_texture = ExtResource("1_73cvi")
+metallic = 1.0
+metallic_texture = ExtResource("2_tkk2m")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_tkk2m")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_0hnop")
+ao_enabled = true
+ao_texture = ExtResource("2_tkk2m")
+uv1_scale = Vector3(0.5, 1, 1)
+uv1_offset = Vector3(0.15, 0, 0)

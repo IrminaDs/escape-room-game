@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://0tvnoii853oi"]
+
+[ext_resource type="Texture2D" uid="uid://83lnt0w7txu4" path="res://models/Room1/textures/boards/europe.jpg" id="1_f7w8k"]
+[ext_resource type="Texture2D" uid="uid://bvvep161256pb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="2_vrvfi"]
+[ext_resource type="Texture2D" uid="uid://0rfdky4tm1iy" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="3_dmj32"]
+[ext_resource type="Texture2D" uid="uid://qv1e6rooyxjj" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="4_dmj32"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pbabw"]
+size = Vector2(0.75, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vrvfi"]
+albedo_texture = ExtResource("1_f7w8k")
+metallic = 1.0
+metallic_texture = ExtResource("2_vrvfi")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_vrvfi")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_dmj32")
+ao_enabled = true
+ao_texture = ExtResource("2_vrvfi")
+uv1_scale = Vector3(0.975, 1, 1)
+uv1_offset = Vector3(0.02, 0, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q7cbs"]
+albedo_texture = ExtResource("4_dmj32")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01sg1"]
+albedo_texture = ExtResource("4_dmj32")
+
+[node name="Map" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("PlaneMesh_pbabw")
+surface_material_override/0 = SubResource("StandardMaterial3D_vrvfi")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+use_collision = true
+size = Vector3(0.75, 0.5, 0.01)
+material = SubResource("StandardMaterial3D_q7cbs")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+operation = 2
+use_collision = true
+size = Vector3(0.73, 0.48, 0.02)
+material = SubResource("StandardMaterial3D_01sg1")

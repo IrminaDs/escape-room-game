@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=4 uid="uid://juc16lkxmsc4"]
+
+[ext_resource type="Texture2D" uid="uid://cp6iqlaa6wcif" path="res://models/Room1/objects/carpet/carpet_0.jpg" id="1_eo17i"]
+[ext_resource type="Texture2D" uid="uid://dsh3o8y6we6ic" path="res://models/Room1/objects/carpet/carpet_1.png" id="2_d71gk"]
+[ext_resource type="Texture2D" uid="uid://bekopjf7jxcfk" path="res://models/Room1/objects/carpet/carpet_2.jpg" id="3_jt6f6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pgud"]
+resource_name = "SM_Carpet0102"
+cull_mode = 2
+albedo_texture = ExtResource("1_eo17i")
+metallic = 1.0
+metallic_texture = ExtResource("2_d71gk")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_d71gk")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_jt6f6")
+ao_enabled = true
+ao_texture = ExtResource("2_d71gk")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tdl6g"]
+_surfaces = [{
+"aabb": AABB(-447.169, -0.139737, 1063.86, 894.337, 2.9, 545.405),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAgADAAQAAgAEAAAAAQAFAAMAAAAEAAYABwAFAAEAAAAHAAEABwAGAAUAAAAGAAcA"),
+"name": "SM_Carpet0102",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("1AD//6L+AAAq////XAEAACr///+i/gAA//8AAP//AAAAAAAA//8AAP//AAAAAAAAAAAAAAAAAADUAP//XAEAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ruvmq"]
+resource_name = "Sketchfab_Scene_SM_Carpet_01_SM_Carpet0102_0"
+_surfaces = [{
+"aabb": AABB(-447.169, -0.139737, 1063.86, 894.337, 2.9, 545.405),
+"attribute_data": PackedByteArray("ugME2gN9TA7zAWAPSAFyDqt9Ww3MArDaAwG5Dsp+8NjxfaENu3+X2XZ/3tkTA/Xa"),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAQAEAAMAAgAFAAAAAgAGAAUAAAAHAAEABwAIAAEABwAJAAgAAAAKAAcAAAALAAoA"),
+"material": SubResource("StandardMaterial3D_6pgud"),
+"name": "SM_Carpet0102",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("1AD//6L+cdUq////XAGT1Sr///+i/lHV//8AAP//j7///wAAAACq3QAAAAD//8jN//8AAP//S8fUAP//XAHg1f//AAAAAKXaAAAAAAAAZ+0AAAAAAAC96AAAAAD//1PWdNVpKv3UfSol1SwqsNNOHovCCSqs6fUqodIVFzDVgyofx+EyP9MqMcXYODgW5iEl")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tdl6g")
+
+[node name="Carpet" type="Node3D"]
+
+[node name="Sketchfab_Scene" type="Node3D" parent="."]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+
+[node name="Sketchfab_model" type="Node3D" parent="Sketchfab_Scene"]
+transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
+
+[node name="3e6cebc93b324422bf51e0c186a3b243_fbx" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
+
+[node name="RootNode" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/3e6cebc93b324422bf51e0c186a3b243_fbx"]
+
+[node name="SM_Carpet_01" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/3e6cebc93b324422bf51e0c186a3b243_fbx/RootNode"]
+
+[node name="SM_Carpet_01_SM_Carpet0102_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/3e6cebc93b324422bf51e0c186a3b243_fbx/RootNode/SM_Carpet_01"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.9976e-13, -1350)
+mesh = SubResource("ArrayMesh_ruvmq")
+skeleton = NodePath("")

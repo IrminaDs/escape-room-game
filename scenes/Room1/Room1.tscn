@@ -1,7 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=36 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_jdjux"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
@@ -14,6 +13,17 @@
 [ext_resource type="PackedScene" uid="uid://bwd5j6iwefaio" path="res://scenes/Room1/painting.tscn" id="11_mhhkb"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
+[ext_resource type="PackedScene" uid="uid://dbn456rnxbbfb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb" id="15_cee2x"]
+[ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
+[ext_resource type="Material" uid="uid://b55daf63o185" path="res://models/Room1/objects/paintings/fox.tres" id="17_e8ajp"]
+[ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
+[ext_resource type="Material" uid="uid://cv6hu0xvk52oo" path="res://models/Room1/objects/paintings/deer.tres" id="18_el76y"]
+[ext_resource type="PackedScene" uid="uid://0tvnoii853oi" path="res://scenes/Room1/map.tscn" id="20_el76y"]
+[ext_resource type="PackedScene" uid="uid://c07v6wee104gp" path="res://scenes/Room1/wall_shelf.tscn" id="21_20w1x"]
+[ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
+[ext_resource type="Texture2D" uid="uid://bcflb7ant12oj" path="res://models/Room1/textures/boards/polibiusz.jpg" id="23_kacvt"]
+[ext_resource type="Texture2D" uid="uid://bdg0nfdbd4sih" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
+[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="25_quxoa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -28,18 +38,36 @@ sky = SubResource("Sky_75n1p")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_55bmt"]
+size = Vector2(1.5, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yh7v7"]
+albedo_color = Color(0.695503, 0.695503, 0.695503, 1)
+albedo_texture = ExtResource("23_kacvt")
+
+[sub_resource type="SphereMesh" id="SphereMesh_kacvt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_quxoa"]
+albedo_color = Color(0.485703, 0.485704, 0.485703, 1)
+metallic = 1.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_vjalx"]
+size = Vector2(1.7, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikev5"]
+albedo_color = Color(0.699654, 0.699653, 0.699653, 1)
+albedo_texture = ExtResource("24_quxoa")
+
+[sub_resource type="SphereMesh" id="SphereMesh_55bmt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjalx"]
+albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
+metallic = 1.0
+
 [node name="Room1" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2dtu0")
-
-[node name="ProtoController" parent="." instance=ExtResource("1_jdjux")]
-transform = Transform3D(-1, 0, -2.98023e-07, 0, 1, 0, 2.98023e-07, 0, -1, 0, 0.25, -2)
-input_left = "move_left"
-input_right = "move_right"
-input_forward = "move_up"
-input_back = "move_down"
-input_jump = "jump"
 
 [node name="Build" type="Node3D" parent="."]
 
@@ -456,8 +484,69 @@ transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 
 [node name="Clock" parent="Objects" instance=ExtResource("3_75n1p")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.81035, 1.36174, -2.90445)
 
-[node name="DeskLamp" parent="." instance=ExtResource("12_s215m")]
+[node name="DeskLamp" parent="Objects" instance=ExtResource("12_s215m")]
 transform = Transform3D(0.00565685, 0, -0.00565685, 0, 0.008, 0, 0.00565685, 0, 0.00565685, -0.75, 1.325, 0.75)
 
-[node name="Chest" parent="." instance=ExtResource("13_5da8r")]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 1.825, 0.25, -2.5)
+[node name="Chest" parent="Objects" instance=ExtResource("13_5da8r")]
+transform = Transform3D(0.519615, 0, -0.3, 0, 0.6, 0, 0.3, 0, 0.519615, 1.95, 0.25, -1.9)
+
+[node name="WallShelf" parent="Objects" instance=ExtResource("21_20w1x")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.125, 2, -2.75)
+
+[node name="TabP" type="MeshInstance3D" parent="Objects"]
+transform = Transform3D(-2.18557e-08, -0.5, 2.18557e-08, 0, -2.18557e-08, -0.5, 0.5, -2.18557e-08, 9.55343e-16, 2.999, 2, -0.625)
+mesh = SubResource("PlaneMesh_55bmt")
+surface_material_override/0 = SubResource("StandardMaterial3D_yh7v7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/TabP"]
+transform = Transform3D(0.05, 0, -6.61744e-24, 0, 0.05, -4.17594e-24, -6.61744e-24, -4.17594e-24, 0.05, 0, 0, -0.9)
+mesh = SubResource("SphereMesh_kacvt")
+surface_material_override/0 = SubResource("StandardMaterial3D_quxoa")
+
+[node name="TabV" type="MeshInstance3D" parent="Objects"]
+transform = Transform3D(-3.27835e-08, -0.75, 3.27835e-08, 0, -3.27835e-08, -0.75, 0.75, -3.27835e-08, 1.43301e-15, 2.999, 2, 0.5)
+mesh = SubResource("PlaneMesh_vjalx")
+surface_material_override/0 = SubResource("StandardMaterial3D_ikev5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/TabV"]
+transform = Transform3D(0.05, 0, 6.61744e-24, 0, 0.05, -4.17594e-24, 6.61744e-24, -4.17594e-24, 0.05, 0, 0, -0.9)
+mesh = SubResource("SphereMesh_55bmt")
+surface_material_override/0 = SubResource("StandardMaterial3D_vjalx")
+
+[node name="Frame1" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2, 1.75)
+
+[node name="Object_7" parent="Objects/Frame1/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("16_4y5xy")
+
+[node name="Frame2" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2, -1.5)
+
+[node name="Object_7" parent="Objects/Frame2/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("17_e8ajp")
+
+[node name="Frame3" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2, 1.25)
+
+[node name="Object_7" parent="Objects/Frame3/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_el76y")
+
+[node name="Frame4" parent="Objects" instance=ExtResource("15_cee2x")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2, -1.75)
+
+[node name="Object_7" parent="Objects/Frame4/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_e8ajp")
+
+[node name="Map" parent="Objects" instance=ExtResource("20_el76y")]
+transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.975, 2, -0.25)
+
+[node name="Carpet" parent="Objects" instance=ExtResource("22_0c67s")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
+
+[node name="Player" parent="." instance=ExtResource("25_quxoa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.25, 0)
+
+[editable path="Objects/Frame1"]
+[editable path="Objects/Frame2"]
+[editable path="Objects/Frame3"]
+[editable path="Objects/Frame4"]
