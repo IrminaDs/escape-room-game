@@ -3,16 +3,16 @@
 [ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/ui_lock_chest.gd" id="1_gsxl3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gsxl3"]
-bg_color = Color(0.529067, 0.529067, 0.529067, 1)
+bg_color = Color(0.537255, 0.537255, 0.537255, 0.72549)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(0.903598, 0.903598, 0.903598, 1)
-corner_radius_top_left = 50
-corner_radius_top_right = 50
-corner_radius_bottom_right = 50
-corner_radius_bottom_left = 50
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_poyqd"]
 bg_color = Color(0.105882, 0.105882, 0.105882, 1)
@@ -113,6 +113,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
 offset_left = 464.0
 offset_top = 192.0
 offset_right = 560.0
@@ -123,6 +124,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
 offset_left = 592.0
 offset_top = 192.0
 offset_right = 688.0
@@ -133,6 +135,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label4" type="Label" parent="Panel"]
+layout_mode = 0
 offset_left = 720.0
 offset_top = 192.0
 offset_right = 816.0

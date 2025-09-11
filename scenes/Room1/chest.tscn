@@ -88,7 +88,9 @@ _data = {
 size = Vector3(2.5, 1.75, 1.25)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_westq"]
-albedo_color = Color(0.155963, 0.129898, 0.128068, 1)
+albedo_color = Color(0.327687, 0.313111, 0.283651, 1)
+metallic = 0.8
+roughness = 0.1
 
 [sub_resource type="BoxMesh" id="BoxMesh_tsus3"]
 material = SubResource("StandardMaterial3D_westq")
@@ -186,7 +188,7 @@ mesh = SubResource("BoxMesh_tsus3")
 shape = SubResource("ConvexPolygonShape3D_tsus3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0, 0.01)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0, 0.002)
 mesh = SubResource("BoxMesh_3eabm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D"]
@@ -194,7 +196,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
 mesh = SubResource("CapsuleMesh_gy8cq")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.035, 0, 0.01)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.035, 0, 0.002)
 mesh = SubResource("BoxMesh_3eabm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D2"]
@@ -202,7 +204,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
 mesh = SubResource("CapsuleMesh_gy8cq")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0.01)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0.002)
 mesh = SubResource("BoxMesh_3eabm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D3"]
@@ -210,7 +212,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.025)
 mesh = SubResource("CapsuleMesh_gy8cq")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Lock3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0, 0.01)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0, 0.002)
 mesh = SubResource("BoxMesh_3eabm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Lock3D/MeshInstance3D4"]

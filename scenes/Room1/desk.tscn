@@ -1,6 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://diqbe0b8v51us"]
+[gd_scene load_steps=6 format=3 uid="uid://diqbe0b8v51us"]
 
 [ext_resource type="PackedScene" uid="uid://yyi0mlp8dpx7" path="res://models/Room1/objects/desk/antique_desk.glb" id="1_fx2yj"]
+
+[sub_resource type="Animation" id="Animation_fx2yj"]
+resource_name = "Open"
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 3_low")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.266667, 1, 0, -0.025, 0, 0.4, 1, 0, -0.05, 0, 0.633333, 1, 0, -0.1, 0, 0.8, 1, 0, -0.15, 0, 1, 1, 0, -0.225, -3.66572e-08)
+
+[sub_resource type="Animation" id="Animation_0qsej"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 3_low")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p88sg"]
+_data = {
+&"Open": SubResource("Animation_fx2yj"),
+&"RESET": SubResource("Animation_0qsej")
+}
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0qsej"]
 size = Vector3(1.8, 0.9, 0.75)
@@ -11,6 +37,16 @@ size = Vector3(1.8, 0.9, 0.75)
 
 [node name="Sketchfab_Scene" parent="StaticBody3D" instance=ExtResource("1_fx2yj")]
 
+[node name="Draw 3_low" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D/Sketchfab_Scene"]
+libraries = {
+&"": SubResource("AnimationLibrary_p88sg")
+}
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
 shape = SubResource("BoxShape3D_0qsej")
+
+[editable path="StaticBody3D/Sketchfab_Scene"]
