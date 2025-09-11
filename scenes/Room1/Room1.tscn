@@ -1,6 +1,7 @@
-[gd_scene load_steps=36 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=37 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
+[ext_resource type="Script" uid="uid://dbij2tl08ocgc" path="res://scripts/room_1.gd" id="1_quxoa"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
@@ -65,6 +66,17 @@ albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
 metallic = 1.0
 
 [node name="Room1" type="Node3D"]
+script = ExtResource("1_quxoa")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2dtu0")
@@ -544,7 +556,7 @@ transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.25, 0)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, -2.25)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
