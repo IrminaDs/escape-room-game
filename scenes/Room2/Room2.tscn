@@ -1,8 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=15 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_atr2y"]
 [ext_resource type="PackedScene" uid="uid://bgww3363gq6x6" path="res://models/Room2/textures/floor/modular_sci-fi_floor.glb" id="2_atr2y"]
 [ext_resource type="PackedScene" uid="uid://bhjg84bsyn64e" path="res://models/Room2/textures/wall/sci-fi_wall.glb" id="3_ie4lb"]
+[ext_resource type="Texture2D" uid="uid://lwde37sq5p0y" path="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_0.png" id="4_6lgvw"]
+[ext_resource type="Texture2D" uid="uid://fsqjfte7oroc" path="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_1.png" id="5_p6krx"]
+[ext_resource type="Texture2D" uid="uid://do8mm6kq30jex" path="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_2.png" id="6_axvhm"]
+[ext_resource type="PackedScene" uid="uid://cvp6kteqamrna" path="res://models/Room2/objects/monitor/crt_monitor.glb" id="7_p6krx"]
+[ext_resource type="PackedScene" uid="uid://ciis6fsb62g8c" path="res://models/Room2/objects/desk/old_metal_table_low_poly.glb" id="8_fx4mq"]
+[ext_resource type="PackedScene" uid="uid://dvs23k1gfm7ei" path="res://models/Room2/objects/oldpc/old_pc.glb" id="9_wapua"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -17,13 +23,24 @@ sky = SubResource("Sky_um1ds")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fx4mq"]
+albedo_texture = ExtResource("4_6lgvw")
+roughness_texture = ExtResource("6_axvhm")
+normal_enabled = true
+normal_texture = ExtResource("5_p6krx")
+uv1_scale = Vector3(3, 3, 3)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wapua"]
+material = SubResource("StandardMaterial3D_fx4mq")
+size = Vector2(8, 8)
+
 [node name="Room2" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p6krx")
 
 [node name="ProtoController" parent="." instance=ExtResource("1_atr2y")]
-transform = Transform3D(-1, 0, -2.98023e-07, 0, 1, 0, 2.98023e-07, 0, -1, 0, 0.25, -2)
+transform = Transform3D(-1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, 0, 2.8, 2)
 input_left = "move_left"
 input_right = "move_right"
 input_forward = "move_up"
@@ -33,6 +50,7 @@ input_jump = "jump"
 [node name="Build" type="Node3D" parent="."]
 
 [node name="Floor" type="Node3D" parent="Build"]
+visible = false
 
 [node name="floor" parent="Build/Floor" instance=ExtResource("2_atr2y")]
 transform = Transform3D(1.2, 0, 0, 0, 2, 0, 0, 0, 1.2, -1.05443, 0.189271, -1.70527)
@@ -254,6 +272,7 @@ transform = Transform3D(1.2, 0, 0, 0, 2, 0, 0, 0, 1.2, -7.7, 0.189, -8.05)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.625, 0)
 
 [node name="Walls" type="Node3D" parent="Build"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.342, 0.5)
 
 [node name="WallNorth" type="Node3D" parent="Build/Walls"]
 
@@ -301,3 +320,28 @@ transform = Transform3D(1.52855e-15, -3.49691e-08, -0.8, -0.8, -3.49691e-08, 0, 
 
 [node name="wall3" parent="Build/Walls/WallWest" instance=ExtResource("3_ie4lb")]
 transform = Transform3D(1.52855e-15, -3.49691e-08, -0.8, -0.8, -3.49691e-08, 0, -3.49691e-08, 0.8, -3.49691e-08, 2.617, 2.342, 2.173)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.282119, 2.46, 0.482)
+mesh = SubResource("PlaneMesh_wapua")
+
+[node name="komp5" parent="." instance=ExtResource("7_p6krx")]
+transform = Transform3D(0.299934, 0, -0.00628281, 0, 0.3, 0, 0.00628281, 0, 0.299934, -2.84997, 4.00536, 1.25916)
+
+[node name="komp4" parent="." instance=ExtResource("7_p6krx")]
+transform = Transform3D(0.299744, 0, -0.0123953, 0, 0.3, 0, 0.0123953, 0, 0.299744, -3.01358, 4.00476, -0.9879)
+
+[node name="komp3" parent="." instance=ExtResource("7_p6krx")]
+transform = Transform3D(0.298392, 0, -0.0310201, 0, 0.3, 0, 0.0310201, 0, 0.298392, -2.98474, 4.0093, -2.31992)
+
+[node name="komp1" parent="." instance=ExtResource("7_p6krx")]
+transform = Transform3D(0.292683, 0, -0.0658517, 0, 0.3, 0, 0.0658517, 0, 0.292683, -3.05981, 4.00984, 0.287593)
+
+[node name="desk1" parent="." instance=ExtResource("8_fx4mq")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.11084, 2.92515, 1.30635)
+
+[node name="desk2" parent="." instance=ExtResource("8_fx4mq")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.10593, 2.92929, -1.71302)
+
+[node name="komp2" parent="." instance=ExtResource("9_wapua")]
+transform = Transform3D(1.16901, 0, 0.270941, 0, 1.2, 0, -0.270941, 0, 1.16901, -3.13055, 3.59365, 2.2122)
