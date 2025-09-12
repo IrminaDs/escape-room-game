@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var ui_scene : PackedScene = preload("res://scenes/Room1/UILockChest.tscn")
+@export var ui_scene : PackedScene = preload("res://scenes/Room1/UILockDesk.tscn")
 var ui_instance : Node = null
 
 func _ready():
