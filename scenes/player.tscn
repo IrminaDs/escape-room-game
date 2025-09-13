@@ -23,18 +23,18 @@ script = ExtResource("1_3vyb7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 current = true
 
-[node name="LeftHand" type="XRController3D" parent="XROrigin3D"]
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 0)
 tracker = &"left_hand"
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftHand"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
 mesh = SubResource("CapsuleMesh_u8vuu")
 
-[node name="RightHand" type="XRController3D" parent="XROrigin3D"]
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0)
 tracker = &"right_hand"
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/RightHand"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D/RightController"]
 mesh = SubResource("CapsuleMesh_3vyb7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
