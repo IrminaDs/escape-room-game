@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
 [ext_resource type="Texture2D" uid="uid://bcflb7ant12oj" path="res://models/Room1/textures/boards/polibiusz.jpg" id="23_kacvt"]
 [ext_resource type="Texture2D" uid="uid://bdg0nfdbd4sih" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
-[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="25_quxoa"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="25_quxoa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
