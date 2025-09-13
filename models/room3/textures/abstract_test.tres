@@ -1,0 +1,53 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://k8mbyvdl7dy4"]
+
+[sub_resource type="Shader" id="Shader_q2lr8"]
+code = "shader_type spatial;
+
+uniform sampler2D mask : hint_albedo;
+uniform sampler2D tex0_albedo : hint_albedo;
+uniform sampler2D tex0_normal : hint_normal;
+uniform sampler2D tex0_ao : hint_black_white;
+uniform sampler2D tex0_roughness : hint_black_white;
+uniform sampler2D tex0_height : hint_black_white;
+
+uniform sampler2D tex1_albedo : hint_albedo;
+uniform sampler2D tex1_normal : hint_normal;
+uniform sampler2D tex1_ao : hint_black_white;
+uniform sampler2D tex1_roughness : hint_black_white;
+uniform sampler2D tex1_height : hint_black_white;
+
+void fragment() {
+    vec2 uv = UV;
+
+    float m = texture(mask, uv).r;
+
+    vec3 albedo0 = texture(tex0_albedo, uv).rgb;
+    vec3 albedo1 = texture(tex1_albedo, uv).rgb;
+    vec3 albedo_mix = mix(albedo0, albedo1, m);
+
+    vec3 normal0 = texture(tex0_normal, uv).rgb * 2.0 - 1.0;
+    vec3 normal1 = texture(tex1_normal, uv).rgb * 2.0 - 1.0;
+    vec3 normal_mix = normalize(mix(normal0, normal1, m));
+
+    float ao0 = texture(tex0_ao, uv).r;
+    float ao1 = texture(tex1_ao, uv).r;
+    float ao_mix = mix(ao0, ao1, m);
+
+    float rough0 = texture(tex0_roughness, uv).r;
+    float rough1 = texture(tex1_roughness, uv).r;
+    float rough_mix = mix(rough0, rough1, m);
+
+    float height0 = texture(tex0_height, uv).r;
+    float height1 = texture(tex1_height, uv).r;
+    float height_mix = mix(height0, height1, m);
+
+    ALBEDO = albedo_mix;
+    NORMAL = normal_mix;
+    AO = ao_mix;
+    ROUGHNESS = rough_mix;
+}
+"
+
+[resource]
+render_priority = 0
+shader = SubResource("Shader_q2lr8")
