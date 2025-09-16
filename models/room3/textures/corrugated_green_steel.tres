@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=7 format=3 uid="uid://m5vucriat6of"]
+
+[ext_resource type="Texture2D" uid="uid://b7hnhj272cpi3" path="res://models/room3/textures/corrugated_steel/Color.jpg" id="1_sembe"]
+[ext_resource type="Texture2D" uid="uid://ce3ts2ty0nmlv" path="res://models/room3/textures/corrugated_steel/AmbientOcclusion.jpg" id="2_nx83y"]
+[ext_resource type="Texture2D" uid="uid://drdm40i3l1s5g" path="res://models/room3/textures/corrugated_steel/Displacement.jpg" id="3_ck54b"]
+[ext_resource type="Texture2D" uid="uid://bsp4llkvk0l6u" path="res://models/room3/textures/corrugated_steel/Metalness.jpg" id="4_tb7qg"]
+[ext_resource type="Texture2D" uid="uid://bllr0d0ewqt5i" path="res://models/room3/textures/corrugated_steel/NormalGL.jpg" id="5_5vsei"]
+[ext_resource type="Texture2D" uid="uid://ba2x3jihvxmwe" path="res://models/room3/textures/corrugated_steel/Roughness.jpg" id="6_3ekgy"]
+
+[resource]
+albedo_texture = ExtResource("1_sembe")
+metallic = 1.0
+metallic_texture = ExtResource("4_tb7qg")
+roughness_texture = ExtResource("6_3ekgy")
+normal_enabled = true
+normal_texture = ExtResource("5_5vsei")
+ao_enabled = true
+ao_texture = ExtResource("2_nx83y")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_ck54b")
+uv1_triplanar = true

@@ -1,8 +1,16 @@
 extends CharacterBody3D
 
 @export var speed := 5.0
+var can_move := true  # dodajemy flagę, czy gracz może się poruszać
 
 func _physics_process(delta):
+	if not can_move:
+		# jeśli ruch zablokowany, zerujemy velocity i wychodzimy
+		velocity.x = 0
+		velocity.z = 0
+		move_and_slide()
+		return
+
 	var move_vector := Vector3.ZERO
 	var head = $XROrigin3D/XRCamera3D
 
@@ -34,4 +42,4 @@ func _physics_process(delta):
 		velocity.y = 0
 
 	# Poruszanie się z kolizjami
-	move_and_slide()  # korzysta z velocity wbudowanego w CharacterBody3D
+	move_and_slide()
