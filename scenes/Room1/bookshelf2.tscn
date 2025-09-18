@@ -1,25 +1,25 @@
-[gd_scene load_steps=92 format=4 uid="uid://dpkqptb18his1"]
+[gd_scene load_steps=92 format=4 uid="uid://curyiydvedhpa"]
 
-[ext_resource type="Texture2D" uid="uid://badf7erq56kd6" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
-[ext_resource type="Texture2D" uid="uid://dp21tuyf4i3rw" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_ejc8x"]
-[ext_resource type="Texture2D" uid="uid://b10pccmj16qon" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_0gh3c"]
-[ext_resource type="Texture2D" uid="uid://bj47kxhdtr5bj" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_2wevw"]
-[ext_resource type="Texture2D" uid="uid://e0bcergbafon" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_wsqjv"]
-[ext_resource type="Texture2D" uid="uid://dn5ehg5wgdq7b" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_ymvo7"]
+[ext_resource type="Texture2D" uid="uid://badf7erq56kd6" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
+[ext_resource type="Texture2D" uid="uid://dp21tuyf4i3rw" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
+[ext_resource type="Texture2D" uid="uid://b10pccmj16qon" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_klhjw"]
+[ext_resource type="Texture2D" uid="uid://bj47kxhdtr5bj" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_m3ybm"]
+[ext_resource type="Texture2D" uid="uid://e0bcergbafon" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_ssm5c"]
+[ext_resource type="Texture2D" uid="uid://dn5ehg5wgdq7b" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_6kvop"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
 resource_name = "Material.001"
 cull_mode = 2
-albedo_texture = ExtResource("1_88mrq")
+albedo_texture = ExtResource("1_jxup7")
 metallic = 1.0
-metallic_texture = ExtResource("2_ejc8x")
+metallic_texture = ExtResource("2_dxa2x")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("2_ejc8x")
+roughness_texture = ExtResource("2_dxa2x")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("3_0gh3c")
+normal_texture = ExtResource("3_klhjw")
 ao_enabled = true
-ao_texture = ExtResource("2_ejc8x")
+ao_texture = ExtResource("2_dxa2x")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e05kt"]
 _surfaces = [{
@@ -192,15 +192,15 @@ shadow_mesh = SubResource("ArrayMesh_0bffv")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_irr6i"]
 resource_name = "Material.005"
 cull_mode = 2
-albedo_texture = ExtResource("4_2wevw")
-metallic_texture = ExtResource("5_wsqjv")
+albedo_texture = ExtResource("4_m3ybm")
+metallic_texture = ExtResource("5_ssm5c")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("5_wsqjv")
+roughness_texture = ExtResource("5_ssm5c")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("6_ymvo7")
+normal_texture = ExtResource("6_6kvop")
 ao_enabled = true
-ao_texture = ExtResource("5_wsqjv")
+ao_texture = ExtResource("5_ssm5c")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_h510c"]
 _surfaces = [{
@@ -1429,294 +1429,298 @@ shadow_mesh = SubResource("ArrayMesh_eifya")
 [sub_resource type="BoxShape3D" id="BoxShape3D_88mrq"]
 size = Vector3(0.6, 2.7, 1.25)
 
-[node name="Bookshelf" type="Node3D"]
+[node name="Bookshelf2" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
-[node name="Cube_001_Cube_002" type="Node3D" parent="StaticBody3D"]
+[node name="Shelf" type="Node3D" parent="StaticBody3D"]
+
+[node name="Cube_001_Cube_002" type="Node3D" parent="StaticBody3D/Shelf"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="Cube_001_Cube_002_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Cube_001_Cube_002"]
+[node name="Cube_001_Cube_002_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Shelf/Cube_001_Cube_002"]
 mesh = SubResource("ArrayMesh_toknq")
 skeleton = NodePath("")
 
-[node name="Cube_003_Cube_004" type="Node3D" parent="StaticBody3D"]
+[node name="Cube_003_Cube_004" type="Node3D" parent="StaticBody3D/Shelf"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="Cube_003_Cube_004_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Cube_003_Cube_004"]
+[node name="Cube_003_Cube_004_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Shelf/Cube_003_Cube_004"]
 mesh = SubResource("ArrayMesh_ofll1")
 skeleton = NodePath("")
 
-[node name="Cube_004_Cube_005" type="Node3D" parent="StaticBody3D"]
+[node name="Cube_004_Cube_005" type="Node3D" parent="StaticBody3D/Shelf"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="Cube_004_Cube_005_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Cube_004_Cube_005"]
+[node name="Cube_004_Cube_005_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Shelf/Cube_004_Cube_005"]
 mesh = SubResource("ArrayMesh_2o2bp")
 skeleton = NodePath("")
 
-[node name="Cube_Cube_001" type="Node3D" parent="StaticBody3D"]
+[node name="Cube_Cube_001" type="Node3D" parent="StaticBody3D/Shelf"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="Cube_Cube_001_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Cube_Cube_001"]
+[node name="Cube_Cube_001_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Shelf/Cube_Cube_001"]
 mesh = SubResource("ArrayMesh_5t1tj")
 skeleton = NodePath("")
 
-[node name="Cylinder_001" type="Node3D" parent="StaticBody3D"]
+[node name="Cylinder_001" type="Node3D" parent="StaticBody3D/Shelf"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="Cylinder_001_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Cylinder_001"]
+[node name="Cylinder_001_Material_001_0" type="MeshInstance3D" parent="StaticBody3D/Shelf/Cylinder_001"]
 mesh = SubResource("ArrayMesh_l1ee0")
 skeleton = NodePath("")
 
-[node name="book_001_Cube_003" type="Node3D" parent="StaticBody3D"]
+[node name="Books" type="Node3D" parent="StaticBody3D"]
+
+[node name="book_001_Cube_003" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_001_Cube_003_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_001_Cube_003"]
+[node name="book_001_Cube_003_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_001_Cube_003"]
 mesh = SubResource("ArrayMesh_1ge5u")
 skeleton = NodePath("")
 
-[node name="book_002_Cube_006" type="Node3D" parent="StaticBody3D"]
+[node name="book_002_Cube_006" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_002_Cube_006_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_002_Cube_006"]
+[node name="book_002_Cube_006_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_002_Cube_006"]
 mesh = SubResource("ArrayMesh_84mjj")
 skeleton = NodePath("")
 
-[node name="book_003_Cube_007" type="Node3D" parent="StaticBody3D"]
+[node name="book_003_Cube_007" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_003_Cube_007_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_003_Cube_007"]
+[node name="book_003_Cube_007_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_003_Cube_007"]
 mesh = SubResource("ArrayMesh_uwlj5")
 skeleton = NodePath("")
 
-[node name="book_004_Cube_008" type="Node3D" parent="StaticBody3D"]
+[node name="book_004_Cube_008" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_004_Cube_008"]
+[node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_004_Cube_008"]
 mesh = SubResource("ArrayMesh_l5irs")
 skeleton = NodePath("")
 
-[node name="book_005_Cube_009" type="Node3D" parent="StaticBody3D"]
+[node name="book_005_Cube_009" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_005_Cube_009"]
+[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_005_Cube_009"]
 mesh = SubResource("ArrayMesh_0bsha")
 skeleton = NodePath("")
 
-[node name="book_006_Cube_010" type="Node3D" parent="StaticBody3D"]
+[node name="book_006_Cube_010" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_006_Cube_010_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_006_Cube_010"]
+[node name="book_006_Cube_010_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_006_Cube_010"]
 mesh = SubResource("ArrayMesh_k3ddy")
 skeleton = NodePath("")
 
-[node name="book_007_Cube_011" type="Node3D" parent="StaticBody3D"]
+[node name="book_007_Cube_011" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_007_Cube_011_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_007_Cube_011"]
+[node name="book_007_Cube_011_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_007_Cube_011"]
 mesh = SubResource("ArrayMesh_r2gt6")
 skeleton = NodePath("")
 
-[node name="book_008_Cube_012" type="Node3D" parent="StaticBody3D"]
+[node name="book_008_Cube_012" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_008_Cube_012_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_008_Cube_012"]
+[node name="book_008_Cube_012_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_008_Cube_012"]
 mesh = SubResource("ArrayMesh_qti3u")
 skeleton = NodePath("")
 
-[node name="book_009_Cube_013" type="Node3D" parent="StaticBody3D"]
+[node name="book_009_Cube_013" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_009_Cube_013_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_009_Cube_013"]
+[node name="book_009_Cube_013_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_009_Cube_013"]
 mesh = SubResource("ArrayMesh_gs2j8")
 skeleton = NodePath("")
 
-[node name="book_010_Cube_014" type="Node3D" parent="StaticBody3D"]
+[node name="book_010_Cube_014" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_010_Cube_014_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_010_Cube_014"]
+[node name="book_010_Cube_014_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_010_Cube_014"]
 mesh = SubResource("ArrayMesh_l5057")
 skeleton = NodePath("")
 
-[node name="book_011_Cube_015" type="Node3D" parent="StaticBody3D"]
+[node name="book_011_Cube_015" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_011_Cube_015_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_011_Cube_015"]
+[node name="book_011_Cube_015_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_011_Cube_015"]
 mesh = SubResource("ArrayMesh_ocg51")
 skeleton = NodePath("")
 
-[node name="book_012_Cube_016" type="Node3D" parent="StaticBody3D"]
+[node name="book_012_Cube_016" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_012_Cube_016_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_012_Cube_016"]
+[node name="book_012_Cube_016_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_012_Cube_016"]
 mesh = SubResource("ArrayMesh_tt0y4")
 skeleton = NodePath("")
 
-[node name="book_013_Cube_017" type="Node3D" parent="StaticBody3D"]
+[node name="book_013_Cube_017" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_013_Cube_017_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_013_Cube_017"]
+[node name="book_013_Cube_017_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_013_Cube_017"]
 mesh = SubResource("ArrayMesh_oc4k1")
 skeleton = NodePath("")
 
-[node name="book_014_Cube_018" type="Node3D" parent="StaticBody3D"]
+[node name="book_014_Cube_018" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_014_Cube_018"]
+[node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_014_Cube_018"]
 mesh = SubResource("ArrayMesh_6qlhi")
 skeleton = NodePath("")
 
-[node name="book_015_Cube_019" type="Node3D" parent="StaticBody3D"]
+[node name="book_015_Cube_019" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_015_Cube_019_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_015_Cube_019"]
+[node name="book_015_Cube_019_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_015_Cube_019"]
 mesh = SubResource("ArrayMesh_1meoe")
 skeleton = NodePath("")
 
-[node name="book_016_Cube_020" type="Node3D" parent="StaticBody3D"]
+[node name="book_016_Cube_020" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_016_Cube_020_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_016_Cube_020"]
+[node name="book_016_Cube_020_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_016_Cube_020"]
 mesh = SubResource("ArrayMesh_2n0ep")
 skeleton = NodePath("")
 
-[node name="book_017_Cube_021" type="Node3D" parent="StaticBody3D"]
+[node name="book_017_Cube_021" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_017_Cube_021_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_017_Cube_021"]
+[node name="book_017_Cube_021_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_017_Cube_021"]
 mesh = SubResource("ArrayMesh_f4hm4")
 skeleton = NodePath("")
 
-[node name="book_018_Cube_022" type="Node3D" parent="StaticBody3D"]
+[node name="book_018_Cube_022" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_018_Cube_022_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_018_Cube_022"]
+[node name="book_018_Cube_022_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_018_Cube_022"]
 mesh = SubResource("ArrayMesh_jmsua")
 skeleton = NodePath("")
 
-[node name="book_019_Cube_023" type="Node3D" parent="StaticBody3D"]
+[node name="book_019_Cube_023" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_019_Cube_023_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_019_Cube_023"]
+[node name="book_019_Cube_023_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_019_Cube_023"]
 mesh = SubResource("ArrayMesh_kblc7")
 skeleton = NodePath("")
 
-[node name="book_020_Cube_024" type="Node3D" parent="StaticBody3D"]
+[node name="book_020_Cube_024" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_020_Cube_024_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_020_Cube_024"]
+[node name="book_020_Cube_024_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_020_Cube_024"]
 mesh = SubResource("ArrayMesh_vyq0j")
 skeleton = NodePath("")
 
-[node name="book_021_Cube_025" type="Node3D" parent="StaticBody3D"]
+[node name="book_021_Cube_025" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_021_Cube_025_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_021_Cube_025"]
+[node name="book_021_Cube_025_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_021_Cube_025"]
 mesh = SubResource("ArrayMesh_i4wd2")
 skeleton = NodePath("")
 
-[node name="book_022_Cube_026" type="Node3D" parent="StaticBody3D"]
+[node name="book_022_Cube_026" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_022_Cube_026_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_022_Cube_026"]
+[node name="book_022_Cube_026_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_022_Cube_026"]
 mesh = SubResource("ArrayMesh_xhsof")
 skeleton = NodePath("")
 
-[node name="book_023_Cube_027" type="Node3D" parent="StaticBody3D"]
+[node name="book_023_Cube_027" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_023_Cube_027_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_023_Cube_027"]
+[node name="book_023_Cube_027_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_023_Cube_027"]
 mesh = SubResource("ArrayMesh_sx6ha")
 skeleton = NodePath("")
 
-[node name="book_024_Cube_028" type="Node3D" parent="StaticBody3D"]
+[node name="book_024_Cube_028" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_024_Cube_028_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_024_Cube_028"]
+[node name="book_024_Cube_028_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_024_Cube_028"]
 mesh = SubResource("ArrayMesh_fqcjx")
 skeleton = NodePath("")
 
-[node name="book_025_Cube_029" type="Node3D" parent="StaticBody3D"]
+[node name="book_025_Cube_029" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_025_Cube_029_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_025_Cube_029"]
+[node name="book_025_Cube_029_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_025_Cube_029"]
 mesh = SubResource("ArrayMesh_satui")
 skeleton = NodePath("")
 
-[node name="book_026_Cube_030" type="Node3D" parent="StaticBody3D"]
+[node name="book_026_Cube_030" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_026_Cube_030_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_026_Cube_030"]
+[node name="book_026_Cube_030_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_026_Cube_030"]
 mesh = SubResource("ArrayMesh_dccgi")
 skeleton = NodePath("")
 
-[node name="book_027_Cube_031" type="Node3D" parent="StaticBody3D"]
+[node name="book_027_Cube_031" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_027_Cube_031_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_027_Cube_031"]
+[node name="book_027_Cube_031_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_027_Cube_031"]
 mesh = SubResource("ArrayMesh_eh1ag")
 skeleton = NodePath("")
 
-[node name="book_028_Cube_032" type="Node3D" parent="StaticBody3D"]
+[node name="book_028_Cube_032" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_028_Cube_032_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_028_Cube_032"]
+[node name="book_028_Cube_032_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_028_Cube_032"]
 mesh = SubResource("ArrayMesh_nmm2f")
 skeleton = NodePath("")
 
-[node name="book_029_Cube_033" type="Node3D" parent="StaticBody3D"]
+[node name="book_029_Cube_033" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_029_Cube_033"]
+[node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_029_Cube_033"]
 mesh = SubResource("ArrayMesh_ftbsl")
 skeleton = NodePath("")
 
-[node name="book_030_Cube_034" type="Node3D" parent="StaticBody3D"]
+[node name="book_030_Cube_034" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_030_Cube_034_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_030_Cube_034"]
+[node name="book_030_Cube_034_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_030_Cube_034"]
 mesh = SubResource("ArrayMesh_h2oue")
 skeleton = NodePath("")
 
-[node name="book_031_Cube_035" type="Node3D" parent="StaticBody3D"]
+[node name="book_031_Cube_035" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_031_Cube_035_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_031_Cube_035"]
+[node name="book_031_Cube_035_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_031_Cube_035"]
 mesh = SubResource("ArrayMesh_vybex")
 skeleton = NodePath("")
 
-[node name="book_032_Cube_036" type="Node3D" parent="StaticBody3D"]
+[node name="book_032_Cube_036" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_032_Cube_036_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_032_Cube_036"]
+[node name="book_032_Cube_036_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_032_Cube_036"]
 mesh = SubResource("ArrayMesh_hfgik")
 skeleton = NodePath("")
 
-[node name="book_033_Cube_037" type="Node3D" parent="StaticBody3D"]
+[node name="book_033_Cube_037" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_033_Cube_037_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_033_Cube_037"]
+[node name="book_033_Cube_037_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_033_Cube_037"]
 mesh = SubResource("ArrayMesh_5wt3e")
 skeleton = NodePath("")
 
-[node name="book_034_Cube_038" type="Node3D" parent="StaticBody3D"]
+[node name="book_034_Cube_038" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_034_Cube_038_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_034_Cube_038"]
+[node name="book_034_Cube_038_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_034_Cube_038"]
 mesh = SubResource("ArrayMesh_n201s")
 skeleton = NodePath("")
 
-[node name="book_035_Cube_039" type="Node3D" parent="StaticBody3D"]
+[node name="book_035_Cube_039" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_035_Cube_039_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_035_Cube_039"]
+[node name="book_035_Cube_039_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_035_Cube_039"]
 mesh = SubResource("ArrayMesh_5h6i2")
 skeleton = NodePath("")
 
-[node name="book_036_Cube_040" type="Node3D" parent="StaticBody3D"]
+[node name="book_036_Cube_040" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 
-[node name="book_036_Cube_040_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/book_036_Cube_040"]
+[node name="book_036_Cube_040_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_036_Cube_040"]
 mesh = SubResource("ArrayMesh_e7ll2")
 skeleton = NodePath("")
 
