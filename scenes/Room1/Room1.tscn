@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=39 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="Script" uid="uid://dbij2tl08ocgc" path="res://scripts/room_1.gd" id="1_quxoa"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
 [ext_resource type="PackedScene" uid="uid://dbn456rnxbbfb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb" id="15_cee2x"]
+[ext_resource type="PackedScene" uid="uid://c17comrej3tl4" path="res://scenes/Room1/ceasar.tscn" id="15_yh7v7"]
 [ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
 [ext_resource type="Material" uid="uid://b55daf63o185" path="res://models/Room1/objects/paintings/fox.tres" id="17_e8ajp"]
 [ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
@@ -502,6 +503,9 @@ transform = Transform3D(0.00565685, 0, -0.00565685, 0, 0.008, 0, 0.00565685, 0, 
 
 [node name="Chest" parent="Objects" instance=ExtResource("13_5da8r")]
 transform = Transform3D(0.519615, 0, -0.3, 0, 0.6, 0, 0.3, 0, 0.519615, 1.95, 0.25, -1.9)
+
+[node name="Ceasar" parent="Objects" instance=ExtResource("15_yh7v7")]
+transform = Transform3D(0.259808, -0.129904, -0.075, 0.15, 0.225, 0.129904, 0, -0.15, 0.259808, 1.725, 0.5, -2.05)
 
 [node name="WallShelf" parent="Objects" instance=ExtResource("21_20w1x")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.125, 2, -2.8)

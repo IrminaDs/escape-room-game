@@ -154,7 +154,7 @@ bones/2/parent = 1
 bones/2/rest = Transform3D(1, -2.38419e-07, 2.84217e-14, 0, -1.19209e-07, -1, 2.38419e-07, 1, -1.19209e-07, -2.02656e-05, 49.5, 85)
 bones/2/enabled = true
 bones/2/position = Vector3(-2.02656e-05, 49.5, 85)
-bones/2/rotation = Quaternion(0.707107, -8.42937e-08, 8.42937e-08, 0.707107)
+bones/2/rotation = Quaternion(-5.96046e-08, -1.19209e-07, -7.10543e-15, 1)
 bones/2/scale = Vector3(1, 1, 1)
 
 [node name="Object_10" type="MeshInstance3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
