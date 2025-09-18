@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vn74i0c8xlyc"
-path.s3tc="res://.godot/imported/diffuse.jpg-c9819ba080340ca986c5c8e20b174b4e.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/wallpaper/diffuse.jpg"
-dest_files=["res://.godot/imported/diffuse.jpg-c9819ba080340ca986c5c8e20b174b4e.s3tc.ctex"]
 
 [params]
 

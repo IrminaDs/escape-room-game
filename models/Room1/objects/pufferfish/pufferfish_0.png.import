@@ -2,12 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnnmeutt1nvbr"
-valid=false
+uid="uid://b60s8qhx6eepj"
+path.s3tc="res://.godot/imported/pufferfish_0.png-0ce6d82ef62dba5f0ff09e27578c1b59.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "dc8fda1eb4ef99cff384cc87848dd4ba"
+}
 
 [deps]
 
-source_file="res://models/room3/textures/beige_wall/beige_wall_001_rough_4k.jpg"
+source_file="res://models/Room1/objects/pufferfish/pufferfish_0.png"
+dest_files=["res://.godot/imported/pufferfish_0.png-0ce6d82ef62dba5f0ff09e27578c1b59.s3tc.ctex"]
 
 [params]
 

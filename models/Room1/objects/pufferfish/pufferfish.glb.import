@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cks3tlrxfk7qg"
-valid=false
+uid="uid://cie3c8b2dnam4"
+path="res://.godot/imported/pufferfish.glb-e99c6942eba93cb671cf11b33831d8ca.scn"
 
 [deps]
 
-source_file="res://models/room3/furniture/table/table.glb"
+source_file="res://models/Room1/objects/pufferfish/pufferfish.glb"
+dest_files=["res://.godot/imported/pufferfish.glb-e99c6942eba93cb671cf11b33831d8ca.scn"]
 
 [params]
 
@@ -25,7 +26,7 @@ meshes/light_baking=1
 meshes/lightmap_texel_size=0.2
 meshes/force_disable_compression=false
 skins/use_named_skins=true
-animation/import=false
+animation/import=true
 animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true

@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0t8vj4obtgf8"
-path.s3tc="res://.godot/imported/specular.jpg-a87a72683d07cf271a59d3d37b460170.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/wallpaper/specular.jpg"
-dest_files=["res://.godot/imported/specular.jpg-a87a72683d07cf271a59d3d37b460170.s3tc.ctex"]
 
 [params]
 

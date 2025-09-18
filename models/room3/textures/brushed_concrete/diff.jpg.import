@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfvf1qbba1rtx"
-path="res://.godot/imported/diff.jpg-e30e902718c8ff6c28cf81346b2097c6.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/brushed_concrete/diff.jpg"
-dest_files=["res://.godot/imported/diff.jpg-e30e902718c8ff6c28cf81346b2097c6.ctex"]
 
 [params]
 
