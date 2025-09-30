@@ -1,7 +1,7 @@
 [gd_scene load_steps=40 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
-[ext_resource type="Script" uid="uid://dbij2tl08ocgc" path="res://scripts/room_1.gd" id="1_quxoa"]
+[ext_resource type="Script" path="res://scripts/room_1.gd" id="1_quxoa"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
 [ext_resource type="Texture2D" uid="uid://bcflb7ant12oj" path="res://models/Room1/textures/boards/polibiusz.jpg" id="23_kacvt"]
 [ext_resource type="Texture2D" uid="uid://bdg0nfdbd4sih" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
-[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="25_quxoa"]
+[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="25_quxoa"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
