@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=4 uid="uid://dpkqptb18his1"]
+[gd_scene load_steps=99 format=4 uid="uid://dpkqptb18his1"]
 
 [ext_resource type="Texture2D" uid="uid://badf7erq56kd6" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
 [ext_resource type="Texture2D" uid="uid://dp21tuyf4i3rw" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_ejc8x"]
@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://bj47kxhdtr5bj" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_2wevw"]
 [ext_resource type="Texture2D" uid="uid://e0bcergbafon" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_wsqjv"]
 [ext_resource type="Texture2D" uid="uid://dn5ehg5wgdq7b" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_ymvo7"]
+[ext_resource type="Texture2D" uid="uid://dv6shimfq7xrh" path="res://models/Room1/textures/books/green.jpg" id="7_1jdum"]
+[ext_resource type="Texture2D" uid="uid://o1pn3c4ie54n" path="res://models/Room1/objects/shelf/dusty_bookshelfs_5.png" id="8_6n3w4"]
+[ext_resource type="Texture2D" uid="uid://dx31ecslxpgno" path="res://models/Room1/textures/books/blue.jpg" id="9_ncs31"]
+[ext_resource type="Texture2D" uid="uid://cwf0ri4ms3n0d" path="res://models/Room1/textures/books/orange.jpg" id="10_uxd8u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
 resource_name = "Material.001"
@@ -303,6 +307,13 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0r3t0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_li15u"]
+albedo_texture = ExtResource("7_1jdum")
+roughness = 0.7
+normal_texture = ExtResource("8_6n3w4")
+uv1_scale = Vector3(0.48, 0.48, 0.48)
+uv1_offset = Vector3(0.76, 0, 0)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m10ds"]
 _surfaces = [{
@@ -609,6 +620,15 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_v4uqs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cbdk"]
+albedo_color = Color(0.581033, 0.581033, 0.581033, 1)
+albedo_texture = ExtResource("9_ncs31")
+roughness = 0.22
+normal_enabled = true
+normal_scale = 0.9
+normal_texture = ExtResource("6_ymvo7")
+uv1_offset = Vector3(0, 0.32, 0)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sbhr6"]
 _surfaces = [{
@@ -1392,6 +1412,12 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_o7jc0")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xu2ar"]
+albedo_color = Color(0.544974, 0.544974, 0.544974, 1)
+albedo_texture = ExtResource("10_uxd8u")
+roughness = 0.31
+uv1_offset = Vector3(0, 0.32, 0)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_ktcqu"]
 _surfaces = [{
 "aabb": AABB(-0.106009, -0.224586, 0.17119, 0.229066, 0.29716, 0.042516),
@@ -1486,12 +1512,13 @@ transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.5, 
 mesh = SubResource("ArrayMesh_oc4k1")
 skeleton = NodePath("")
 
-[node name="book_014_Cube_018" type="Node3D" parent="StaticBody3D/Books"]
+[node name="green" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.5, 0.6)
 
-[node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_014_Cube_018"]
+[node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/green"]
 mesh = SubResource("ArrayMesh_6qlhi")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_li15u")
 
 [node name="book_033_Cube_037" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.98, 0.35)
@@ -1549,12 +1576,13 @@ transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0
 mesh = SubResource("ArrayMesh_l5057")
 skeleton = NodePath("")
 
-[node name="book_004_Cube_008" type="Node3D" parent="StaticBody3D/Books"]
+[node name="blue" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
 
-[node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_004_Cube_008"]
+[node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/blue"]
 mesh = SubResource("ArrayMesh_l5irs")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_2cbdk")
 
 [node name="book_005_Cube_009" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
@@ -1710,12 +1738,13 @@ transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0
 mesh = SubResource("ArrayMesh_nmm2f")
 skeleton = NodePath("")
 
-[node name="book_029_Cube_033" type="Node3D" parent="StaticBody3D/Books"]
+[node name="orange" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0.57)
 
-[node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/book_029_Cube_033"]
+[node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/orange"]
 mesh = SubResource("ArrayMesh_ftbsl")
 skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_xu2ar")
 
 [node name="book_030_Cube_034" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0.57)
