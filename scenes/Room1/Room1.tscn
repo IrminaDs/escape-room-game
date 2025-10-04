@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=41 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="Script" path="res://scripts/room_1.gd" id="1_quxoa"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://bdg0nfdbd4sih" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="25_quxoa"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
+[ext_resource type="PackedScene" uid="uid://dcgvqqjrhujqo" path="res://scenes/Room1/letter_desk.tscn" id="29_ikev5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -566,6 +567,9 @@ transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, -2.25)
+
+[node name="Letter" parent="." instance=ExtResource("29_ikev5")]
+transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 0, 1.335, 0.75)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
