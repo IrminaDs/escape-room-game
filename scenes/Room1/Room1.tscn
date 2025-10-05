@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=42 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="Script" path="res://scripts/room_1.gd" id="1_quxoa"]
@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="25_quxoa"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 [ext_resource type="PackedScene" uid="uid://dcgvqqjrhujqo" path="res://scenes/Room1/letter_desk.tscn" id="29_ikev5"]
+[ext_resource type="PackedScene" uid="uid://bpryrlwosegyc" path="res://scenes/Room1/disk.tscn" id="30_cfovf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -562,14 +563,17 @@ transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 
 [node name="Carpet" parent="Objects" instance=ExtResource("22_0c67s")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
 
+[node name="Disk" parent="Objects" instance=ExtResource("30_cfovf")]
+transform = Transform3D(0.892552, -0.963603, 0.724444, 1.14912, 0.952582, -0.148716, -0.364527, 0.643472, 1.30502, 2.23, 0.65, -1.75)
+
+[node name="Letter" parent="Objects" instance=ExtResource("29_ikev5")]
+transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 0, 1.335, 0.75)
+
 [node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, -2.25)
-
-[node name="Letter" parent="." instance=ExtResource("29_ikev5")]
-transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 0, 1.335, 0.75)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]

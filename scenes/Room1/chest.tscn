@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=4 uid="uid://g52giiyj6f3h"]
 
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
-[ext_resource type="Script" uid="uid://bx21x3dnermmp" path="res://scripts/lock_chest.gd" id="3_gy8cq"]
+[ext_resource type="Script" path="res://scripts/lock_chest.gd" id="3_gy8cq"]
 [ext_resource type="Material" uid="uid://bnjt32daohc10" path="res://models/Room1/objects/chest/M_Chest_Wood.tres" id="7_3eabm"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gy8cq"]
