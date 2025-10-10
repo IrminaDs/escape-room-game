@@ -87,6 +87,7 @@ color = Color(0, 0, 0, 1)
 environment = SubResource("Environment_2dtu0")
 
 [node name="Build" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 
 [node name="Floor" type="Node3D" parent="Build"]
 
@@ -476,6 +477,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 3.125)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
 
 [node name="Objects" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 
 [node name="Lamp" parent="Objects" instance=ExtResource("6_ht3nn")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.65, 0)
@@ -573,7 +575,7 @@ transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.0
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.25, -2.25)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.5, -2.25)
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
