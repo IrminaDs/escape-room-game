@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c664tfpk5ohkb"]
+[gd_scene load_steps=5 format=3 uid="uid://c664tfpk5ohkb"]
 
 [ext_resource type="Script" uid="uid://citypy6bqcqkj" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://dhaqth6q5yw4n" path="res://addons/godot-xr-tools/hands/model/hand_l.gltf" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://ds1t8vc0kxoeo" path="res://addons/godot-xr-tools/hands/model/hand_r.gltf" id="3_dqkch"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3vyb7"]
 radius = 0.25
@@ -19,9 +21,13 @@ current = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 0)
 tracker = &"left_hand"
 
+[node name="hand_l" parent="XROrigin3D/LeftController" instance=ExtResource("2_qhqgy")]
+
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0)
 tracker = &"right_hand"
+
+[node name="hand_r" parent="XROrigin3D/RightController" instance=ExtResource("3_dqkch")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0)

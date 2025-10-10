@@ -576,7 +576,6 @@ transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -1.5)
-visible = false
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
