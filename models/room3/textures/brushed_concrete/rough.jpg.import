@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dadr3ekij25fp"
-path.s3tc="res://.godot/imported/rough.jpg-92607b738947877f43c30ec3d9e5458d.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/brushed_concrete/rough.jpg"
-dest_files=["res://.godot/imported/rough.jpg-92607b738947877f43c30ec3d9e5458d.s3tc.ctex"]
 
 [params]
 

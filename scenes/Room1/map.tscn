@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://0tvnoii853oi"]
+[gd_scene load_steps=15 format=3 uid="uid://0tvnoii853oi"]
 
 [ext_resource type="Texture2D" uid="uid://83lnt0w7txu4" path="res://models/Room1/textures/boards/europe.jpg" id="1_f7w8k"]
 [ext_resource type="Texture2D" uid="uid://bvvep161256pb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="2_vrvfi"]
 [ext_resource type="Texture2D" uid="uid://0rfdky4tm1iy" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="3_dmj32"]
 [ext_resource type="Texture2D" uid="uid://qv1e6rooyxjj" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="4_dmj32"]
+[ext_resource type="Texture2D" uid="uid://omlfrdi8cokx" path="res://models/Room1/textures/boards/scale_up.png" id="5_01sg1"]
+[ext_resource type="Texture2D" uid="uid://grwx0dvche0t" path="res://models/Room1/textures/boards/scale_side.png" id="6_3joba"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_pbabw"]
 size = Vector2(0.75, 0.5)
@@ -28,6 +30,22 @@ albedo_texture = ExtResource("4_dmj32")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01sg1"]
 albedo_texture = ExtResource("4_dmj32")
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_6sn22"]
+size = Vector2(1, 0.75)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1npcn"]
+transparency = 1
+albedo_color = Color(0.28389, 0.152459, 0.0751035, 1)
+albedo_texture = ExtResource("5_01sg1")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_o0gsu"]
+size = Vector2(1, 0.75)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uemqp"]
+transparency = 1
+albedo_color = Color(0.322978, 0.162604, 0.095105, 1)
+albedo_texture = ExtResource("6_3joba")
+
 [node name="Map" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -47,3 +65,13 @@ operation = 2
 use_collision = true
 size = Vector3(0.73, 0.48, 0.02)
 material = SubResource("StandardMaterial3D_01sg1")
+
+[node name="ScaleUp" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.8, 0, 0, 0, -3.49691e-08, -0.8, 0, 0.8, -3.49691e-08, 0.05, 0.1, -0.005)
+mesh = SubResource("PlaneMesh_6sn22")
+surface_material_override/0 = SubResource("StandardMaterial3D_1npcn")
+
+[node name="ScaleSide" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7, 0, 0, 0, -3.0598e-08, -0.7, 0, 0.7, -3.0598e-08, 0.15, 0.015, -0.005)
+mesh = SubResource("PlaneMesh_o0gsu")
+surface_material_override/0 = SubResource("StandardMaterial3D_uemqp")
