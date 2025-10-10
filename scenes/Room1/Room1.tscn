@@ -87,7 +87,7 @@ color = Color(0, 0, 0, 1)
 environment = SubResource("Environment_2dtu0")
 
 [node name="Build" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, -0.185, 0)
 
 [node name="Floor" type="Node3D" parent="Build"]
 
@@ -477,19 +477,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 3.125)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
 
 [node name="Objects" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, -0.185, 0)
+
+[node name="Desk" parent="Objects" instance=ExtResource("9_7bwvd")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.25, 0.666667)
+
+[node name="DeskLamp" parent="Objects" instance=ExtResource("12_s215m")]
+transform = Transform3D(0.00494975, 0, -0.00494975, 0, 0.007, 0, 0.00494975, 0, 0.00494975, -0.75, 1.325, 0.416667)
+
+[node name="Chair" parent="Objects" instance=ExtResource("8_eh12f")]
+transform = Transform3D(-1.2557, 0, -0.336465, 0, 1.3, 0, 0.336465, 0, -1.2557, 0, 0.25, 1.41667)
+
+[node name="Letter" parent="Objects" instance=ExtResource("29_ikev5")]
+transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 0, 1.335, 0.416667)
 
 [node name="Lamp" parent="Objects" instance=ExtResource("6_ht3nn")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.65, 0)
 
 [node name="Door" parent="Objects" instance=ExtResource("7_t3n42")]
 transform = Transform3D(-6.55671e-08, 0, 0.8, 0, 0.8, 0, -1.5, 0, -3.49691e-08, 0, 1.2, -3.1)
-
-[node name="Chair" parent="Objects" instance=ExtResource("8_eh12f")]
-transform = Transform3D(-1.2557, 0, -0.336465, 0, 1.3, 0, 0.336465, 0, -1.2557, 0, 0.25, 1.75)
-
-[node name="Desk" parent="Objects" instance=ExtResource("9_7bwvd")]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.25, 1)
 
 [node name="Bookshelf1" parent="Objects" instance=ExtResource("10_0e1ws")]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 2.25, 1.5, 2.6)
@@ -501,10 +507,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.25,
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
 
 [node name="Clock" parent="Objects" instance=ExtResource("3_75n1p")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.81035, 1.36174, -2.90445)
-
-[node name="DeskLamp" parent="Objects" instance=ExtResource("12_s215m")]
-transform = Transform3D(0.00565685, 0, -0.00565685, 0, 0.008, 0, 0.00565685, 0, 0.00565685, -0.75, 1.325, 0.75)
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -1.81035, 1.36174, -2.90445)
 
 [node name="Chest" parent="Objects" instance=ExtResource("13_5da8r")]
 transform = Transform3D(0.519615, 0, -0.3, 0, 0.6, 0, 0.3, 0, 0.519615, 1.95, 0.25, -1.9)
@@ -568,14 +571,12 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
 [node name="Disk" parent="Objects" instance=ExtResource("30_cfovf")]
 transform = Transform3D(0.892552, -0.963603, 0.724444, 1.14912, 0.952582, -0.148716, -0.364527, 0.643472, 1.30502, 2.23, 0.65, -1.75)
 
-[node name="Letter" parent="Objects" instance=ExtResource("29_ikev5")]
-transform = Transform3D(-0.05, 0, -4.37114e-09, 0, 0.05, 0, 4.37114e-09, 0, -0.05, 0, 1.335, 0.75)
-
 [node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.5, -2.25)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -1.5)
+visible = false
 
 [editable path="Objects/Frame1"]
 [editable path="Objects/Frame2"]
