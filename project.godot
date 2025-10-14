@@ -29,6 +29,9 @@ version_control/autoload_on_startup=true
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot-xr-tools/addons/godot-xr-tools/plugin.cfg", "res://addons/godot-xr-tools/plugin.cfg")
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 
