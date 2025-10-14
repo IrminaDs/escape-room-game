@@ -158,9 +158,6 @@ func _physics_process(_delta: float) -> void:
 		var grip : float = _controller.get_float(grip_action)
 		var trigger : float = _controller.get_float(trigger_action)
 		
-		print("Grip action:", grip_action, "Trigger action:", trigger_action)
-		print("Grip value:", _controller.get_float(grip_action), "Trigger value:", _controller.get_float(trigger_action))
-
 		# Allow overriding of grip and trigger
 		if _force_grip >= 0.0: 
 			grip = _force_grip 
