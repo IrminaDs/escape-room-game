@@ -1,6 +1,5 @@
 extends Node3D
 
-
 @onready var fade_rect = $CanvasLayer/ColorRect
 
 func _ready():
