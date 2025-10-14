@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bur2x321plese"
-path="res://.godot/imported/special_modern_chair.glb-db84c27e802c035efd9da56159a8c3de.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/room3/furniture/chair/special_modern_chair.glb"
-dest_files=["res://.godot/imported/special_modern_chair.glb-db84c27e802c035efd9da56159a8c3de.scn"]
 
 [params]
 

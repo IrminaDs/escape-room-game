@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c17comrej3tl4"]
+
+[ext_resource type="PackedScene" uid="uid://ble65f46v0tia" path="res://models/Room1/objects/ceasar/gaius_julius_caesar.glb" id="1_lucao"]
+
+[node name="Ceasar" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_lucao")]

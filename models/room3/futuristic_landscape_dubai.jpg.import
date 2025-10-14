@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyjiqhia0ha3j"
-path.s3tc="res://.godot/imported/futuristic_landscape_dubai.jpg-d03928abd5c8305a457c5570fd5ba4e4.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/futuristic_landscape_dubai.jpg"
-dest_files=["res://.godot/imported/futuristic_landscape_dubai.jpg-d03928abd5c8305a457c5570fd5ba4e4.s3tc.ctex"]
 
 [params]
 
