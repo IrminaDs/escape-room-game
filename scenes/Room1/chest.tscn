@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://g52giiyj6f3h"]
+[gd_scene load_steps=20 format=4 uid="uid://g52giiyj6f3h"]
 
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
 [ext_resource type="Script" path="res://scripts/lock_chest.gd" id="3_gy8cq"]
@@ -85,7 +85,13 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tsus3"]
-size = Vector3(2.5, 1.75, 1.25)
+size = Vector3(2.5, 1, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_westq"]
+size = Vector3(0.1, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e16p2"]
+size = Vector3(2.5, 0.1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_westq"]
 albedo_color = Color(0.327687, 0.313111, 0.283651, 1)
@@ -154,7 +160,7 @@ bones/2/parent = 1
 bones/2/rest = Transform3D(1, -2.38419e-07, 2.84217e-14, 0, -1.19209e-07, -1, 2.38419e-07, 1, -1.19209e-07, -2.02656e-05, 49.5, 85)
 bones/2/enabled = true
 bones/2/position = Vector3(-2.02656e-05, 49.5, 85)
-bones/2/rotation = Quaternion(0.707107, -8.42937e-08, 8.42937e-08, 0.707107)
+bones/2/rotation = Quaternion(-5.96046e-08, -1.19209e-07, -7.10543e-15, 1)
 bones/2/scale = Vector3(1, 1, 1)
 
 [node name="Object_10" type="MeshInstance3D" parent="Chest3D/Sketchfab_Scene/Sketchfab_model/Chest_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
@@ -177,8 +183,24 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Chest3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.902814, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.55)
 shape = SubResource("BoxShape3D_tsus3")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Chest3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.55)
+shape = SubResource("BoxShape3D_tsus3")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Chest3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.5, 0)
+shape = SubResource("BoxShape3D_westq")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Chest3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.5, 0)
+shape = SubResource("BoxShape3D_westq")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Chest3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_e16p2")
 
 [node name="Lock3D" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.993251, 0.64526)
