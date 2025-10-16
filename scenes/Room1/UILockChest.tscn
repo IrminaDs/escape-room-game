@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://dyqkrr88xjnwt"]
+[gd_scene load_steps=16 format=3 uid="uid://dyqkrr88xjnwt"]
 
-[ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/ui_lock_chest.gd" id="1_gsxl3"]
+[ext_resource type="Script" path="res://scripts/ui_lock_chest.gd" id="1_gsxl3"]
 [ext_resource type="FontFile" uid="uid://bmgcq1evjoolc" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_poyqd"]
 
 [sub_resource type="Gradient" id="Gradient_poyqd"]
@@ -65,22 +65,23 @@ font_size = 100
 font = ExtResource("2_poyqd")
 font_size = 100
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a6ysn"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 0.862745)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_gsxl3")
 
 [node name="Panel" type="Panel" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="Panel"]
 layout_mode = 0
-offset_left = 256.0
-offset_top = 192.0
-offset_right = 896.0
-offset_bottom = 448.0
+offset_top = 128.0
+offset_right = 640.0
+offset_bottom = 384.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_htnk8")
 
 [node name="Panel" type="Panel" parent="Panel/Panel"]
@@ -123,10 +124,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_m546d")
 
 [node name="Label1" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 336.0
-offset_top = 192.0
-offset_right = 432.0
-offset_bottom = 448.0
+offset_left = 80.0
+offset_top = 128.0
+offset_right = 176.0
+offset_bottom = 384.0
 text = "1"
 label_settings = SubResource("LabelSettings_poyqd")
 horizontal_alignment = 1
@@ -134,10 +135,10 @@ vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 464.0
-offset_top = 192.0
-offset_right = 560.0
-offset_bottom = 448.0
+offset_left = 208.0
+offset_top = 128.0
+offset_right = 304.0
+offset_bottom = 384.0
 text = "2"
 label_settings = SubResource("LabelSettings_jvode")
 horizontal_alignment = 1
@@ -145,10 +146,10 @@ vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 592.0
-offset_top = 192.0
-offset_right = 688.0
-offset_bottom = 448.0
+offset_left = 336.0
+offset_top = 128.0
+offset_right = 432.0
+offset_bottom = 384.0
 text = "3"
 label_settings = SubResource("LabelSettings_htnk8")
 horizontal_alignment = 1
@@ -156,11 +157,89 @@ vertical_alignment = 1
 
 [node name="Label4" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 720.0
-offset_top = 192.0
-offset_right = 816.0
-offset_bottom = 448.0
+offset_left = 464.0
+offset_top = 128.0
+offset_right = 560.0
+offset_bottom = 384.0
 text = "4"
 label_settings = SubResource("LabelSettings_f4uu3")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Container" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonUp1" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 80.0
+offset_top = 12.0
+offset_right = 180.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonUp2" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 208.0
+offset_top = 12.0
+offset_right = 308.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonUp3" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 336.0
+offset_top = 12.0
+offset_right = 436.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonUp4" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 464.0
+offset_top = 12.0
+offset_right = 564.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonDown1" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 80.0
+offset_top = 400.0
+offset_right = 180.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonDown2" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 208.0
+offset_top = 400.0
+offset_right = 308.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonDown3" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 336.0
+offset_top = 400.0
+offset_right = 436.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+
+[node name="ButtonDown4" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 464.0
+offset_top = 400.0
+offset_right = 564.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
