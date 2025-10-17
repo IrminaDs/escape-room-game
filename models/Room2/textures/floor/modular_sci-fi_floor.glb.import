@@ -1,0 +1,115 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bgww3363gq6x6"
+path="res://.godot/imported/modular_sci-fi_floor.glb-3e1c569d1042bf92459f8fad26b83b35.scn"
+
+[deps]
+
+source_file="res://models/Room2/textures/floor/modular_sci-fi_floor.glb"
+dest_files=["res://.godot/imported/modular_sci-fi_floor.glb-3e1c569d1042bf92459f8fad26b83b35.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=0.001
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_000": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_000/Cube_000__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_001": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_001/Cube_001__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_002": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_002/Cube_002__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_003": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_003/Cube_003__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_004/Cube_004__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_005/Cube_005__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_006/Cube_006__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_007/Cube_007__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_008/Cube_008__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_009/Cube_009__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_010/Cube_010__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_011/Cube_011__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_012/Cube_012__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_013/Cube_013__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_014/Cube_014__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_015/Cube_015__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_016/Cube_016__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_018/Cube_018__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_019/Cube_019__0": {
+"generate/physics": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_020/Cube_020__0": {
+"import/skip_import": true
+},
+"PATH:Sketchfab_model/8a3b650b1c044abf86eed972a044bf8c_fbx/RootNode/Cube_021/Cube_021__0": {
+"import/skip_import": true
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
