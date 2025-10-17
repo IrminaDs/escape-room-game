@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdvcwpeafwx8r"]
+[gd_scene load_steps=8 format=3 uid="uid://bdvcwpeafwx8r"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_t3jle"]
 [ext_resource type="PackedScene" uid="uid://ble65f46v0tia" path="res://models/Room1/objects/ceasar/gaius_julius_caesar.glb" id="2_rjxdj"]
+[ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/ceasar.gd" id="2_we0g3"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="3_rjxdj"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="4_ohslw"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_0hwm2"]
@@ -13,7 +14,6 @@ points = PackedVector3Array(-0.051046, 0.297678, -1.78255, -0.295022, -0.591773,
 mass = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, 0.3, 0)
-release_mode = 0
 
 [node name="CollisionShape3D" parent="." index="0"]
 transform = Transform3D(0.3, 0, 0, 0, -1.31134e-08, -0.3, 0, 0.3, -1.31134e-08, 0, 0, 0)
@@ -30,3 +30,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0.25, -0.1)
 
 [node name="GrabPointHandRight" parent="." index="4" instance=ExtResource("5_0hwm2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0.25, -0.1)
+
+[node name="EnableGrab" type="Node" parent="." index="5"]
+script = ExtResource("2_we0g3")
