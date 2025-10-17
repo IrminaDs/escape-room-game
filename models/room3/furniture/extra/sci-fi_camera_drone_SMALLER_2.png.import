@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bag6mo0ye2dq4"
-valid=false
+path.s3tc="res://.godot/imported/sci-fi_camera_drone_SMALLER_2.png-8a2a0ae0431f9cf66ebc5869c024a9a9.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "05ecae431439604e8bba5675ee0d7b20"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/extra/sci-fi_camera_drone_SMALLER_2.png"
+dest_files=["res://.godot/imported/sci-fi_camera_drone_SMALLER_2.png-8a2a0ae0431f9cf66ebc5869c024a9a9.s3tc.ctex"]
 
 [params]
 

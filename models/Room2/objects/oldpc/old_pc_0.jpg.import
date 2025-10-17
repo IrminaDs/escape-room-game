@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cic0n2u2a4k1a"
-path.s3tc="res://.godot/imported/old_pc_0.jpg-183b249efcf33aa9940e9c552eda13ac.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "2addf12170c9b4425faa0eeeed8aaafa"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room2/objects/oldpc/old_pc_0.jpg"
-dest_files=["res://.godot/imported/old_pc_0.jpg-183b249efcf33aa9940e9c552eda13ac.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbvb8plo8qqes"
-path="res://.godot/imported/wall_ready_for_construction.glb-ee0b8de5888b457415b1ecb3455d6184.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/objects/wall2/wall_ready_for_construction.glb"
-dest_files=["res://.godot/imported/wall_ready_for_construction.glb-ee0b8de5888b457415b1ecb3455d6184.scn"]
 
 [params]
 

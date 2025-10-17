@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhjr652fvjp2q"
-path.s3tc="res://.godot/imported/old_glass_ceilling_lamp_3.png-50010a602b492add477f1b8366d1690a.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "a029b7107e2a50e16c53655517dc63bb"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room2/objects/lamp/old_glass_ceilling_lamp_3.png"
-dest_files=["res://.godot/imported/old_glass_ceilling_lamp_3.png-50010a602b492add477f1b8366d1690a.s3tc.ctex"]
 
 [params]
 

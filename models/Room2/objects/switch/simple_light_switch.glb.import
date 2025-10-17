@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dtrffq8sehxfy"
-path="res://.godot/imported/simple_light_switch.glb-c2a0955878c7482f999144278cdca829.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/objects/switch/simple_light_switch.glb"
-dest_files=["res://.godot/imported/simple_light_switch.glb-c2a0955878c7482f999144278cdca829.scn"]
 
 [params]
 

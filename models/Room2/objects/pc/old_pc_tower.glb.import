@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c35eito4kdd5c"
-path="res://.godot/imported/old_pc_tower.glb-7594fef59f7d6cab5a7b4db4926e9298.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/objects/pc/old_pc_tower.glb"
-dest_files=["res://.godot/imported/old_pc_tower.glb-7594fef59f7d6cab5a7b4db4926e9298.scn"]
 
 [params]
 

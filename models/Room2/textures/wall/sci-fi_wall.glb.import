@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bhjg84bsyn64e"
-path="res://.godot/imported/sci-fi_wall.glb-7691fccb00be05f1595b2ed610cc03f4.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/textures/wall/sci-fi_wall.glb"
-dest_files=["res://.godot/imported/sci-fi_wall.glb-7691fccb00be05f1595b2ed610cc03f4.scn"]
 
 [params]
 

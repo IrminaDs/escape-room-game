@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://co48qbyrvva4i"
-valid=false
+path="res://.godot/imported/door-anim.glb-399257752fde5a41faf6b0ee4307c6a6.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/door/door-anim.glb"
+dest_files=["res://.godot/imported/door-anim.glb-399257752fde5a41faf6b0ee4307c6a6.scn"]
 
 [params]
 

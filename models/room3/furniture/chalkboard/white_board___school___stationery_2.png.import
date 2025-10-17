@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5b3jbpc1vora"
-valid=false
+path.s3tc="res://.godot/imported/white_board___school___stationery_2.png-55373f46ac4c434464458a19398f555a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "2106f8b3d268142da2ede05b498180b2"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/chalkboard/white_board___school___stationery_2.png"
+dest_files=["res://.godot/imported/white_board___school___stationery_2.png-55373f46ac4c434464458a19398f555a.s3tc.ctex"]
 
 [params]
 

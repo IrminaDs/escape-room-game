@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgklge8l2l6fk"
-path.s3tc="res://.godot/imported/wall_ready_for_construction_7.png-ffa3e3ed8910e82e79183914857e9b0c.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "010e5c177ec2e5f3c3df301e489133e1"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room2/objects/wall2/wall_ready_for_construction_7.png"
-dest_files=["res://.godot/imported/wall_ready_for_construction_7.png-ffa3e3ed8910e82e79183914857e9b0c.s3tc.ctex"]
 
 [params]
 

@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dvmqa8ntatr6f"
-valid=false
+path="res://.godot/imported/quantum_computer.glb-4d1014ea8e410d524019e43b29a26597.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/quantum_computer/quantum_computer.glb"
+dest_files=["res://.godot/imported/quantum_computer.glb-4d1014ea8e410d524019e43b29a26597.scn"]
 
 [params]
 

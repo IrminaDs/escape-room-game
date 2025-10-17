@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csix0on52mrrh"
-path.s3tc="res://.godot/imported/treasure_chest_4.png-d69b7a2804d6c06b4ac299e568bd5c97.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "2ad350f60f13e32dbb36aef6f30d7bbc"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room1/objects/chest/treasure_chest_4.png"
-dest_files=["res://.godot/imported/treasure_chest_4.png-d69b7a2804d6c06b4ac299e568bd5c97.s3tc.ctex"]
 
 [params]
 

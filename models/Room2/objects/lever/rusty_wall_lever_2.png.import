@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v1lss257vvwd"
-path.s3tc="res://.godot/imported/rusty_wall_lever_2.png-bd48758719ab153fcf2bf7e33192a7a0.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "e120fffd6a2100ef982b5d44ef1cd267"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room2/objects/lever/rusty_wall_lever_2.png"
-dest_files=["res://.godot/imported/rusty_wall_lever_2.png-bd48758719ab153fcf2bf7e33192a7a0.s3tc.ctex"]
 
 [params]
 

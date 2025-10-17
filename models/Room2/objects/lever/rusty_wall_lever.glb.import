@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://chduelf5m6lyt"
-path="res://.godot/imported/rusty_wall_lever.glb-605cce311db9c2230f287ba4cbbac1a7.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/objects/lever/rusty_wall_lever.glb"
-dest_files=["res://.godot/imported/rusty_wall_lever.glb-605cce311db9c2230f287ba4cbbac1a7.scn"]
 
 [params]
 

@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mhemxjwq4bok"
-valid=false
+path.s3tc="res://.godot/imported/sci-fi_door_prob_0.png-b53c5c457a207e96df1ce745a10a6ed0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "3348c5b844b682e5031e7e6d15099880"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/door/sci-fi_door_prob_0.png"
+dest_files=["res://.godot/imported/sci-fi_door_prob_0.png-b53c5c457a207e96df1ce745a10a6ed0.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bgww3363gq6x6"
-path="res://.godot/imported/modular_sci-fi_floor.glb-3e1c569d1042bf92459f8fad26b83b35.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/textures/floor/modular_sci-fi_floor.glb"
-dest_files=["res://.godot/imported/modular_sci-fi_floor.glb-3e1c569d1042bf92459f8fad26b83b35.scn"]
 
 [params]
 

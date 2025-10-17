@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bllr0d0ewqt5i"
-valid=false
+path.s3tc="res://.godot/imported/NormalGL.jpg-482d4cc66dab699918fa5b94a954efa1.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/textures/corrugated_steel/NormalGL.jpg"
+dest_files=["res://.godot/imported/NormalGL.jpg-482d4cc66dab699918fa5b94a954efa1.s3tc.ctex"]
 
 [params]
 

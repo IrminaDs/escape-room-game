@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cvp6kteqamrna"
-path="res://.godot/imported/crt_monitor.glb-a1fd9d524b143b5650ddb51db9690331.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/objects/monitor/crt_monitor.glb"
-dest_files=["res://.godot/imported/crt_monitor.glb-a1fd9d524b143b5650ddb51db9690331.scn"]
 
 [params]
 
