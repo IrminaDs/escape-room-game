@@ -3,10 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck87mqgbf4p8"
-path="res://.godot/imported/old_wall_clock_3.png-422db2b9f470c9f6d1fc5e2675913756.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 generator_parameters={
 "md5": "9cc21bc1e2c823776414c676571ee042"
 }
@@ -14,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room1/objects/clock/old_wall_clock_3.png"
-dest_files=["res://.godot/imported/old_wall_clock_3.png-422db2b9f470c9f6d1fc5e2675913756.ctex"]
 
 [params]
 

@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdjvjh86q2qxr"
-path.s3tc="res://.godot/imported/lamp_low__an_old_soviet_ceiling_lamp_24.png-ac05ec2892c3ed21de6f8ae8d13ed28c.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "c45ff7e94c0858e7eb836e904a2e448f"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room1/objects/lamps/lamp_low__an_old_soviet_ceiling_lamp_24.png"
-dest_files=["res://.godot/imported/lamp_low__an_old_soviet_ceiling_lamp_24.png-ac05ec2892c3ed21de6f8ae8d13ed28c.s3tc.ctex"]
 
 [params]
 

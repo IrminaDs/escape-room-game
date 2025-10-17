@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bad6ojb0hjtb"
-path="res://.godot/imported/realistic_blackboard.glb-936e0c364a3c55fad21a1e84e6b45d14.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room2/objects/blackboard/realistic_blackboard.glb"
-dest_files=["res://.godot/imported/realistic_blackboard.glb-936e0c364a3c55fad21a1e84e6b45d14.scn"]
 
 [params]
 

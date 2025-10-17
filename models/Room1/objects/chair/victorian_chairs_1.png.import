@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyusrydeg4gt0"
-path.s3tc="res://.godot/imported/victorian_chairs_1.png-09061cc9e39a7c7372f7de50f4eb09d9.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "bb3f15268083711aaa06a1a6d11c754c"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room1/objects/chair/victorian_chairs_1.png"
-dest_files=["res://.godot/imported/victorian_chairs_1.png-09061cc9e39a7c7372f7de50f4eb09d9.s3tc.ctex"]
 
 [params]
 

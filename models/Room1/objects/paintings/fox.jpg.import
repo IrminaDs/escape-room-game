@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clolcaw7wpcfv"
-path.s3tc="res://.godot/imported/fox.jpg-62a550be7db69bf035f6d503f82f8c16.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/paintings/fox.jpg"
-dest_files=["res://.godot/imported/fox.jpg-62a550be7db69bf035f6d503f82f8c16.s3tc.ctex"]
 
 [params]
 
