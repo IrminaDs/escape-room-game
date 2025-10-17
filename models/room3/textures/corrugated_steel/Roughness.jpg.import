@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba2x3jihvxmwe"
-path.s3tc="res://.godot/imported/Roughness.jpg-d29df2db7c10eada18384348c35fb620.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/corrugated_steel/Roughness.jpg"
-dest_files=["res://.godot/imported/Roughness.jpg-d29df2db7c10eada18384348c35fb620.s3tc.ctex"]
 
 [params]
 

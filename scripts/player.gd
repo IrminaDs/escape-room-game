@@ -1,8 +1,31 @@
 extends CharacterBody3D
 
+var xr_interface: XRInterface
+
+func _ready():
+	xr_interface = XRServer.find_interface("OpenXR")
+	if xr_interface and xr_interface.is_initialized():
+		print("OpenXR initialized successfully")
+
+		# Turn off v-sync!
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+
+		# Change our main viewport to output to the HMD
+		get_viewport().use_xr = true
+	else:
+		print("OpenXR not initialized, please check if your headset is connected")
+
 @export var speed := 5.0
+var can_move := true  # dodajemy flagę, czy gracz może się poruszać
 
 func _physics_process(delta):
+	if not can_move:
+		# jeśli ruch zablokowany, zerujemy velocity i wychodzimy
+		velocity.x = 0
+		velocity.z = 0
+		move_and_slide()
+		return
+
 	var move_vector := Vector3.ZERO
 	var head = $XROrigin3D/XRCamera3D
 
@@ -34,4 +57,4 @@ func _physics_process(delta):
 		velocity.y = 0
 
 	# Poruszanie się z kolizjami
-	move_and_slide()  # korzysta z velocity wbudowanego w CharacterBody3D
+	move_and_slide()

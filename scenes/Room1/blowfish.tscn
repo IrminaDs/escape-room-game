@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://wl3dp23skwjr"]
+
+[ext_resource type="PackedScene" uid="uid://cie3c8b2dnam4" path="res://models/Room1/objects/pufferfish/pufferfish.glb" id="1_8frw3"]
+[ext_resource type="PackedScene" uid="uid://bn40lta4ettai" path="res://models/Room1/objects/pufferfish/simple_fish_bowl.glb" id="2_tu7op"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8frw3"]
+size = Vector3(0.4, 0.4, 0.4)
+
+[node name="Blowfish" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="Blowfish" parent="StaticBody3D" instance=ExtResource("1_8frw3")]
+transform = Transform3D(0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0, 1, 0.1, -0.05, 0)
+
+[node name="Sketchfab_model" parent="StaticBody3D/Blowfish" index="0"]
+transform = Transform3D(0.025, 0, 0, 0, -1.09278e-09, 0.025, 0, -0.025, -1.09278e-09, 0, 0, 0)
+
+[node name="Bowl" parent="StaticBody3D" instance=ExtResource("2_tu7op")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="BOL_001" parent="StaticBody3D/Bowl/Sketchfab_model/5baa99a48f61485085f21cddeadc703d_fbx/RootNode" index="0"]
+transform = Transform3D(100, 0, 0, 0, -4.37114e-06, 100, 0, -100, -4.37114e-06, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_8frw3")
+
+[editable path="StaticBody3D/Blowfish"]
+[editable path="StaticBody3D/Bowl"]

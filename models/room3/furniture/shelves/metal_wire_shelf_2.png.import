@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmq47muvp18h"
-path.s3tc="res://.godot/imported/metal_wire_shelf_2.png-28371c2c1933c73044631de29d6ac66a.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "60e65780588de2bc58879e4a1474303a"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/shelves/metal_wire_shelf_2.png"
-dest_files=["res://.godot/imported/metal_wire_shelf_2.png-28371c2c1933c73044631de29d6ac66a.s3tc.ctex"]
 
 [params]
 

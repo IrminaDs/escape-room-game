@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oagadgfiigb8"
-path="res://.godot/imported/nor_dx.jpg-afc612bbf97986a7bde5a0aaf0adac09.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/brushed_concrete/nor_dx.jpg"
-dest_files=["res://.godot/imported/nor_dx.jpg-afc612bbf97986a7bde5a0aaf0adac09.ctex"]
 
 [params]
 

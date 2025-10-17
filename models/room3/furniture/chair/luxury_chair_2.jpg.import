@@ -3,19 +3,14 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmcf3evyro2k"
-path.s3tc="res://.godot/imported/luxury_chair_2.jpg-1e00f1fd1cf0456bc4dad0fb793e2ee3.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
-"md5": "0bd28fea760862fe5997b949c1a41447"
+"md5": "b2f74e482e3705ab737a189d6ed781d5"
 }
 
 [deps]
 
 source_file="res://models/room3/furniture/chair/luxury_chair_2.jpg"
-dest_files=["res://.godot/imported/luxury_chair_2.jpg-1e00f1fd1cf0456bc4dad0fb793e2ee3.s3tc.ctex"]
 
 [params]
 
