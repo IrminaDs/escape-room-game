@@ -1,6 +1,5 @@
-[gd_scene load_steps=20 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=21 format=3 uid="uid://cff7h38fahrpi"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_e0phc"]
 [ext_resource type="PackedScene" uid="uid://dbvb8plo8qqes" path="res://models/Room2/objects/wall2/wall_ready_for_construction.glb" id="2_axvhm"]
 [ext_resource type="PackedScene" uid="uid://cvp6kteqamrna" path="res://models/Room2/objects/monitor/crt_monitor.glb" id="3_m43c8"]
 [ext_resource type="PackedScene" uid="uid://ciis6fsb62g8c" path="res://models/Room2/objects/desk/old_metal_table_low_poly.glb" id="4_t1nq0"]
@@ -12,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://chduelf5m6lyt" path="res://models/Room2/objects/lever/rusty_wall_lever.glb" id="9_axndq"]
 [ext_resource type="PackedScene" uid="uid://c35eito4kdd5c" path="res://models/Room2/objects/pc/old_pc_tower.glb" id="10_n8qcn"]
 [ext_resource type="PackedScene" uid="uid://dce3mft1vc5ym" path="res://models/Room2/objects/monitor2/monitor.glb" id="11_axndq"]
+[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="12_axndq"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="13_n8qcn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -40,14 +41,6 @@ albedo_color = Color(0.278431, 0.164706, 0, 1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p6krx")
-
-[node name="ProtoController" parent="." instance=ExtResource("1_e0phc")]
-transform = Transform3D(-1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, 0, 2.8, 2)
-input_left = "move_left"
-input_right = "move_right"
-input_forward = "move_up"
-input_back = "move_down"
-input_jump = "jump"
 
 [node name="Build" type="Node3D" parent="."]
 
@@ -186,3 +179,8 @@ shape = SubResource("BoxShape3D_fx4mq")
 transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 5, 0, 2, 0)
 mesh = SubResource("BoxMesh_n8qcn")
 surface_material_override/0 = ExtResource("8_axvhm")
+
+[node name="Player" parent="." instance=ExtResource("12_axndq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0)
+
+[node name="StartXR" parent="." instance=ExtResource("13_n8qcn")]
