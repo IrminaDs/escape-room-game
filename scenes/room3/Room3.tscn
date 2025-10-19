@@ -1,43 +1,43 @@
 [gd_scene load_steps=81 format=4 uid="uid://de5gwyciigv2k"]
 
-[ext_resource type="Texture2D" uid="uid://cyjiqhia0ha3j" path="res://models/room3/futuristic_landscape_dubai.jpg" id="1_sg02c"]
-[ext_resource type="Material" uid="uid://bheyi72wht7f8" path="res://models/room3/textures/main_floor.tres" id="1_ykapl"]
-[ext_resource type="PackedScene" uid="uid://co48qbyrvva4i" path="res://models/room3/furniture/door/door-anim.glb" id="2_2wjaf"]
-[ext_resource type="PackedScene" uid="uid://gyk3h2nv87b" path="res://models/room3/furniture/light/chandelier.glb" id="2_4btv5"]
-[ext_resource type="Material" uid="uid://hyrm1oo54d75" path="res://models/room3/textures/secret_floor_grey.tres" id="2_5hlaq"]
-[ext_resource type="Texture2D" uid="uid://cxmmj0uuu0pn0" path="res://models/room3/furniture/light/light_switch_and_bulb_0.png" id="2_784tl"]
-[ext_resource type="Texture2D" uid="uid://dmoy8adfx3ykl" path="res://models/room3/furniture/light/light_switch_and_bulb_2.png" id="3_464bt"]
-[ext_resource type="Material" uid="uid://bpdivd48c3hrl" path="res://models/room3/textures/corrugated_grey_steel.tres" id="3_d6xrr"]
-[ext_resource type="Texture2D" uid="uid://c600k0yakcvxg" path="res://models/room3/furniture/carpet/carpet_0.jpg" id="3_ws00r"]
-[ext_resource type="PackedScene" uid="uid://dhquic58lwy2g" path="res://models/room3/furniture/chair/luxury_chair.glb" id="3_yc5ve"]
-[ext_resource type="Texture2D" uid="uid://c0w8u4nw7v731" path="res://models/room3/furniture/light/light_switch_and_bulb_1.png" id="4_aq5rk"]
-[ext_resource type="Texture2D" uid="uid://i8jtpww6but0" path="res://models/room3/furniture/carpet/carpet_1.png" id="4_bgs03"]
-[ext_resource type="PackedScene" uid="uid://bur2x321plese" path="res://models/room3/furniture/chair/special_modern_chair.glb" id="4_obrw1"]
-[ext_resource type="Texture2D" uid="uid://daisld7tyb2wn" path="res://models/room3/furniture/light/light_switch_and_bulb_3.png" id="5_ee0l8"]
-[ext_resource type="Material" uid="uid://dqyfery3dtwtt" path="res://models/room3/textures/beige_wall.tres" id="5_sk48j"]
-[ext_resource type="Texture2D" uid="uid://bw8bq820r7y8e" path="res://models/room3/furniture/carpet/carpet_2.jpg" id="5_yc5ve"]
-[ext_resource type="PackedScene" uid="uid://b4wbgent22lob" path="res://models/room3/furniture/door/sci-fi_door_prob.glb" id="6_4gx4d"]
-[ext_resource type="PackedScene" uid="uid://3jwrsx03g1yy" path="res://models/room3/furniture/light/ceiling_light.glb" id="6_464bt"]
-[ext_resource type="Shader" uid="uid://cub36jyxm6f3v" path="res://models/room3/textures/carpet.gdshader" id="6_obrw1"]
-[ext_resource type="Texture2D" uid="uid://eimldn1jmgr0" path="res://models/room3/furniture/light/ceiling_light_0.png" id="8_sg02c"]
-[ext_resource type="Texture2D" uid="uid://bq3y53d6c3fw3" path="res://models/room3/furniture/light/ceiling_light_2.png" id="9_4btv5"]
-[ext_resource type="Texture2D" uid="uid://ckygsbpak7p6f" path="res://models/room3/furniture/light/ceiling_light_1.png" id="10_2wjaf"]
-[ext_resource type="PackedScene" uid="uid://dvmqa8ntatr6f" path="res://models/room3/furniture/quantum_computer/quantum_computer.glb" id="11_eupch"]
-[ext_resource type="Texture2D" uid="uid://6ta0fiiuii7d" path="res://models/room3/furniture/light/ceiling_light_3.png" id="11_sk48j"]
-[ext_resource type="PackedScene" uid="uid://b336b4skq3c5x" path="res://models/room3/furniture/extra/sci-fi_camera_drone_SMALLER.glb" id="25_yc5ve"]
-[ext_resource type="PackedScene" uid="uid://bdftb4aytkh4d" path="res://models/room3/furniture/extra/switchboard.glb" id="26_obrw1"]
-[ext_resource type="Texture2D" uid="uid://dqpbl6lpqh5ou" path="res://models/room3/furniture/shelves/metal_wire_shelf_0.png" id="27_jwm6x"]
-[ext_resource type="Texture2D" uid="uid://twsn10aenuw" path="res://models/room3/furniture/shelves/metal_wire_shelf_1.png" id="28_chtwm"]
-[ext_resource type="Texture2D" uid="uid://dmq47muvp18h" path="res://models/room3/furniture/shelves/metal_wire_shelf_2.png" id="29_i1lai"]
-[ext_resource type="PackedScene" uid="uid://cks3tlrxfk7qg" path="res://models/room3/furniture/table/table.glb" id="30_chtwm"]
-[ext_resource type="Texture2D" uid="uid://bx57gms0lh0mj" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_0.png" id="31_a56g3"]
-[ext_resource type="Texture2D" uid="uid://dsf6sn11xokhw" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_1.png" id="32_x8o8n"]
-[ext_resource type="Texture2D" uid="uid://cgre7muilmxqd" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_3.png" id="33_2l6yo"]
-[ext_resource type="Texture2D" uid="uid://dyce11u6tb057" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_2.png" id="34_xsvyc"]
-[ext_resource type="PackedScene" uid="uid://dasp6vux0iiuy" path="res://models/room3/furniture/shelves/corner_wall_shelf.glb" id="35_k37vi"]
+[ext_resource type="Texture2D" uid="uid://cyjiqhia0ha3j" path="res://models/room3/futuristic_landscape_dubai.jpg" id="1_5uibx"]
+[ext_resource type="PackedScene" uid="uid://co48qbyrvva4i" path="res://models/room3/furniture/door/door-anim.glb" id="2_7ney6"]
+[ext_resource type="PackedScene" uid="uid://dhquic58lwy2g" path="res://models/room3/furniture/chair/luxury_chair.glb" id="3_kudfk"]
+[ext_resource type="PackedScene" uid="uid://bur2x321plese" path="res://models/room3/furniture/chair/special_modern_chair.glb" id="4_drt1f"]
+[ext_resource type="Shader" uid="uid://cub36jyxm6f3v" path="res://models/room3/textures/carpet.gdshader" id="5_ea8d4"]
+[ext_resource type="Texture2D" uid="uid://c600k0yakcvxg" path="res://models/room3/furniture/carpet/carpet_0.jpg" id="6_e6wh1"]
+[ext_resource type="Texture2D" uid="uid://i8jtpww6but0" path="res://models/room3/furniture/carpet/carpet_1.png" id="7_s43ko"]
+[ext_resource type="Texture2D" uid="uid://bw8bq820r7y8e" path="res://models/room3/furniture/carpet/carpet_2.jpg" id="8_54mn3"]
+[ext_resource type="PackedScene" uid="uid://gyk3h2nv87b" path="res://models/room3/furniture/light/chandelier.glb" id="9_2gp46"]
+[ext_resource type="Material" uid="uid://bheyi72wht7f8" path="res://models/room3/textures/main_floor.tres" id="10_aq38s"]
+[ext_resource type="Material" uid="uid://dqyfery3dtwtt" path="res://models/room3/textures/beige_wall.tres" id="11_efs3u"]
+[ext_resource type="PackedScene" uid="uid://dvmqa8ntatr6f" path="res://models/room3/furniture/quantum_computer/quantum_computer.glb" id="12_jq66g"]
+[ext_resource type="PackedScene" uid="uid://b4wbgent22lob" path="res://models/room3/furniture/door/sci-fi_door_prob.glb" id="13_ge870"]
+[ext_resource type="Texture2D" uid="uid://cxmmj0uuu0pn0" path="res://models/room3/furniture/light/light_switch_and_bulb_0.png" id="14_lwe0x"]
+[ext_resource type="Texture2D" uid="uid://dmoy8adfx3ykl" path="res://models/room3/furniture/light/light_switch_and_bulb_2.png" id="15_hxygu"]
+[ext_resource type="Texture2D" uid="uid://c0w8u4nw7v731" path="res://models/room3/furniture/light/light_switch_and_bulb_1.png" id="16_bbp6i"]
+[ext_resource type="Texture2D" uid="uid://daisld7tyb2wn" path="res://models/room3/furniture/light/light_switch_and_bulb_3.png" id="17_irn7y"]
+[ext_resource type="PackedScene" uid="uid://b336b4skq3c5x" path="res://models/room3/furniture/extra/sci-fi_camera_drone_SMALLER.glb" id="18_j26xq"]
+[ext_resource type="PackedScene" uid="uid://3jwrsx03g1yy" path="res://models/room3/furniture/light/ceiling_light.glb" id="19_tj1k3"]
+[ext_resource type="Texture2D" uid="uid://eimldn1jmgr0" path="res://models/room3/furniture/light/ceiling_light_0.png" id="20_ifah8"]
+[ext_resource type="Texture2D" uid="uid://bq3y53d6c3fw3" path="res://models/room3/furniture/light/ceiling_light_2.png" id="21_7lo11"]
+[ext_resource type="Texture2D" uid="uid://ckygsbpak7p6f" path="res://models/room3/furniture/light/ceiling_light_1.png" id="22_ejo50"]
+[ext_resource type="Texture2D" uid="uid://6ta0fiiuii7d" path="res://models/room3/furniture/light/ceiling_light_3.png" id="23_na2c5"]
+[ext_resource type="Material" uid="uid://hyrm1oo54d75" path="res://models/room3/textures/secret_floor_grey.tres" id="24_rv2ua"]
+[ext_resource type="Material" uid="uid://bpdivd48c3hrl" path="res://models/room3/textures/corrugated_grey_steel.tres" id="25_kdj58"]
+[ext_resource type="PackedScene" uid="uid://bdftb4aytkh4d" path="res://models/room3/furniture/extra/switchboard.glb" id="26_ok6vk"]
+[ext_resource type="Texture2D" uid="uid://dqpbl6lpqh5ou" path="res://models/room3/furniture/shelves/metal_wire_shelf_0.png" id="27_g1tqt"]
+[ext_resource type="Texture2D" uid="uid://twsn10aenuw" path="res://models/room3/furniture/shelves/metal_wire_shelf_1.png" id="28_rxynk"]
+[ext_resource type="Texture2D" uid="uid://dmq47muvp18h" path="res://models/room3/furniture/shelves/metal_wire_shelf_2.png" id="29_4iabg"]
+[ext_resource type="PackedScene" uid="uid://cks3tlrxfk7qg" path="res://models/room3/furniture/table/table.glb" id="30_6fell"]
+[ext_resource type="Texture2D" uid="uid://bx57gms0lh0mj" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_0.png" id="31_fkfry"]
+[ext_resource type="Texture2D" uid="uid://dsf6sn11xokhw" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_1.png" id="32_7uhvo"]
+[ext_resource type="Texture2D" uid="uid://cgre7muilmxqd" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_3.png" id="33_pyj38"]
+[ext_resource type="Texture2D" uid="uid://dyce11u6tb057" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_2.png" id="34_fqxom"]
+[ext_resource type="PackedScene" uid="uid://dasp6vux0iiuy" path="res://models/room3/furniture/shelves/corner_wall_shelf.glb" id="35_aw20m"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_4btv5"]
-panorama = ExtResource("1_sg02c")
+panorama = ExtResource("1_5uibx")
 
 [sub_resource type="Sky" id="Sky_2wjaf"]
 sky_material = SubResource("PanoramaSkyMaterial_4btv5")
@@ -54,11 +54,11 @@ fog_light_energy = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ws00r"]
 render_priority = 0
-shader = ExtResource("6_obrw1")
-shader_parameter/albedo_tex = ExtResource("3_ws00r")
-shader_parameter/normal_tex = ExtResource("5_yc5ve")
-shader_parameter/roughness_tex = ExtResource("4_bgs03")
-shader_parameter/metallic_tex = ExtResource("4_bgs03")
+shader = ExtResource("5_ea8d4")
+shader_parameter/albedo_tex = ExtResource("6_e6wh1")
+shader_parameter/normal_tex = ExtResource("8_54mn3")
+shader_parameter/roughness_tex = ExtResource("7_s43ko")
+shader_parameter/metallic_tex = ExtResource("7_s43ko")
 shader_parameter/hue_shift = 0.417
 shader_parameter/saturation_boost = 3.0
 shader_parameter/value_boost = 1.718
@@ -66,14 +66,14 @@ shader_parameter/value_boost = 1.718
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq6fg"]
 resource_name = "Carpet_-_Dark_Brown_69"
 cull_mode = 2
-albedo_texture = ExtResource("3_ws00r")
+albedo_texture = ExtResource("6_e6wh1")
 metallic = 0.2
-metallic_texture = ExtResource("4_bgs03")
+metallic_texture = ExtResource("7_s43ko")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("4_bgs03")
+roughness_texture = ExtResource("7_s43ko")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("5_yc5ve")
+normal_texture = ExtResource("8_54mn3")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kcoob"]
 _surfaces = [{
@@ -111,11 +111,11 @@ shadow_mesh = SubResource("ArrayMesh_kcoob")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_16cux"]
 render_priority = 0
-shader = ExtResource("6_obrw1")
-shader_parameter/albedo_tex = ExtResource("3_ws00r")
-shader_parameter/normal_tex = ExtResource("5_yc5ve")
-shader_parameter/roughness_tex = ExtResource("4_bgs03")
-shader_parameter/metallic_tex = ExtResource("4_bgs03")
+shader = ExtResource("5_ea8d4")
+shader_parameter/albedo_tex = ExtResource("6_e6wh1")
+shader_parameter/normal_tex = ExtResource("8_54mn3")
+shader_parameter/roughness_tex = ExtResource("7_s43ko")
+shader_parameter/metallic_tex = ExtResource("7_s43ko")
 shader_parameter/hue_shift = 0.417
 shader_parameter/saturation_boost = 3.0
 shader_parameter/value_boost = 3.0
@@ -123,14 +123,14 @@ shader_parameter/value_boost = 3.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n7ceu"]
 resource_name = "Carpet_-_Dark_Brown_69_0"
 cull_mode = 2
-albedo_texture = ExtResource("3_ws00r")
+albedo_texture = ExtResource("6_e6wh1")
 metallic = 0.2
-metallic_texture = ExtResource("4_bgs03")
+metallic_texture = ExtResource("7_s43ko")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("4_bgs03")
+roughness_texture = ExtResource("7_s43ko")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("5_yc5ve")
+normal_texture = ExtResource("8_54mn3")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yulor"]
 _surfaces = [{
@@ -195,17 +195,17 @@ shader_parameter/main_room_color = Vector4(0, 0, 0, 0)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtjfx"]
 resource_name = "Material.001"
 cull_mode = 2
-albedo_texture = ExtResource("2_784tl")
+albedo_texture = ExtResource("14_lwe0x")
 metallic = 1.0
-metallic_texture = ExtResource("4_aq5rk")
+metallic_texture = ExtResource("16_bbp6i")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("4_aq5rk")
+roughness_texture = ExtResource("16_bbp6i")
 roughness_texture_channel = 1
 emission_enabled = true
 emission_energy_multiplier = 2.64838
-emission_texture = ExtResource("3_464bt")
+emission_texture = ExtResource("15_hxygu")
 normal_enabled = true
-normal_texture = ExtResource("5_ee0l8")
+normal_texture = ExtResource("17_irn7y")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_n7t22"]
 _surfaces = [{
@@ -278,17 +278,17 @@ shadow_mesh = SubResource("ArrayMesh_0vd75")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vfrt5"]
 resource_name = "T_Overhead_light"
 cull_mode = 2
-albedo_texture = ExtResource("8_sg02c")
+albedo_texture = ExtResource("20_ifah8")
 metallic = 1.0
-metallic_texture = ExtResource("10_2wjaf")
+metallic_texture = ExtResource("22_ejo50")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("10_2wjaf")
+roughness_texture = ExtResource("22_ejo50")
 roughness_texture_channel = 1
 emission_enabled = true
 emission_energy_multiplier = 2.09991
-emission_texture = ExtResource("9_4btv5")
+emission_texture = ExtResource("21_7lo11")
 normal_enabled = true
-normal_texture = ExtResource("11_sk48j")
+normal_texture = ExtResource("23_na2c5")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rlopn"]
 _surfaces = [{
@@ -497,14 +497,14 @@ resource_name = "Shelf01"
 transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
-albedo_texture = ExtResource("27_jwm6x")
+albedo_texture = ExtResource("27_g1tqt")
 metallic = 1.0
-metallic_texture = ExtResource("28_chtwm")
+metallic_texture = ExtResource("28_rxynk")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("28_chtwm")
+roughness_texture = ExtResource("28_rxynk")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = ExtResource("29_i1lai")
+normal_texture = ExtResource("29_4iabg")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7ufcx"]
 _surfaces = [{
@@ -543,10 +543,10 @@ shadow_mesh = SubResource("ArrayMesh_7ufcx")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t0fcv"]
 resource_name = "M_BathroomCabinent.003"
 cull_mode = 2
-albedo_texture = ExtResource("31_a56g3")
+albedo_texture = ExtResource("31_fkfry")
 roughness = 0.830821
 emission_enabled = true
-emission_texture = ExtResource("32_x8o8n")
+emission_texture = ExtResource("32_7uhvo")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7ltp8"]
 resource_name = "Sketchfab_Scene_Bathroom_Cabinet_Bathroom_Locker_001_M_BathroomCabinent_003_0"
@@ -593,13 +593,13 @@ bind/5/pose = Transform3D(3.07059e-08, -3.32993e-07, -0.173198, -0.170405, -0.03
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmcc8"]
 resource_name = "M_BathroomCabinent.004"
 cull_mode = 2
-albedo_texture = ExtResource("31_a56g3")
-metallic_texture = ExtResource("34_xsvyc")
+albedo_texture = ExtResource("31_fkfry")
+metallic_texture = ExtResource("34_fqxom")
 metallic_texture_channel = 2
-roughness_texture = ExtResource("34_xsvyc")
+roughness_texture = ExtResource("34_fqxom")
 roughness_texture_channel = 1
 emission_enabled = true
-emission_texture = ExtResource("33_2l6yo")
+emission_texture = ExtResource("33_pyj38")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_o3jmk"]
 resource_name = "Sketchfab_Scene_Bathroom_Cabinet_Bathroom_Locker_001_M_BathroomCabinent_004_0"
@@ -624,10 +624,10 @@ blend_shape_mode = 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_883vl"]
 resource_name = "M_BathroomCabinent.005"
 cull_mode = 2
-albedo_texture = ExtResource("31_a56g3")
+albedo_texture = ExtResource("31_fkfry")
 roughness = 0.830821
 emission_enabled = true
-emission_texture = ExtResource("32_x8o8n")
+emission_texture = ExtResource("32_7uhvo")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_oumro"]
 resource_name = "Sketchfab_Scene_Bathroom_Cabinet_Bathroom_Locker_001_M_BathroomCabinent_005_0"
@@ -687,13 +687,13 @@ shadow_transmittance_bias = 0.0
 
 [node name="MainRoom" type="Node3D" parent="."]
 
-[node name="MainDoor" parent="MainRoom" instance=ExtResource("2_2wjaf")]
+[node name="MainDoor" parent="MainRoom" instance=ExtResource("2_7ney6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.94635, 0.0994519, -0.00381055)
 
-[node name="Sketchfab_Scene" parent="MainRoom" instance=ExtResource("3_yc5ve")]
+[node name="Sketchfab_Scene" parent="MainRoom" instance=ExtResource("3_kudfk")]
 transform = Transform3D(0.326216, 0, -0.0768258, 0, 0.335141, 0, 0.0768258, 0, 0.326216, -0.213786, 0.861982, 0)
 
-[node name="Sketchfab_Scene2" parent="MainRoom" instance=ExtResource("4_obrw1")]
+[node name="Sketchfab_Scene2" parent="MainRoom" instance=ExtResource("4_drt1f")]
 transform = Transform3D(-0.319986, 0, 0.302628, 0, 0.440426, 0, -0.302628, 0, -0.319986, 0, 0.082881, 1.26131)
 
 [node name="Carpet" type="Node3D" parent="MainRoom"]
@@ -732,7 +732,7 @@ light_energy = 1.068
 shadow_enabled = true
 omni_range = 6.598
 
-[node name="Chandelier1" parent="MainRoom/Light" instance=ExtResource("2_4btv5")]
+[node name="Chandelier1" parent="MainRoom/Light" instance=ExtResource("9_2gp46")]
 transform = Transform3D(-0.0012472, 2.24947e-10, -0.00134215, 0, 0.00351255, 1.60174e-10, -0.00134215, -2.09034e-10, 0.0012472, 0, 2.73916, 0)
 
 [node name="Camera" type="Camera3D" parent="MainRoom"]
@@ -746,7 +746,7 @@ fov = 73.4276
 
 [node name="Floor" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
 transform = Transform3D(6, -3.85245e-06, 0.00136761, 0.000229359, 0.0999999, 0.00568142, -0.00164138, -0.000113627, 5, 0, 0.05, 0)
-material = ExtResource("1_ykapl")
+material = ExtResource("10_aq38s")
 
 [node name="GlassWall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
 transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 5, -2.95, 1.35, 0)
@@ -754,7 +754,7 @@ material = SubResource("StandardMaterial3D_s1e02")
 
 [node name="MainDoorWall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
 transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 5, 2.95, 1.35, 0)
-material = ExtResource("5_sk48j")
+material = ExtResource("11_efs3u")
 
 [node name="MainDoorHole" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
 transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 0.9, 2.95, 1.1, 0)
@@ -773,15 +773,15 @@ depth = 0.09
 
 [node name="Wall" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
 transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 0, 1.35, -2.45)
-material = ExtResource("5_sk48j")
+material = ExtResource("11_efs3u")
 
 [node name="Ceiling" type="CSGBox3D" parent="MainRoom/RoomSkeleton"]
 transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 5, 0, 2.65, 0)
-material = ExtResource("5_sk48j")
+material = ExtResource("11_efs3u")
 
 [node name="SecretRoom" type="Node3D" parent="."]
 
-[node name="QuantumComputer" parent="SecretRoom" instance=ExtResource("11_eupch")]
+[node name="QuantumComputer" parent="SecretRoom" instance=ExtResource("12_jq66g")]
 transform = Transform3D(0.0734081, 0, 0, 0, 0.0734081, 0, 0, 0, 0.0734081, 0, 0.875068, 5.8431)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SecretRoom/QuantumComputer"]
@@ -789,7 +789,7 @@ transform = Transform3D(13.6061, 0.0311681, 0.667809, 0.668536, -0.634285, -13.5
 spot_range = 0.204273
 spot_angle = 89.99
 
-[node name="AutomaticDoor" parent="SecretRoom" instance=ExtResource("6_4gx4d")]
+[node name="AutomaticDoor" parent="SecretRoom" instance=ExtResource("13_ge870")]
 transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.033, 1.039, 2.45)
 
 [node name="LightBulb" type="Node3D" parent="SecretRoom"]
@@ -810,12 +810,12 @@ transform = Transform3D(0.241993, -0.698835, -3.05469e-08, 3.14714e-15, -3.23265
 mesh = SubResource("ArrayMesh_sg02c")
 skeleton = NodePath("")
 
-[node name="DroneCamera" parent="SecretRoom" instance=ExtResource("25_yc5ve")]
+[node name="DroneCamera" parent="SecretRoom" instance=ExtResource("18_j26xq")]
 transform = Transform3D(0.000766215, 0.000470432, 0.00106185, -0.000171616, 0.00130401, -0.000453882, -0.00114864, 0.000118976, 0.000776132, -2.0537, 1.49051, 3.53048)
 
 [node name="CeilingLights" type="Node3D" parent="SecretRoom"]
 
-[node name="CeilingLight" parent="SecretRoom/CeilingLights" instance=ExtResource("6_464bt")]
+[node name="CeilingLight" parent="SecretRoom/CeilingLights" instance=ExtResource("19_tj1k3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.802, 2.1, 4.485)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SecretRoom/CeilingLights/CeilingLight"]
@@ -862,7 +862,7 @@ transform = Transform3D(1, 0, 0, 0, -2.8213e-07, -1, 0, 1, -2.8213e-07, -0.04839
 mesh = SubResource("ArrayMesh_lsfyr")
 skeleton = NodePath("")
 
-[node name="CeilingLight3" parent="SecretRoom/CeilingLights" instance=ExtResource("6_464bt")]
+[node name="CeilingLight3" parent="SecretRoom/CeilingLights" instance=ExtResource("19_tj1k3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.415, 2.1, 4.502)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SecretRoom/CeilingLights/CeilingLight3"]
@@ -907,23 +907,23 @@ fov = 64.6
 
 [node name="Floor" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 0.05, 4.5)
-material = ExtResource("2_5hlaq")
+material = ExtResource("24_rv2ua")
 
 [node name="Wall" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4, -2.95, 1.35, 4.5)
-material = ExtResource("3_d6xrr")
+material = ExtResource("25_kdj58")
 
 [node name="Wall2" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4, 2.95, 1.35, 4.5)
-material = ExtResource("3_d6xrr")
+material = ExtResource("25_kdj58")
 
 [node name="Wall3" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 0, 1.35, 6.45)
-material = ExtResource("3_d6xrr")
+material = ExtResource("25_kdj58")
 
 [node name="DoorWall" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.05, 0, 1.35, 2.475)
-material = ExtResource("3_d6xrr")
+material = ExtResource("25_kdj58")
 
 [node name="SecretDoorHole2" type="CSGPolygon3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.445515, 0.269354, 2.50627)
@@ -933,9 +933,9 @@ depth = 0.09
 
 [node name="Ceiling" type="CSGBox3D" parent="SecretRoom/RoomSkeleton"]
 transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 2.65, 4.5)
-material = ExtResource("2_5hlaq")
+material = ExtResource("24_rv2ua")
 
-[node name="Switchboard" parent="SecretRoom" instance=ExtResource("26_obrw1")]
+[node name="Switchboard" parent="SecretRoom" instance=ExtResource("26_ok6vk")]
 transform = Transform3D(0.345338, 0, 0, 0, 0.345338, 0, 0, 0, 0.345338, 2.25108, 1.03322, 2.622)
 
 [node name="MetalShelf" type="Node3D" parent="SecretRoom"]
@@ -945,7 +945,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.6533
 mesh = SubResource("ArrayMesh_p70hd")
 skeleton = NodePath("")
 
-[node name="Table" parent="SecretRoom" instance=ExtResource("30_chtwm")]
+[node name="Table" parent="SecretRoom" instance=ExtResource("30_6fell")]
 transform = Transform3D(0.943897, 0, 0, 0, 0.943897, 0, 0, 0, 0.943897, 0.642, -0.191874, -1.014)
 
 [node name="Cabinet" type="Node3D" parent="SecretRoom"]
@@ -1033,5 +1033,5 @@ libraries = {
 &"": SubResource("AnimationLibrary_smy8x")
 }
 
-[node name="CornerShelf" parent="SecretRoom" instance=ExtResource("35_k37vi")]
+[node name="CornerShelf" parent="SecretRoom" instance=ExtResource("35_aw20m")]
 transform = Transform3D(2.15775e-08, 0, -1.80945, 0, 1.80945, 0, 1.80945, 0, 2.15775e-08, 2.9, 0.1, -2.4)
