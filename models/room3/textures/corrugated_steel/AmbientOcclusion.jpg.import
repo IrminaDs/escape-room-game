@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce3ts2ty0nmlv"
-valid=false
+path.s3tc="res://.godot/imported/AmbientOcclusion.jpg-c0cc739700e394101efb23c879f19f0d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/textures/corrugated_steel/AmbientOcclusion.jpg"
+dest_files=["res://.godot/imported/AmbientOcclusion.jpg-c0cc739700e394101efb23c879f19f0d.s3tc.ctex"]
 
 [params]
 

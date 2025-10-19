@@ -3,10 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqn3q61tcdda1"
-path.s3tc="res://.godot/imported/corner_wall_shelf_0.jpg-f459d748952c83f3c2f0b698bade3d14.s3tc.ctex"
+path="res://.godot/imported/corner_wall_shelf_0.jpg-f459d748952c83f3c2f0b698bade3d14.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
 "md5": "89a591b44c8d6068619b4ae88515128f"
@@ -15,6 +14,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/shelves/corner_wall_shelf_0.jpg"
+dest_files=["res://.godot/imported/corner_wall_shelf_0.jpg-f459d748952c83f3c2f0b698bade3d14.ctex"]
 
 [params]
 

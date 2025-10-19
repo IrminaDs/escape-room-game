@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvgl8f3buwibd"
-valid=false
+path.s3tc="res://.godot/imported/ao.jpg-dbb5e9b21bb42e6049c0ede2cc69585a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/textures/brushed_concrete/ao.jpg"
+dest_files=["res://.godot/imported/ao.jpg-dbb5e9b21bb42e6049c0ede2cc69585a.s3tc.ctex"]
 
 [params]
 

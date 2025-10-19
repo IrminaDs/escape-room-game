@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cviiaghqlkj60"
-valid=false
+path.s3tc="res://.godot/imported/main_wall.png-b341ea9fc178c80619c8b61c59ef4ecd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/main_wall.png"
+dest_files=["res://.godot/imported/main_wall.png-b341ea9fc178c80619c8b61c59ef4ecd.s3tc.ctex"]
 
 [params]
 

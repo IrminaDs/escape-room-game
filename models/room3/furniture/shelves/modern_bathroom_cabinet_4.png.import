@@ -3,7 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcoc0dm02nhre"
-valid=false
+path="res://.godot/imported/modern_bathroom_cabinet_4.png-880f7d50c16ab8d38f352260ca287546.ctex"
+metadata={
+"vram_texture": false
+}
 generator_parameters={
 "md5": "906e8c0642f7e29eb76bb5097d553ec7"
 }
@@ -11,6 +14,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/shelves/modern_bathroom_cabinet_4.png"
+dest_files=["res://.godot/imported/modern_bathroom_cabinet_4.png-880f7d50c16ab8d38f352260ca287546.ctex"]
 
 [params]
 

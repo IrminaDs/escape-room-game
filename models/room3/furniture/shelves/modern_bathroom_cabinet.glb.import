@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c2g3prslqxqwi"
-valid=false
+path="res://.godot/imported/modern_bathroom_cabinet.glb-b714c6e6f112458939675a60d97d55fa.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/shelves/modern_bathroom_cabinet.glb"
+dest_files=["res://.godot/imported/modern_bathroom_cabinet.glb-b714c6e6f112458939675a60d97d55fa.scn"]
 
 [params]
 

@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnatv4212miwy"
-path.s3tc="res://.godot/imported/sci-fi_wall_2.png-a4397b7ffce9003176a40fd3ee5cfdcb.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "f418cb586aca455103a317f05a430bc2"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room2/textures/wall/sci-fi_wall_2.png"
-dest_files=["res://.godot/imported/sci-fi_wall_2.png-a4397b7ffce9003176a40fd3ee5cfdcb.s3tc.ctex"]
 
 [params]
 

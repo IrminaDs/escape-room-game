@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://gyk3h2nv87b"
-valid=false
+path="res://.godot/imported/chandelier.glb-ae6f0bcb4ff1c2c7713e4146c381f954.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/light/chandelier.glb"
+dest_files=["res://.godot/imported/chandelier.glb-ae6f0bcb4ff1c2c7713e4146c381f954.scn"]
 
 [params]
 

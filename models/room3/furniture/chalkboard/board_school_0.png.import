@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bipk3jcv2dc87"
-valid=false
+path.s3tc="res://.godot/imported/board_school_0.png-4e552d2c336e35998fc72007eec3bc7d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "ba368eda5383cf61266770569db5d44f"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/chalkboard/board_school_0.png"
+dest_files=["res://.godot/imported/board_school_0.png-4e552d2c336e35998fc72007eec3bc7d.s3tc.ctex"]
 
 [params]
 

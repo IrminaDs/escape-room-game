@@ -1,10 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=18 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_e0phc"]
 [ext_resource type="PackedScene" uid="uid://dbvb8plo8qqes" path="res://models/Room2/objects/wall2/wall_ready_for_construction.glb" id="2_axvhm"]
-[ext_resource type="PackedScene" uid="uid://cvp6kteqamrna" path="res://models/Room2/objects/monitor/crt_monitor.glb" id="3_m43c8"]
 [ext_resource type="PackedScene" uid="uid://ciis6fsb62g8c" path="res://models/Room2/objects/desk/old_metal_table_low_poly.glb" id="4_t1nq0"]
-[ext_resource type="PackedScene" uid="uid://dvs23k1gfm7ei" path="res://models/Room2/objects/oldpc/old_pc.glb" id="5_23udo"]
 [ext_resource type="PackedScene" uid="uid://bad6ojb0hjtb" path="res://models/Room2/objects/blackboard/realistic_blackboard.glb" id="6_77b6e"]
 [ext_resource type="PackedScene" uid="uid://b5m8vtooflpb4" path="res://models/Room2/objects/lamp/old_glass_ceilling_lamp.glb" id="7_mgkur"]
 [ext_resource type="PackedScene" uid="uid://dtrffq8sehxfy" path="res://models/Room2/objects/switch/simple_light_switch.glb" id="8_4tva4"]
@@ -117,28 +115,78 @@ light_energy = 2.067
 light_specular = 1.152
 
 [node name="lamp" parent="Build/Objects" instance=ExtResource("7_mgkur")]
-transform = Transform3D(0.114315, 0, 0.066, 0, 0.132, 0, -0.066, 0, 0.114315, -0.226976, 5.15437, 0.01991)
+transform = Transform3D(0.0112583, 0, 0.00650002, 0, 0.013, 0, -0.00650002, 0, 0.0112583, -0.226976, 5.15437, 0.01991)
 
 [node name="kompy" type="Node3D" parent="Build/Objects"]
 visible = false
 
-[node name="komp5" parent="Build/Objects/kompy" instance=ExtResource("3_m43c8")]
+[node name="komp5" parent="Build/Objects/kompy"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(0.299934, 0, -0.00628281, 0, 0.3, 0, 0.00628281, 0, 0.299934, -0.899424, 4.37786, 1.62489)
+script = null
 
-[node name="komp4" parent="Build/Objects/kompy" instance=ExtResource("3_m43c8")]
+[node name="komp4" parent="Build/Objects/kompy"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(0.299744, 0, -0.0123953, 0, 0.3, 0, 0.0123953, 0, 0.299744, -1.06303, 4.37726, -0.622172)
+script = null
 
-[node name="komp3" parent="Build/Objects/kompy" instance=ExtResource("3_m43c8")]
+[node name="komp3" parent="Build/Objects/kompy"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(0.298392, 0, -0.0310201, 0, 0.3, 0, 0.0310201, 0, 0.298392, -1.03419, 4.3818, -1.95419)
+script = null
 
-[node name="komp1" parent="Build/Objects/kompy" instance=ExtResource("3_m43c8")]
+[node name="komp1" parent="Build/Objects/kompy"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(0.292683, 0, -0.0658517, 0, 0.3, 0, 0.0658517, 0, 0.292683, -0.924144, 4.38234, 0.653321)
+script = null
 
-[node name="komp2" parent="Build/Objects/kompy" instance=ExtResource("5_23udo")]
+[node name="komp2" parent="Build/Objects/kompy"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(1.16901, 0, 0.270941, 0, 1.2, 0, -0.270941, 0, 1.16901, -1.18, 3.96615, 2.57793)
+script = null
 
 [node name="switch" parent="Build/Objects" instance=ExtResource("8_4tva4")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -1.57843, 4.26262, -2.34307)
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.57843, 4.26262, -2.34307)
 
 [node name="lever" parent="Build/Objects" instance=ExtResource("9_axndq")]
 transform = Transform3D(-0.7, 0, -1.05697e-07, 0, 0.7, 0, 1.05697e-07, 0, -0.7, 1.54017, 4.06218, -2.31874)
@@ -158,10 +206,10 @@ transform = Transform3D(0.30472, 0, 4.99071, 0, 5, 0, -4.99071, 0, 0.30472, -1.4
 transform = Transform3D(0.30472, 0, 4.99071, 0, 5, 0, -4.99071, 0, 0.30472, -1.47816, 2.59274, -0.141076)
 
 [node name="monitor" parent="Build/Objects" instance=ExtResource("11_axndq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89975, 4.52372, -0.954992)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.89975, 4.52372, -0.954992)
 
 [node name="monitor2" parent="Build/Objects" instance=ExtResource("11_axndq")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.7385, 4.52149, 2.39916)
+transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-10, -1.7385, 4.52149, 2.39916)
 
 [node name="ceiling" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26649, 0)

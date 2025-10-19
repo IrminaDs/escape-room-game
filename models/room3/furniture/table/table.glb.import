@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cks3tlrxfk7qg"
-valid=false
+path="res://.godot/imported/table.glb-a16c31ad35d2fa607a9a96a6b002aa93.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/table/table.glb"
+dest_files=["res://.godot/imported/table.glb-a16c31ad35d2fa607a9a96a6b002aa93.scn"]
 
 [params]
 

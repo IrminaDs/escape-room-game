@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp0d3eq8l412"
-valid=false
+path.s3tc="res://.godot/imported/displacement.jpg-0dd694eb579f23e1a9c908dde7e84cf1.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/textures/wallpaper/displacement.jpg"
+dest_files=["res://.godot/imported/displacement.jpg-0dd694eb579f23e1a9c908dde7e84cf1.s3tc.ctex"]
 
 [params]
 
