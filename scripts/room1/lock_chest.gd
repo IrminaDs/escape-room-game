@@ -7,7 +7,7 @@ extends Area3D
 var viewport: XRToolsViewport2DIn3D
 
 var original_position: Vector3 = Vector3(0, 1.5, 0)
-var hidden_position: Vector3 = Vector3(0, -10, 0)
+var hidden_position: Vector3 = Vector3(0, -15, 0)
 
 func _ready():
 	viewport = get_parent().get_node("Viewport2Din3D")

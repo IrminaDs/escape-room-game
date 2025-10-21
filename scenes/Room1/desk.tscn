@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://d3wo21h60qgp6" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="4_o2c3b"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock_desk.gd" id="5_y2qhp"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_o2c3b"]
-[ext_resource type="PackedScene" uid="uid://x2mls23q4l21" path="res://scenes/Room1/UILockDesk.tscn" id="7_hht3v"]
+[ext_resource type="PackedScene" uid="uid://x2mls23q4l21" path="res://scenes/Room1/ui_lock_desk.tscn" id="7_hht3v"]
 
 [sub_resource type="Animation" id="Animation_fx2yj"]
 resource_name = "Open"
@@ -63,6 +63,7 @@ size = Vector3(0.5, 0.75, 0.75)
 script = ExtResource("1_ktqyj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_mask = 7
 
 [node name="Sketchfab_Scene" parent="StaticBody3D" instance=ExtResource("1_fx2yj")]
 
@@ -172,6 +173,7 @@ transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.
 screen_size = Vector2(0.55, 0.3)
 scene = ExtResource("7_hht3v")
 viewport_size = Vector2(768, 416)
-scene_properties_keys = PackedStringArray()
+scene_properties_keys = PackedStringArray("ui_lock_desk.gd", "correct_code")
+correct_code = "BBBBBBB"
 
 [editable path="StaticBody3D/Sketchfab_Scene"]
