@@ -16,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://curyiydvedhpa" path="res://scenes/Room1/bookshelf2.tscn" id="11_vjalx"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
-[ext_resource type="PackedScene" uid="uid://br2db0rkmoimu" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb" id="15_cee2x"]
 [ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
 [ext_resource type="Material" uid="uid://b55daf63o185" path="res://models/Room1/objects/paintings/fox.tres" id="17_e8ajp"]
 [ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
@@ -29,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 [ext_resource type="PackedScene" uid="uid://bdvcwpeafwx8r" path="res://scenes/Room1/ceasar.tscn" id="30_4763k"]
 [ext_resource type="PackedScene" uid="uid://bpryrlwosegyc" path="res://scenes/Room1/disk.tscn" id="30_cfovf"]
+[ext_resource type="PackedScene" uid="uid://dhmifnm1s13sc" path="res://scenes/Room1/picture.tscn" id="30_ryx7d"]
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="31_4763k"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="31_ew1ad"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="32_dprwg"]
@@ -538,32 +538,8 @@ transform = Transform3D(0.05, 0, 6.61744e-24, 0, 0.05, -4.17594e-24, 6.61744e-24
 mesh = SubResource("SphereMesh_55bmt")
 surface_material_override/0 = SubResource("StandardMaterial3D_vjalx")
 
-[node name="Frame1" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.975, 2, 1.75)
-
-[node name="Object_7" parent="Objects/Frame1/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("16_4y5xy")
-
-[node name="Frame2" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.975, 2, -1.5)
-
-[node name="Object_7" parent="Objects/Frame2/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("17_e8ajp")
-
-[node name="Frame3" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.975, 2, 1.25)
-
-[node name="Object_7" parent="Objects/Frame3/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("18_el76y")
-
-[node name="Frame4" parent="Objects" instance=ExtResource("15_cee2x")]
-transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.975, 2, -1.75)
-
-[node name="Object_7" parent="Objects/Frame4/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("18_e8ajp")
-
 [node name="Map" parent="Objects" instance=ExtResource("20_el76y")]
-transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.975, 2, -0.25)
+transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.985, 2, -0.25)
 
 [node name="Carpet" parent="Objects" instance=ExtResource("22_0c67s")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.25, 0.75)
@@ -576,6 +552,34 @@ transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819
 
 [node name="Caesar" parent="Objects" instance=ExtResource("30_4763k")]
 transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
+
+[node name="Picture" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, 1.25)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Picture/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_el76y")
+
+[node name="Picture2" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, -1.75)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Picture2/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_e8ajp")
+
+[node name="Picture3" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.99, 2, -1.5)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Picture3/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("17_e8ajp")
+
+[node name="Picture4" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.99, 2, 1.75)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Picture4/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("16_4y5xy")
 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
@@ -591,7 +595,11 @@ viewport_size = Vector2(640, 512)
 scene_properties_keys = PackedStringArray("ui_lock_chest.gd", "correct_code")
 correct_code = "BBBB"
 
-[editable path="Objects/Frame1"]
-[editable path="Objects/Frame2"]
-[editable path="Objects/Frame3"]
-[editable path="Objects/Frame4"]
+[editable path="Objects/Picture"]
+[editable path="Objects/Picture/Sketchfab_Scene"]
+[editable path="Objects/Picture2"]
+[editable path="Objects/Picture2/Sketchfab_Scene"]
+[editable path="Objects/Picture3"]
+[editable path="Objects/Picture3/Sketchfab_Scene"]
+[editable path="Objects/Picture4"]
+[editable path="Objects/Picture4/Sketchfab_Scene"]

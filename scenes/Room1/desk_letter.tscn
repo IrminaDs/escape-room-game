@@ -161,12 +161,10 @@ skeleton = NodePath("")
 
 [node name="GrabPointHandLeft" parent="." index="2" instance=ExtResource("8_x3bky")]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, -0.175, 0.005, -0.05)
-visible = true
 hand_pose = SubResource("Resource_nanl5")
 
 [node name="GrabPointHandRight" parent="." index="3" instance=ExtResource("11_06sun")]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0.175, 0.005, -0.05)
-visible = true
 hand_pose = SubResource("Resource_l5oow")
 
 [node name="HighlightRing" parent="." index="4" instance=ExtResource("13_amk21")]
