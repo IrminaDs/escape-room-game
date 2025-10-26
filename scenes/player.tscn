@@ -30,6 +30,7 @@ script = ExtResource("1_smehm")
 
 [node name="FunctionPointer" parent="XROrigin3D/LeftController" instance=ExtResource("4_fjrip")]
 visible = false
+collide_with_areas = true
 
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0)
@@ -44,5 +45,6 @@ script = ExtResource("1_smehm")
 
 [node name="FunctionPointer" parent="XROrigin3D/RightController" instance=ExtResource("4_fjrip")]
 visible = false
+collide_with_areas = true
 
 [node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("4_dqkch")]

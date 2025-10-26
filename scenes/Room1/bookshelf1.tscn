@@ -1,15 +1,20 @@
-[gd_scene load_steps=102 format=4 uid="uid://dpkqptb18his1"]
+[gd_scene load_steps=110 format=4 uid="uid://dpkqptb18his1"]
 
 [ext_resource type="Texture2D" uid="uid://bw0tvt58hooy1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
+[ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="1_uxd8u"]
 [ext_resource type="Texture2D" uid="uid://bd63e2sm57r72" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_ejc8x"]
 [ext_resource type="Texture2D" uid="uid://bewl5dwkforwd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_0gh3c"]
 [ext_resource type="Texture2D" uid="uid://cpwju0fv0w4ly" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_2wevw"]
+[ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="4_li15u"]
+[ext_resource type="PackedScene" uid="uid://cnxufynim25r" path="res://scenes/Room1/ui_ceasar.tscn" id="5_2cbdk"]
 [ext_resource type="Texture2D" uid="uid://bd1ng54nakvqm" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_wsqjv"]
 [ext_resource type="Texture2D" uid="uid://bitvqe5eppbpd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_ymvo7"]
 [ext_resource type="Texture2D" uid="uid://bog87b1sg1ae2" path="res://models/Room1/textures/books/green.jpg" id="7_1jdum"]
 [ext_resource type="Texture2D" uid="uid://cda71ebxk2s3" path="res://models/Room1/objects/shelf/dusty_bookshelfs_5.png" id="8_6n3w4"]
 [ext_resource type="Texture2D" uid="uid://cf16x48g1qsjr" path="res://models/Room1/textures/books/blue.jpg" id="9_ncs31"]
 [ext_resource type="Texture2D" uid="uid://c7wvmxnpgfary" path="res://models/Room1/textures/books/orange.jpg" id="10_uxd8u"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_6n3w4"]
+[ext_resource type="PackedScene" uid="uid://ftfct3ms4mwd" path="res://scenes/Room1/ui_desk_letter.tscn" id="12_ncs31"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
 resource_name = "Material.001"
@@ -249,6 +254,15 @@ uv1_offset = Vector3(0.76, 0, 0)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6n3w4"]
 size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_li15u"]
+size = Vector3(0.225, 0.035, 0.275)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtcel"]
+transparency = 1
+albedo_color = Color(0.513726, 0.905882, 0.509804, 0.0784314)
+emission_enabled = true
+emission = Color(0.429176, 0.421744, 0.421743, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_v4uqs"]
 _surfaces = [{
@@ -1464,6 +1478,8 @@ shadow_mesh = SubResource("ArrayMesh_ktcqu")
 [sub_resource type="BoxShape3D" id="BoxShape3D_88mrq"]
 size = Vector3(0.6, 2.7, 1.25)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_uxd8u"]
+
 [node name="Bookshelf" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -1507,8 +1523,13 @@ skeleton = NodePath("")
 
 [node name="Books" type="Node3D" parent="StaticBody3D"]
 
-[node name="green" type="Area3D" parent="StaticBody3D/Books"]
+[node name="green" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.5, 0.6)
+collision_layer = 1048576
+collision_mask = 0
+script = ExtResource("4_li15u")
+viewport = NodePath("../../../Viewport2Din3D")
+scene = ExtResource("5_2cbdk")
 
 [node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/green"]
 mesh = SubResource("ArrayMesh_6qlhi")
@@ -1518,6 +1539,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_li15u")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/green"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -0.3)
 shape = SubResource("BoxShape3D_6n3w4")
+
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/green"]
+transform = Transform3D(0.981627, 0, -0.190809, 0, 1, 0, 0.190809, 0, 0.981627, 0.005, 0.407, -0.34)
+mesh = SubResource("BoxMesh_li15u")
+surface_material_override/0 = SubResource("StandardMaterial3D_wtcel")
 
 [node name="blue" type="Area3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
@@ -1777,3 +1803,18 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
 shape = SubResource("BoxShape3D_88mrq")
+
+[node name="InteractionZone" type="Area3D" parent="."]
+collision_mask = 524288
+script = ExtResource("1_uxd8u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, -0.75, 0)
+shape = SubResource("BoxShape3D_uxd8u")
+
+[node name="Viewport2Din3D" parent="." instance=ExtResource("11_6n3w4")]
+transform = Transform3D(-0.258819, -0.482963, 0.836516, -2.18557e-08, 0.866025, 0.5, -0.965926, 0.129409, -0.224144, 0.5, 0.25, 0.25)
+screen_size = Vector2(0.6, 0.45)
+scene = ExtResource("12_ncs31")
+viewport_size = Vector2(2000, 1500)
+scene_properties_keys = PackedStringArray()

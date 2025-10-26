@@ -6,8 +6,6 @@ extends Node
 func _ready():
 	$"../Viewport2Din3D".visible = false
 	
-	print(parent_pickable)
-	
 	if parent_pickable.has_signal("grabbed"):
 		parent_pickable.connect("grabbed", Callable(self, "_on_grabbed"))
 		
