@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://tcg5ovtl487"]
+
+[ext_resource type="Material" uid="uid://bheyi72wht7f8" path="res://models/room3/textures/main_floor.tres" id="1_5tu10"]
+[ext_resource type="Material" uid="uid://hyrm1oo54d75" path="res://models/room3/textures/secret_floor_grey.tres" id="1_itkfe"]
+[ext_resource type="Material" uid="uid://bpdivd48c3hrl" path="res://models/room3/textures/corrugated_grey_steel.tres" id="2_p3x4b"]
+[ext_resource type="Material" uid="uid://dnmupoky1j7ad" path="res://models/room3/textures/glass.tres" id="3_p3x4b"]
+
+[node name="RoomSkeleton" type="CSGCombiner3D"]
+use_collision = true
+
+[node name="Ceiling" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 2.65, 4.5)
+material = ExtResource("1_itkfe")
+
+[node name="Ceiling2" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 0.1, 0, 0, 0, 4, 4.5, 2.65, 4.5)
+material = ExtResource("1_5tu10")
+
+[node name="DoorWall" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.05, 0, 1.35, 2.475)
+material = ExtResource("2_p3x4b")
+
+[node name="DoorHole" type="CSGPolygon3D" parent="DoorWall"]
+transform = Transform3D(0.166667, 0, 0, 0, 0.37037, 0, 0, 0, 20, -0.0742525, -0.400239, 0.625401)
+operation = 2
+polygon = PackedVector2Array(-0.252636, -0.0900751, 1.03931, -0.0585764, 1.1718, 0.215404, 1.18092, 1.46424, 1.04705, 1.76475, -0.273332, 1.76353, -0.43985, 1.36041, -0.449742, 0.141656)
+depth = 0.09
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 0.05, 4.5)
+material = ExtResource("1_itkfe")
+
+[node name="Floor2" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 0.1, 0, 0, 0, 4, 4.5, 0.05, 4.5)
+material = ExtResource("1_5tu10")
+
+[node name="GlassWall" type="CSGBox3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2.725, 0, 0, 0, 4.03, 3.05, 1.35, 4.454)
+size = Vector3(1, 0.912, 0.967)
+material = ExtResource("3_p3x4b")
+
+[node name="Wall" type="CSGBox3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4, -2.95, 1.35, 4.5)
+material = ExtResource("2_p3x4b")
+
+[node name="Wall2" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 0, 1.35, 6.45)
+material = ExtResource("2_p3x4b")
+
+[node name="WallQ" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 4.5, 1.35, 6.465)
+material = ExtResource("1_5tu10")
+
+[node name="WallQ2" type="CSGBox3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 2.7, 0, 0, 0, 0.1, 4.5, 1.35, 2.453)
+material = ExtResource("1_5tu10")
+
+[node name="WallQ3" type="CSGBox3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2.75, 0, 0, 0, 4, 6.05, 1.345, 4.445)
+material = ExtResource("1_5tu10")
