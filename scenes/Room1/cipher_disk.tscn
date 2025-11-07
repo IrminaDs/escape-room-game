@@ -1,0 +1,131 @@
+[gd_scene load_steps=25 format=3 uid="uid://cal0tlif24cjp"]
+
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_mejc7"]
+[ext_resource type="Texture2D" uid="uid://dpm5ioo52fxjm" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_BaseColor.jpg" id="2_s1gk3"]
+[ext_resource type="Texture2D" uid="uid://dydl72fhn1frr" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_AmbientOcclusion.png" id="3_wmloq"]
+[ext_resource type="Texture2D" uid="uid://b6vif6j34taqc" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Metallic.png" id="4_3850b"]
+[ext_resource type="Texture2D" uid="uid://dffyvn3rgs78d" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Normal.png" id="5_vyowg"]
+[ext_resource type="Texture2D" uid="uid://divim3a85enl1" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_shl1r"]
+[ext_resource type="Texture2D" uid="uid://chorehuhvbh0x" path="res://models/Room1/textures/boards/messages-wheel.png" id="7_2cq3l"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="8_s1gk3"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="9_2cq3l"]
+[ext_resource type="Animation" uid="uid://db62hs5s4n2b3" path="res://addons/godot-xr-tools/hands/animations/left/Grip 4.res" id="10_rsjvq"]
+[ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="11_2m83n"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="12_totro"]
+[ext_resource type="Animation" uid="uid://d1xnpyc08njjx" path="res://addons/godot-xr-tools/hands/animations/right/Grip 4.res" id="13_hthnu"]
+[ext_resource type="Script" uid="uid://dtnexmpf2k4wx" path="res://scripts/room1/disk_controller.gd" id="14_rsjvq"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mejc7"]
+height = 0.05
+radius = 0.25
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsjvq"]
+albedo_color = Color(0.728822, 0.728822, 0.728822, 1)
+albedo_texture = ExtResource("2_s1gk3")
+metallic = 1.0
+metallic_texture = ExtResource("4_3850b")
+roughness_texture = ExtResource("6_shl1r")
+normal_enabled = true
+normal_texture = ExtResource("5_vyowg")
+ao_texture = ExtResource("3_wmloq")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2m83n"]
+size = Vector2(0.51, 0.51)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_totro"]
+transparency = 1
+albedo_texture = ExtResource("7_2cq3l")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hthnu"]
+albedo_texture = ExtResource("2_s1gk3")
+metallic = 1.0
+metallic_texture = ExtResource("4_3850b")
+roughness_texture = ExtResource("6_shl1r")
+normal_enabled = true
+normal_texture = ExtResource("5_vyowg")
+ao_texture = ExtResource("3_wmloq")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_o0ijk"]
+size = Vector2(0.4, 0.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8lx3o"]
+transparency = 1
+albedo_texture = ExtResource("7_2cq3l")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x7gq8"]
+albedo_color = Color(0.741385, 0.741385, 0.741384, 1)
+albedo_texture = ExtResource("2_s1gk3")
+metallic = 1.0
+metallic_texture = ExtResource("4_3850b")
+roughness_texture = ExtResource("6_shl1r")
+ao_enabled = true
+ao_texture = ExtResource("5_vyowg")
+
+[sub_resource type="Resource" id="Resource_o0ijk"]
+script = ExtResource("11_2m83n")
+open_pose = ExtResource("10_rsjvq")
+closed_pose = ExtResource("10_rsjvq")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[sub_resource type="Resource" id="Resource_8lx3o"]
+script = ExtResource("11_2m83n")
+open_pose = ExtResource("13_hthnu")
+closed_pose = ExtResource("13_hthnu")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[node name="Disk" instance=ExtResource("1_mejc7")]
+second_hand_grab = 2
+
+[node name="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0)
+shape = SubResource("CylinderShape3D_mejc7")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." index="1"]
+
+[node name="OuterDisk" type="CSGCylinder3D" parent="CSGCombiner3D" index="0"]
+radius = 0.25
+height = 0.01
+sides = 64
+material = SubResource("StandardMaterial3D_rsjvq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGCombiner3D/OuterDisk" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.006, 0)
+mesh = SubResource("PlaneMesh_2m83n")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_totro")
+
+[node name="InnerDisk" type="CSGCylinder3D" parent="CSGCombiner3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
+radius = 0.2
+height = 0.01
+sides = 48
+material = SubResource("StandardMaterial3D_hthnu")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="CSGCombiner3D/InnerDisk" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.006, 0)
+mesh = SubResource("PlaneMesh_o0ijk")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8lx3o")
+
+[node name="MeshInstance3D3" type="CSGCylinder3D" parent="CSGCombiner3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
+operation = 2
+radius = 0.05
+height = 0.01
+sides = 26
+material = SubResource("StandardMaterial3D_x7gq8")
+
+[node name="HighlightRing" parent="." index="2" instance=ExtResource("8_s1gk3")]
+
+[node name="GrabPointHandLeft" parent="." index="3" instance=ExtResource("9_2cq3l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, -0.1)
+visible = true
+hand_pose = SubResource("Resource_o0ijk")
+
+[node name="GrabPointHandRight" parent="." index="4" instance=ExtResource("12_totro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, -0.1)
+visible = true
+hand_pose = SubResource("Resource_8lx3o")
+
+[node name="DiskController" type="Node" parent="." index="5"]
+script = ExtResource("14_rsjvq")
