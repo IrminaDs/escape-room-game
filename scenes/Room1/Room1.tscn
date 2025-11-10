@@ -1,7 +1,6 @@
 [gd_scene load_steps=45 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
-[ext_resource type="Script" uid="uid://dbij2tl08ocgc" path="res://scripts/room_1.gd" id="1_quxoa"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
@@ -33,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="31_ew1ad"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="32_dprwg"]
 [ext_resource type="PackedScene" uid="uid://dyqkrr88xjnwt" path="res://scenes/Room1/ui_lock_chest.tscn" id="33_dprwg"]
+[ext_resource type="PackedScene" uid="uid://lr3gjisxvpdm" path="res://scenes/Room1/stand.tscn" id="34_ryx7d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -74,17 +74,6 @@ albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
 metallic = 1.0
 
 [node name="Room1" type="Node3D"]
-script = ExtResource("1_quxoa")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2dtu0")
@@ -547,7 +536,7 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 [node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
 transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
 
-[node name="Caesar" parent="Objects" instance=ExtResource("30_4763k")]
+[node name="Ceasar" parent="Objects" instance=ExtResource("30_4763k")]
 transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
 
 [node name="Picture" parent="Objects" instance=ExtResource("30_ryx7d")]
@@ -580,6 +569,9 @@ surface_material_override/0 = ExtResource("16_4y5xy")
 
 [node name="Disk" parent="Objects" instance=ExtResource("29_dprwg")]
 transform = Transform3D(0.595726, -0.642175, 0.482412, 0.765595, 0.63561, -0.0993197, -0.242845, 0.4285, 0.870295, 2.23, 0.65, -1.75)
+
+[node name="Stand" parent="Objects" instance=ExtResource("34_ryx7d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.31, 0.75)
 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 

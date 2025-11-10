@@ -1565,6 +1565,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wtcel")
 
 [node name="blue" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
+collision_layer = 1048576
+collision_mask = 0
 script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_2cbdk")
@@ -1585,6 +1587,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_m7e7g")
 
 [node name="orange" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0.57)
+collision_layer = 1048576
+collision_mask = 0
 script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_2cbdk")

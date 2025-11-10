@@ -1542,6 +1542,8 @@ skeleton = NodePath("")
 
 [node name="purple" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
+collision_layer = 1048576
+collision_mask = 0
 script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_jrfvl")
@@ -1562,6 +1564,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_b7qjb")
 
 [node name="red" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
+collision_layer = 1048576
+collision_mask = 0
 script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_jrfvl")
@@ -1582,6 +1586,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jrfvl")
 
 [node name="yellow" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
+collision_layer = 1048576
+collision_mask = 0
 script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_jrfvl")
