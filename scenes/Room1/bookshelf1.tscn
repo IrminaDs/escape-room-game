@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=4 uid="uid://dpkqptb18his1"]
+[gd_scene load_steps=115 format=4 uid="uid://dpkqptb18his1"]
 
 [ext_resource type="Texture2D" uid="uid://bw0tvt58hooy1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="1_uxd8u"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cf16x48g1qsjr" path="res://models/Room1/textures/books/blue.jpg" id="9_ncs31"]
 [ext_resource type="Texture2D" uid="uid://c7wvmxnpgfary" path="res://models/Room1/textures/books/orange.jpg" id="10_uxd8u"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_6n3w4"]
+[ext_resource type="FontFile" uid="uid://bdbrac1xidmlj" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="11_xu2ar"]
 [ext_resource type="PackedScene" uid="uid://ftfct3ms4mwd" path="res://scenes/Room1/ui_desk_letter.tscn" id="12_ncs31"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
@@ -1560,6 +1561,7 @@ shape = SubResource("BoxShape3D_6n3w4")
 
 [node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Green"]
 transform = Transform3D(0.981627, 0, -0.190809, 0, 1, 0, 0.190809, 0, 0.981627, 0.005, 0.407, -0.34)
+visible = false
 mesh = SubResource("BoxMesh_li15u")
 surface_material_override/0 = SubResource("StandardMaterial3D_wtcel")
 
@@ -1567,6 +1569,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wtcel")
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.25, -0.35)
 outline_modulate = Color(0, 0.431373, 0, 1)
 text = "Cienie Babilonu"
+font = ExtResource("11_xu2ar")
 font_size = 48
 
 [node name="Blue" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
@@ -1588,6 +1591,7 @@ shape = SubResource("BoxShape3D_1jdum")
 
 [node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Blue"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, -0.495)
+visible = false
 mesh = SubResource("BoxMesh_2cbdk")
 surface_material_override/0 = SubResource("StandardMaterial3D_m7e7g")
 
@@ -1595,6 +1599,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_m7e7g")
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.75, -0.5)
 outline_modulate = Color(0, 0.2, 0.705882, 1)
 text = "Zapiski Bracta Światła"
+font = ExtResource("11_xu2ar")
 font_size = 48
 
 [node name="Orange" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
@@ -1616,6 +1621,7 @@ shape = SubResource("BoxShape3D_ncs31")
 
 [node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Orange"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.075, 0.235)
+visible = false
 mesh = SubResource("BoxMesh_xu2ar")
 surface_material_override/0 = SubResource("StandardMaterial3D_mfvyi")
 
@@ -1623,6 +1629,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_mfvyi")
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, -0.25, 0.275)
 outline_modulate = Color(0.706552, 0.307696, 5.77569e-07, 1)
 text = "Starożytni Grecy"
+font = ExtResource("11_xu2ar")
 font_size = 48
 
 [node name="book_012_Cube_016" type="Node3D" parent="StaticBody3D/Books"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=4 uid="uid://curyiydvedhpa"]
+[gd_scene load_steps=113 format=4 uid="uid://curyiydvedhpa"]
 
 [ext_resource type="Texture2D" uid="uid://bw0tvt58hooy1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
 [ext_resource type="Texture2D" uid="uid://bd63e2sm57r72" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dsks2e6qgut0s" path="res://models/Room1/textures/books/purple.jpg" id="7_dxa2x"]
 [ext_resource type="Texture2D" uid="uid://br3prqhb0c5k8" path="res://models/Room1/textures/books/red.jpg" id="7_klhjw"]
 [ext_resource type="Texture2D" uid="uid://c4wvpr3ur8gxp" path="res://models/Room1/textures/books/yellow.jpg" id="9_m3ybm"]
+[ext_resource type="FontFile" uid="uid://bdbrac1xidmlj" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="10_4npbk"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="10_6kvop"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="10_ssm5c"]
 
@@ -1559,6 +1560,7 @@ shape = SubResource("BoxShape3D_m3ybm")
 
 [node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Purple"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, -0.4)
+visible = false
 mesh = SubResource("BoxMesh_6kvop")
 surface_material_override/0 = SubResource("StandardMaterial3D_b7qjb")
 
@@ -1566,6 +1568,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_b7qjb")
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.75, -0.2)
 outline_modulate = Color(0.364706, 0, 0.470588, 1)
 text = "Wiersze z przeplotem"
+font = ExtResource("10_4npbk")
 font_size = 48
 outline_size = 16
 
@@ -1588,6 +1591,7 @@ shape = SubResource("BoxShape3D_ssm5c")
 
 [node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Red"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.403, 0.507)
+visible = false
 mesh = SubResource("BoxMesh_b7qjb")
 surface_material_override/0 = SubResource("StandardMaterial3D_jrfvl")
 
@@ -1595,6 +1599,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jrfvl")
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.25, 0.3)
 outline_modulate = Color(0.658824, 0, 0, 1)
 text = "Historia Rzymu"
+font = ExtResource("10_4npbk")
 font_size = 48
 outline_size = 16
 
@@ -1617,6 +1622,7 @@ shape = SubResource("BoxShape3D_6kvop")
 
 [node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Yellow"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.075, 0.11)
+visible = false
 mesh = SubResource("BoxMesh_jrfvl")
 surface_material_override/0 = SubResource("StandardMaterial3D_4npbk")
 
@@ -1624,6 +1630,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4npbk")
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, -0.25, 0.1)
 outline_modulate = Color(0.780163, 0.570072, 0.0770715, 1)
 text = "Sekrety wojny"
+font = ExtResource("10_4npbk")
 font_size = 48
 outline_size = 16
 
