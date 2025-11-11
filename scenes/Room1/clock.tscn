@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=4 uid="uid://cjf61g55qsv02"]
+[gd_scene load_steps=20 format=4 uid="uid://cjf61g55qsv02"]
 
-[ext_resource type="Texture2D" uid="uid://cr5wtyj5jx06v" path="res://models/Room1/objects/clock/old_wall_clock_0.png" id="1_4acud"]
-[ext_resource type="Texture2D" uid="uid://cjomc6o6kw3j3" path="res://models/Room1/objects/clock/old_wall_clock_1.png" id="2_gk6gk"]
-[ext_resource type="Texture2D" uid="uid://5idcg3mm7syw" path="res://models/Room1/objects/clock/old_wall_clock_2.png" id="3_q22f8"]
+[ext_resource type="Texture2D" uid="uid://dc7qh8purkd7a" path="res://models/Room1/objects/clock/old_wall_clock_0.png" id="1_4acud"]
+[ext_resource type="Script" uid="uid://dfflbydwwgyud" path="res://scripts/room1/clock.gd" id="1_gk6gk"]
+[ext_resource type="Texture2D" uid="uid://dwb7wa7bpxqdo" path="res://models/Room1/objects/clock/old_wall_clock_1.png" id="2_gk6gk"]
+[ext_resource type="Texture2D" uid="uid://clusk383648hl" path="res://models/Room1/objects/clock/old_wall_clock_2.png" id="3_q22f8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uivmj"]
 resource_name = "Wall_clock"
@@ -55,38 +56,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_exybk")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_cw5n1"]
-_surfaces = [{
-"aabb": AABB(-1.27327, 36.4695, 6.96744, 5.19282, 6.1534, 1e-05),
-"format": 34896613377,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"name": "Wall_clock",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("+xkAAAAAAAAD5v//AAAAAP//H+4AAAAAAADfEQAAAAA=")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_xau4s"]
-resource_name = "Sketchfab_Scene_wall_clock_arrow_minutes_Wall_clock_0"
-_surfaces = [{
-"aabb": AABB(-1.27327, 36.4695, 6.96744, 5.19282, 6.1534, 1e-05),
-"attribute_data": PackedByteArray("oXb39jTLvv40y/X2oXbB/g=="),
-"format": 34896613399,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_uivmj"),
-"name": "Wall_clock",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("+xkAAAAAI6QD5v//AAAjpP//H+4AACOkAADfEQAAI6T+//7//v/+//7//v/+//7/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_cw5n1")
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_61lv2"]
 _surfaces = [{
 "aabb": AABB(-4.03029, -27.1117, -0.68401, 8.06058, 23.2135, 1.36802),
@@ -120,6 +89,38 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_61lv2")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cw5n1"]
+_surfaces = [{
+"aabb": AABB(-1.27327, 36.4695, 6.96744, 5.19282, 6.1534, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "Wall_clock",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("+xkAAAAAAAAD5v//AAAAAP//H+4AAAAAAADfEQAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xau4s"]
+resource_name = "Sketchfab_Scene_wall_clock_arrow_minutes_Wall_clock_0"
+_surfaces = [{
+"aabb": AABB(-1.27327, 36.4695, 6.96744, 5.19282, 6.1534, 1e-05),
+"attribute_data": PackedByteArray("oXb39jTLvv40y/X2oXbB/g=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_uivmj"),
+"name": "Wall_clock",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("+xkAAAAAI6QD5v//AAAjpP//H+4AACOkAADfEQAAI6T+//7//v/+//7//v/+//7/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_cw5n1")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vm1cy"]
 _surfaces = [{
@@ -222,61 +223,61 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_4ukey"]
 size = Vector3(0.2, 0.5, 0.15)
 
-[node name="Clock" type="Node3D"]
+[node name="Clock" type="StaticBody3D"]
+script = ExtResource("1_gk6gk")
 
-[node name="AnimatableBody3D" type="AnimatableBody3D" parent="."]
+[node name="Sketchfab_Scene" type="Node3D" parent="."]
 
-[node name="Sketchfab_Scene" type="Node3D" parent="AnimatableBody3D"]
-
-[node name="Sketchfab_model" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene"]
+[node name="Sketchfab_model" type="Node3D" parent="Sketchfab_Scene"]
 transform = Transform3D(0.01, 0, 0, 0, 2.22045e-18, 0.01, 0, -0.01, 2.22045e-18, 0, 0, 0)
 
-[node name="wall_clock_fbx" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model"]
+[node name="wall_clock_fbx" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model"]
 transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
 
-[node name="Object_2" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx"]
+[node name="Object_2" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx"]
 
-[node name="RootNode" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2"]
+[node name="RootNode" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2"]
 
-[node name="wall_clock" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode"]
+[node name="wall_clock" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode"]
 
-[node name="wall_clock_Wall_clock_0" type="MeshInstance3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
+[node name="wall_clock_Wall_clock_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
 mesh = SubResource("ArrayMesh_xwcmb")
 skeleton = NodePath("")
 
-[node name="wall_clock_arrow_minutes" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.08323)
+[node name="wall_clock_pendulum" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
+transform = Transform3D(0.992674, 0.12082, 1.59905e-24, -0.12082, 0.992674, 1.31379e-23, 0, -1.32349e-23, 1, -0.00010252, 38.0959, 0.0328436)
 
-[node name="wall_clock_arrow_minutes_Wall_clock_0" type="MeshInstance3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_arrow_minutes"]
-mesh = SubResource("ArrayMesh_xau4s")
-skeleton = NodePath("")
-
-[node name="wall_clock_pendulum" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
-transform = Transform3D(0.992674, 0.120821, 0, -0.120821, 0.992674, 0, 0, 0, 1, -0.00010252, 38.0959, 0.0328436)
-
-[node name="wall_clock_pendulum_Wall_clock_0" type="MeshInstance3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_pendulum"]
+[node name="wall_clock_pendulum_Wall_clock_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_pendulum"]
 mesh = SubResource("ArrayMesh_04cil")
 skeleton = NodePath("")
 
-[node name="wall_clock_arrow_hour" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
+[node name="wall_clock_arrow_minutes" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.29396e-23, -2.08323)
+
+[node name="wall_clock_arrow_minutes_Wall_clock_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_arrow_minutes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_xau4s")
+skeleton = NodePath("")
+
+[node name="wall_clock_arrow_hour" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.08323)
 
-[node name="wall_clock_arrow_hour_Wall_clock_0" type="MeshInstance3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_arrow_hour"]
+[node name="wall_clock_arrow_hour_Wall_clock_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_arrow_hour"]
 mesh = SubResource("ArrayMesh_ntdqy")
 skeleton = NodePath("")
 
-[node name="wall_clock_glass" type="Node3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
+[node name="wall_clock_glass" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock"]
 
-[node name="wall_clock_glass_Wall_clock_glass_0" type="MeshInstance3D" parent="AnimatableBody3D/Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_glass"]
+[node name="wall_clock_glass_Wall_clock_glass_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_glass"]
 mesh = SubResource("ArrayMesh_4nn6e")
 skeleton = NodePath("")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody3D/Sketchfab_Scene"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sketchfab_Scene"]
 libraries = {
 &"": SubResource("AnimationLibrary_lu56r")
 }
 autoplay = "Take 001"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -0.025)
 shape = SubResource("BoxShape3D_4ukey")

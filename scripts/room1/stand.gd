@@ -45,5 +45,7 @@ func _on_picked_up(pickable: XRToolsPickable):
 			static_copy.rotation.y + deg_to_rad(30),
 			1
 		).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+		
+		Room1GameEvents.emit_signal("ceasar_placed")
 
 		snap_zone.enabled = false
