@@ -4,16 +4,24 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 
 @export var viewport : XRToolsViewport2DIn3D
 @export var scene : PackedScene
-
 @onready var highlight = $Highlight
-@onready var left_pointer: XRToolsFunctionPointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/LeftController/FunctionPointer")
-@onready var right_pointer: XRToolsFunctionPointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/RightController/FunctionPointer")
 @onready var label: Label3D = $Label3D
 
+var left_pointer: XRToolsFunctionPointer
+var right_pointer: XRToolsFunctionPointer
+
+
 func _ready():
-	connect("pointer_event", Callable(self, "_on_pointer_event"))
+	if Engine.is_editor_hint():
+		return
+	
+	left_pointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/LeftController/FunctionPointer")
+	right_pointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/RightController/FunctionPointer")
+	
 	highlight.visible = false
 	label.visible = false
+
+	connect("pointer_event", Callable(self, "_on_pointer_event"))
 
 func _on_pointer_event(event):
 	if viewport == null or scene == null:
