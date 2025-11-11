@@ -1540,7 +1540,7 @@ skeleton = NodePath("")
 
 [node name="Books" type="Node3D" parent="StaticBody3D"]
 
-[node name="purple" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
+[node name="Purple" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
 collision_mask = 0
@@ -1548,21 +1548,21 @@ script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_jrfvl")
 
-[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/purple"]
+[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Purple"]
 mesh = SubResource("ArrayMesh_0bsha")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_klhjw")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/purple"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/Purple"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -0.35)
 shape = SubResource("BoxShape3D_m3ybm")
 
-[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/purple"]
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Purple"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, -0.4)
 mesh = SubResource("BoxMesh_6kvop")
 surface_material_override/0 = SubResource("StandardMaterial3D_b7qjb")
 
-[node name="red" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
+[node name="Red" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
 collision_mask = 0
@@ -1570,21 +1570,21 @@ script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_jrfvl")
 
-[node name="book_001_Cube_003_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/red"]
+[node name="book_001_Cube_003_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Red"]
 mesh = SubResource("ArrayMesh_1ge5u")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_m3ybm")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/red"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/Red"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0.4)
 shape = SubResource("BoxShape3D_ssm5c")
 
-[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/red"]
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Red"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.403, 0.507)
 mesh = SubResource("BoxMesh_b7qjb")
 surface_material_override/0 = SubResource("StandardMaterial3D_jrfvl")
 
-[node name="yellow" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
+[node name="Yellow" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
 collision_mask = 0
@@ -1592,16 +1592,16 @@ script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_jrfvl")
 
-[node name="book_026_Cube_030_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/yellow"]
+[node name="book_026_Cube_030_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Yellow"]
 mesh = SubResource("ArrayMesh_dccgi")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_ssm5c")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/yellow"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/Yellow"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
 shape = SubResource("BoxShape3D_6kvop")
 
-[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/yellow"]
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Yellow"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.075, 0.11)
 mesh = SubResource("BoxMesh_jrfvl")
 surface_material_override/0 = SubResource("StandardMaterial3D_4npbk")
@@ -1842,6 +1842,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
 shape = SubResource("BoxShape3D_88mrq")
 
 [node name="InteractionZone" type="Area3D" parent="."]
+collision_mask = 524288
 script = ExtResource("10_6kvop")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]

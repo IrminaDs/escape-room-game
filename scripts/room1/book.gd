@@ -26,8 +26,10 @@ func _on_pointer_event(event):
 		XRToolsPointerEvent.Type.EXITED:
 			highlight.visible = false
 		XRToolsPointerEvent.Type.PRESSED:
-			if viewport.visible:
+			if viewport.visible and viewport.scene == scene:
 				viewport.visible = false
 			else:
 				viewport.scene = scene
 				viewport.visible = true
+				if self.name == "Red":
+					Room1GameEvents.emit_signal("book_opened")

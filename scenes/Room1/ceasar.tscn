@@ -23,7 +23,7 @@ shape = SubResource("ConvexPolygonShape3D_j4ctu")
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0.03)
 
 [node name="HighlightRing" parent="." index="2" instance=ExtResource("3_rjxdj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0.03)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 
 [node name="GrabPointHandLeft" parent="." index="3" instance=ExtResource("4_ohslw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, 0.25, 0.03)

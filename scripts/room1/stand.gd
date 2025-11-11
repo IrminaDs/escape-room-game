@@ -3,10 +3,21 @@ extends StaticBody3D
 
 @export var item_name: String = "Ceasar"
 @onready var snap_zone: XRToolsSnapZone = $"SnapZone"
+@onready var collision: CollisionShape3D = $"CollisionShape3D"
 
 func _ready():
 	if snap_zone.has_signal("has_picked_up"):
 		snap_zone.connect("has_picked_up", Callable(self, "_on_picked_up"))
+	Room1GameEvents.connect("book_opened", Callable(self, "_on_book_opened"), CONNECT_ONE_SHOT)
+	
+	self.visible = false
+	snap_zone.enabled = false
+	collision.disabled = true
+	
+func _on_book_opened():
+	self.visible = true
+	snap_zone.enabled = true
+	collision.disabled = false
 	
 func _on_picked_up(pickable: XRToolsPickable):
 	if pickable.name == item_name:
@@ -18,7 +29,8 @@ func _on_picked_up(pickable: XRToolsPickable):
 		static_copy.transform.origin.y += 0.25
 		
 		for child in pickable.get_children():
-			static_copy.add_child(child.duplicate())
+			if child.name == "CollisionShape3D" or child.name == "Sketchfab_Scene":
+				static_copy.add_child(child.duplicate())
 
 		var parent = pickable.get_parent()
 		parent.add_child(static_copy)

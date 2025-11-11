@@ -1541,7 +1541,7 @@ skeleton = NodePath("")
 
 [node name="Books" type="Node3D" parent="StaticBody3D"]
 
-[node name="green" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
+[node name="Green" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.5, 0.6)
 collision_layer = 1048576
 collision_mask = 0
@@ -1549,21 +1549,21 @@ script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_2cbdk")
 
-[node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/green"]
+[node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Green"]
 mesh = SubResource("ArrayMesh_6qlhi")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_li15u")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/green"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/Green"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -0.3)
 shape = SubResource("BoxShape3D_6n3w4")
 
-[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/green"]
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Green"]
 transform = Transform3D(0.981627, 0, -0.190809, 0, 1, 0, 0.190809, 0, 0.981627, 0.005, 0.407, -0.34)
 mesh = SubResource("BoxMesh_li15u")
 surface_material_override/0 = SubResource("StandardMaterial3D_wtcel")
 
-[node name="blue" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
+[node name="Blue" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
 collision_layer = 1048576
 collision_mask = 0
@@ -1571,21 +1571,21 @@ script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_2cbdk")
 
-[node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/blue"]
+[node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Blue"]
 mesh = SubResource("ArrayMesh_l5irs")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_2cbdk")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/blue"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/Blue"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, -0.5)
 shape = SubResource("BoxShape3D_1jdum")
 
-[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/blue"]
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Blue"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, -0.495)
 mesh = SubResource("BoxMesh_2cbdk")
 surface_material_override/0 = SubResource("StandardMaterial3D_m7e7g")
 
-[node name="orange" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
+[node name="Orange" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0.57)
 collision_layer = 1048576
 collision_mask = 0
@@ -1593,16 +1593,16 @@ script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("5_2cbdk")
 
-[node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/orange"]
+[node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Orange"]
 mesh = SubResource("ArrayMesh_ftbsl")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_xu2ar")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/orange"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Books/Orange"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.07302e-08, 0.25)
 shape = SubResource("BoxShape3D_ncs31")
 
-[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/orange"]
+[node name="Highlight" type="MeshInstance3D" parent="StaticBody3D/Books/Orange"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.075, 0.235)
 mesh = SubResource("BoxMesh_xu2ar")
 surface_material_override/0 = SubResource("StandardMaterial3D_mfvyi")

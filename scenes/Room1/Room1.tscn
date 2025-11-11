@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=43 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
@@ -30,8 +30,6 @@
 [ext_resource type="PackedScene" uid="uid://dhmifnm1s13sc" path="res://scenes/Room1/picture.tscn" id="30_ryx7d"]
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="31_4763k"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="31_ew1ad"]
-[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="32_dprwg"]
-[ext_resource type="PackedScene" uid="uid://dyqkrr88xjnwt" path="res://scenes/Room1/ui_lock_chest.tscn" id="33_dprwg"]
 [ext_resource type="PackedScene" uid="uid://lr3gjisxvpdm" path="res://scenes/Room1/stand.tscn" id="34_ryx7d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
@@ -577,15 +575,6 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.3
 
 [node name="Player" parent="." instance=ExtResource("31_4763k")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.25)
-
-[node name="Viewport2Din3D" parent="." instance=ExtResource("32_dprwg")]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 1.95, 1.5, -1.875)
-visible = false
-screen_size = Vector2(0.7, 0.5)
-scene = ExtResource("33_dprwg")
-viewport_size = Vector2(640, 512)
-scene_properties_keys = PackedStringArray("ui_lock_chest.gd", "correct_code")
-correct_code = "BBBB"
 
 [editable path="Objects/Picture"]
 [editable path="Objects/Picture/Sketchfab_Scene"]
