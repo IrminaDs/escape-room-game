@@ -1562,6 +1562,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, -0.4)
 mesh = SubResource("BoxMesh_6kvop")
 surface_material_override/0 = SubResource("StandardMaterial3D_b7qjb")
 
+[node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Purple"]
+transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.75, -0.2)
+outline_modulate = Color(0.364706, 0, 0.470588, 1)
+text = "Wiersze z przeplotem"
+font_size = 48
+outline_size = 16
+
 [node name="Red" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
@@ -1584,6 +1591,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.403, 0.507)
 mesh = SubResource("BoxMesh_b7qjb")
 surface_material_override/0 = SubResource("StandardMaterial3D_jrfvl")
 
+[node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Red"]
+transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.25, 0.3)
+outline_modulate = Color(0.658824, 0, 0, 1)
+text = "Historia Rzymu"
+font_size = 48
+outline_size = 16
+
 [node name="Yellow" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
@@ -1605,6 +1619,13 @@ shape = SubResource("BoxShape3D_6kvop")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.075, 0.11)
 mesh = SubResource("BoxMesh_jrfvl")
 surface_material_override/0 = SubResource("StandardMaterial3D_4npbk")
+
+[node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Yellow"]
+transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, -0.25, 0.1)
+outline_modulate = Color(0.780163, 0.570072, 0.0770715, 1)
+text = "Sekrety wojny"
+font_size = 48
+outline_size = 16
 
 [node name="book_002_Cube_006" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
@@ -1850,7 +1871,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, -0.75, 0)
 shape = SubResource("BoxShape3D_b7qjb")
 
 [node name="Viewport2Din3D" parent="." instance=ExtResource("10_ssm5c")]
-transform = Transform3D(-0.258819, -0.482963, -0.836516, -2.18557e-08, 0.866025, -0.5, 0.965926, -0.12941, -0.224144, 0.5, 0.25, -0.25)
+transform = Transform3D(0.258819, -0.25, 0.933013, -1.93572e-08, 0.965926, 0.258819, -0.965926, -0.0669873, 0.25, 0.5, 0.25, -0.25)
 screen_size = Vector2(0.6, 0.45)
 viewport_size = Vector2(2000, 1500)
 scene_properties_keys = PackedStringArray()

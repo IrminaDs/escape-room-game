@@ -1,3 +1,4 @@
+@tool
 extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 
 
@@ -7,10 +8,12 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 @onready var highlight = $Highlight
 @onready var left_pointer: XRToolsFunctionPointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/LeftController/FunctionPointer")
 @onready var right_pointer: XRToolsFunctionPointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/RightController/FunctionPointer")
+@onready var label: Label3D = $Label3D
 
 func _ready():
 	connect("pointer_event", Callable(self, "_on_pointer_event"))
 	highlight.visible = false
+	label.visible = false
 
 func _on_pointer_event(event):
 	if viewport == null or scene == null:
@@ -18,13 +21,16 @@ func _on_pointer_event(event):
 		
 	if left_pointer.visible == false and right_pointer.visible == false:
 		highlight.visible = false
+		label.visible = false
 		return
 
 	match event.event_type:
 		XRToolsPointerEvent.Type.ENTERED:
 			highlight.visible = true
+			label.visible = true
 		XRToolsPointerEvent.Type.EXITED:
 			highlight.visible = false
+			label.visible = false
 		XRToolsPointerEvent.Type.PRESSED:
 			if viewport.visible and viewport.scene == scene:
 				viewport.visible = false

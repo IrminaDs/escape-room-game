@@ -1563,6 +1563,12 @@ transform = Transform3D(0.981627, 0, -0.190809, 0, 1, 0, 0.190809, 0, 0.981627, 
 mesh = SubResource("BoxMesh_li15u")
 surface_material_override/0 = SubResource("StandardMaterial3D_wtcel")
 
+[node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Green"]
+transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.25, -0.35)
+outline_modulate = Color(0, 0.431373, 0, 1)
+text = "Cienie Babilonu"
+font_size = 48
+
 [node name="Blue" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
 collision_layer = 1048576
@@ -1585,6 +1591,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.925, -0.495)
 mesh = SubResource("BoxMesh_2cbdk")
 surface_material_override/0 = SubResource("StandardMaterial3D_m7e7g")
 
+[node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Blue"]
+transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.75, -0.5)
+outline_modulate = Color(0, 0.2, 0.705882, 1)
+text = "Zapiski Bracta Światła"
+font_size = 48
+
 [node name="Orange" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0.57)
 collision_layer = 1048576
@@ -1606,6 +1618,12 @@ shape = SubResource("BoxShape3D_ncs31")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.075, 0.235)
 mesh = SubResource("BoxMesh_xu2ar")
 surface_material_override/0 = SubResource("StandardMaterial3D_mfvyi")
+
+[node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Orange"]
+transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, -0.25, 0.275)
+outline_modulate = Color(0.706552, 0.307696, 5.77569e-07, 1)
+text = "Starożytni Grecy"
+font_size = 48
 
 [node name="book_012_Cube_016" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.5, 0.6)
@@ -1851,7 +1869,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, -0.75, 0)
 shape = SubResource("BoxShape3D_uxd8u")
 
 [node name="Viewport2Din3D" parent="." instance=ExtResource("11_6n3w4")]
-transform = Transform3D(-0.258819, -0.482963, 0.836516, -2.18557e-08, 0.866025, 0.5, -0.965926, 0.129409, -0.224144, 0.5, 0.25, 0.25)
+transform = Transform3D(-0.258819, -0.25, 0.933012, 0, 0.965925, 0.258819, -0.965926, 0.0669873, -0.25, 0.5, 0.25, 0.25)
 screen_size = Vector2(0.6, 0.45)
 scene = ExtResource("12_ncs31")
 viewport_size = Vector2(2000, 1500)
