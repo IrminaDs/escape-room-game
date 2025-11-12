@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://x2mls23q4l21"]
 
-[ext_resource type="Script" uid="uid://c38tpmh4konh7" path="res://scripts/room1/ui_lock_desk.gd" id="1_1ks76"]
+[ext_resource type="Script" uid="uid://c38tpmh4konh7" path="res://scripts/room1/ui_lock_7.gd" id="1_1ks76"]
 [ext_resource type="Texture2D" uid="uid://dkmh10sgrkx8x" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg" id="1_axefp"]
 [ext_resource type="FontFile" uid="uid://ikgxoc6bfj1y" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_21jtx"]
 [ext_resource type="Texture2D" uid="uid://d24tq1k55j8jv" path="res://models/Room1/textures/icons/arrow.png" id="4_1ks76"]

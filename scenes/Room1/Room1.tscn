@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=44 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://curyiydvedhpa" path="res://scenes/Room1/bookshelf2.tscn" id="11_vjalx"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
+[ext_resource type="PackedScene" uid="uid://dti05nqqibg6x" path="res://scenes/Room1/clock_lock.tscn" id="15_4763k"]
 [ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
 [ext_resource type="Material" uid="uid://b55daf63o185" path="res://models/Room1/objects/paintings/fox.tres" id="17_e8ajp"]
 [ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
@@ -469,14 +470,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
 [node name="Objects" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 
+[node name="Door" parent="Objects" instance=ExtResource("7_t3n42")]
+transform = Transform3D(-6.55671e-08, 0, 0.8, 0, 0.8, 0, -1.5, 0, -3.49691e-08, 0, 1.2, -3.1)
+
 [node name="Desk" parent="Objects" instance=ExtResource("9_7bwvd")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.25, 0.666667)
 
-[node name="DeskLamp" parent="Objects" instance=ExtResource("12_s215m")]
-transform = Transform3D(0.00494975, 0, -0.00494975, 0, 0.007, 0, 0.00494975, 0, 0.00494975, -0.75, 1.325, 0.416667)
-
 [node name="Chair" parent="Objects" instance=ExtResource("8_eh12f")]
 transform = Transform3D(-1.2557, 0, -0.336465, 0, 1.3, 0, 0.336465, 0, -1.2557, 0, 0.25, 1.41667)
+
+[node name="DeskLamp" parent="Objects" instance=ExtResource("12_s215m")]
+transform = Transform3D(0.00494975, 0, -0.00494975, 0, 0.007, 0, 0.00494975, 0, 0.00494975, -0.75, 1.325, 0.416667)
 
 [node name="Lamp" parent="Objects" instance=ExtResource("6_ht3nn")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.65, 0)
@@ -484,8 +488,8 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -0.65, 0)
 [node name="Letter" parent="Objects" instance=ExtResource("10_dprwg")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.35, 0.4)
 
-[node name="Door" parent="Objects" instance=ExtResource("7_t3n42")]
-transform = Transform3D(-6.55671e-08, 0, 0.8, 0, 0.8, 0, -1.5, 0, -3.49691e-08, 0, 1.2, -3.1)
+[node name="Stand" parent="Objects" instance=ExtResource("34_ryx7d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.31, 0.75)
 
 [node name="Bookshelf1" parent="Objects" instance=ExtResource("10_0e1ws")]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 2.25, 1.5, 2.6)
@@ -493,17 +497,54 @@ transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 2.25, 1.
 [node name="Bookshelf2" parent="Objects" instance=ExtResource("11_vjalx")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.25, 1.5, 2.6)
 
-[node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
-transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
-
 [node name="Clock" parent="Objects" instance=ExtResource("3_75n1p")]
-transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -1.81035, 1.36174, -2.90445)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.81035, 1.36174, -2.90445)
+
+[node name="ClockLock" parent="Objects" instance=ExtResource("15_4763k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 2, -3)
 
 [node name="Chest" parent="Objects" instance=ExtResource("13_5da8r")]
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 1.95, 0.25, -1.9)
 
+[node name="Ceasar" parent="Objects" instance=ExtResource("30_4763k")]
+transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
+
+[node name="Disk" parent="Objects" instance=ExtResource("29_dprwg")]
+transform = Transform3D(0.595726, -0.642175, 0.482412, 0.765595, 0.63561, -0.0993197, -0.242845, 0.4285, 0.870295, 2.23, 0.65, -1.75)
+
 [node name="WallShelf" parent="Objects" instance=ExtResource("21_20w1x")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.125, 2, -2.8)
+
+[node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
+transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
+
+[node name="Deer" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, 1.25)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Deer/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_el76y")
+
+[node name="Hare" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, -1.75)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Hare/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("18_e8ajp")
+
+[node name="Fox" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.99, 2, -1.5)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Fox/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("17_e8ajp")
+
+[node name="Duck" parent="Objects" instance=ExtResource("30_ryx7d")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.99, 2, 1.75)
+move_offset = Vector3(0, 0.28, -0.25)
+
+[node name="Object_7" parent="Objects/Duck/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
+surface_material_override/0 = ExtResource("16_4y5xy")
 
 [node name="TabP" type="MeshInstance3D" parent="Objects"]
 transform = Transform3D(-2.18557e-08, -0.5, 2.18557e-08, 0, -2.18557e-08, -0.5, 0.5, -2.18557e-08, 9.55343e-16, 2.999, 2, -0.625)
@@ -531,56 +572,19 @@ transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 
 [node name="Carpet" parent="Objects" instance=ExtResource("22_0c67s")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 
-[node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
-transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
-
-[node name="Ceasar" parent="Objects" instance=ExtResource("30_4763k")]
-transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
-
-[node name="Picture" parent="Objects" instance=ExtResource("30_ryx7d")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, 1.25)
-move_offset = Vector3(0, 0.28, -0.25)
-
-[node name="Object_7" parent="Objects/Picture/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("18_el76y")
-
-[node name="Picture2" parent="Objects" instance=ExtResource("30_ryx7d")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, -1.75)
-move_offset = Vector3(0, 0.28, -0.25)
-
-[node name="Object_7" parent="Objects/Picture2/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("18_e8ajp")
-
-[node name="Picture3" parent="Objects" instance=ExtResource("30_ryx7d")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.99, 2, -1.5)
-move_offset = Vector3(0, 0.28, -0.25)
-
-[node name="Object_7" parent="Objects/Picture3/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("17_e8ajp")
-
-[node name="Picture4" parent="Objects" instance=ExtResource("30_ryx7d")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.99, 2, 1.75)
-move_offset = Vector3(0, 0.28, -0.25)
-
-[node name="Object_7" parent="Objects/Picture4/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("16_4y5xy")
-
-[node name="Disk" parent="Objects" instance=ExtResource("29_dprwg")]
-transform = Transform3D(0.595726, -0.642175, 0.482412, 0.765595, 0.63561, -0.0993197, -0.242845, 0.4285, 0.870295, 2.23, 0.65, -1.75)
-
-[node name="Stand" parent="Objects" instance=ExtResource("34_ryx7d")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.31, 0.75)
+[node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
 [node name="Player" parent="." instance=ExtResource("31_4763k")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.25)
 
-[editable path="Objects/Picture"]
-[editable path="Objects/Picture/Sketchfab_Scene"]
-[editable path="Objects/Picture2"]
-[editable path="Objects/Picture2/Sketchfab_Scene"]
-[editable path="Objects/Picture3"]
-[editable path="Objects/Picture3/Sketchfab_Scene"]
-[editable path="Objects/Picture4"]
-[editable path="Objects/Picture4/Sketchfab_Scene"]
+[editable path="Objects/Deer"]
+[editable path="Objects/Deer/Sketchfab_Scene"]
+[editable path="Objects/Hare"]
+[editable path="Objects/Hare/Sketchfab_Scene"]
+[editable path="Objects/Fox"]
+[editable path="Objects/Fox/Sketchfab_Scene"]
+[editable path="Objects/Duck"]
+[editable path="Objects/Duck/Sketchfab_Scene"]

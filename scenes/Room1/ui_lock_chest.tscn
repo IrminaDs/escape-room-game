@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://dyqkrr88xjnwt"]
 
-[ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/room1/ui_lock_chest.gd" id="1_poyqd"]
+[ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/room1/ui_lock_4.gd" id="1_poyqd"]
 [ext_resource type="FontFile" uid="uid://ikgxoc6bfj1y" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_poyqd"]
 [ext_resource type="Texture2D" uid="uid://d24tq1k55j8jv" path="res://models/Room1/textures/icons/arrow.png" id="3_jvode"]
 
@@ -106,6 +106,8 @@ expand_margin_bottom = 25.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_poyqd")
+color = Color(0.1, 0.4, 0.7, 1)
+signal_to_emit = "chest_unlocked"
 
 [node name="Panel" type="Panel" parent="."]
 
@@ -267,7 +269,6 @@ offset_right = 204.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
@@ -282,7 +283,6 @@ offset_right = 332.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
@@ -297,7 +297,6 @@ offset_right = 460.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
@@ -312,7 +311,6 @@ offset_right = 588.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_font_sizes/font_size = 64
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
