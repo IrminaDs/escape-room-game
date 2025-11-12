@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bqluhn38io8wi"
-valid=false
+uid="uid://dg12n024hrvmn"
+path="res://.godot/imported/rusted_metal_texture_pbr.glb-9845952a538103951a5ebfd32cef5f9b.scn"
 
 [deps]
 
 source_file="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr.glb"
+dest_files=["res://.godot/imported/rusted_metal_texture_pbr.glb-9845952a538103951a5ebfd32cef5f9b.scn"]
 
 [params]
 

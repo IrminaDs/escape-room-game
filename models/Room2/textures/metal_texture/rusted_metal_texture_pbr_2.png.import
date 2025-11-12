@@ -2,8 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do8mm6kq30jex"
-valid=false
+uid="uid://banicrsxj25de"
+path.s3tc="res://.godot/imported/rusted_metal_texture_pbr_2.png-9ab156f1b2e8a7d62804c1b6d61a43b0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "c5c4ecf535fd91bcc2c9c8a600fc9d97"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_2.png"
+dest_files=["res://.godot/imported/rusted_metal_texture_pbr_2.png-9ab156f1b2e8a7d62804c1b6d61a43b0.s3tc.ctex"]
 
 [params]
 
@@ -23,7 +28,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://models/Room2/textures/rusted_metal_texture_pbr_2.png"
+roughness/src_normal="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_2.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

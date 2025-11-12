@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8ekrxmvcixdc"]
+
+[ext_resource type="PackedScene" uid="uid://dp3l7ksxuaigl" path="res://models/Room2/objects/lever/rusty_wall_lever.glb" id="1_8moki"]
+
+[sub_resource type="Animation" id="Animation_0fwpu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lever_v2_Box_Handle_0:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_yeh7t"]
+resource_name = "pull_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lever_v2_Box_Handle_0:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1.50316e-07, 1.17485, -1.00085e-07)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yjux3"]
+_data = {
+&"RESET": SubResource("Animation_0fwpu"),
+&"pull_up": SubResource("Animation_yeh7t")
+}
+
+[node name="lever" instance=ExtResource("1_8moki")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sketchfab_model/Breaker Sketchfab_fbx/RootNode/Lever_v2_Box" index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_yjux3")
+}
