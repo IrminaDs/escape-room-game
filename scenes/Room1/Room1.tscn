@@ -1,13 +1,17 @@
-[gd_scene load_steps=44 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=46 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
 [ext_resource type="PackedScene" uid="uid://bqh6qnke2e5oi" path="res://scenes/Room1/wall_with_door.tscn" id="4_3qgkt"]
+[ext_resource type="Texture2D" uid="uid://d3mj2hpequ5aj" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_diff_1k.jpg" id="5_r538a"]
+[ext_resource type="Texture2D" uid="uid://ddsee1axfkkil" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_nor_gl_1k.jpg" id="6_5h5dv"]
 [ext_resource type="PackedScene" uid="uid://cavsvwbhkq8ku" path="res://scenes/Room1/ceiling_lamp.tscn" id="6_ht3nn"]
+[ext_resource type="Texture2D" uid="uid://d1goc2eg6hj1f" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_rough_1k.jpg" id="7_qqr2f"]
 [ext_resource type="PackedScene" uid="uid://d2hnqwhnkrji4" path="res://scenes/Room1/door.tscn" id="7_t3n42"]
 [ext_resource type="PackedScene" uid="uid://bb4gv22ydqjwc" path="res://scenes/Room1/chair.tscn" id="8_eh12f"]
+[ext_resource type="Script" uid="uid://bav8lib4g6rtn" path="res://scripts/room1/wall_hole.gd" id="8_fqerl"]
 [ext_resource type="PackedScene" uid="uid://diqbe0b8v51us" path="res://scenes/Room1/desk.tscn" id="9_7bwvd"]
 [ext_resource type="PackedScene" uid="uid://dpkqptb18his1" path="res://scenes/Room1/bookshelf1.tscn" id="10_0e1ws"]
 [ext_resource type="PackedScene" uid="uid://jkp1jxx5n811" path="res://scenes/Room1/desk_letter.tscn" id="10_dprwg"]
@@ -23,7 +27,6 @@
 [ext_resource type="PackedScene" uid="uid://0tvnoii853oi" path="res://scenes/Room1/map.tscn" id="20_el76y"]
 [ext_resource type="PackedScene" uid="uid://c07v6wee104gp" path="res://scenes/Room1/wall_shelf.tscn" id="21_20w1x"]
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
-[ext_resource type="Texture2D" uid="uid://xojgt4nreawc" path="res://models/Room1/textures/boards/polibiusz.jpg" id="23_kacvt"]
 [ext_resource type="Texture2D" uid="uid://dvammeg6x516k" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 [ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="29_dprwg"]
@@ -31,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://dhmifnm1s13sc" path="res://scenes/Room1/picture.tscn" id="30_ryx7d"]
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="31_4763k"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="31_ew1ad"]
+[ext_resource type="Script" uid="uid://5pqgnsknm61n" path="res://scripts/room1/painting.gd" id="34_r538a"]
 [ext_resource type="PackedScene" uid="uid://lr3gjisxvpdm" path="res://scenes/Room1/stand.tscn" id="34_ryx7d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
@@ -46,18 +50,11 @@ sky = SubResource("Sky_75n1p")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_55bmt"]
-size = Vector2(1.5, 2)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yh7v7"]
-albedo_color = Color(0.695503, 0.695503, 0.695503, 1)
-albedo_texture = ExtResource("23_kacvt")
-
-[sub_resource type="SphereMesh" id="SphereMesh_kacvt"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_quxoa"]
-albedo_color = Color(0.485703, 0.485704, 0.485703, 1)
-metallic = 1.0
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bfc0x"]
+albedo_texture = ExtResource("5_r538a")
+roughness_texture = ExtResource("7_qqr2f")
+normal_enabled = true
+normal_texture = ExtResource("6_5h5dv")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_vjalx"]
 size = Vector2(1.7, 2)
@@ -71,6 +68,9 @@ albedo_texture = ExtResource("24_quxoa")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjalx"]
 albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
 metallic = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5h5dv"]
+size = Vector3(5, 2, 2)
 
 [node name="Room1" type="Node3D"]
 
@@ -422,6 +422,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.25, 0.125)
 [node name="WallTile5" parent="Build/Walls/WallEast" instance=ExtResource("3_yo7fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 0.125)
 
+[node name="WallHole" type="CSGBox3D" parent="Build/Walls/WallEast/WallTile5/CSGCombiner3D" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, -0.25, 0.0250001)
+operation = 2
+size = Vector3(0.3, 0.4, 0.2)
+material = SubResource("StandardMaterial3D_bfc0x")
+script = ExtResource("8_fqerl")
+
 [node name="WallTile6" parent="Build/Walls/WallEast" instance=ExtResource("3_yo7fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 0.125)
 
@@ -546,18 +553,8 @@ move_offset = Vector3(0, 0.28, -0.25)
 [node name="Object_7" parent="Objects/Duck/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
 surface_material_override/0 = ExtResource("16_4y5xy")
 
-[node name="TabP" type="MeshInstance3D" parent="Objects"]
-transform = Transform3D(-2.18557e-08, -0.5, 2.18557e-08, 0, -2.18557e-08, -0.5, 0.5, -2.18557e-08, 9.55343e-16, 2.999, 2, -0.625)
-mesh = SubResource("PlaneMesh_55bmt")
-surface_material_override/0 = SubResource("StandardMaterial3D_yh7v7")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/TabP"]
-transform = Transform3D(0.05, 0, -6.61744e-24, 0, 0.05, -4.17594e-24, -6.61744e-24, -4.17594e-24, 0.05, 0, 0, -0.9)
-mesh = SubResource("SphereMesh_kacvt")
-surface_material_override/0 = SubResource("StandardMaterial3D_quxoa")
-
 [node name="TabV" type="MeshInstance3D" parent="Objects"]
-transform = Transform3D(-3.27835e-08, -0.75, 3.27835e-08, 0, -3.27835e-08, -0.75, 0.75, -3.27835e-08, 1.43301e-15, 2.999, 2, 0.5)
+transform = Transform3D(-3.27835e-08, -0.75, 3.27835e-08, 0, -3.27835e-08, -0.75, 0.75, -3.27835e-08, 1.43301e-15, 2.999, 2, 0.125)
 mesh = SubResource("PlaneMesh_vjalx")
 surface_material_override/0 = SubResource("StandardMaterial3D_ikev5")
 
@@ -575,11 +572,29 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 [node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
 
+[node name="Label3D" type="Label3D" parent="Objects/Painting"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.25, 0.25)
+text = "Zdzisław Beksiński - Obraz AA72
+Własność Muzeum Historycznego w Sanoku"
+
+[node name="Label3D2" type="Label3D" parent="Objects/Painting"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2.5, 0.25)
+text = "(nie pozywajcie nas proszę)"
+
+[node name="Area3D" type="Area3D" parent="Objects/Painting"]
+collision_mask = 524288
+script = ExtResource("34_r538a")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Painting/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.25, 1.25)
+shape = SubResource("BoxShape3D_5h5dv")
+
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
 [node name="Player" parent="." instance=ExtResource("31_4763k")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.25)
 
+[editable path="Build/Walls/WallEast/WallTile5"]
 [editable path="Objects/Deer"]
 [editable path="Objects/Deer/Sketchfab_Scene"]
 [editable path="Objects/Hare"]
