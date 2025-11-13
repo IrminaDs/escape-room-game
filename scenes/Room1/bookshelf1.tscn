@@ -1,4 +1,4 @@
-[gd_scene load_steps=115 format=4 uid="uid://dpkqptb18his1"]
+[gd_scene load_steps=117 format=4 uid="uid://dpkqptb18his1"]
 
 [ext_resource type="Texture2D" uid="uid://bw0tvt58hooy1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="1_uxd8u"]
@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bewl5dwkforwd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_0gh3c"]
 [ext_resource type="Texture2D" uid="uid://cpwju0fv0w4ly" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_2wevw"]
 [ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="4_li15u"]
-[ext_resource type="PackedScene" uid="uid://cnxufynim25r" path="res://scenes/Room1/ui_ceasar.tscn" id="5_2cbdk"]
+[ext_resource type="PackedScene" uid="uid://27ryup17ssjr" path="res://scenes/Room1/ui_atbash.tscn" id="5_m7e7g"]
 [ext_resource type="Texture2D" uid="uid://bd1ng54nakvqm" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_wsqjv"]
 [ext_resource type="Texture2D" uid="uid://bitvqe5eppbpd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_ymvo7"]
 [ext_resource type="Texture2D" uid="uid://bog87b1sg1ae2" path="res://models/Room1/textures/books/green.jpg" id="7_1jdum"]
@@ -15,7 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://c7wvmxnpgfary" path="res://models/Room1/textures/books/orange.jpg" id="10_uxd8u"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_6n3w4"]
 [ext_resource type="FontFile" uid="uid://bdbrac1xidmlj" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="11_xu2ar"]
+[ext_resource type="PackedScene" uid="uid://3hch6g6d0let" path="res://scenes/Room1/ui_pigpen.tscn" id="12_mfvyi"]
 [ext_resource type="PackedScene" uid="uid://ftfct3ms4mwd" path="res://scenes/Room1/ui_desk_letter.tscn" id="12_ncs31"]
+[ext_resource type="PackedScene" uid="uid://cdiqk7c8wx6wc" path="res://scenes/Room1/ui_polibiusz.tscn" id="14_w5dia"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
 resource_name = "Material.001"
@@ -1548,7 +1550,7 @@ collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
-scene = ExtResource("5_2cbdk")
+scene = ExtResource("5_m7e7g")
 
 [node name="book_014_Cube_018_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Green"]
 mesh = SubResource("ArrayMesh_6qlhi")
@@ -1578,7 +1580,7 @@ collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
-scene = ExtResource("5_2cbdk")
+scene = ExtResource("12_mfvyi")
 
 [node name="book_004_Cube_008_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Blue"]
 mesh = SubResource("ArrayMesh_l5irs")
@@ -1608,7 +1610,7 @@ collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("4_li15u")
 viewport = NodePath("../../../Viewport2Din3D")
-scene = ExtResource("5_2cbdk")
+scene = ExtResource("14_w5dia")
 
 [node name="book_029_Cube_033_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Orange"]
 mesh = SubResource("ArrayMesh_ftbsl")

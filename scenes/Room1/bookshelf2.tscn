@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=4 uid="uid://curyiydvedhpa"]
+[gd_scene load_steps=115 format=4 uid="uid://curyiydvedhpa"]
 
 [ext_resource type="Texture2D" uid="uid://bw0tvt58hooy1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
 [ext_resource type="Texture2D" uid="uid://bd63e2sm57r72" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="4_b7qjb"]
 [ext_resource type="Texture2D" uid="uid://cpwju0fv0w4ly" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_m3ybm"]
 [ext_resource type="PackedScene" uid="uid://cnxufynim25r" path="res://scenes/Room1/ui_ceasar.tscn" id="5_jrfvl"]
+[ext_resource type="PackedScene" uid="uid://cueoa5jv8bhll" path="res://scenes/Room1/ui_plotek.tscn" id="5_kffnr"]
 [ext_resource type="Texture2D" uid="uid://bd1ng54nakvqm" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_ssm5c"]
 [ext_resource type="Texture2D" uid="uid://bitvqe5eppbpd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_6kvop"]
 [ext_resource type="Texture2D" uid="uid://dsks2e6qgut0s" path="res://models/Room1/textures/books/purple.jpg" id="7_dxa2x"]
@@ -14,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://bdbrac1xidmlj" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="10_4npbk"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="10_6kvop"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="10_ssm5c"]
+[ext_resource type="PackedScene" uid="uid://cffkhpsyw5x8g" path="res://scenes/Room1/ui_skytale.tscn" id="13_3t4xh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
 resource_name = "Material.001"
@@ -1547,7 +1549,7 @@ collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
-scene = ExtResource("5_jrfvl")
+scene = ExtResource("5_kffnr")
 
 [node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Purple"]
 mesh = SubResource("ArrayMesh_0bsha")
@@ -1609,7 +1611,7 @@ collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("4_b7qjb")
 viewport = NodePath("../../../Viewport2Din3D")
-scene = ExtResource("5_jrfvl")
+scene = ExtResource("13_3t4xh")
 
 [node name="book_026_Cube_030_Material_005_0" type="MeshInstance3D" parent="StaticBody3D/Books/Yellow"]
 mesh = SubResource("ArrayMesh_dccgi")

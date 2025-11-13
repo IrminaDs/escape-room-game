@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cffkhpsyw5x8g"]
+
+[ext_resource type="Texture2D" uid="uid://dtcghgfpex7wr" path="res://models/Room1/textures/books/skytale.png" id="1_uqdp7"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("1_uqdp7")
