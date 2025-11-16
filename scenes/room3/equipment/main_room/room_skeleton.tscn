@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj871xi444yul"]
+
+[ext_resource type="Material" uid="uid://bheyi72wht7f8" path="res://models/room3/textures/main_floor.tres" id="1_do44e"]
+[ext_resource type="Material" uid="uid://dnmupoky1j7ad" path="res://models/room3/textures/glass.tres" id="2_jianc"]
+[ext_resource type="Material" uid="uid://dqyfery3dtwtt" path="res://models/room3/textures/beige_wall.tres" id="3_my1t7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk48j"]
+
+[node name="RoomSkeleton" type="CSGCombiner3D"]
+use_collision = true
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(6, -3.85373e-06, 0.00131289, 0.000229359, 0.0999999, 0.00545415, -0.00164138, -0.000113627, 4.8, 0, 0.05, 0)
+material = ExtResource("1_do44e")
+
+[node name="GlassWall" type="CSGBox3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2.45, 0, 0, 0, 4.7, -2.95, 1.35321, -0.0110443)
+size = Vector3(1, 1.01715, 1.01276)
+material = ExtResource("2_jianc")
+
+[node name="MainDoorWall" type="CSGBox3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4.8, 3.05, 1.35, 0)
+material = ExtResource("3_my1t7")
+
+[node name="MainDoorHole" type="CSGBox3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 0.9, 3.05, 1.1, 0)
+operation = 2
+material = ExtResource("3_my1t7")
+
+[node name="SecretDoorWall" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.05, 0, 1.35, 2.425)
+material = SubResource("StandardMaterial3D_sk48j")
+
+[node name="SecretDoorHole" type="CSGPolygon3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.445515, 0.269354, 2.45435)
+operation = 2
+polygon = PackedVector2Array(-0.252636, -0.0900751, 1.0591, -0.150088, 1.27944, 0.0996102, 1.28159, 1.4858, 1.11257, 1.77454, -0.422589, 1.78332, -0.559042, 1.48726, -0.526583, 0.110006)
+depth = 0.09
+
+[node name="Wall" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.1, 0, 1.35, -2.45)
+material = ExtResource("3_my1t7")
+
+[node name="Ceiling" type="CSGBox3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4.8, 0, 2.65, 0)
+material = ExtResource("3_my1t7")
