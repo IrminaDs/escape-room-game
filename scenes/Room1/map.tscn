@@ -35,7 +35,7 @@ size = Vector2(1, 0.75)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1npcn"]
 transparency = 1
-albedo_color = Color(0.28389, 0.152459, 0.0751035, 1)
+albedo_color = Color(0.77084, 0.770839, 0.770839, 1)
 albedo_texture = ExtResource("5_01sg1")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_o0gsu"]
@@ -43,7 +43,7 @@ size = Vector2(1, 0.75)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uemqp"]
 transparency = 1
-albedo_color = Color(0.322978, 0.162604, 0.095105, 1)
+albedo_color = Color(0.683077, 0.683077, 0.683077, 1)
 albedo_texture = ExtResource("6_3joba")
 
 [node name="Map" type="Node3D"]

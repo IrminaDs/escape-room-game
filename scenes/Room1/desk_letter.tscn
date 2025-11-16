@@ -14,7 +14,7 @@
 [ext_resource type="Animation" uid="uid://c8hn123uon74u" path="res://addons/godot-xr-tools/hands/animations/right/PingPong.res" id="12_sqvar"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="13_amk21"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="14_76dgt"]
-[ext_resource type="PackedScene" uid="uid://ftfct3ms4mwd" path="res://scenes/Room1/ui_desk_letter.tscn" id="15_06sun"]
+[ext_resource type="PackedScene" uid="uid://b6cfn3axrgnig" path="res://scenes/Room1/ui_letter.tscn" id="15_sqvar"]
 [ext_resource type="Script" uid="uid://bsqnac6x8cqxl" path="res://scripts/room1/list_logic.gd" id="16_sqvar"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1lfyh"]
@@ -172,9 +172,10 @@ hand_pose = SubResource("Resource_l5oow")
 [node name="Viewport2Din3D" parent="." index="5" instance=ExtResource("14_76dgt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
 screen_size = Vector2(0.3, 0.4)
-scene = ExtResource("15_06sun")
-viewport_size = Vector2(100, 100)
-scene_properties_keys = PackedStringArray()
+scene = ExtResource("15_sqvar")
+viewport_size = Vector2(1500, 2000)
+scene_properties_keys = PackedStringArray("ui_letter.gd", "path")
+path = "res://models/Room1/textures/letters/first_letter.png"
 
 [node name="LetterLogic" type="Node" parent="." index="6"]
 script = ExtResource("16_sqvar")
