@@ -1,11 +1,14 @@
-[gd_scene load_steps=22 format=4 uid="uid://g52giiyj6f3h"]
+[gd_scene load_steps=25 format=4 uid="uid://g52giiyj6f3h"]
 
 [ext_resource type="Script" uid="uid://ds0w4t2j7brk" path="res://scripts/room1/chest.gd" id="1_e16p2"]
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
-[ext_resource type="Script" uid="uid://cq5mxrirddcj2" path="res://scripts/room1/lock_chest.gd" id="3_westq"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="4_bpvxt"]
-[ext_resource type="PackedScene" uid="uid://dyqkrr88xjnwt" path="res://scenes/Room1/UILockChest.tscn" id="5_westq"]
+[ext_resource type="Texture2D" uid="uid://b6vif6j34taqc" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Metallic.png" id="4_hjvjy"]
+[ext_resource type="Texture2D" uid="uid://dffyvn3rgs78d" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Normal.png" id="5_kghx8"]
+[ext_resource type="PackedScene" uid="uid://dyqkrr88xjnwt" path="res://scenes/Room1/ui_lock_chest.tscn" id="5_westq"]
+[ext_resource type="Texture2D" uid="uid://divim3a85enl1" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_yrf4u"]
 [ext_resource type="Material" uid="uid://bnjt32daohc10" path="res://models/Room1/objects/chest/M_Chest_Wood.tres" id="7_3eabm"]
+[ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="7_hjvjy"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gy8cq"]
 resource_name = "Sketchfab_Scene_SM_Chest_M_Chest_Reinforcment_0"
@@ -98,8 +101,11 @@ size = Vector3(2.5, 0.1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_westq"]
 albedo_color = Color(0.327687, 0.313111, 0.283651, 1)
-metallic = 0.8
-roughness = 0.1
+metallic = 1.0
+metallic_texture = ExtResource("4_hjvjy")
+roughness_texture = ExtResource("6_yrf4u")
+normal_enabled = true
+normal_texture = ExtResource("5_kghx8")
 
 [sub_resource type="BoxMesh" id="BoxMesh_tsus3"]
 material = SubResource("StandardMaterial3D_westq")
@@ -248,8 +254,9 @@ mesh = SubResource("CapsuleMesh_gy8cq")
 
 [node name="InteractionZone" type="Area3D" parent="Lock"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -0.625)
-collision_mask = 16777215
-script = ExtResource("3_westq")
+collision_mask = 524288
+script = ExtResource("7_hjvjy")
+original_position = Vector3(0, 1.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1.16667)
@@ -260,5 +267,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 screen_size = Vector2(1, 0.8)
 scene = ExtResource("5_westq")
 viewport_size = Vector2(640, 512)
-scene_properties_keys = PackedStringArray("ui_lock_chest.gd", "correct_code")
+scene_properties_keys = PackedStringArray("ui_lock_4.gd", "correct_code", "color", "signal_to_emit")
 correct_code = "BBBB"
+color = Color(0.101961, 0.4, 0.701961, 1)
+signal_to_emit = "chest_unlocked"
