@@ -219,6 +219,7 @@ texture = ExtResource("12_438py")
 
 [node name="ceiling" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26649, 0)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ceiling"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
