@@ -1,18 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bj871xi444yul"]
+[gd_scene load_steps=4 format=3 uid="uid://bj871xi444yul"]
 
 [ext_resource type="Material" uid="uid://v18aypyxfqcl" path="res://models/room3/textures/pink_floor.tres" id="1_do44e"]
 [ext_resource type="Material" uid="uid://dnmupoky1j7ad" path="res://models/room3/textures/glass.tres" id="2_jianc"]
-[ext_resource type="Material" uid="uid://6c76fe7kgxgd" path="res://models/room3/textures/main_wall.tres" id="3_jianc"]
 [ext_resource type="Material" uid="uid://dqyfery3dtwtt" path="res://models/room3/textures/beige_wall.tres" id="3_my1t7"]
-[ext_resource type="Shader" uid="uid://biq6x0188ii4v" path="res://models/room3/wall_sh.gdshader" id="4_my1t7"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghsje"]
-render_priority = 0
-shader = ExtResource("4_my1t7")
-shader_parameter/flip_mask_y = false
-shader_parameter/flip_mask_z = false
-shader_parameter/displacement_scale = 0.1
-shader_parameter/uv_scale = Vector2(1, 1)
 
 [node name="RoomSkeleton" type="Node3D"]
 
@@ -52,7 +42,7 @@ material = ExtResource("2_jianc")
 [node name="MainDoorWall" type="CSGBox3D" parent="BaseBoard"]
 transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4.8, 3.04, 1.338, 0)
 size = Vector3(1, 0.946075, 0.999902)
-material = ExtResource("3_jianc")
+material = ExtResource("3_my1t7")
 
 [node name="MainDoorHole" type="CSGBox3D" parent="BaseBoard"]
 transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 0.9, 3.04, 1.1, 0)
@@ -72,8 +62,8 @@ polygon = PackedVector2Array(-0.291987, -0.164639, 1.0591, -0.150088, 1.27944, 0
 depth = 0.09
 
 [node name="Wall" type="CSGBox3D" parent="BaseBoard"]
-transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.1, 0, 1.35, -2.45)
-material = SubResource("ShaderMaterial_ghsje")
+transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.1, 0, 1.35, -2.41996)
+material = ExtResource("3_my1t7")
 
 [node name="Ceiling" type="CSGBox3D" parent="BaseBoard"]
 transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4.8, 0, 2.65, 0)
