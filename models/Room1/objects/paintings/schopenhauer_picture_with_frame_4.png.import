@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coxhvidgc3kgk"
-path.s3tc="res://.godot/imported/schopenhauer_picture_with_frame_4.png-c228bc5f84b6ff0b082f70cb4944b6dd.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "242776fc95aeb0834af2fc079accdeae"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_4.png"
-dest_files=["res://.godot/imported/schopenhauer_picture_with_frame_4.png-c228bc5f84b6ff0b082f70cb4944b6dd.s3tc.ctex"]
 
 [params]
 

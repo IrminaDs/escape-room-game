@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c3eowqh2ixq22"
-path="res://.godot/imported/old_lamp.glb-6a5202c96218ca21c82bb86211ea6d13.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/lamps/old_lamp.glb"
-dest_files=["res://.godot/imported/old_lamp.glb-6a5202c96218ca21c82bb86211ea6d13.scn"]
 
 [params]
 

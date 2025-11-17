@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dccd41fphcu0c"
-path="res://.godot/imported/carpet.glb-c0d8d063713d790101d5784a6be9b9d9.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/carpet/carpet.glb"
-dest_files=["res://.godot/imported/carpet.glb-c0d8d063713d790101d5784a6be9b9d9.scn"]
 
 [params]
 

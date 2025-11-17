@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d2a1kv3bour40"
-path="res://.godot/imported/metal_wire_shelf.glb-c7950f105b7890930c77c23ab00b7965.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/room3/furniture/shelves/metal_wire_shelf.glb"
-dest_files=["res://.godot/imported/metal_wire_shelf.glb-c7950f105b7890930c77c23ab00b7965.scn"]
 
 [params]
 

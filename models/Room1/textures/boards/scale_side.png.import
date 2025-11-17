@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://grwx0dvche0t"
-path.s3tc="res://.godot/imported/scale_side.png-8c8019c6305c8777fd7d4b7079695bea.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/textures/boards/scale_side.png"
-dest_files=["res://.godot/imported/scale_side.png-8c8019c6305c8777fd7d4b7079695bea.s3tc.ctex"]
 
 [params]
 

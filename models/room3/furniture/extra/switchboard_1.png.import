@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4pncxqadqco"
-path.s3tc="res://.godot/imported/switchboard_1.png-2982323cfa24d53c3a2c00a38b648431.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "3b99efda67cb0a22fff145e3c9001105"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/extra/switchboard_1.png"
-dest_files=["res://.godot/imported/switchboard_1.png-2982323cfa24d53c3a2c00a38b648431.s3tc.ctex"]
 
 [params]
 
