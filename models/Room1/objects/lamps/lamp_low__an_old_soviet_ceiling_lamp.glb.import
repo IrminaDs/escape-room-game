@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://e2odfywimlgf"
-path="res://.godot/imported/lamp_low__an_old_soviet_ceiling_lamp.glb-d42c7699595b248b2d8bf4126d7db25d.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/lamps/lamp_low__an_old_soviet_ceiling_lamp.glb"
-dest_files=["res://.godot/imported/lamp_low__an_old_soviet_ceiling_lamp.glb-d42c7699595b248b2d8bf4126d7db25d.scn"]
 
 [params]
 

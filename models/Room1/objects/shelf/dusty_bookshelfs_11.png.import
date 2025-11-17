@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn5ehg5wgdq7b"
-path.s3tc="res://.godot/imported/dusty_bookshelfs_11.png-9e088713162fe73aa00d879d0129639c.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "1947cf2dc15d7fd55193e94d31228f46"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png"
-dest_files=["res://.godot/imported/dusty_bookshelfs_11.png-9e088713162fe73aa00d879d0129639c.s3tc.ctex"]
 
 [params]
 

@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://omlfrdi8cokx"
-path.s3tc="res://.godot/imported/scale_up.png-1986016e6ae0e16475bed95c0a03720d.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/textures/boards/scale_up.png"
-dest_files=["res://.godot/imported/scale_up.png-1986016e6ae0e16475bed95c0a03720d.s3tc.ctex"]
 
 [params]
 

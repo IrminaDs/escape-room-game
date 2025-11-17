@@ -1,18 +1,21 @@
-[gd_scene load_steps=22 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=25 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_e0phc"]
 [ext_resource type="PackedScene" uid="uid://ysgjsosgmubf" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
-[ext_resource type="PackedScene" uid="uid://cgayrqh8s7c51" path="res://models/Room2/objects/desk/old_metal_table_low_poly.glb" id="4_t1nq0"]
-[ext_resource type="PackedScene" uid="uid://8d8j760irfqd" path="res://models/Room2/objects/blackboard/realistic_blackboard.glb" id="6_77b6e"]
-[ext_resource type="PackedScene" uid="uid://byvp2e3u0tmpn" path="res://models/Room2/objects/lamp/old_glass_ceilling_lamp.glb" id="7_mgkur"]
-[ext_resource type="PackedScene" uid="uid://b8ekrxmvcixdc" path="res://models/Room2/objects/lever/lever.tscn" id="7_n8qcn"]
-[ext_resource type="PackedScene" uid="uid://b2kmctcko4oyy" path="res://models/Room2/objects/switch/simple_light_switch.glb" id="8_4tva4"]
+[ext_resource type="PackedScene" uid="uid://cngr45cppwaqu" path="res://models/Room2/objects/keypad/cc0_-_keypad_door_lock.glb" id="3_x55sq"]
+[ext_resource type="PackedScene" uid="uid://kdlxuvl0h71i" path="res://models/Room2/objects/desk/old_metal_table_low_poly.glb" id="4_t1nq0"]
+[ext_resource type="PackedScene" uid="uid://dbfwtn8dueyir" path="res://models/Room2/objects/blackboard/realistic_blackboard.glb" id="6_77b6e"]
+[ext_resource type="PackedScene" uid="uid://ccf46q7l41keg" path="res://models/Room2/objects/lamp/old_glass_ceilling_lamp.glb" id="7_mgkur"]
+[ext_resource type="PackedScene" uid="uid://dxgxjw8w3kkc3" path="res://models/Room2/objects/switch/simple_light_switch.glb" id="8_4tva4"]
 [ext_resource type="PackedScene" uid="uid://dm2e0etdro3ql" path="res://models/Room2/objects/note/legal_pad.glb" id="10_axndq"]
-[ext_resource type="PackedScene" uid="uid://q0whj5m6q57h" path="res://models/Room2/objects/pc/old_pc_tower.glb" id="10_n8qcn"]
+[ext_resource type="PackedScene" uid="uid://cj4wqr41lf74u" path="res://models/Room2/objects/pc/old_pc_tower.glb" id="10_n8qcn"]
 [ext_resource type="Material" uid="uid://m8tyfikh1h13" path="res://models/Room2/textures/metal_texture/material_floor.tres" id="10_wapua"]
-[ext_resource type="PackedScene" uid="uid://3h1lnhm0o32o" path="res://models/Room2/objects/monitor2/monitor.glb" id="11_axndq"]
+[ext_resource type="PackedScene" uid="uid://dn7ktd6qeqag2" path="res://models/Room2/objects/monitor2/monitor.glb" id="11_axndq"]
 [ext_resource type="Texture2D" uid="uid://c5gglprqvxrjq" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
 [ext_resource type="Texture2D" uid="uid://bcpejtk8vaaf3" path="res://models/Room2/objects/note/Hexadecimal-and-Binary-Number-System-Representation.jpg" id="12_438py"]
+[ext_resource type="PackedScene" uid="uid://buv2sqf8cvkce" path="res://models/Room2/objects/document/document_file_folder.glb" id="13_j5lkk"]
+[ext_resource type="PackedScene" uid="uid://cnu7dk7k5dp27" path="res://models/Room2/objects/folder/folder_-_3mb.glb" id="14_uugd8"]
+[ext_resource type="PackedScene" uid="uid://dlyodp41jvx6" path="res://models/Room2/objects/old_radio/old_radio.glb" id="15_qyg7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -46,7 +49,7 @@ albedo_color = Color(0.278431, 0.164706, 0, 1)
 environment = SubResource("Environment_p6krx")
 
 [node name="ProtoController" parent="." instance=ExtResource("1_e0phc")]
-transform = Transform3D(-1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, 0, 2.8, 2)
+transform = Transform3D(-1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -0.575962, 2.8, 2)
 input_left = "move_left"
 input_right = "move_right"
 input_forward = "move_up"
@@ -152,11 +155,14 @@ shape = SubResource("BoxShape3D_4tva4")
 
 [node name="Objects" type="Node3D" parent="Build"]
 
+[node name="keypad" parent="Build/Objects" instance=ExtResource("3_x55sq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.51783, 3.79638, 2.36216)
+
 [node name="desk1" parent="Build/Objects" instance=ExtResource("4_t1nq0")]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.40175, 2.89554, 1.50174)
+transform = Transform3D(-3.49691e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.49691e-08, 0.9764, 2.89554, 1.91002)
 
 [node name="desk2" parent="Build/Objects" instance=ExtResource("4_t1nq0")]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.3884, 2.89554, -0.087858)
+transform = Transform3D(-0.0179125, 0, -0.799799, 0, 0.8, 0, 0.799799, 0, -0.0179125, -0.449033, 2.89554, -1.95491)
 
 [node name="blackboard2" parent="Build/Objects" instance=ExtResource("6_77b6e")]
 transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, 1.80059, 4.33319, -0.422786)
@@ -180,22 +186,19 @@ visible = false
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -1.57843, 4.26262, -2.34307)
 visible = false
 
-[node name="lever2" parent="Build/Objects" instance=ExtResource("7_n8qcn")]
-transform = Transform3D(-0.9, 0, -1.35896e-07, 0, 0.9, 0, 1.35896e-07, 0, -0.9, 1.55762, 4.03193, -2.26389)
-
 [node name="pc_group" type="Node3D" parent="Build/Objects"]
 
 [node name="pc" parent="Build/Objects/pc_group" instance=ExtResource("10_n8qcn")]
-transform = Transform3D(0.30472, 0, 4.99071, 0, 5, 0, -4.99071, 0, 0.30472, -1.48671, 2.53532, 1.42577)
+transform = Transform3D(-4.98029, 0, 0.443602, 0, 5, 0, -0.443602, 0, -4.98029, 1.35633, 2.53532, 1.94524)
 
 [node name="pc2" parent="Build/Objects/pc_group" instance=ExtResource("10_n8qcn")]
-transform = Transform3D(0.30472, 0, 4.99071, 0, 5, 0, -4.99071, 0, 0.30472, -1.48253, 2.53532, 1.78873)
+transform = Transform3D(-4.96706, 0, 0.573038, 0, 5, 0, -0.573038, 0, -4.96706, 0.819981, 2.53532, 1.84489)
 
 [node name="pc3" parent="Build/Objects/pc_group" instance=ExtResource("10_n8qcn")]
-transform = Transform3D(0.30472, 0, 4.99071, 0, 5, 0, -4.99071, 0, 0.30472, -1.43969, 2.53532, 0.281009)
+transform = Transform3D(4.98264, 0, -0.416389, 0, 5, 0, 0.416389, 0, 4.98264, -0.816659, 2.53532, -2.01445)
 
 [node name="pc4" parent="Build/Objects/pc_group" instance=ExtResource("10_n8qcn")]
-transform = Transform3D(0.30472, 0, 4.99071, 0, 5, 0, -4.99071, 0, 0.30472, -1.42622, 2.53532, -0.130452)
+transform = Transform3D(4.98264, 0, -0.416389, 0, 5, 0, 0.416389, 0, 4.98264, -0.405603, 2.53532, -1.99177)
 
 [node name="monitor" parent="Build/Objects" instance=ExtResource("11_axndq")]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.89975, 4.52372, -0.954992)
@@ -216,6 +219,17 @@ transform = Transform3D(0.15, 0, 0, 0, -6.55671e-09, -0.15, 0, 0.15, -6.55671e-0
 [node name="Sprite3D" type="Sprite3D" parent="Build/Objects/notes_HEX"]
 transform = Transform3D(0.7, 0, 0, 0, -3.0598e-08, 0.7, 0, -0.7, -3.0598e-08, 0, 0.107816, 0.130259)
 texture = ExtResource("12_438py")
+
+[node name="ondesk" type="Node3D" parent="Build/Objects"]
+
+[node name="document" parent="Build/Objects/ondesk" instance=ExtResource("13_j5lkk")]
+transform = Transform3D(0.0999989, 0, -0.000469492, 0, 0.1, 0, 0.000469492, 0, 0.0999989, 0.0385606, 3.28899, -1.82682)
+
+[node name="folders" parent="Build/Objects/ondesk" instance=ExtResource("14_uugd8")]
+transform = Transform3D(0.995126, 0, -0.0986077, 0, 1, 0, 0.0986077, 0, 0.995126, -1.09344, 3.26189, -2.19898)
+
+[node name="radio" parent="Build/Objects/ondesk" instance=ExtResource("15_qyg7m")]
+transform = Transform3D(-0.00968467, 0, 0.0114546, 0, 0.015, 0, -0.0114546, 0, -0.00968467, 0.558452, 3.39838, 1.90813)
 
 [node name="ceiling" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26649, 0)

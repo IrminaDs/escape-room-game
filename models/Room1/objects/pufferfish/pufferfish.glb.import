@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cie3c8b2dnam4"
-path="res://.godot/imported/pufferfish.glb-e99c6942eba93cb671cf11b33831d8ca.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/pufferfish/pufferfish.glb"
-dest_files=["res://.godot/imported/pufferfish.glb-e99c6942eba93cb671cf11b33831d8ca.scn"]
 
 [params]
 

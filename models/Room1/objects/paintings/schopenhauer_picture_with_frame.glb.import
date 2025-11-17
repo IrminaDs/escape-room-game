@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbn456rnxbbfb"
-path="res://.godot/imported/schopenhauer_picture_with_frame.glb-262c6907c465a54c7bcf9ea76198ee1c.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb"
-dest_files=["res://.godot/imported/schopenhauer_picture_with_frame.glb-262c6907c465a54c7bcf9ea76198ee1c.scn"]
 
 [params]
 

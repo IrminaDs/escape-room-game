@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://yyi0mlp8dpx7"
-path="res://.godot/imported/antique_desk.glb-7471816d49ca33f46aa749a30949c176.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/desk/antique_desk.glb"
-dest_files=["res://.godot/imported/antique_desk.glb-7471816d49ca33f46aa749a30949c176.scn"]
 
 [params]
 

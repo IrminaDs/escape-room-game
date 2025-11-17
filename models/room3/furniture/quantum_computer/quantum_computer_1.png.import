@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn8kqmdjsvpi4"
-path.s3tc="res://.godot/imported/quantum_computer_1.png-6ab56582cf2b3ba832a0e9f9b32a75dd.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "2fdd6851b32ae931637d4845c037b550"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/quantum_computer/quantum_computer_1.png"
-dest_files=["res://.godot/imported/quantum_computer_1.png-6ab56582cf2b3ba832a0e9f9b32a75dd.s3tc.ctex"]
 
 [params]
 

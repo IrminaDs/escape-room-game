@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bn40lta4ettai"
-path="res://.godot/imported/simple_fish_bowl.glb-a498bb60942efc6bcf7fecc866f7e925.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/pufferfish/simple_fish_bowl.glb"
-dest_files=["res://.godot/imported/simple_fish_bowl.glb-a498bb60942efc6bcf7fecc866f7e925.scn"]
 
 [params]
 

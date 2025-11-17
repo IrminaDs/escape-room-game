@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw8mfmmswdnnp"
-path="res://.godot/imported/CorrugatedSteel006A_PREVIEW.jpg-cd07f3e627ebbf303b7e1948c18b5a1c.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/corrugated_steel/CorrugatedSteel006A_PREVIEW.jpg"
-dest_files=["res://.godot/imported/CorrugatedSteel006A_PREVIEW.jpg-cd07f3e627ebbf303b7e1948c18b5a1c.ctex"]
 
 [params]
 

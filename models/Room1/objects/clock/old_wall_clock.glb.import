@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b8p2bdrgdu8ug"
-path="res://.godot/imported/old_wall_clock.glb-a132187793ed35561bbf01970f94b2f9.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/clock/old_wall_clock.glb"
-dest_files=["res://.godot/imported/old_wall_clock.glb-a132187793ed35561bbf01970f94b2f9.scn"]
 
 [params]
 

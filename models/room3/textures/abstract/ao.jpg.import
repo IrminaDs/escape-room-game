@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by5v3bln0hjfy"
-path.s3tc="res://.godot/imported/ao.jpg-039c7fc0274dee41f0e4fb4de8187b79.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/room3/textures/abstract/ao.jpg"
-dest_files=["res://.godot/imported/ao.jpg-039c7fc0274dee41f0e4fb4de8187b79.s3tc.ctex"]
 
 [params]
 

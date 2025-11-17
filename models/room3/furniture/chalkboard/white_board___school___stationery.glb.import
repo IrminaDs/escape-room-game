@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbk6n7202oky"
-path="res://.godot/imported/white_board___school___stationery.glb-df1348891e03c0d512cda7bc70d7f770.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/room3/furniture/chalkboard/white_board___school___stationery.glb"
-dest_files=["res://.godot/imported/white_board___school___stationery.glb-df1348891e03c0d512cda7bc70d7f770.scn"]
 
 [params]
 

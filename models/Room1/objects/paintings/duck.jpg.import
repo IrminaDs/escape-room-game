@@ -3,16 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://he57flk237dg"
-path.s3tc="res://.godot/imported/duck.jpg-d4ac8adffb0960725435b65181ab0bcf.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/paintings/duck.jpg"
-dest_files=["res://.godot/imported/duck.jpg-d4ac8adffb0960725435b65181ab0bcf.s3tc.ctex"]
 
 [params]
 

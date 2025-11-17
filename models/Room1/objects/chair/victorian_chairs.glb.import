@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bl325pbr1pvmi"
-path="res://.godot/imported/victorian_chairs.glb-0fdf643370981bb837424bf62711349b.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/chair/victorian_chairs.glb"
-dest_files=["res://.godot/imported/victorian_chairs.glb-0fdf643370981bb837424bf62711349b.scn"]
 
 [params]
 

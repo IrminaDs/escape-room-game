@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ble65f46v0tia"
-path="res://.godot/imported/gaius_julius_caesar.glb-28d73d2262c69fe3bbc3190b41a579a5.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/ceasar/gaius_julius_caesar.glb"
-dest_files=["res://.godot/imported/gaius_julius_caesar.glb-28d73d2262c69fe3bbc3190b41a579a5.scn"]
 
 [params]
 

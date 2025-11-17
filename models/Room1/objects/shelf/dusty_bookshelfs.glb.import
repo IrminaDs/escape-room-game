@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bw44sqbqe0vo7"
-path="res://.godot/imported/dusty_bookshelfs.glb-37a633be8fce3257db56fcd060b3dea0.scn"
+valid=false
 
 [deps]
 
 source_file="res://models/Room1/objects/shelf/dusty_bookshelfs.glb"
-dest_files=["res://.godot/imported/dusty_bookshelfs.glb-37a633be8fce3257db56fcd060b3dea0.scn"]
 
 [params]
 
