@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=11 format=3 uid="uid://6c76fe7kgxgd"]
+
+[ext_resource type="Shader" uid="uid://biq6x0188ii4v" path="res://models/room3/wall_sh.gdshader" id="1_jv0qq"]
+[ext_resource type="Texture2D" uid="uid://dc7hg06pf6k2d" path="res://models/room3/textures/beige_wall/beige_wall_001_ao_4k.jpg" id="2_2lyrv"]
+[ext_resource type="Texture2D" uid="uid://ipbh4mp5fbvv" path="res://models/room3/textures/abstract/ao.jpg" id="3_8thld"]
+[ext_resource type="Texture2D" uid="uid://cc4dccidbmgn2" path="res://models/room3/textures/abstract/diffuse.jpg" id="4_gfwt6"]
+[ext_resource type="Texture2D" uid="uid://b6gv6bhqq2yho" path="res://models/room3/textures/beige_wall/beige_wall_001_disp_4k.jpg" id="5_ejs65"]
+[ext_resource type="Texture2D" uid="uid://cktekh5uuu1rp" path="res://models/room3/textures/abstract/displacement.jpg" id="6_57ejv"]
+[ext_resource type="Texture2D" uid="uid://bvj0vvivhef7o" path="res://models/room3/main_wall.png" id="7_y4bbt"]
+[ext_resource type="Texture2D" uid="uid://bp6u5omja11o2" path="res://models/room3/textures/beige_wall/beige_wall_001_nor_dx_4k.jpg" id="8_3rfjc"]
+[ext_resource type="Texture2D" uid="uid://cpgrrvjg7ie4o" path="res://models/room3/textures/abstract/normal.jpg" id="9_tmi7e"]
+[ext_resource type="Texture2D" uid="uid://crid8w4r4i7hf" path="res://models/room3/textures/abstract/specular.jpg" id="10_fwyod"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_jv0qq")
+shader_parameter/mask_tex = ExtResource("7_y4bbt")
+shader_parameter/flip_mask_y = false
+shader_parameter/flip_mask_z = true
+shader_parameter/albedo_a = ExtResource("2_2lyrv")
+shader_parameter/normal_a = ExtResource("8_3rfjc")
+shader_parameter/displacement_a = ExtResource("5_ejs65")
+shader_parameter/diffuse_a = ExtResource("2_2lyrv")
+shader_parameter/albedo_b = ExtResource("3_8thld")
+shader_parameter/normal_b = ExtResource("9_tmi7e")
+shader_parameter/specular_b = ExtResource("10_fwyod")
+shader_parameter/displacement_b = ExtResource("6_57ejv")
+shader_parameter/diffuse_b = ExtResource("4_gfwt6")
+shader_parameter/displacement_scale = 0.1
+shader_parameter/uv_scale = Vector2(1, 1)

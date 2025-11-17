@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkdev530tkmb0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fltlm"]
+albedo_color = Color(0.136826, 0.136826, 0.136826, 1)
+metallic_specular = 0.35
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6vku"]
+albedo_color = Color(0.60933, 0.60933, 0.60933, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tgh7f"]
+albedo_color = Color(1, 1, 0.898039, 1)
+emission_enabled = true
+emission = Color(0.838897, 0.838897, 0.838897, 1)
+emission_energy_multiplier = 16.0
+
+[node name="Reflector" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14922, 0.112713, -0.00409776)
+size = Vector3(0.388591, 0.250659, 0.080307)
+material = SubResource("StandardMaterial3D_fltlm")
+
+[node name="CSGMesh3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D"]
+transform = Transform3D(0.424005, 0, 0, 0, 0.229893, 0, 0, 0, 0.0163678, 0.00414553, 0.00259862, 0.0328657)
+operation = 2
+size = Vector3(0.737261, 0.734726, 1.3335)
+material = SubResource("StandardMaterial3D_d6vku")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1.033, 0, 0, 0, 1, -0.147233, 0.111048, -0.05896)
+size = Vector3(0.318675, 0.151997, 0.0441895)
+material = SubResource("StandardMaterial3D_fltlm")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.999987, 0.000872279, -0.00502856, 0.000894295, 0.99999, -0.00437763, 0.00502469, -0.00438207, -0.999978, -0.15981, 0.117896, 0.0254347)
+light_energy = 7.426
+light_specular = 4.936
+spot_range = 5.88731
+spot_angle = 10.8809
+
+[node name="CSGMesh3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.424005, 0, 0, 0, 0.229893, 0, 0, 0, 0.0163678, -0.150208, 0.115312, 0.0216266)
+operation = 1
+size = Vector3(0.713047, 0.734726, 0.350403)
+material = SubResource("StandardMaterial3D_tgh7f")
