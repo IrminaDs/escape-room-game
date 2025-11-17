@@ -1,9 +1,12 @@
-[gd_scene load_steps=114 format=4 uid="uid://c0pbd1tsa1ec1"]
+[gd_scene load_steps=115 format=4 uid="uid://c0pbd1tsa1ec1"]
 
 [ext_resource type="Texture2D" uid="uid://7qf5tvg8h4uk" path="res://models/room3/furniture/extra/switchboard_0.png" id="1_tilks"]
 [ext_resource type="Texture2D" uid="uid://ko4bif2tr3kl" path="res://models/room3/furniture/extra/switchboard_1.png" id="2_3rhff"]
 [ext_resource type="Texture2D" uid="uid://irms2yl4xy4f" path="res://models/room3/furniture/extra/switchboard_2.png" id="3_3qtd6"]
 [ext_resource type="Texture2D" uid="uid://ccavdb8qnd3iw" path="res://models/room3/furniture/extra/switchboard_3.png" id="4_1cqwa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tilks"]
+size = Vector3(1.27089, 2.01794, 1.00903)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13m0j"]
 resource_name = "Switchboard"
@@ -1947,8 +1950,12 @@ _data = {
 [node name="Switchboard" type="Node3D"]
 transform = Transform3D(0.345338, 0, 0, 0, 0.345338, 0, 0, 0, 0.345338, 0, 0, 0)
 
-[node name="Sketchfab_model" type="Node3D" parent="."]
+[node name="Sketchfab_model" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model"]
+transform = Transform3D(1, 0, 0, 0, 2.22045e-16, -0.657584, 0, 1, 1.46013e-16, 0.0105362, -0.025704, 0.99408)
+shape = SubResource("BoxShape3D_tilks")
 
 [node name="root" type="Node3D" parent="Sketchfab_model"]
 
@@ -2314,7 +2321,7 @@ mesh = SubResource("ArrayMesh_lpnh1")
 skeleton = NodePath("")
 
 [node name="LP_switchboarrd_055_52" type="Node3D" parent="Sketchfab_model/root/GLTF_SceneRootNode"]
-transform = Transform3D(1, 0, 0, 0, -1, 3.89414e-07, 0, -3.89414e-07, -1, 0.085853, 0.885154, 0.39112)
+transform = Transform3D(0.998782, 0, 0, 0, -0.998782, 3.8894e-07, 0, -3.8894e-07, -0.998782, 0.085853, 0.885154, 0.39112)
 
 [node name="Object_108" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/LP_switchboarrd_055_52"]
 mesh = SubResource("ArrayMesh_0y22t")

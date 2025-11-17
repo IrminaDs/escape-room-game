@@ -1,46 +1,85 @@
-[gd_scene load_steps=5 format=3 uid="uid://bj871xi444yul"]
+[gd_scene load_steps=7 format=3 uid="uid://bj871xi444yul"]
 
-[ext_resource type="Material" uid="uid://bheyi72wht7f8" path="res://models/room3/textures/main_floor.tres" id="1_do44e"]
+[ext_resource type="Material" uid="uid://v18aypyxfqcl" path="res://models/room3/textures/pink_floor.tres" id="1_do44e"]
 [ext_resource type="Material" uid="uid://dnmupoky1j7ad" path="res://models/room3/textures/glass.tres" id="2_jianc"]
+[ext_resource type="Material" uid="uid://6c76fe7kgxgd" path="res://models/room3/textures/main_wall.tres" id="3_jianc"]
 [ext_resource type="Material" uid="uid://dqyfery3dtwtt" path="res://models/room3/textures/beige_wall.tres" id="3_my1t7"]
+[ext_resource type="Shader" uid="uid://biq6x0188ii4v" path="res://models/room3/wall_sh.gdshader" id="4_my1t7"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk48j"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghsje"]
+render_priority = 0
+shader = ExtResource("4_my1t7")
+shader_parameter/flip_mask_y = false
+shader_parameter/flip_mask_z = false
+shader_parameter/displacement_scale = 0.1
+shader_parameter/uv_scale = Vector2(1, 1)
 
-[node name="RoomSkeleton" type="CSGCombiner3D"]
+[node name="RoomSkeleton" type="Node3D"]
+
+[node name="CSGPolygon3D4" type="CSGPolygon3D" parent="."]
+transform = Transform3D(0.00131263, -3.85372e-06, -6, 0.00545415, 0.0999999, -0.000229359, 4.8, -0.000113573, 0.00164117, -3.01917, -0.684823, 4.64698)
+polygon = PackedVector2Array(-0.465243, 8.47648, -0.466, 7.89, -0.478, 7.89)
+depth = 1.04
+
+[node name="CSGPolygon3D5" type="CSGPolygon3D" parent="."]
+transform = Transform3D(4.8, -0.000174533, 0, 0.00837758, 0.0999998, 0, 0, 0, 6, -0.776207, -0.693408, 2.40364)
+polygon = PackedVector2Array(-0.465243, 8.47648, -0.466, 7.89, -0.452, 7.89)
+depth = 0.81
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
+transform = Transform3D(0.00131263, -3.85373e-06, -6, 0.00545415, 0.0999999, -0.000229359, 4.8, -0.000113627, 0.00164117, -3.00594, -0.694149, -0.119756)
+polygon = PackedVector2Array(-0.465243, 8.47648, -0.465793, 7.82465, -0.451508, 7.79937)
+depth = 1.15
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="."]
+transform = Transform3D(-6, -3.85388e-06, -0.00131236, -0.00022936, 0.0999999, -0.00545415, 0.00164095, -0.000113627, -4.8, 0.144455, -0.684494, -1.14685)
+polygon = PackedVector2Array(-0.46465, 8.47391, -0.46474, 7.91215, -0.453563, 7.93501)
+depth = 0.15
+
+[node name="CSGPolygon3D3" type="CSGPolygon3D" parent="."]
+transform = Transform3D(-6, -3.85388e-06, -0.00131236, -0.00022936, 0.0999999, -0.00545415, 0.00164095, -0.000113627, -4.8, 0.142239, -0.696531, 0.421914)
+polygon = PackedVector2Array(-0.46805, 8.46728, -0.466216, 7.93505, -0.455799, 7.94564)
+depth = 0.42
+
+[node name="BaseBoard" type="CSGCombiner3D" parent="."]
 use_collision = true
 
-[node name="Floor" type="CSGBox3D" parent="."]
-transform = Transform3D(6, -3.85373e-06, 0.00131289, 0.000229359, 0.0999999, 0.00545415, -0.00164138, -0.000113627, 4.8, 0, 0.05, 0)
-material = ExtResource("1_do44e")
-
-[node name="GlassWall" type="CSGBox3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 2.45, 0, 0, 0, 4.7, -2.95, 1.35321, -0.0110443)
-size = Vector3(1, 1.01715, 1.01276)
+[node name="GlassWall" type="CSGBox3D" parent="BaseBoard"]
+transform = Transform3D(0.1, 0, 0, 0, 2.45, 0, 0, 0, 4.7, -3.04935, 1.42926, -0.0109303)
+size = Vector3(1, 1.02912, 1.01271)
 material = ExtResource("2_jianc")
 
-[node name="MainDoorWall" type="CSGBox3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4.8, 3.05, 1.35, 0)
+[node name="MainDoorWall" type="CSGBox3D" parent="BaseBoard"]
+transform = Transform3D(0.1, 0, 0, 0, 2.7, 0, 0, 0, 4.8, 3.04, 1.338, 0)
+size = Vector3(1, 0.946075, 0.999902)
+material = ExtResource("3_jianc")
+
+[node name="MainDoorHole" type="CSGBox3D" parent="BaseBoard"]
+transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 0.9, 3.04, 1.1, 0)
+operation = 2
+size = Vector3(1, 1.00024, 1)
 material = ExtResource("3_my1t7")
 
-[node name="MainDoorHole" type="CSGBox3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 2, 0, 0, 0, 0.9, 3.05, 1.1, 0)
-operation = 2
+[node name="SecretDoorWall" type="CSGBox3D" parent="BaseBoard"]
+transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.05, 0.027523, 1.35, 2.425)
+size = Vector3(1.00917, 1, 1)
 material = ExtResource("3_my1t7")
 
-[node name="SecretDoorWall" type="CSGBox3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.05, 0, 1.35, 2.425)
-material = SubResource("StandardMaterial3D_sk48j")
-
-[node name="SecretDoorHole" type="CSGPolygon3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.445515, 0.269354, 2.45435)
+[node name="SecretDoorHole" type="CSGPolygon3D" parent="BaseBoard/SecretDoorWall"]
+transform = Transform3D(0.166667, 0, 0, 0, 0.4, 0, 0, 0, 20, -0.0788397, -0.432258, 0.586994)
 operation = 2
-polygon = PackedVector2Array(-0.252636, -0.0900751, 1.0591, -0.150088, 1.27944, 0.0996102, 1.28159, 1.4858, 1.11257, 1.77454, -0.422589, 1.78332, -0.559042, 1.48726, -0.526583, 0.110006)
+polygon = PackedVector2Array(-0.291987, -0.164639, 1.0591, -0.150088, 1.27944, 0.0996102, 1.28159, 1.4858, 1.11257, 1.77454, -0.422589, 1.78332, -0.559042, 1.48726, -0.526583, 0.110006)
 depth = 0.09
 
-[node name="Wall" type="CSGBox3D" parent="."]
+[node name="Wall" type="CSGBox3D" parent="BaseBoard"]
 transform = Transform3D(6, 0, 0, 0, 2.5, 0, 0, 0, 0.1, 0, 1.35, -2.45)
-material = ExtResource("3_my1t7")
+material = SubResource("ShaderMaterial_ghsje")
 
-[node name="Ceiling" type="CSGBox3D" parent="."]
+[node name="Ceiling" type="CSGBox3D" parent="BaseBoard"]
 transform = Transform3D(6, 0, 0, 0, 0.1, 0, 0, 0, 4.8, 0, 2.65, 0)
 material = ExtResource("3_my1t7")
+
+[node name="Floor" type="CSGBox3D" parent="BaseBoard"]
+transform = Transform3D(6, -3.85373e-06, 0.00131289, 0.000229359, 0.0999999, 0.00545415, -0.00164138, -0.000113627, 4.8, 0.102219, 0.0500039, -2.79633e-05)
+size = Vector3(1.03407, 1, 1)
+material = ExtResource("1_do44e")
