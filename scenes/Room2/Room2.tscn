@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=22 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_e0phc"]
 [ext_resource type="PackedScene" uid="uid://ysgjsosgmubf" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
@@ -13,10 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://3h1lnhm0o32o" path="res://models/Room2/objects/monitor2/monitor.glb" id="11_axndq"]
 [ext_resource type="Texture2D" uid="uid://c5gglprqvxrjq" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
 [ext_resource type="Texture2D" uid="uid://bcpejtk8vaaf3" path="res://models/Room2/objects/note/Hexadecimal-and-Binary-Number-System-Representation.jpg" id="12_438py"]
-[ext_resource type="PackedScene" uid="uid://cngr45cppwaqu" path="res://models/Room2/objects/keypad/cc0_-_keypad_door_lock.glb" id="13_j5lkk"]
-[ext_resource type="PackedScene" uid="uid://dlyodp41jvx6" path="res://models/Room2/objects/old_radio/old_radio.glb" id="14_uugd8"]
-[ext_resource type="PackedScene" uid="uid://buv2sqf8cvkce" path="res://models/Room2/objects/document/document_file_folder.glb" id="15_qyg7m"]
-[ext_resource type="PackedScene" uid="uid://cnu7dk7k5dp27" path="res://models/Room2/objects/folder/folder_-_3mb.glb" id="16_k4i2i"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -220,18 +216,6 @@ transform = Transform3D(0.15, 0, 0, 0, -6.55671e-09, -0.15, 0, 0.15, -6.55671e-0
 [node name="Sprite3D" type="Sprite3D" parent="Build/Objects/notes_HEX"]
 transform = Transform3D(0.7, 0, 0, 0, -3.0598e-08, 0.7, 0, -0.7, -3.0598e-08, 0, 0.107816, 0.130259)
 texture = ExtResource("12_438py")
-
-[node name="Sketchfab_Scene" parent="Build/Objects" instance=ExtResource("13_j5lkk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.27883, 3.87487, 2.29587)
-
-[node name="Sketchfab_Scene2" parent="Build/Objects" instance=ExtResource("14_uugd8")]
-transform = Transform3D(-0.00338344, 0, 0.00941023, 0, 0.01, 0, -0.00941023, 0, -0.00338344, -1.56206, 3.35912, 1.01587)
-
-[node name="Sketchfab_Scene3" parent="Build/Objects" instance=ExtResource("15_qyg7m")]
-transform = Transform3D(-4.37114e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.37114e-09, -1.3217, 3.27695, -0.520455)
-
-[node name="Sketchfab_Scene4" parent="Build/Objects" instance=ExtResource("16_k4i2i")]
-transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -1.51041, 3.31625, 0.225002)
 
 [node name="ceiling" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26649, 0)
