@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdftb4aytkh4d"
-valid=false
+path="res://.godot/imported/switchboard.glb-36878fe8014a404d8dbd6a8b2a08b041.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/extra/switchboard.glb"
+dest_files=["res://.godot/imported/switchboard.glb-36878fe8014a404d8dbd6a8b2a08b041.scn"]
 
 [params]
 

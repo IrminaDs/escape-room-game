@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctns7u8tshpvs"
-valid=false
+path.s3tc="res://.godot/imported/table_0.jpg-e91517ccb6be2a36959b7d58aa1b6342.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "295b01d06e4dbeb33a20021755aad299"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/table/table_0.jpg"
+dest_files=["res://.godot/imported/table_0.jpg-e91517ccb6be2a36959b7d58aa1b6342.s3tc.ctex"]
 
 [params]
 

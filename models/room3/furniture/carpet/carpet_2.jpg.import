@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw8bq820r7y8e"
-valid=false
+path.s3tc="res://.godot/imported/carpet_2.jpg-7747f5e0c2085817e0eb6c82df2c53dd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "c3c9187261917984d6f6e00469f50bf4"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/carpet/carpet_2.jpg"
+dest_files=["res://.godot/imported/carpet_2.jpg-7747f5e0c2085817e0eb6c82df2c53dd.s3tc.ctex"]
 
 [params]
 
