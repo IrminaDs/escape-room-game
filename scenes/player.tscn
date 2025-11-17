@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://c664tfpk5ohkb"]
+[gd_scene load_steps=9 format=3 uid="uid://c664tfpk5ohkb"]
 
+[ext_resource type="Script" uid="uid://d111e5dw1njvw" path="res://scripts/room1/controller.gd" id="1_smehm"]
 [ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_fjrip"]
 [ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="3_smehm"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_tuyoq"]
@@ -19,6 +20,7 @@ current = true
 [node name="LeftController" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 0)
 tracker = &"left_hand"
+script = ExtResource("1_smehm")
 
 [node name="LeftHand" parent="XROrigin3D/LeftController" instance=ExtResource("2_fjrip")]
 
@@ -28,10 +30,12 @@ tracker = &"left_hand"
 
 [node name="FunctionPointer" parent="XROrigin3D/LeftController" instance=ExtResource("4_fjrip")]
 visible = false
+collide_with_areas = true
 
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0)
 tracker = &"right_hand"
+script = ExtResource("1_smehm")
 
 [node name="RightHand" parent="XROrigin3D/RightController" instance=ExtResource("4_ur7pv")]
 
@@ -41,5 +45,6 @@ tracker = &"right_hand"
 
 [node name="FunctionPointer" parent="XROrigin3D/RightController" instance=ExtResource("4_fjrip")]
 visible = false
+collide_with_areas = true
 
 [node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("4_dqkch")]

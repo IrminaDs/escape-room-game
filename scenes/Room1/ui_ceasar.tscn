@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnxufynim25r"]
+
+[ext_resource type="Texture2D" uid="uid://dpdgvbog1rvkp" path="res://models/Room1/textures/books/ceasar.png" id="1_7sav8"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_7sav8")
