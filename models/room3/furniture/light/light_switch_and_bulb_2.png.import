@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmoy8adfx3ykl"
-valid=false
+path.s3tc="res://.godot/imported/light_switch_and_bulb_2.png-cfc2789c510a10e57d892751e2b9affb.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "4a55bd0a1120efb44c685a21a5c80c81"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/light/light_switch_and_bulb_2.png"
+dest_files=["res://.godot/imported/light_switch_and_bulb_2.png-cfc2789c510a10e57d892751e2b9affb.s3tc.ctex"]
 
 [params]
 

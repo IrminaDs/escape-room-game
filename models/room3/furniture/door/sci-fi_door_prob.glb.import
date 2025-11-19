@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b4wbgent22lob"
-valid=false
+path="res://.godot/imported/sci-fi_door_prob.glb-8d436848a2f290aa8e68614c7099c31f.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/door/sci-fi_door_prob.glb"
+dest_files=["res://.godot/imported/sci-fi_door_prob.glb-8d436848a2f290aa8e68614c7099c31f.scn"]
 
 [params]
 

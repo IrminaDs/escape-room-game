@@ -3,7 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6ta0fiiuii7d"
-valid=false
+path.s3tc="res://.godot/imported/ceiling_light_3.png-afef037b46fa445d75fd5193640cd581.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "6e28242245b5de90d4bfbca509077040"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://models/room3/furniture/light/ceiling_light_3.png"
+dest_files=["res://.godot/imported/ceiling_light_3.png-afef037b46fa445d75fd5193640cd581.s3tc.ctex"]
 
 [params]
 

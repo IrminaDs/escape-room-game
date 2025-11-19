@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://3jwrsx03g1yy"
-valid=false
+path="res://.godot/imported/ceiling_light.glb-311f8e1e7b5fedbaf94b7c36d8b6fc7d.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/light/ceiling_light.glb"
+dest_files=["res://.godot/imported/ceiling_light.glb-311f8e1e7b5fedbaf94b7c36d8b6fc7d.scn"]
 
 [params]
 

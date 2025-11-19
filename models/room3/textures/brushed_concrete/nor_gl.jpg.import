@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k5jquvovj5cu"
-valid=false
+path.s3tc="res://.godot/imported/nor_gl.jpg-28b7cc577d8e928f188e4fc2d1b7b110.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/textures/brushed_concrete/nor_gl.jpg"
+dest_files=["res://.godot/imported/nor_gl.jpg-28b7cc577d8e928f188e4fc2d1b7b110.s3tc.ctex"]
 
 [params]
 

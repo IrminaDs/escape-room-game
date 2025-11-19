@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnnmeutt1nvbr"
-valid=false
+path.s3tc="res://.godot/imported/beige_wall_001_rough_4k.jpg-3c6918eb21421f8a7d6b8e3aebc01d35.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/room3/textures/beige_wall/beige_wall_001_rough_4k.jpg"
+dest_files=["res://.godot/imported/beige_wall_001_rough_4k.jpg-3c6918eb21421f8a7d6b8e3aebc01d35.s3tc.ctex"]
 
 [params]
 

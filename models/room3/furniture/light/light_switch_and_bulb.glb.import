@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://na18f0bfmnal"
-valid=false
+path="res://.godot/imported/light_switch_and_bulb.glb-42fe1c419e693f92970e566414520ae0.scn"
 
 [deps]
 
 source_file="res://models/room3/furniture/light/light_switch_and_bulb.glb"
+dest_files=["res://.godot/imported/light_switch_and_bulb.glb-42fe1c419e693f92970e566414520ae0.scn"]
 
 [params]
 
