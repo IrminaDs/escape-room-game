@@ -3,11 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://udbcdbrx7liq"
-valid=false
+path.s3tc="res://.godot/imported/fine_grained_wood_col_1k.jpg-f6204f65d5a9e08c5d88652c1a76dac6.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg"
+dest_files=["res://.godot/imported/fine_grained_wood_col_1k.jpg-f6204f65d5a9e08c5d88652c1a76dac6.s3tc.ctex"]
 
 [params]
 

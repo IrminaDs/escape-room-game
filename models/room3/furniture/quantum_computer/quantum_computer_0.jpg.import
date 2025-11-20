@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmxeoobptvl28"
-path="res://.godot/imported/quantum_computer_0.jpg-eb8f8bbdc3b0992067236f2ec1af600f.ctex"
+path.s3tc="res://.godot/imported/quantum_computer_0.jpg-eb8f8bbdc3b0992067236f2ec1af600f.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]

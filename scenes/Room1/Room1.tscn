@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=38 format=3 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="Script" uid="uid://dbij2tl08ocgc" path="res://scripts/room_1.gd" id="1_quxoa"]
@@ -15,12 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://curyiydvedhpa" path="res://scenes/Room1/bookshelf2.tscn" id="11_vjalx"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
-[ext_resource type="PackedScene" uid="uid://dbn456rnxbbfb" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb" id="15_cee2x"]
 [ext_resource type="PackedScene" uid="uid://c17comrej3tl4" path="res://scenes/Room1/ceasar.tscn" id="15_yh7v7"]
-[ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
-[ext_resource type="Material" uid="uid://b55daf63o185" path="res://models/Room1/objects/paintings/fox.tres" id="17_e8ajp"]
-[ext_resource type="Material" uid="uid://36s7ogb62k1j" path="res://models/Room1/objects/paintings/hare.tres" id="18_e8ajp"]
-[ext_resource type="Material" uid="uid://cv6hu0xvk52oo" path="res://models/Room1/objects/paintings/deer.tres" id="18_el76y"]
 [ext_resource type="PackedScene" uid="uid://0tvnoii853oi" path="res://scenes/Room1/map.tscn" id="20_el76y"]
 [ext_resource type="PackedScene" uid="uid://c07v6wee104gp" path="res://scenes/Room1/wall_shelf.tscn" id="21_20w1x"]
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
@@ -539,29 +534,57 @@ transform = Transform3D(0.05, 0, 6.61744e-24, 0, 0.05, -4.17594e-24, 6.61744e-24
 mesh = SubResource("SphereMesh_55bmt")
 surface_material_override/0 = SubResource("StandardMaterial3D_vjalx")
 
-[node name="Frame1" parent="Objects" instance=ExtResource("15_cee2x")]
+[node name="Frame1" parent="Objects"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2, 1.75)
+script = null
 
-[node name="Object_7" parent="Objects/Frame1/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("16_4y5xy")
-
-[node name="Frame2" parent="Objects" instance=ExtResource("15_cee2x")]
+[node name="Frame2" parent="Objects"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 2.95, 2, -1.5)
+script = null
 
-[node name="Object_7" parent="Objects/Frame2/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("17_e8ajp")
-
-[node name="Frame3" parent="Objects" instance=ExtResource("15_cee2x")]
+[node name="Frame3" parent="Objects"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2, 1.25)
+script = null
 
-[node name="Object_7" parent="Objects/Frame3/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("18_el76y")
-
-[node name="Frame4" parent="Objects" instance=ExtResource("15_cee2x")]
+[node name="Frame4" parent="Objects"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, -2.95, 2, -1.75)
-
-[node name="Object_7" parent="Objects/Frame4/Sketchfab_model/root/GLTF_SceneRootNode/Scene_1/root_2/Cube_3/Cube_4" index="0"]
-surface_material_override/0 = ExtResource("18_e8ajp")
+script = null
 
 [node name="Map" parent="Objects" instance=ExtResource("20_el76y")]
 transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, -2.975, 2, -0.25)
@@ -579,8 +602,3 @@ transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819
 
 [node name="Player" parent="." instance=ExtResource("25_quxoa")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.25)
-
-[editable path="Objects/Frame1"]
-[editable path="Objects/Frame2"]
-[editable path="Objects/Frame3"]
-[editable path="Objects/Frame4"]

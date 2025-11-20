@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://db0pwqroo1gio"]
+
+[ext_resource type="PackedScene" uid="uid://dbfwtn8dueyir" path="res://models/Room2/objects/blackboard/realistic_blackboard.glb" id="1_lvmjt"]
+
+[node name="blackboard" instance=ExtResource("1_lvmjt")]

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbxuvxk4bieit"]
+
+[ext_resource type="PackedScene" uid="uid://b8ekrxmvcixdc" path="res://models/Room2/objects/lever/lever.tscn" id="1_8whwg"]
+
+[node name="lever" instance=ExtResource("1_8whwg")]
