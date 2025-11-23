@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://lr3gjisxvpdm"]
+[gd_scene load_steps=10 format=3 uid="uid://lr3gjisxvpdm"]
 
 [ext_resource type="Script" uid="uid://72wkrjngpxg2" path="res://scripts/room1/stand.gd" id="1_e0cxy"]
-[ext_resource type="PackedScene" uid="uid://bj0s046glicvw" path="res://models/Room1/objects/stand/statue_base_round1.glb" id="2_e0cxy"]
-[ext_resource type="Texture2D" uid="uid://li7nm111l26c" path="res://models/Room1/textures/RammedEarth018/RammedEarth018_DISP_2K_METALNESS.png" id="2_srfih"]
-[ext_resource type="Texture2D" uid="uid://cbiy6paliqxyy" path="res://models/Room1/textures/RammedEarth018/RammedEarth018_METALNESS_2K_METALNESS.png" id="3_e0cxy"]
-[ext_resource type="Texture2D" uid="uid://6yva5570uj67" path="res://models/Room1/textures/RammedEarth018/RammedEarth018_ROUGHNESS_2K_METALNESS.png" id="5_o2l3k"]
+[ext_resource type="PackedScene" uid="uid://bxp8utkh2otqj" path="res://models/Room1/objects/stand/statue_base_round1.glb" id="2_e0cxy"]
+[ext_resource type="Texture2D" uid="uid://ulsuq04l87m5" path="res://models/Room1/textures/RammedEarth018/RammedEarth018_DISP_2K_METALNESS.png" id="2_srfih"]
+[ext_resource type="Texture2D" uid="uid://cutfmm3yie3xs" path="res://models/Room1/textures/RammedEarth018/RammedEarth018_METALNESS_2K_METALNESS.png" id="3_e0cxy"]
+[ext_resource type="Texture2D" uid="uid://cubk7qn0ugtdg" path="res://models/Room1/textures/RammedEarth018/RammedEarth018_ROUGHNESS_2K_METALNESS.png" id="5_o2l3k"]
 [ext_resource type="PackedScene" uid="uid://ce7vysyvondf8" path="res://addons/godot-xr-tools/objects/snap_zone.tscn" id="6_e0cxy"]
+[ext_resource type="AudioStream" uid="uid://b41l3e7m8yb2h" path="res://models/Room1/sounds/113093__edgardedition__click3.wav" id="7_kfq2m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kfq2m"]
 albedo_texture = ExtResource("2_srfih")
@@ -31,5 +32,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_kfq2m")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.07, 0, 0, 0, -3.0598e-09, 0.07, 0, -0.07, -3.0598e-09, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_o2l3k")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_kfq2m")
 
 [editable path="Sketchfab_Scene"]

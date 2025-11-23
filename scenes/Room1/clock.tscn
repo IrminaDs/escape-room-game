@@ -1,9 +1,10 @@
-[gd_scene load_steps=20 format=4 uid="uid://cjf61g55qsv02"]
+[gd_scene load_steps=21 format=4 uid="uid://cjf61g55qsv02"]
 
-[ext_resource type="Texture2D" uid="uid://dc7qh8purkd7a" path="res://models/Room1/objects/clock/old_wall_clock_0.png" id="1_4acud"]
+[ext_resource type="Texture2D" uid="uid://byy0j5ubkjvxt" path="res://models/Room1/objects/clock/old_wall_clock_0.png" id="1_4acud"]
 [ext_resource type="Script" uid="uid://dfflbydwwgyud" path="res://scripts/room1/clock.gd" id="1_gk6gk"]
-[ext_resource type="Texture2D" uid="uid://dwb7wa7bpxqdo" path="res://models/Room1/objects/clock/old_wall_clock_1.png" id="2_gk6gk"]
-[ext_resource type="Texture2D" uid="uid://clusk383648hl" path="res://models/Room1/objects/clock/old_wall_clock_2.png" id="3_q22f8"]
+[ext_resource type="Texture2D" uid="uid://d0l03mrdggm0n" path="res://models/Room1/objects/clock/old_wall_clock_1.png" id="2_gk6gk"]
+[ext_resource type="Texture2D" uid="uid://bvcam21waio81" path="res://models/Room1/objects/clock/old_wall_clock_2.png" id="3_q22f8"]
+[ext_resource type="AudioStream" uid="uid://die20ls41xebo" path="res://models/Room1/sounds/384089__jay_you__antique-clock-1x-gong.ogg" id="5_q22f8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uivmj"]
 resource_name = "Wall_clock"
@@ -255,7 +256,6 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.29396e-23, -2.08323)
 
 [node name="wall_clock_arrow_minutes_Wall_clock_0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/wall_clock_fbx/Object_2/RootNode/wall_clock/wall_clock_arrow_minutes"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_xau4s")
 skeleton = NodePath("")
 
@@ -281,3 +281,9 @@ autoplay = "Take 001"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -0.025)
 shape = SubResource("BoxShape3D_4ukey")
+
+[node name="TickingAudio" type="AudioStreamPlayer3D" parent="."]
+volume_db = -20.0
+
+[node name="BellAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_q22f8")
