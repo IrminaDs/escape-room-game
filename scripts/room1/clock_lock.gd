@@ -1,4 +1,4 @@
-extends Node3D
+extends StaticBody3D
 
 
 @onready var lock_area: Node3D = $InteractionZone
