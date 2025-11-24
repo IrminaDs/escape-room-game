@@ -567,11 +567,11 @@ transform = Transform3D(0.595726, -0.642175, 0.482412, 0.765595, 0.63561, -0.099
 [node name="WallShelf" parent="Objects" instance=ExtResource("21_20w1x")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.125, 2, -2.8)
 
+[node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 1.4, 2.45, -2.65)
+
 [node name="Radio" parent="Objects" instance=ExtResource("24_5h5dv")]
 transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 2.2, 2.4, -2.75)
-
-[node name="Blowfish" parent="Objects" instance=ExtResource("26_55bmt")]
-transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 1.375, 2.4, -2.75)
 
 [node name="Deer" parent="Objects" instance=ExtResource("30_ryx7d")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.99, 2, 1.25)
@@ -626,7 +626,7 @@ transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
 [node name="Player" parent="." instance=ExtResource("31_4763k")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.25)
+transform = Transform3D(-1, 0, -1.49012e-07, 0, 1, 0, 1.49012e-07, 0, -1, 0, 0, -0.25)
 
 [editable path="Build/Walls/WallEast/WallTile5"]
 [editable path="Objects/Deer"]
