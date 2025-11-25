@@ -283,7 +283,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -0.025)
 shape = SubResource("BoxShape3D_4ukey")
 
 [node name="TickingAudio" type="AudioStreamPlayer3D" parent="."]
-volume_db = -20.0
+volume_db = -10.0
+unit_size = 1.0
 
 [node name="BellAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_q22f8")

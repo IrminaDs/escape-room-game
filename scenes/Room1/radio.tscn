@@ -1,11 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://chs60mukpdhpl"]
+[gd_scene load_steps=7 format=3 uid="uid://chs60mukpdhpl"]
 
 [ext_resource type="PackedScene" uid="uid://jdyvu12aid36" path="res://models/Room1/objects/radio/old_radio.glb" id="1_l0kew"]
 [ext_resource type="Script" uid="uid://ddc1b2f0o80wd" path="res://scripts/room1/radio.gd" id="1_nu4q8"]
 [ext_resource type="AudioStream" uid="uid://byvpu788l7kd2" path="res://models/Room1/sounds/173161__cubis2324__analogpop.wav" id="3_t6n3k"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_t6n3k"]
+size = Vector3(0.75, 0.75, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t6n3k"]
+size = Vector3(0.5, 0.3, 0.25)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1idn"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.0784314)
+emission_enabled = true
+emission = Color(0.77084, 0.770839, 0.770839, 1)
+
 [node name="Radio" type="Node3D"]
-script = ExtResource("1_nu4q8")
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_l0kew")]
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
@@ -14,10 +25,22 @@ transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.926407, -0.43519, 0.560999)
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
-volume_db = -10.0
+volume_db = -15.0
 autoplay = true
 
 [node name="SfxPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_t6n3k")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 1048576
+collision_mask = 0
+script = ExtResource("1_nu4q8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_t6n3k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_t6n3k")
+surface_material_override/0 = SubResource("StandardMaterial3D_u1idn")
 
 [editable path="Sketchfab_Scene"]

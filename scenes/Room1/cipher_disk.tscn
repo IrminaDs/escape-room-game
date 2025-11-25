@@ -1,12 +1,12 @@
 [gd_scene load_steps=27 format=3 uid="uid://cal0tlif24cjp"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_mejc7"]
-[ext_resource type="Texture2D" uid="uid://dpm5ioo52fxjm" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_BaseColor.jpg" id="2_s1gk3"]
-[ext_resource type="Texture2D" uid="uid://dydl72fhn1frr" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_AmbientOcclusion.png" id="3_wmloq"]
-[ext_resource type="Texture2D" uid="uid://b6vif6j34taqc" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Metallic.png" id="4_3850b"]
-[ext_resource type="Texture2D" uid="uid://dffyvn3rgs78d" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Normal.png" id="5_vyowg"]
-[ext_resource type="Texture2D" uid="uid://divim3a85enl1" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_shl1r"]
-[ext_resource type="Texture2D" uid="uid://chorehuhvbh0x" path="res://models/Room1/textures/boards/messages-wheel.png" id="7_2cq3l"]
+[ext_resource type="Texture2D" uid="uid://bf8sotlu0app4" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_BaseColor.jpg" id="2_s1gk3"]
+[ext_resource type="Texture2D" uid="uid://dwjwntkevfykb" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_AmbientOcclusion.png" id="3_wmloq"]
+[ext_resource type="Texture2D" uid="uid://cylp6ilgpvkxe" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Metallic.png" id="4_3850b"]
+[ext_resource type="Texture2D" uid="uid://bce3hgbp5o7fg" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Normal.png" id="5_vyowg"]
+[ext_resource type="Texture2D" uid="uid://cxwc16w4vfu3n" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_shl1r"]
+[ext_resource type="Texture2D" uid="uid://c4xhlf230dtjb" path="res://models/Room1/textures/boards/messages-wheel.png" id="7_2cq3l"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="8_s1gk3"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="9_2cq3l"]
 [ext_resource type="Animation" uid="uid://db62hs5s4n2b3" path="res://addons/godot-xr-tools/hands/animations/left/Grip 4.res" id="10_rsjvq"]
@@ -14,8 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="12_totro"]
 [ext_resource type="Animation" uid="uid://d1xnpyc08njjx" path="res://addons/godot-xr-tools/hands/animations/right/Grip 4.res" id="13_hthnu"]
 [ext_resource type="Script" uid="uid://dtnexmpf2k4wx" path="res://scripts/room1/disk_controller.gd" id="14_rsjvq"]
-[ext_resource type="FontFile" uid="uid://coi16x6xd4kw5" path="res://models/Room1/fonts/Castellar Regular/Castellar Regular.ttf" id="15_2m83n"]
-[ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/enable_grab.gd" id="16_totro"]
+[ext_resource type="FontFile" uid="uid://tgceaqse2vp2" path="res://models/Room1/fonts/Castellar Regular/Castellar Regular.ttf" id="15_2m83n"]
+[ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/enable_grab_chest.gd" id="16_totro"]
+
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_mejc7"]
 height = 0.05

@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=4 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=55 format=4 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
@@ -113,6 +113,12 @@ albedo_texture = ExtResource("24_quxoa")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjalx"]
 albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
 metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_3mj44"]
+size = Vector3(0.25, 0.4, 0.01)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3mj44"]
+size = Vector3(0.25, 0.4, 0.01)
 
 [node name="Room1" type="Node3D"]
 
@@ -622,6 +628,20 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 
 [node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
+
+[node name="Node3D" type="RigidBody3D" parent="Objects"]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2, 0.65, -2.2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/Node3D"]
+mesh = SubResource("BoxMesh_3mj44")
+
+[node name="PinJoint3D" type="PinJoint3D" parent="Objects/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+node_a = NodePath("..")
+node_b = NodePath("../../Chest")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Node3D"]
+shape = SubResource("BoxShape3D_3mj44")
 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
