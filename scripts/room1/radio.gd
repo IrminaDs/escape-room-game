@@ -12,6 +12,9 @@ var left_pointer: XRToolsFunctionPointer
 var right_pointer: XRToolsFunctionPointer
 
 func _ready():
+	if Engine.is_editor_hint():
+		return
+	
 	left_pointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/LeftController/FunctionPointer")
 	right_pointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/RightController/FunctionPointer")
 	

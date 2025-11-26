@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=54 format=4 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
 [ext_resource type="PackedScene" uid="uid://chs60mukpdhpl" path="res://scenes/Room1/radio.tscn" id="24_5h5dv"]
 [ext_resource type="Texture2D" uid="uid://2h271ch8iw2r" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
+[ext_resource type="PackedScene" uid="uid://sgmtfe8i4c17" path="res://scenes/Room1/chest_message.tscn" id="25_y0e56"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 [ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="29_dprwg"]
 [ext_resource type="PackedScene" uid="uid://bdvcwpeafwx8r" path="res://scenes/Room1/ceasar.tscn" id="30_4763k"]
@@ -113,12 +114,6 @@ albedo_texture = ExtResource("24_quxoa")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjalx"]
 albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
 metallic = 1.0
-
-[sub_resource type="BoxMesh" id="BoxMesh_3mj44"]
-size = Vector3(0.25, 0.4, 0.01)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_3mj44"]
-size = Vector3(0.25, 0.4, 0.01)
 
 [node name="Room1" type="Node3D"]
 
@@ -564,6 +559,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 2, -3)
 [node name="Chest" parent="Objects" instance=ExtResource("13_5da8r")]
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 1.95, 0.25, -1.9)
 
+[node name="ChestMessage" parent="Objects" instance=ExtResource("25_y0e56")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2.13, 0.75, -2.13)
+
+[node name="PinJoint3D" parent="Objects/ChestMessage" index="2"]
+node_a = NodePath("..")
+node_b = NodePath("../../Chest")
+
 [node name="Ceasar" parent="Objects" instance=ExtResource("30_4763k")]
 transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
 
@@ -629,26 +631,13 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 [node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
 transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
 
-[node name="Node3D" type="RigidBody3D" parent="Objects"]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2, 0.65, -2.2)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Objects/Node3D"]
-mesh = SubResource("BoxMesh_3mj44")
-
-[node name="PinJoint3D" type="PinJoint3D" parent="Objects/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
-node_a = NodePath("..")
-node_b = NodePath("../../Chest")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/Node3D"]
-shape = SubResource("BoxShape3D_3mj44")
-
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
 [node name="Player" parent="." instance=ExtResource("31_4763k")]
 transform = Transform3D(-1, 0, -1.49012e-07, 0, 1, 0, 1.49012e-07, 0, -1, 0, 0, -0.25)
 
 [editable path="Build/Walls/WallEast/WallTile5"]
+[editable path="Objects/ChestMessage"]
 [editable path="Objects/Deer"]
 [editable path="Objects/Deer/Sketchfab_Scene"]
 [editable path="Objects/Hare"]

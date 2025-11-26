@@ -1,0 +1,70 @@
+[gd_scene load_steps=18 format=3 uid="uid://sgmtfe8i4c17"]
+
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_jca4u"]
+[ext_resource type="Texture2D" uid="uid://d12klmm3pe64u" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="2_5wpx4"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="2_skosb"]
+[ext_resource type="Texture2D" uid="uid://b0xt4iw38w8ua" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_nor_gl_1k.jpg" id="3_i1thn"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="3_p6byh"]
+[ext_resource type="Texture2D" uid="uid://dywyly4ubeheo" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_rough_1k.jpg" id="4_1a6nb"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="4_fp1fr"]
+[ext_resource type="Script" uid="uid://ben4v8lyfep7" path="res://scripts/room1/message_logic.gd" id="5_p6byh"]
+[ext_resource type="Animation" uid="uid://c8qmcuyaltdnw" path="res://addons/godot-xr-tools/hands/animations/left/PingPong.res" id="7_i08am"]
+[ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="8_62t3e"]
+[ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/enable_grab_chest.gd" id="9_i1thn"]
+[ext_resource type="Animation" uid="uid://c8hn123uon74u" path="res://addons/godot-xr-tools/hands/animations/right/PingPong.res" id="10_62t3e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_muwet"]
+size = Vector3(0.25, 0.2, 0.01)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aovu0"]
+albedo_color = Color(0.505344, 0.505344, 0.505344, 1)
+albedo_texture = ExtResource("2_5wpx4")
+roughness_texture = ExtResource("4_1a6nb")
+normal_enabled = true
+normal_texture = ExtResource("3_i1thn")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ufpjj"]
+material = SubResource("StandardMaterial3D_aovu0")
+size = Vector3(0.25, 0.2, 0.01)
+
+[sub_resource type="Resource" id="Resource_moyp1"]
+script = ExtResource("8_62t3e")
+open_pose = ExtResource("7_i08am")
+closed_pose = ExtResource("7_i08am")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[sub_resource type="Resource" id="Resource_jocjj"]
+script = ExtResource("8_62t3e")
+open_pose = ExtResource("10_62t3e")
+closed_pose = ExtResource("10_62t3e")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[node name="ChestMessage" instance=ExtResource("1_jca4u")]
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+
+[node name="CollisionShape3D" parent="." index="0"]
+shape = SubResource("BoxShape3D_muwet")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1"]
+mesh = SubResource("BoxMesh_ufpjj")
+
+[node name="PinJoint3D" type="PinJoint3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="HighlightRing" parent="." index="3" instance=ExtResource("2_skosb")]
+
+[node name="GrabPointHandLeft" parent="." index="4" instance=ExtResource("3_p6byh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15, 0, -0.05)
+hand_pose = SubResource("Resource_moyp1")
+
+[node name="GrabPointHandRight" parent="." index="5" instance=ExtResource("4_fp1fr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0, -0.05)
+hand_pose = SubResource("Resource_jocjj")
+
+[node name="MessageLogic" type="Node" parent="." index="6"]
+script = ExtResource("5_p6byh")
+
+[node name="EnableGrab" type="Node" parent="." index="7"]
+script = ExtResource("9_i1thn")
