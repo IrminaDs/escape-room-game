@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cueoa5jv8bhll"]
+
+[ext_resource type="Texture2D" uid="uid://hbawynl8hx0x" path="res://models/Room1/textures/books/plotek.png" id="1_h41ru"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_h41ru")

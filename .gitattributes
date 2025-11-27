@@ -1,5 +1,8 @@
 # Normalize EOL for all files that Git considers text files.
-* text=auto eol=lf
+# * text=auto eol=lf
 # *.glb filter=lfs diff=lfs merge=lfs -text
 # *.jpg filter=lfs diff=lfs merge=lfs -text
 # *.png filter=lfs diff=lfs merge=lfs -text
+models/room3/furniture/quantum_computer/quantum_computer.glb filter=lfs diff=lfs merge=lfs -text
+scenes/room3/equipment/quantum_room/quantum_computer.tscn filter=lfs diff=lfs merge=lfs -text
+scenes/room3/Room3.tscn filter=lfs diff=lfs merge=lfs -text

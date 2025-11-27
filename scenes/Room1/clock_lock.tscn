@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=3 uid="uid://dti05nqqibg6x"]
+
+[ext_resource type="Script" uid="uid://dur8t4p868d85" path="res://scripts/room1/clock_lock.gd" id="1_ghd41"]
+[ext_resource type="Texture2D" uid="uid://dkmh10sgrkx8x" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg" id="1_qgwlb"]
+[ext_resource type="Texture2D" uid="uid://dd3lr75pm1gwo" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_nor_gl_1k.jpg" id="2_krdek"]
+[ext_resource type="Texture2D" uid="uid://d3wo21h60qgp6" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="3_jpi1g"]
+[ext_resource type="Texture2D" uid="uid://cfbn7wwh21kwp" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="4_jpi1g"]
+[ext_resource type="Texture2D" uid="uid://c3a3q632o50ip" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="5_a1ah3"]
+[ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="6_5ao3e"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_w3i1q"]
+[ext_resource type="PackedScene" uid="uid://dyxf8lc8vdg5v" path="res://scenes/Room1/ui_lock_clock.tscn" id="8_w3i1q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1ah3"]
+albedo_color = Color(0.632264, 0.440739, 0.0733184, 1)
+albedo_texture = ExtResource("1_qgwlb")
+roughness_texture = ExtResource("3_jpi1g")
+normal_enabled = true
+normal_texture = ExtResource("2_krdek")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ao3e"]
+resource_name = "material_0"
+albedo_color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+metallic = 1.0
+metallic_texture = ExtResource("4_jpi1g")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("4_jpi1g")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("5_a1ah3")
+ao_enabled = true
+ao_texture = ExtResource("4_jpi1g")
+uv1_scale = Vector3(0.4, 0.8, 0.8)
+uv1_offset = Vector3(0.3, 0.1, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpi1g"]
+metallic = 0.1
+emission_enabled = true
+emission = Color(0.707967, 0.707967, 0.707967, 1)
+ao_enabled = true
+ao_light_affect = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jpi1g"]
+size = Vector3(1, 1.5, 1)
+
+[node name="ClockLock" type="Node3D"]
+script = ExtResource("1_ghd41")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="Base" type="CSGBox3D" parent="CSGCombiner3D"]
+size = Vector3(0.275, 0.08, 0.025)
+material = SubResource("StandardMaterial3D_a1ah3")
+
+[node name="Hole1" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09, 0, 0.008)
+operation = 2
+size = Vector3(0.05, 0.05, 0.01)
+material = SubResource("StandardMaterial3D_5ao3e")
+
+[node name="Hole2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, 0, 0.008)
+operation = 2
+size = Vector3(0.05, 0.05, 0.01)
+material = SubResource("StandardMaterial3D_5ao3e")
+
+[node name="Hole3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03, 0, 0.008)
+operation = 2
+size = Vector3(0.05, 0.05, 0.01)
+material = SubResource("StandardMaterial3D_5ao3e")
+
+[node name="Hole4" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0.008)
+operation = 2
+size = Vector3(0.05, 0.05, 0.01)
+material = SubResource("StandardMaterial3D_5ao3e")
+
+[node name="Letter1" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09, 0, 0.01)
+size = Vector3(0.002, 0.025, 0.001)
+material = SubResource("StandardMaterial3D_jpi1g")
+
+[node name="Letter2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03, 0, 0.01)
+size = Vector3(0.002, 0.025, 0.001)
+material = SubResource("StandardMaterial3D_jpi1g")
+
+[node name="Letter3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03, 0, 0.01)
+size = Vector3(0.002, 0.025, 0.001)
+material = SubResource("StandardMaterial3D_jpi1g")
+
+[node name="Letter4" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09, 0, 0.01)
+size = Vector3(0.002, 0.025, 0.001)
+material = SubResource("StandardMaterial3D_jpi1g")
+
+[node name="InteractionZone" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0, 0)
+collision_mask = 524288
+script = ExtResource("6_5ao3e")
+original_position = Vector3(0.1, 0, 0.1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0.5)
+shape = SubResource("BoxShape3D_jpi1g")
+
+[node name="Viewport2Din3D" parent="." instance=ExtResource("7_w3i1q")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0.1, 0, 0.1)
+screen_size = Vector2(1, 0.7)
+scene = ExtResource("8_w3i1q")
+viewport_size = Vector2(640, 448)
+scene_properties_keys = PackedStringArray("ui_lock_4.gd", "correct_code", "color", "signal_to_emit")
+correct_code = "BBBB"
+color = Color(0.8, 0.6, 0, 1)
+signal_to_emit = "clock_lock"
