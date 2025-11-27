@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6cfn3axrgnig"]
+
+[ext_resource type="Script" uid="uid://bj3cntuoyn7ep" path="res://scripts/room1/ui_letter.gd" id="1_ykto7"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_ykto7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

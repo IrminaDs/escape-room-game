@@ -1,10 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://diqbe0b8v51us"]
+[gd_scene load_steps=17 format=3 uid="uid://diqbe0b8v51us"]
 
-[ext_resource type="PackedScene" uid="uid://yyi0mlp8dpx7" path="res://models/Room1/objects/desk/antique_desk.glb" id="1_fx2yj"]
-[ext_resource type="Texture2D" uid="uid://udbcdbrx7liq" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg" id="2_b1o43"]
-[ext_resource type="Texture2D" uid="uid://bca85483esd4k" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_nor_gl_1k.jpg" id="3_y2qhp"]
-[ext_resource type="Texture2D" uid="uid://b3hsdc6hgefih" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="4_o2c3b"]
-[ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/lock_desk.gd" id="5_y2qhp"]
+[ext_resource type="PackedScene" uid="uid://cfq2cpyaqr3r" path="res://models/Room1/objects/desk/antique_desk.glb" id="1_fx2yj"]
+[ext_resource type="Script" uid="uid://bpra12wkcv5ji" path="res://scripts/room1/desk.gd" id="1_ktqyj"]
+[ext_resource type="Texture2D" uid="uid://dkmh10sgrkx8x" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg" id="2_b1o43"]
+[ext_resource type="Texture2D" uid="uid://dd3lr75pm1gwo" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_nor_gl_1k.jpg" id="3_y2qhp"]
+[ext_resource type="Texture2D" uid="uid://d3wo21h60qgp6" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="4_o2c3b"]
+[ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="5_y2qhp"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_o2c3b"]
+[ext_resource type="PackedScene" uid="uid://x2mls23q4l21" path="res://scenes/Room1/ui_lock_desk.tscn" id="7_hht3v"]
 
 [sub_resource type="Animation" id="Animation_fx2yj"]
 resource_name = "Open"
@@ -53,15 +56,14 @@ albedo_color = Color(0.80236, 0.747615, 0.704193, 1)
 metallic = 0.8
 roughness = 0.5
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_b1o43"]
-size = Vector3(0.1, 0.1, 0.3)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_y2qhp"]
-size = Vector3(0.5, 0.25, 0.75)
+size = Vector3(0.5, 0.75, 0.75)
 
 [node name="Desk" type="Node3D"]
+script = ExtResource("1_ktqyj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_mask = 7
 
 [node name="Sketchfab_Scene" parent="StaticBody3D" instance=ExtResource("1_fx2yj")]
 
@@ -77,7 +79,7 @@ libraries = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
 shape = SubResource("BoxShape3D_0qsej")
 
-[node name="Lock" type="Area3D" parent="."]
+[node name="Lock" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.905, 0)
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="Lock"]
@@ -157,15 +159,21 @@ material = SubResource("StandardMaterial3D_y2qhp")
 operation = 2
 size = Vector3(0.01, 0.006, 0.005)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Lock"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04, 0, 0)
-shape = SubResource("BoxShape3D_b1o43")
-
-[node name="InteractionZone" type="Area3D" parent="."]
+[node name="InteractionZone" type="Area3D" parent="Lock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, -0.905, 0)
+collision_mask = 524288
 script = ExtResource("5_y2qhp")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.875, 0.75, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 0)
 shape = SubResource("BoxShape3D_y2qhp")
+
+[node name="Viewport2Din3D" parent="Lock" instance=ExtResource("6_o2c3b")]
+transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.5, -1, 0, -4.37114e-08, -0.1, 0.25, 0)
+screen_size = Vector2(0.55, 0.3)
+scene = ExtResource("7_hht3v")
+viewport_size = Vector2(768, 416)
+scene_properties_keys = PackedStringArray("ui_lock_desk.gd", "correct_code")
+correct_code = "BBBBBBB"
 
 [editable path="StaticBody3D/Sketchfab_Scene"]

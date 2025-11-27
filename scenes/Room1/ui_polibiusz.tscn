@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdiqk7c8wx6wc"]
+
+[ext_resource type="Texture2D" uid="uid://cmnhvoie6j4n7" path="res://models/Room1/textures/books/polibiusz.png" id="1_ofb6w"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 2841.0
+offset_bottom = 1947.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_ofb6w")

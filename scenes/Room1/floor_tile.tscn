@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cio73n8qirde5"]
 
-[ext_resource type="Texture2D" uid="uid://damyvpj24hom1" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_diff_1k.jpg" id="1_ame24"]
-[ext_resource type="Texture2D" uid="uid://bnf74dl8xkd6l" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_nor_gl_1k.jpg" id="2_txllk"]
-[ext_resource type="Texture2D" uid="uid://c5th8nr867g5g" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_arm_1k.jpg" id="3_334n2"]
+[ext_resource type="Texture2D" uid="uid://ynahmskxq7v7" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_diff_1k.jpg" id="1_ame24"]
+[ext_resource type="Texture2D" uid="uid://ba5e2dclativ1" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_nor_gl_1k.jpg" id="2_txllk"]
+[ext_resource type="Texture2D" uid="uid://cfh6o28njchry" path="res://models/Room1/textures/wood_floor_deck_1k.gltf/textures/wood_floor_deck_arm_1k.jpg" id="3_334n2"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_olh77"]
 
