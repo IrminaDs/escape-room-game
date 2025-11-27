@@ -28,7 +28,7 @@ func _on_picked_up(pickable: XRToolsPickable):
 		var static_copy := StaticBody3D.new()
 		static_copy.name = pickable.name
 		static_copy.transform = pickable.global_transform
-		static_copy.transform.origin.y += 0.25
+		static_copy.transform.origin.y += 0.5
 		
 		for child in pickable.get_children():
 			if child.name == "CollisionShape3D" or child.name == "Sketchfab_Scene":

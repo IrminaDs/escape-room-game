@@ -56,6 +56,8 @@ func toggle_picture():
 		target = start_transform
 	else:
 		target = target_transform
+		if self.name == 'Duck':
+			Room1GameEvents.emit_signal("picture_open")
 
 	tween.tween_property(self, "global_transform", target, animation_time)
 	is_open = not is_open

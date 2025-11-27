@@ -566,6 +566,9 @@ transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2.13, 0.75
 node_a = NodePath("..")
 node_b = NodePath("../../Chest")
 
+[node name="Text" parent="Objects/ChestMessage" index="8"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.006)
+
 [node name="Ceasar" parent="Objects" instance=ExtResource("30_4763k")]
 transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
 
