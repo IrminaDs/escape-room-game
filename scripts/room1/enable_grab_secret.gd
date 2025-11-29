@@ -2,6 +2,7 @@ extends Node
 
 
 @onready var grab := get_parent()
+@onready var highlight = get_parent().get_node("HighlightRing")
 
 var chest: bool = false
 

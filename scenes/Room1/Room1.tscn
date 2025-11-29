@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=4 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=55 format=4 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
@@ -42,6 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="31_ew1ad"]
 [ext_resource type="PackedScene" uid="uid://c3wk8plljjbr2" path="res://scenes/Room1/album.tscn" id="31_qqr2f"]
 [ext_resource type="PackedScene" uid="uid://lr3gjisxvpdm" path="res://scenes/Room1/stand.tscn" id="34_ryx7d"]
+[ext_resource type="PackedScene" uid="uid://cs6u3b2406b11" path="res://scenes/Room1/scroll.tscn" id="37_5e5h7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -566,9 +567,6 @@ transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2.13, 0.75
 node_a = NodePath("..")
 node_b = NodePath("../../Chest")
 
-[node name="Text" parent="Objects/ChestMessage" index="8"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.006)
-
 [node name="Ceasar" parent="Objects" instance=ExtResource("30_4763k")]
 transform = Transform3D(0.86605, -0.433032, -0.249882, 0.499958, 0.749655, 0.433659, -0.000463218, -0.500501, 0.865736, 1.725, 0.5, -2.05)
 
@@ -615,6 +613,9 @@ surface_material_override/0 = ExtResource("16_4y5xy")
 [node name="Album" parent="Objects" instance=ExtResource("31_qqr2f")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3.15, 2, 1.61)
 
+[node name="Scroll" parent="Objects" instance=ExtResource("37_5e5h7")]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 3.05, 2, 1.75)
+
 [node name="TabV" type="MeshInstance3D" parent="Objects"]
 transform = Transform3D(-3.27835e-08, -0.75, 3.27835e-08, 0, -3.27835e-08, -0.75, 0.75, -3.27835e-08, 1.43301e-15, 2.999, 2, 0.125)
 mesh = SubResource("PlaneMesh_vjalx")
@@ -637,7 +638,7 @@ transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 
 [node name="Player" parent="." instance=ExtResource("31_4763k")]
-transform = Transform3D(-1, 0, -1.49012e-07, 0, 1, 0, 1.49012e-07, 0, -1, 0, 0, -0.25)
+transform = Transform3D(-1, 0, -1.19209e-07, 0, 1, 0, 1.19209e-07, 0, -1, 0, 0, -0.25)
 
 [editable path="Build/Walls/WallEast/WallTile5"]
 [editable path="Objects/ChestMessage"]
