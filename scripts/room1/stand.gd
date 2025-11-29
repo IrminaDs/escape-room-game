@@ -4,6 +4,7 @@ extends StaticBody3D
 @export var item_name: String = "Ceasar"
 @onready var snap_zone: XRToolsSnapZone = $"SnapZone"
 @onready var collision: CollisionShape3D = $"CollisionShape3D"
+@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 
 func _ready():
 	if snap_zone.has_signal("has_picked_up"):
@@ -18,6 +19,7 @@ func _on_book_opened():
 	self.visible = true
 	snap_zone.enabled = true
 	collision.disabled = false
+	audio.play()
 	
 func _on_picked_up(pickable: XRToolsPickable):
 	if pickable.name == item_name:
@@ -26,7 +28,7 @@ func _on_picked_up(pickable: XRToolsPickable):
 		var static_copy := StaticBody3D.new()
 		static_copy.name = pickable.name
 		static_copy.transform = pickable.global_transform
-		static_copy.transform.origin.y += 0.25
+		static_copy.transform.origin.y += 0.5
 		
 		for child in pickable.get_children():
 			if child.name == "CollisionShape3D" or child.name == "Sketchfab_Scene":

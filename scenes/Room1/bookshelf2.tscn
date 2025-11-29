@@ -1,18 +1,18 @@
 [gd_scene load_steps=115 format=4 uid="uid://curyiydvedhpa"]
 
-[ext_resource type="Texture2D" uid="uid://bw0tvt58hooy1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
-[ext_resource type="Texture2D" uid="uid://bd63e2sm57r72" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
-[ext_resource type="Texture2D" uid="uid://bewl5dwkforwd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_klhjw"]
+[ext_resource type="Texture2D" uid="uid://b0uwtt3rmwhpt" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
+[ext_resource type="Texture2D" uid="uid://80ulpjbx2f0e" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
+[ext_resource type="Texture2D" uid="uid://nb8dof1q57kp" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_klhjw"]
 [ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="4_b7qjb"]
-[ext_resource type="Texture2D" uid="uid://cpwju0fv0w4ly" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_m3ybm"]
+[ext_resource type="Texture2D" uid="uid://dfxacjvcqtnx1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_m3ybm"]
 [ext_resource type="PackedScene" uid="uid://cnxufynim25r" path="res://scenes/Room1/ui_ceasar.tscn" id="5_jrfvl"]
 [ext_resource type="PackedScene" uid="uid://cueoa5jv8bhll" path="res://scenes/Room1/ui_plotek.tscn" id="5_kffnr"]
-[ext_resource type="Texture2D" uid="uid://bd1ng54nakvqm" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_ssm5c"]
-[ext_resource type="Texture2D" uid="uid://bitvqe5eppbpd" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_6kvop"]
-[ext_resource type="Texture2D" uid="uid://dsks2e6qgut0s" path="res://models/Room1/textures/books/purple.jpg" id="7_dxa2x"]
-[ext_resource type="Texture2D" uid="uid://br3prqhb0c5k8" path="res://models/Room1/textures/books/red.jpg" id="7_klhjw"]
-[ext_resource type="Texture2D" uid="uid://c4wvpr3ur8gxp" path="res://models/Room1/textures/books/yellow.jpg" id="9_m3ybm"]
-[ext_resource type="FontFile" uid="uid://bdbrac1xidmlj" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="10_4npbk"]
+[ext_resource type="Texture2D" uid="uid://d2w6wuwa81y8k" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_ssm5c"]
+[ext_resource type="Texture2D" uid="uid://bnovf5vbn71kk" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_6kvop"]
+[ext_resource type="Texture2D" uid="uid://b85kjpl3e71s1" path="res://models/Room1/textures/books/purple.jpg" id="7_dxa2x"]
+[ext_resource type="Texture2D" uid="uid://c7rfh5sihdbfm" path="res://models/Room1/textures/books/red.jpg" id="7_klhjw"]
+[ext_resource type="Texture2D" uid="uid://b7hah0a4bgx30" path="res://models/Room1/textures/books/yellow.jpg" id="9_m3ybm"]
+[ext_resource type="FontFile" uid="uid://ctaeyagdyucmm" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="10_4npbk"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="10_6kvop"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="10_ssm5c"]
 [ext_resource type="PackedScene" uid="uid://cffkhpsyw5x8g" path="res://scenes/Room1/ui_skytale.tscn" id="13_3t4xh"]
@@ -1882,5 +1882,6 @@ shape = SubResource("BoxShape3D_b7qjb")
 [node name="Viewport2Din3D" parent="." instance=ExtResource("10_ssm5c")]
 transform = Transform3D(0.258819, -0.25, 0.933013, -1.93572e-08, 0.965926, 0.258819, -0.965926, -0.0669873, 0.25, 0.5, 0.25, -0.25)
 screen_size = Vector2(0.6, 0.45)
+scene = ExtResource("5_kffnr")
 viewport_size = Vector2(2000, 1500)
 scene_properties_keys = PackedStringArray()
