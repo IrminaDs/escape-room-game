@@ -32,7 +32,7 @@ material = ExtResource("2_p3x4b")
 [node name="DoorHole" type="CSGPolygon3D" parent="DoorWall"]
 transform = Transform3D(0.166667, 0, 0, 0, 0.37037, 0, 0, 0, 20, -0.0742525, -0.400239, 0.625401)
 operation = 2
-polygon = PackedVector2Array(-0.251817, -0.168369, 1.04635, -0.172281, 1.1718, 0.215404, 1.18092, 1.46424, 1.04705, 1.76475, -0.273332, 1.76353, -0.43985, 1.36041, -0.449742, 0.141656)
+polygon = PackedVector2Array(-0.237081, -0.191632, 1.04304, -0.182067, 1.19178, 0.191315, 1.22248, 1.54517, 1.0117, 1.97314, -0.219366, 1.99648, -0.504456, 1.48463, -0.495698, 0.12355)
 depth = 0.09
 
 [node name="Floor" type="CSGBox3D" parent="."]
