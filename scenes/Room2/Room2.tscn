@@ -1,6 +1,5 @@
-[gd_scene load_steps=24 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=26 format=3 uid="uid://cff7h38fahrpi"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_e0phc"]
 [ext_resource type="PackedScene" uid="uid://ysgjsosgmubf" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
 [ext_resource type="PackedScene" uid="uid://l164ps20gx5q" path="res://scenes/Room2/keypad.tscn" id="3_x55sq"]
 [ext_resource type="PackedScene" uid="uid://dltb2uh4gdrsd" path="res://scenes/Room2/desk.tscn" id="4_j5lkk"]
@@ -13,8 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://c5gglprqvxrjq" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
 [ext_resource type="Texture2D" uid="uid://bcpejtk8vaaf3" path="res://models/Room2/objects/note/Hexadecimal-and-Binary-Number-System-Representation.jpg" id="12_438py"]
 [ext_resource type="PackedScene" uid="uid://buv2sqf8cvkce" path="res://models/Room2/objects/document/document_file_folder.glb" id="13_j5lkk"]
+[ext_resource type="PackedScene" uid="uid://bbxuvxk4bieit" path="res://scenes/Room2/lever.tscn" id="14_j5lkk"]
 [ext_resource type="PackedScene" uid="uid://c5tmrqo3pdohd" path="res://scenes/Room2/folders.tscn" id="14_k4i2i"]
 [ext_resource type="PackedScene" uid="uid://bw8qw7hsvbdmt" path="res://scenes/Room2/radio.tscn" id="14_uugd8"]
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="15_x55sq"]
+[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="16_j5lkk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -47,15 +49,8 @@ albedo_color = Color(0.278431, 0.164706, 0, 1)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p6krx")
 
-[node name="ProtoController" parent="." instance=ExtResource("1_e0phc")]
-transform = Transform3D(-1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -0.575962, 2.8, 2)
-input_left = "move_left"
-input_right = "move_right"
-input_forward = "move_up"
-input_back = "move_down"
-input_jump = "jump"
-
 [node name="Build" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.61382, 0)
 
 [node name="Walls" type="Node3D" parent="Build"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.27163, 0.5)
@@ -226,27 +221,42 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.978135, 3.25528, -2.15197)
 [node name="radio" parent="Build/Objects/ondesk" instance=ExtResource("14_uugd8")]
 transform = Transform3D(-0.0124861, 0, -0.00831243, 0, 0.015, 0, 0.00831243, 0, -0.0124861, 1.46226, 3.41941, 1.95172)
 
-[node name="ceiling" type="StaticBody3D" parent="."]
+[node name="cipher_text" type="Label3D" parent="Build/Objects"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.0810235, 4.45954, 2.38173)
+modulate = Color(1, 0.92, 0.92, 1)
+outline_modulate = Color(0, 0, 0, 0)
+text = "0001 1111 0101"
+
+[node name="lever" parent="Build/Objects" instance=ExtResource("14_j5lkk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22884, 3.68692, 2.28312)
+metadata/_edit_group_ = true
+
+[node name="ceiling" type="StaticBody3D" parent="Build"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26649, 0)
 visible = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ceiling"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Build/ceiling"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_fx4mq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="ceiling"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Build/ceiling"]
 transform = Transform3D(-3.99855, -0.0269272, 0, 0.107709, -0.999637, 0, 0, 0, 5, 0, 1, 0)
 mesh = SubResource("BoxMesh_fx4mq")
 surface_material_override/0 = SubResource("StandardMaterial3D_axndq")
 
-[node name="ground" type="StaticBody3D" parent="."]
+[node name="ground" type="StaticBody3D" parent="Build"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000343323, 0.0353171, -0.00355971)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ground"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Build/ground"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 shape = SubResource("BoxShape3D_fx4mq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Build/ground"]
 transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 5, 0, 2, 0)
 mesh = SubResource("BoxMesh_n8qcn")
 surface_material_override/0 = ExtResource("10_wapua")
+
+[node name="StartXR" parent="." instance=ExtResource("15_x55sq")]
+
+[node name="Player" parent="." instance=ExtResource("16_j5lkk")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.22542, -0.0485847, 0.698716)

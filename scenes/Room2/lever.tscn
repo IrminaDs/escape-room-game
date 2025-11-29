@@ -1,5 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbxuvxk4bieit"]
+[gd_scene load_steps=5 format=3 uid="uid://bbxuvxk4bieit"]
 
-[ext_resource type="PackedScene" uid="uid://b8ekrxmvcixdc" path="res://models/Room2/objects/lever/lever.tscn" id="1_8whwg"]
+[ext_resource type="PackedScene" uid="uid://1dfse7ecot00" path="res://models/Room2/objects/lever/rusty_wall_lever.glb" id="1_8whwg"]
+
+[sub_resource type="Animation" id="Animation_qk7ji"]
+resource_name = "pull_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lever_v2_Box_Handle_0:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-1.36211e-07, 0.990055, -7.35353e-08)]
+}
+
+[sub_resource type="Animation" id="Animation_e5csp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lever_v2_Box_Handle_0:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5y3p6"]
+_data = {
+&"RESET": SubResource("Animation_e5csp"),
+&"pull_up": SubResource("Animation_qk7ji")
+}
 
 [node name="lever" instance=ExtResource("1_8whwg")]
+
+[node name="Lever_v2_Box_Handle_0" parent="Sketchfab_model/Breaker Sketchfab_fbx/RootNode/Lever_v2_Box" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sketchfab_model/Breaker Sketchfab_fbx/RootNode" index="1"]
+root_node = NodePath("../Lever_v2_Box")
+libraries = {
+&"": SubResource("AnimationLibrary_5y3p6")
+}
