@@ -1,8 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcnjl4atqt0fq"]
+[gd_scene load_steps=8 format=4 uid="uid://dcnjl4atqt0fq"]
 
-[ext_resource type="Texture2D" uid="uid://fcbdj3q6nhmq" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_diff_1k.jpg" id="1_ah2mo"]
-[ext_resource type="Texture2D" uid="uid://dgrb76itngtqs" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_arm_1k.jpg" id="3_ipfx7"]
-[ext_resource type="Texture2D" uid="uid://c7njki1i7y6t" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_nor_gl_1k.jpg" id="4_rxk5g"]
+[ext_resource type="Texture2D" uid="uid://y5x3m6fmda53" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_diff_1k.jpg" id="1_ah2mo"]
+[ext_resource type="Texture2D" uid="uid://7vrcdnj8ew2c" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_arm_1k.jpg" id="3_ipfx7"]
+[ext_resource type="Texture2D" uid="uid://be2nqp0mdcso6" path="res://models/Room1/textures/wooden_garage_door_1k.gltf/textures/wooden_garage_door_nor_gl_1k.jpg" id="4_rxk5g"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6xjnk"]
+data = PackedVector3Array(-0.5, -0.125, 0.5, -0.5, -0.125, -0.5, -0.5, 0.125, -0.5, 0.5, -0.125, -0.5, -0.5, -0.125, -0.5, -0.5, -0.125, 0.5, -0.5, 0.125, -0.5, -0.5, -0.125, -0.5, 0.5, -0.125, -0.5, -0.5, 0.125, -0.5, -0.5, 0.125, 0.5, -0.5, -0.125, 0.5, -0.5, -0.125, 0.5, -0.5, 0.125, 0.5, 0.5, 0.125, 0.5, 0.5, 0.125, 0.5, -0.5, 0.125, 0.5, -0.5, 0.125, -0.5, -0.5, -0.125, 0.5, 0.5, -0.125, 0.5, 0.5, -0.125, -0.5, 0.5, 0.125, 0.5, 0.5, -0.125, 0.5, -0.5, -0.125, 0.5, 0.5, -0.125, -0.5, 0.5, -0.125, 0.5, 0.5, 0.125, 0.5, 0.5, -0.125, -0.5, 0.5, 0.125, -0.5, -0.5, 0.125, -0.5, -0.5, 0.125, -0.5, 0.5, 0.125, -0.5, 0.5, 0.125, 0.5, 0.5, 0.125, 0.5, 0.5, 0.125, -0.5, 0.5, -0.125, -0.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ah2mo"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.125, -0.5, 1, 0.25, 1),
+"attribute_data": PackedByteArray("AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/"),
+"format": 34359738391,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AAAAvwAAAL4AAAA/AAAAvwAAAL4AAAC/AAAAvwAAAD4AAAC/AAAAPwAAAL4AAAC/AAAAvwAAAL4AAAC/AAAAvwAAAL4AAAA/AAAAvwAAAD4AAAC/AAAAvwAAAL4AAAC/AAAAPwAAAL4AAAC/AAAAvwAAAD4AAAC/AAAAvwAAAD4AAAA/AAAAvwAAAL4AAAA/AAAAvwAAAL4AAAA/AAAAvwAAAD4AAAA/AAAAPwAAAD4AAAA/AAAAPwAAAD4AAAA/AAAAvwAAAD4AAAA/AAAAvwAAAD4AAAC/AAAAvwAAAL4AAAA/AAAAPwAAAL4AAAA/AAAAPwAAAL4AAAC/AAAAPwAAAD4AAAA/AAAAPwAAAL4AAAA/AAAAvwAAAL4AAAA/AAAAPwAAAL4AAAC/AAAAPwAAAL4AAAA/AAAAPwAAAD4AAAA/AAAAPwAAAL4AAAC/AAAAPwAAAD4AAAC/AAAAvwAAAD4AAAC/AAAAvwAAAD4AAAC/AAAAPwAAAD4AAAC/AAAAPwAAAD4AAAA/AAAAPwAAAD4AAAA/AAAAPwAAAD4AAAC/AAAAPwAAAL4AAAC/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//38AAP//AAD/fwAA//8AAP9/AAD//wAA/////wAA/z//////AAD/P/////8AAP8/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//fwAA/z//f/9/AAD/P/9//38AAP8//3//////AAD/f/////8AAP9//////wAA/38AAP//AAD/fwAA//8AAP9/AAD//wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8/////f/9//n////9//3/+f////3//f/5//////wAA/z//////AAD/P/////8AAP8//3//////AAD/f/////8AAP9//////wAA////f/9//n////9//3/+f////3//f/5/")
+}]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_olh77"]
 
@@ -18,11 +32,13 @@ normal_texture = ExtResource("4_rxk5g")
 uv1_scale = Vector3(0.5, 0.5, 0.5)
 uv1_offset = Vector3(0.23, 0, 0)
 
-[node name="CeilingTile" type="Node3D"]
+[node name="CeilingTile" type="StaticBody3D"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-use_collision = true
-size = Vector3(1, 0.25, 1)
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConcavePolygonShape3D_6xjnk")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_ah2mo")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.5, 8.74228e-08, 0, -4.37114e-08, -1, 0, 0, 0, 0.5, 0, -0.126, 0)
