@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://m8tyfikh1h13"]
+
+[ext_resource type="Texture2D" uid="uid://c8cfyylrdladl" path="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_0.png" id="1_pgyh3"]
+[ext_resource type="Texture2D" uid="uid://banicrsxj25de" path="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_2.png" id="2_fhvrv"]
+[ext_resource type="Texture2D" uid="uid://c682mnxvdvmld" path="res://models/Room2/textures/metal_texture/rusted_metal_texture_pbr_1.png" id="3_grhrm"]
+
+[resource]
+albedo_color = Color(0.31, 0.31, 0.31, 1)
+albedo_texture = ExtResource("1_pgyh3")
+roughness_texture = ExtResource("3_grhrm")
+normal_enabled = true
+normal_texture = ExtResource("2_fhvrv")
+uv1_scale = Vector3(8, 8, 8)

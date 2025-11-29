@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cobo32mwpx72q"]
+
+[ext_resource type="PackedScene" uid="uid://cj4wqr41lf74u" path="res://models/Room2/objects/pc/old_pc_tower.glb" id="1_seoxc"]
+
+[node name="pc_tower" instance=ExtResource("1_seoxc")]

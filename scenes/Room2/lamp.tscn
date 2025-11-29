@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlll241pb8sv8"]
+
+[ext_resource type="PackedScene" uid="uid://ccf46q7l41keg" path="res://models/Room2/objects/lamp/old_glass_ceilling_lamp.glb" id="1_isyre"]
+
+[node name="lamp" instance=ExtResource("1_isyre")]

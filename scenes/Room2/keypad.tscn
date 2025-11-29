@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://l164ps20gx5q"]
+
+[ext_resource type="PackedScene" uid="uid://cngr45cppwaqu" path="res://models/Room2/objects/keypad/cc0_-_keypad_door_lock.glb" id="1_4v8l6"]
+
+[node name="keypad" instance=ExtResource("1_4v8l6")]
