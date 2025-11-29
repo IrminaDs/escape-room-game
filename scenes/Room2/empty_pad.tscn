@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl4yypba6jl4r"]
+
+[ext_resource type="PackedScene" uid="uid://dm2e0etdro3ql" path="res://models/Room2/objects/note/legal_pad.glb" id="1_frccc"]
+
+[node name="empty_pad" instance=ExtResource("1_frccc")]

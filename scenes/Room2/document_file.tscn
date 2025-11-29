@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkcx5y2w60owo"]
+
+[ext_resource type="PackedScene" uid="uid://buv2sqf8cvkce" path="res://models/Room2/objects/document/document_file_folder.glb" id="1_johdd"]
+
+[node name="document_file" instance=ExtResource("1_johdd")]
