@@ -10,3 +10,4 @@ signal album_taken
 signal photo1
 signal photo2
 signal photo3
+signal close_exit

@@ -796,6 +796,7 @@ shape = SubResource("BoxShape3D_y2qhp")
 [node name="Viewport2Din3D" parent="Lock" instance=ExtResource("6_o2c3b")]
 transform = Transform3D(-3.78552e-08, -0.5, 0.866025, -2.18557e-08, 0.866025, 0.5, -1, 0, -4.37114e-08, -0.1, 0.25, 0)
 screen_size = Vector2(0.55, 0.3)
+collision_layer = 5242880
 scene = ExtResource("7_hht3v")
 viewport_size = Vector2(768, 416)
 scene_properties_keys = PackedStringArray("ui_lock_7.gd", "correct_code")

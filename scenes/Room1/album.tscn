@@ -32,11 +32,11 @@ metadata/_custom_type_script = "uid://cb65h51jcm0kt"
 [node name="Album" instance=ExtResource("1_o0v6u")]
 
 [node name="CollisionShape3D" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.135, 0)
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.11, 0)
 shape = SubResource("BoxShape3D_o0v6u")
 
 [node name="Sketchfab_Scene" parent="." index="1" instance=ExtResource("2_j1rgx")]
-transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
+transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.12, 0, 0, 0)
 
 [node name="Skeleton3D" parent="Sketchfab_Scene/Sketchfab_model/Root/Armature" index="0"]
 bones/1/rotation = Quaternion(0.707107, 0, 0, 0.707107)

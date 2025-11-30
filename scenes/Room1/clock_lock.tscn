@@ -1,11 +1,11 @@
 [gd_scene load_steps=16 format=4 uid="uid://dti05nqqibg6x"]
 
 [ext_resource type="Script" uid="uid://dur8t4p868d85" path="res://scripts/room1/clock_lock.gd" id="1_ghd41"]
-[ext_resource type="Texture2D" uid="uid://dvkeo3db34cfh" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg" id="1_qgwlb"]
-[ext_resource type="Texture2D" uid="uid://b8pc28nvm0yf0" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_nor_gl_1k.jpg" id="2_krdek"]
-[ext_resource type="Texture2D" uid="uid://dkicsbcvj8ece" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="3_jpi1g"]
-[ext_resource type="Texture2D" uid="uid://dlebmjf4jo6cr" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="4_jpi1g"]
-[ext_resource type="Texture2D" uid="uid://ci2igv1qtkhgo" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="5_a1ah3"]
+[ext_resource type="Texture2D" uid="uid://pry078m84ovy" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_col_1k.jpg" id="1_qgwlb"]
+[ext_resource type="Texture2D" uid="uid://bovnt4mck38ch" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_nor_gl_1k.jpg" id="2_krdek"]
+[ext_resource type="Texture2D" uid="uid://d0buh7lvo1iuu" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="3_jpi1g"]
+[ext_resource type="Texture2D" uid="uid://010cx755jvq7" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="4_jpi1g"]
+[ext_resource type="Texture2D" uid="uid://bsdjpr0nui523" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="5_a1ah3"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="6_5ao3e"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_w3i1q"]
 [ext_resource type="PackedScene" uid="uid://dyxf8lc8vdg5v" path="res://scenes/Room1/ui_lock_clock.tscn" id="8_w3i1q"]
@@ -88,7 +88,7 @@ mesh = SubResource("ArrayMesh_07xdt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0, 0)
 collision_mask = 524288
 script = ExtResource("6_5ao3e")
-original_position = Vector3(0.1, 0, 0.1)
+original_position = Vector3(0.1, -0.2, 0.1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0.5)

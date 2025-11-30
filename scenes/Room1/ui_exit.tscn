@@ -1,0 +1,123 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0w7k1feydhb"]
+
+[ext_resource type="Script" uid="uid://bfx8qobla0fsw" path="res://scripts/room1/ui_exit.gd" id="1_77qgp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ouseb"]
+font_size = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5egvq"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ouseb"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77qgp"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 0.705882)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ibfg"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mn0yc"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_77qgp")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 500.0
+offset_bottom = 200.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 16.0
+offset_right = 594.0
+offset_bottom = 83.0
+scale = Vector2(0.75, 0.75)
+text = "Chcesz  wyjść z pokoju?"
+label_settings = SubResource("LabelSettings_ouseb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button1" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 96.0
+offset_right = 225.0
+offset_bottom = 163.0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_5egvq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ouseb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_77qgp")
+text = "Tak"
+
+[node name="Button2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 96.0
+offset_right = 350.0
+offset_bottom = 163.0
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_7ibfg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mn0yc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_77qgp")
+text = "Nie"
+
+[connection signal="pressed" from="Control/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Control/Button2" to="." method="_on_button_2_pressed"]
