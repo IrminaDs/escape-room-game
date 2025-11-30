@@ -1,0 +1,63 @@
+[gd_scene load_steps=7 format=4 uid="uid://cy6ms377s7nhi"]
+
+[ext_resource type="Texture2D" uid="uid://dyylh6mmfv4k3" path="res://models/room3/furniture/display/sci_fi_monitor_2.png" id="1_t3tvx"]
+[ext_resource type="Texture2D" uid="uid://dtk7y75c5evhp" path="res://models/room3/furniture/display/warning.png" id="2_3ofoh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5q7xf"]
+resource_name = "TV_MTL"
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_t3tvx")
+roughness = 0.920748
+emission_enabled = true
+emission = Color(0.462745, 0.843137, 1, 1)
+disable_receive_shadows = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3h7cg"]
+resource_name = "Sketchfab_Scene_pCube1_TV_MTL_0"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.5, -0.5, 1, 1, 1),
+"attribute_data": PackedByteArray("qnSfPaTTRD+5flI/pNNEP7l+Uj+k00Q/qnSfPaTTRD+qdJ89D0avPrl+Uj8PRq8+uX5SPw9Grz6qdJ89D0avPrl+Uj8PRq8+uX5SP6TTRD+5flI/D0avPrl+Uj+k00Q/qnSfPQ9Grz6qdJ89pNNEP6p0nz0PRq8+qnSfPaTTRD+qdJ89D0avPuscUD9lILQ+uX5SPw9Grz7rHFA/emZCPxKDsj1lILQ+uX5SP6TTRD+qdJ89pNNEPxKDsj16ZkI/qnSfPaTTRD/rHFA/emZCP7l+Uj+k00Q/6xxQP2UgtD4Sg7I9emZCP7l+Uj8PRq8+qnSfPQ9Grz4Sg7I9ZSC0PuscUD9lILQ+6xxQP3pmQj/rHFA/emZCP+scUD9lILQ+6xxQP3pmQj8Sg7I9emZCPxKDsj16ZkI/6xxQP3pmQj8Sg7I9emZCPxKDsj1lILQ+EoOyPWUgtD4Sg7I9emZCPxKDsj1lILQ+6xxQP2UgtD7rHFA/ZSC0PhKDsj1lILQ+"),
+"format": 34359742487,
+"index_count": 96,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEgARABMAEAAUABEAEgATABUAFgAUABAAFQATABcAFgAXABQAFQAXABYAGAAZABoAGgAZABsAGAAcABkAGgAbAB0AHgAcABgAHQAbAB8AHgAfABwAHQAfAB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"material": SubResource("StandardMaterial3D_5q7xf"),
+"name": "TV_MTL",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("AAAAvwEAAD8AAAA/AAAAPwEAAD8AAAC/AAAAPwEAAD8AAAA/AAAAvwEAAD8AAAC/AAAAvwAAAL8AAAC/AAAAPwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAPwEAAD8AAAC/AAAAPwAAAL8AAAC/AAAAPwEAAD8AAAA/AAAAvwAAAL8AAAC/AAAAvwEAAD8AAAA/AAAAvwAAAL8AAAA/AAAAvwEAAD8AAAC/AAAAvwAAAL8AAAA/mpn5Pkyf9L4AAAA/AAAAPwAAAL8AAAA/mpn5Pk6f9D4AAAA/mpn5vkyf9L4AAAA/AAAAPwEAAD8AAAA/AAAAvwEAAD8AAAA/mpn5vk6f9D4AAAA/AAAAvwEAAD8AAAC/mpn5Pk6f9D4AAAC/AAAAPwEAAD8AAAC/mpn5Pkyf9L4AAAC/mpn5vk6f9D4AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/mpn5vkyf9L4AAAC/mpn5Pkyf9L4AAAA/mpn5Pk6f9D4AAAC/mpn5Pk6f9D4AAAA/mpn5Pkyf9L4AAAC/mpn5Pk6f9D4AAAA/mpn5vk6f9D4AAAC/mpn5vk6f9D4AAAA/mpn5Pk6f9D4AAAC/mpn5vk6f9D4AAAA/mpn5vkyf9L4AAAC/mpn5vkyf9L4AAAA/mpn5vk6f9D4AAAC/mpn5vkyf9L4AAAA/mpn5Pkyf9L4AAAC/mpn5Pkyf9L4AAAA/mpn5vkyf9L4AAAC//3///////7//f///////v/9///////+//3///////7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v////3////+/////f////7////9/////v////3////+/AAD/f////78AAP9/////vwAA/3////+/AAD/f////7//f/9//v//P/9//3/+//8//3//f/7//z//f/9//v//P/9//3/+//8//3//f/7//z//f/9//v//P/9//3/+//8/AAD+//7//7////7//v//v////v/+//+////+//7//78AAP7//v//v////v/+//+/AAD+//7//78AAP7//v//vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9/////v////3////+/////f////7////9/////v/9///////+//3///////7//f///////v/9///////+/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ofoh"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("2_3ofoh")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_khnrb"]
+orientation = 2
+
+[node name="Panel" type="Node3D"]
+
+[node name="TV_ALL" type="Node3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, -2.22045e-18, 0, 2.22045e-18, 0.01, 0, 0, 0)
+
+[node name="TV" type="Node3D" parent="TV_ALL"]
+
+[node name="pCube1" type="Node3D" parent="TV_ALL/TV"]
+transform = Transform3D(16, 0, 0, 0, 9, 0, 0, 0, 0.2, 0, 6, 0)
+
+[node name="pCube1_TV_MTL_0" type="MeshInstance3D" parent="TV_ALL/TV/pCube1"]
+transform = Transform3D(0.291035, 0, 0, 0, 0.759869, -8.27181e-25, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3h7cg")
+skeleton = NodePath("")
+
+[node name="Display" type="Node3D" parent="."]
+transform = Transform3D(0.46963, 0, 0, 0, 0.46963, 0, 0, 0, 0.46963, 0, 0.033472, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Display"]
+transform = Transform3D(0.0338308, 0, 0, 0, 0.0341416, 0, 0, 0, 0.0341416, -0.000815857, 0.0603859, 0.000425965)
+material_override = SubResource("StandardMaterial3D_3ofoh")
+mesh = SubResource("PlaneMesh_khnrb")

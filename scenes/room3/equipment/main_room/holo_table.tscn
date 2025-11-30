@@ -1,10 +1,10 @@
-[gd_scene load_steps=15 format=4 uid="uid://c6cynkf8yhmqy"]
+[gd_scene load_steps=14 format=4 uid="uid://c6cynkf8yhmqy"]
 
-[ext_resource type="Texture2D" uid="uid://ccsi2pa6agkpi" path="res://models/room3/furniture/table/holo-table_0.png" id="1_4igx4"]
-[ext_resource type="Texture2D" uid="uid://fg4b1p3lla0i" path="res://models/room3/furniture/table/holo-table_2.png" id="2_3tgnh"]
-[ext_resource type="Texture2D" uid="uid://cnvhdde3aycbn" path="res://models/room3/furniture/table/holo-table_1.png" id="3_ewdqu"]
-[ext_resource type="Texture2D" uid="uid://dpnxp60jw23hr" path="res://models/room3/furniture/table/holo-table_3.png" id="4_vruwu"]
-[ext_resource type="Texture2D" uid="uid://c64e2jakn6wrb" path="res://models/room3/holo_trident.png" id="5_vruwu"]
+[ext_resource type="Texture2D" uid="uid://cgj06drk30bc2" path="res://models/room3/furniture/table/holo-table_0.png" id="1_4igx4"]
+[ext_resource type="Texture2D" uid="uid://bb2ne22eauur4" path="res://models/room3/furniture/table/holo-table_2.png" id="2_3tgnh"]
+[ext_resource type="Texture2D" uid="uid://ib8eg8meni2p" path="res://models/room3/furniture/table/holo-table_1.png" id="3_ewdqu"]
+[ext_resource type="Texture2D" uid="uid://er5xt1fwu3uk" path="res://models/room3/furniture/table/holo-table_3.png" id="4_vruwu"]
+[ext_resource type="Texture2D" uid="uid://eyemlaqy6m4t" path="res://models/room3/furniture/display/holo_trident.png" id="5_vruwu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yvtgi"]
 resource_name = "Table"
@@ -88,25 +88,9 @@ tracks/0/keys = {
 "values": [Vector3(0, 0, 0), Vector3(0, 6.28319, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_4igx4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sketchfab_model/Holo_Table_fbx/Object_2/RootNode/Hologram:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3tgnh"]
 _data = {
-&"Hologram | Rotation": SubResource("Animation_kytap"),
-&"RESET": SubResource("Animation_4igx4")
+&"Hologram | Rotation": SubResource("Animation_kytap")
 }
 
 [node name="HoloTable" type="Node3D"]
@@ -132,7 +116,7 @@ skeleton = NodePath("")
 transform = Transform3D(52.3036, 0, 0, 0, 52.3036, 0, 0, 0, 52.3036, 3.2293e-07, 149.32, -3.81171e-07)
 
 [node name="Holo" type="MeshInstance3D" parent="Sketchfab_model/Holo_Table_fbx/Object_2/RootNode/Hologram"]
-transform = Transform3D(-0.913546, 0.406737, -1.7779e-08, 0, -4.37114e-08, -1, -0.406737, -0.913545, 3.99323e-08, 0, 0, 0)
+transform = Transform3D(-1.14255, 0.508697, -2.22358e-08, -1.32349e-23, -5.46689e-08, -1.25068, -0.508697, -1.14255, 4.99424e-08, 0, 0.213118, -4.44089e-16)
 material_override = SubResource("StandardMaterial3D_kytap")
 transparency = 0.31
 mesh = SubResource("PlaneMesh_gc5lk")

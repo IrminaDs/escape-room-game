@@ -1,36 +1,32 @@
 [gd_scene load_steps=53 format=4 uid="uid://dmmp30svrs7x6"]
 
-[ext_resource type="Texture2D" uid="uid://b6dujn151gdnu" path="res://models/room3/furniture/desk/desk_set_0.png" id="1_gxepk"]
-[ext_resource type="Texture2D" uid="uid://conlqlt03mb8r" path="res://models/room3/furniture/desk/desk_set_1.png" id="2_6g0v1"]
-[ext_resource type="Texture2D" uid="uid://etl1k5147ma0" path="res://models/room3/furniture/desk/desk_set_2.png" id="3_0a80i"]
-[ext_resource type="Texture2D" uid="uid://cml3tdme0pjq3" path="res://models/room3/furniture/desk/desk_set_3.png" id="4_v22f5"]
-[ext_resource type="Texture2D" uid="uid://1noog7jnuj74" path="res://models/room3/furniture/desk/desk_set_4.png" id="5_1mh2b"]
-[ext_resource type="Texture2D" uid="uid://c3ywbokrfy4ex" path="res://models/room3/furniture/desk/desk_set_5.png" id="6_1vh85"]
-[ext_resource type="Texture2D" uid="uid://cgicbd7clec78" path="res://models/room3/furniture/desk/desk_set_6.png" id="7_wfr7r"]
-[ext_resource type="Texture2D" uid="uid://dpgjnuf3v35nr" path="res://models/room3/furniture/desk/desk_set_7.png" id="8_f2wov"]
-[ext_resource type="Texture2D" uid="uid://bfuyl1ku8elvy" path="res://models/room3/furniture/desk/desk_set_9.png" id="9_k6hje"]
-[ext_resource type="Texture2D" uid="uid://dvpr6r0g3wc5t" path="res://models/room3/furniture/desk/desk_set_8.png" id="10_li2l3"]
-[ext_resource type="Texture2D" uid="uid://bwvjd3aetfbcl" path="res://models/room3/furniture/desk/desk_set_11.png" id="11_irdn3"]
-[ext_resource type="Texture2D" uid="uid://gg6j5bkx86ek" path="res://models/room3/furniture/desk/desk_set_12.png" id="12_dls6v"]
-[ext_resource type="Texture2D" uid="uid://7vsuxi4146mg" path="res://models/room3/furniture/desk/desk_set_13.png" id="13_bmjpl"]
-[ext_resource type="Texture2D" uid="uid://b7iimjayby4v5" path="res://models/room3/furniture/desk/desk_set_14.png" id="14_t0qj8"]
-[ext_resource type="Texture2D" uid="uid://bnkjjyvxsreie" path="res://models/room3/furniture/desk/desk_set_15.png" id="15_b4q3y"]
-[ext_resource type="Texture2D" uid="uid://dea48vkchxq1x" path="res://models/room3/furniture/desk/desk_set_16.png" id="16_ork1o"]
-[ext_resource type="Texture2D" uid="uid://bg38s8tif5wu" path="res://models/room3/furniture/desk/desk_set_17.png" id="17_0uge7"]
-[ext_resource type="Texture2D" uid="uid://c8orgqqv0p0sb" path="res://models/room3/furniture/desk/desk_set_18.png" id="18_4nky1"]
-[ext_resource type="Texture2D" uid="uid://bkysnwpudprw5" path="res://models/room3/furniture/desk/desk_set_19.png" id="19_otvpk"]
-[ext_resource type="Texture2D" uid="uid://dff87axloxkko" path="res://models/room3/furniture/desk/desk_set_20.png" id="20_yi6jq"]
-[ext_resource type="Texture2D" uid="uid://mwwnwbjwntb1" path="res://models/room3/furniture/desk/desk_set_21.png" id="21_k3ahb"]
+[ext_resource type="Texture2D" uid="uid://bdjjfluay3fdk" path="res://models/room3/furniture/desk/desk_set_0.png" id="1_gxepk"]
+[ext_resource type="Texture2D" uid="uid://c4aqe207reecn" path="res://models/room3/furniture/desk/desk_set_1.png" id="2_6g0v1"]
+[ext_resource type="Texture2D" uid="uid://cjr5pg4q6rayo" path="res://models/room3/furniture/desk/desk_set_2.png" id="3_0a80i"]
+[ext_resource type="Texture2D" uid="uid://bq28w678wiuvf" path="res://models/room3/furniture/desk/desk_set_3.png" id="4_v22f5"]
+[ext_resource type="Texture2D" uid="uid://cd1g45jja2shu" path="res://models/room3/furniture/desk/desk_set_4.png" id="5_1mh2b"]
+[ext_resource type="Texture2D" uid="uid://cxpiratdrr4v3" path="res://models/room3/furniture/desk/desk_set_5.png" id="6_1vh85"]
+[ext_resource type="Texture2D" uid="uid://dmuk2o503ks1j" path="res://models/room3/furniture/desk/desk_set_6.png" id="7_wfr7r"]
+[ext_resource type="Texture2D" uid="uid://c8jmk4v773ucj" path="res://models/room3/furniture/desk/desk_set_7.png" id="8_f2wov"]
+[ext_resource type="Texture2D" uid="uid://v7knvim11n0i" path="res://models/room3/furniture/desk/desk_set_9.png" id="9_k6hje"]
+[ext_resource type="Texture2D" uid="uid://dml06bw5f57f0" path="res://models/room3/furniture/desk/desk_set_8.png" id="10_li2l3"]
+[ext_resource type="Texture2D" uid="uid://bx4ljpdl2xabt" path="res://models/room3/furniture/desk/desk_set_11.png" id="11_irdn3"]
+[ext_resource type="Texture2D" uid="uid://b7wqw5r2f15vd" path="res://models/room3/furniture/desk/desk_set_12.png" id="12_dls6v"]
+[ext_resource type="Texture2D" uid="uid://c5aom2rklydq" path="res://models/room3/furniture/desk/desk_set_13.png" id="13_bmjpl"]
+[ext_resource type="Texture2D" uid="uid://bs5726awcshfy" path="res://models/room3/furniture/desk/desk_set_14.png" id="14_t0qj8"]
+[ext_resource type="Texture2D" uid="uid://day2c2wsuuhj8" path="res://models/room3/furniture/desk/desk_set_15.png" id="15_b4q3y"]
+[ext_resource type="Texture2D" uid="uid://c2tpcus0u6oed" path="res://models/room3/furniture/desk/desk_set_16.png" id="16_ork1o"]
+[ext_resource type="Texture2D" uid="uid://bxrf45t36df5j" path="res://models/room3/furniture/desk/desk_set_17.png" id="17_0uge7"]
+[ext_resource type="Texture2D" uid="uid://3t7i3cvcu7rw" path="res://models/room3/furniture/desk/desk_set_18.png" id="18_4nky1"]
+[ext_resource type="Texture2D" uid="uid://mdh7vr2uceon" path="res://models/room3/furniture/desk/desk_set_19.png" id="19_otvpk"]
+[ext_resource type="Texture2D" uid="uid://dpyx2s3ejm3fr" path="res://models/room3/furniture/posters/beksinski.png" id="20_gxepk"]
+[ext_resource type="Texture2D" uid="uid://b4wfmnb8vlds7" path="res://models/room3/furniture/desk/desk_set_21.png" id="21_k3ahb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gxepk"]
 size = Vector3(1501.12, 793.337, 594.184)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6g0v1"]
 size = Vector3(173.605, 65.4456, 222.95)
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_6g0v1"]
-height = 909.829
-radius = 289.722
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2px6a"]
 resource_name = "Desk"
@@ -143,6 +139,10 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_mvpbj")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6g0v1"]
+height = 909.829
+radius = 289.722
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5r05"]
 resource_name = "Office-Chair"
@@ -419,10 +419,10 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wfxyu")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkeve"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6g0v1"]
 resource_name = "Photography-Type_2"
 cull_mode = 2
-albedo_texture = ExtResource("20_yi6jq")
+albedo_texture = ExtResource("20_gxepk")
 metallic = 1.0
 metallic_texture = ExtResource("21_k3ahb")
 metallic_texture_channel = 2
@@ -453,7 +453,7 @@ _surfaces = [{
 "index_count": 1929,
 "index_data": PackedByteArray("BAEBAAUBBAEFAQYBBQEHAQYBBAEGAQgBBQEJAQcBBQEBAAkBCQHHAAcBxAAEAQgBxAABAAQBxAAIAYMACgHEAIMACgGDAAsBAADEAAoBxAAAAAEAAAAKAQwBCQEBAMUACQHFAMcAxQABAAMAxQANAccAxQADAMYAxQDGAA0BBADGAAMAxgACAA0BBAAOAcYAxgAOAQIADwGqABABEAGqABEBqwCqAA8BEQGqAKcAqwB5AKoAEgF5AKsAMQB5ABIBEwF5ADEArAB5ABMBrAB3AHkAqgB5AHcAMgB3AKwAFAF3ADIAFQF3ABQBdgB3ABUBdgCpAHcAqgB3AKkAFgGpAHYAFwGpABYBGAGpABcBGQGpABgBGQF1AKkAMwB1ABkBGgF1ADMAqAB1ABoBpgB1AKgAqQB1AHgApgB4AHUAqQB4AKoAGwF4AKYApwCqAHgANAB4ABsBpwB4ABwBHAF4ADQAHQGbAB4BmwAfAR4B8QAdAR4BHQGcAJsAIAGbAJwAIQGcAB0BIgGbACABmwAiAR8BIgEjAR8BIgEkASMBHwEjAfAAJAEiASUBIgEgASUBJAElASYBJwEmASUBJwGhACYB7wAnASUB7wAlASAB7QDvACAB7QAgASgBIAGcACgBKAEpAe0AKAGcACoBKAErASkBKAEqASsBKwEsASkBKwGdACwBKwEtAZ0AKwEqAS0BLgEtASoBIQEqAZwALgEqASEB7AAuASEB7AAhAS8BLwEhAR0BMAHsAC8BLwEdAfEAMAEvATEBMQEvAfEAngAwATEBngA5ADABMgGeADEBMgExAfMAMQHxAPMAnwAyAfMA8wDxAPIAnwDzADMB8wDyADMBNAGfADMB8QAeAfIANAEzATUB8gA1ATMBOwA0ATUBOwA1ATYBNQHwADYB8gA3ATUBNQE3AfAAHgE3AfIAHwHwADcBHgEfATcBOAE5AToBOQE7Aa4ArQA7ATkBOAGtADkBrQA8ATsBOQGuAD0BOgE5AT0BPQGuAD4BPAGtAD8BPAE/AX8AfwA/Aa8AfwCvAEABsgCvAD8BrQBBAT8BsgA/AUEBrQA4AUEBQQFCAbIAQQFDAUIBQwFEAUIBQQE4AUUBQQFFAUMBRgFFATgBRgE4AToBQwFHAUQBRwF9AEQBQwFFAUgBQwFIAUcBRwFJAX0ASAFJAUcBtAB9AEkBSgFIAUUBSgFFAUYBSAF7AEkBewBIAUoBtABJAUsBTAG0AEsBSQF7ALUASQG1AEsBTAFLAU0BTgFMAU0BTgFNAU8BSwFQAU0BUAFPAU0BSwG1AFABUAF6AE8BegBQAVEBUQFQAbUAegBRAVIBUgFRAVMBUgFTAVQBUQG1AFUBVQG1AHsAUwFRAVUBVgFUAVMBVQF7AFcBewBKAVcBUwFVAbYAtgBVAVcBVgFTAVgBWAFTAbYAfABWAVgBfAA1AFYBWQF8AFgBWQFYAVoBWAG2AFoBtwBZAVoBtgBXAVsBWgG2AFsBtwBaAVwBWgFbAVwBXQG3AFwBVwFeAVsBXAFbAV4BVwFKAV4BXgFKAUYBXQFcAV8BXAFeAV8BYAFdAV8BXgFGAWEBXwFeAWEBYQFGAToBYAFfAWIBXwFhAWIBYwFgAWIBYQE6AbgAYgFhAbgAOgE9AbgAYwFiAWQBYgG4AGQBuQBjAWQBuAA9AWUBuABlAWQBuQBkAWUBPQE+AWUBOAC5AGUBOABlAT4BZgFnAWgBZwFpAWgBaAFpAWoBZwGiAGkBaAFqAfgAogBnAfUA+ABqAWsBogD1AGwBbQFoAfgAbQFmAWgB+ABrAW4BPwBuAWsBPwD5AG4BbwH4AG4B+QBvAW4BbwFtAfgA+QBwAW8BcAFxAW8BcQFtAW8BcAE9AHEBcQH3AG0B9wBmAW0B9wByAWYBcgFzAWYBZgFzAWcBcgGkAHMB9QBnAXMBdAFzAaQA9QBzAXQBdAGkAHUBdAF1AXYBdAF2AaMAowD1AHQBowD0APUA9ABsAfUA9AB3AWwBeAF5AXoBegF5Af8AeAH7AHkBewF4AXoB+wB4AXwBewF9AXgBfAF4AX0BfgF9AXsBfwF7AXoBgAF+AXsBgAF7AX8BfwF6AQEBegH/AAEBgQF/AQEBfgGCAX0BgwF/AYEBgwGAAX8BhAGDAYEBhQGEAYEBhAGGAYMBhQGBAYcBgQEBAYcBmgCFAYcBhgGIAYMBiAGAAYMBhgEAAYgBAQGJAYcBmgCHAYkBAQH/AIkBigGaAIkBigGJAYsB/wCLAYkBQwCKAYsBQwCLAYwBiwH9AIwB/wCNAYsBiwGNAf0AeQGNAf8AjQGOAf0AeQGPAY0BjQGPAY4B+wCPAXkBjwGWAI4BjwGQAZYA+wCQAY8BkQGWAJABkAH7AJIBkQGQAZMBkAGSAZMBkQGTAZQBkQGUAZUBkwH6AJQBkwGSAfoAlgH6AJIB+wB8AZIBlgGSAXwBlwGWAXwBlwF8AZgBfAF9AZgBlACXAZgBmAF9AYIBlACYAZkBmAGCAZkBmgGUAJkBmgGZAZsBggGbAZkBnAGaAZsBggGZAJsBmQCCAX4BnAGbAZ0BmACcAZ0BmACdAZ4BnQGfAZ4BmwGgAZ0BnQGgAZ8BmwGZAKABoQGfAaABoQGgAaIBogGgAZkA/gChAaIBmQB+AaMBogGZAKMBowF+AYAB/gCiAaQBpAGiAaMBpQH+AKQBowGAAaYBpAGjAaYBiAGmAYABpwGkAaYBpwGmAYgBpQGkAacBAAGnAYgBAAGoAacBqAGlAacBqAFEAKUBugAJALsACwC7AAkACwCpAbsAuwCpAYEAuwCBAKoBugC7AKoBugANAAkAugCqAYAADQC6AKsBqwG6AIAADQCrAawBqwGAAK0BvAASAK4BFACuARIAvAARABIAEQC8AK8BEQCvARMArwG8AL4ArwG+ABAAvACwAb4AvACuAbABrgGxAbABFACyAa4BrgGyAbEBFgCyARQAsgGzAbEBFgC0AbIBsgG0AbMBFwC0ARYAtAG/ALMBFwC9ALQBtAG9AL8AvQAXABgAvQC1Ab8AvQAYAMAAvQDAALUBGQDAABgAwACCALUBGQC2AcAAwAC2AYIAwQAcAMIAHgDCABwAHgC3AcIAwgC3AR0AwgAdALgBwQDCALgBwQAfABwAwQC4AcMAHwDBALkBuQHBAMMAHwC5ASAAuQHDABsAyQCEAIUAugGFAIQAugG7AYUAygC7AboBygAjALsBvAHKALoBvAG9AcoAzAC8AboBzAC6AYQAzgDMAIQAyQCGAIQAzgCEAIYAhgDJAL4BvwHOAIYAhgC+AcABvwGGAMABwAG+ASEAwQG/AcABwAEhAM8AwQHAAc8A0ACIANEA0gAnANEA0gDRAIgA1ADSAIgA1ADCAdIA1QDUAIgA0ADTAIgA1QCIANMA0wDQAMMB0wDEAdUA0wDDAcUB0wDFAcQBxQHDAcYBxQHHAcQBxQHGAcgBxQHIAccByAHGAYcAyAHYAMcByAGHAIkAyAGJANgA2gCJAIcA2wDYAIkA2gCKAIkA2wCJAIoAigDaAMkBygHbAIoAigDJAcsBygGKAMsBywHJASUAzAHKAcsBywElANwAzAHLAdwA3QCLAIwA3gArAIwA3gCMAIsA4gDeAIsA4gDNAd4A4ADiAIsA3QCNAIsA4ACLAI0AjQDdACkAzgHgAI0AjQApAN8AzgGNAN8AjgCPAJAAzwGQAI8AzwHQAZAA4wDQAc8B4wAvANAB0QHjAM8B0QHSAeMA5ADRAc8B5ADPAY8A5QDkAI8AjgDmAI8A5QCPAOYA5gCOANMB5gDUAeUA5gDTAdUB5gDVAdQB1QHTAdYB1QHXAdQB1QHWAdgB1QHYAdcB2AHWAdkB2AHpANcB2AHZAZIA2AGSAOkA6ACSANkB6gDpAJIA6ACTAJIA6gCSAJMAkwDoAC0A2gHqAJMAkwAtAOsA2gGTAOsADgDbAQ8ADgDcAdsB2wHcAd0B2wHdAQgADADeAd8BDADgAd4B3gHgAQoA3gEKAOEBGgDiAeMBGgDkAeIB4gHkARUA4gEVAOUBBgDmAQcABgDIAOYB5gHIAOcB5gHnAQUA6AGVAOkB6gHoAekB6gHpAUIA6AHrAZUAlwCVAOsBlwDrAewB7QGXAOwB7QHsAe4B7wHtAe4B7wHuAfAB8QHvAfAB8QHwAfIB/ADxAfIB/ADyAfMBQQD8APMBQQDzAfQB9QGwADcA9QH2AbAAsQCwAPYBsQD2AfcB9wH4AbEA9wH5AfgB+QH6AfgB+QH7AfoB+wF+APoB+wH8AX4AswB+APwBswD8Af0B/gGzAP0B/gH9Af8BNgD+Af8BNgD/AQAC1wABAgIC1wADAgECBALXAAIC2QABAgMCBAICAgUC2QADAgYCBwIEAgUCCALZAAYCBwIFAtYACAIGAgkCKAAIAgkCKAAJAgoC1gALAgcC1gAMAgsCDAINAgsCDAImAA0C5wAOAg8C5wAQAg4CEQLnAA8CEgIOAhACEQIPAhMCEgIQAhQCLgASAhQCLgAUAhUCFgIRAhMCFgITApEAkQAXAhYCkQAYAhcCGAIZAhcCGAIaAhkCGgIbAhkCGgIwABsCHAI+APYAHAIdAj4A9gAeAhwC9gClAB4CpQAfAh4CpQBAAB8CIAIhAu4AIAIiAiECIgI8ACECIgIjAjwA7gAkAiAC7gCgACQCoAAlAiQCoAAmAiUCJgInAiUCJgI6ACcCzQAoAikCzQDLACgCKgLNACkCywArAigCKgIpAiwCJAAqAiwCJAAsAi0CywAuAisCLgIvAisCLgIiAC8C4QAwAjECLADhADECLAAxAjIC4QAzAjACMwI0AjACMwIqADQCRQBGAEcARQBIAEYASQBFAEcASQBHAEoASwBMAE0ASwA1AkwATgA1AksATgBPADUCUAA2AjcCUABRADYCOAJTAFIAOAI5AlMAVABVAFYAVAACAVUAAgFXAFUAAgFYAFcAAwFaADoCAwFZAFoAXAA7AlsAXAA8AjsCXQBeAF8AXQBgAF4AXwBeAGEAXwBhAGIAYwBkAGUAYwBmAGQAPQJnAGgAPQI+AmcAaQBqAGsAaQBsAGoAbQA/AkACbQBwAD8CQAI/Am4AQAJuAG8AcQByAHMAcQB0AHIA"),
 "lods": [0.52233, PackedByteArray("NAB4AKYApwB4ADQApgB4AHUApgB1AKgAqAB1ADMAMwB1AKkAqQB1AHgAMwCpAHYApwCqAHgAqQB4AKoAqwCqAKcAdgCpAHcAqgB3AKkAdgB3ADIAMgB3AKwAqgB5AHcAqwB5AKoArAB3AHkAMQB5AKsArAB5ADEAewCtAK4ArQB/AK4AfwCtAK8AfwCvADcANwCvALAAsQCwAK8ArQCyAK8AsQCvALIArQB7ALIAsgB+ALEAfQB+ALIAsgB7AH0AswB+AH0AswB9ALQAswC0AHoANgCzAHoAfQC1ALQAtAC1AHoAfQB7ALUAegC1ADUANQC1ALYAtQB7ALYAfAA1ALYAtwB8ALYAtgB7ALgAtwC2ALgAuAB7AK4AuAC5ALcAuACuALkAOAC5AK4AugAJALsACwC7AAkAugANAAkACwCBALsAugC7AIEADACBAAsADAAKAIEAugCBAIAADQC6AIAADQCAAA4ADgCAAAgADgAIAA8AvAASAL0AFAC9ABIAFgC9ABQAvAARABIAFwC9ABYAEQC8ABAAEQAQABMAEAC8AL4AvAC/AL4AvAC9AL8AvQAXABgAvQAYAMAAGQDAABgAvQCCAL8AvQDAAIIAGQCCAMAAGgCCABkAGgAVAIIAwQAcAMIAHgDCABwAHgAdAMIAwQDCAB0AwQAdAMMAwQAfABwAGwDBAMMAHwDBABsAHwAbACAAxAABAMUAxQABAAMAxAAAAAEAxQADAMYABADGAAMABAACAMYAxQDGAAIAxQACAMcAxADFAMcAxADHAIMAAADEAMgAyADEAIMAAADIAAYAyACDAAUABgDIAAUABgAFAAcAyQCEAIUAhAAjAIUAygAjAIQAIgDKAIQAywAiAIQAywCEAMwAzQDLAMwAyQCGAIQAzQDMAM4AzgDMAIQAzgCEAIYAJADNAM4AJADOAM8AzwDOAIYAhgDJAM8AzwDJACEA0ACIANEA0gAnANEA0gDRAIgA0ADTAIgA0wDQAIcA1ADSAIgAJgDSANQA1QCIANMA1QDUAIgA1gAmANQA1gDUANUA0wCHAIkA0wDXANUA1QDXANYA0wCJANcA1wDYANYAiQDYANcA2QDWANgA2gCJAIcA2QDYANsA2wDYAIkAKADZANsAKADbANwA3ADaACUA2wCJAIoA3ADbAIoA2gCKAIkAigDaANwA3QCLAIwA3gArAIwA3gCMAIsA3QCNAIsAjQDdACkAjQApAN8A3wDgAI0A4ACLAI0ALADgAN8ALADhAOAA4ADiAIsA4gDeAIsA4QDiAOAAKgDeAOIA4QAqAOIAjgCPAJAAjwAvAJAA4wAvAI8AMADjAI8AMACPAOQAkQAwAOQA5QDkAI8AkQDkAOUAjgDmAI8A5QCPAOYA5QDnAJEA5gDnAOUA5wAuAJEA5gCOAJIA5gCSAOcA6ACSAI4A5wDpAC4AkgDpAOcALgDpAOoA6gDpAJIALgDqAOsA6ACTAJIA6gCSAJMA6wDqAJMAkwDoAC0AkwAtAOsA7ACdAJwA7QCcAJ0A7QCdADwA7QA8AO4AmwCcAO0A7gDvAO0A7QDvAJsA7gCgAO8AoAChAO8AoAA6AKEA7wChAJsAmwChAPAA8QCcAJsA7ACcAPEAmwDwAPIA8QCbAPIA8gDwADsAOwCfAPIAnwDzAPIA8wDxAPIAnwCeAPMAngDxAPMAngDsAPEAngA5AOwAowD0APUA9gD0AKMAowA+APYAowCkAD4A9QCkAKMA9gClAPQA9QCiAKQA9ACiAPUApQCiAPQApQBAAKIA9wCkAKIA9wCiAPgAogA/APgAPwD5APgA+QD3APgA+QA9APcAlAD6APsAlwD6AJQAlwCVAPoAQgD6AJUAQgD7APoA/ACXAJQAlgD7AEIA+wCWAP0A/ACUAJgAQQD8AJgAlACZAJgA+wCZAJQA/gCYAJkA+wD9AP8AmQD7AP8A/wD9AEMAQwCaAP8AmgAAAf8AAAFEAP4AmQD/AAEBAQH/AAAB/gCZAAEB/gABAQABRQBGAEcARQBIAEYASQBFAEcASQBHAEoASwBMAE0ATgBMAEsATgBPAEwAUABRAFIAUgBRAFMAVABVAFYAVAACAVUAAgFXAFUAAgFYAFcAAwFaAFsAAwFZAFoAXAADAVsAXQBeAF8AXQBgAF4AXwBeAGEAXwBhAGIAYwBkAGUAYwBmAGQAZQBkAGcAZQBnAGgAaQBqAGsAaQBsAGoAbQBuAG8AbQBwAG4AcQByAHMAcQB0AHIA"), 5.11405, PackedByteArray("MwB1AHYANAB1ADMAdgB1AHcAdgB3ADIANAB4AHUAeQB3AHUAMgB3AHkAdQB4AHkANAB5AHgAMgB5ADEAMQB5ADQAegB7AHwANQB6AHwAfQB7AHoANgB9AHoANgB+AH0AfwB7AH0AfAB7AH8AfgB/AH0AOAB8AH8AfgA3AH8AgAAJAIEACwCBAAkADACBAAsADAAKAIEAgAANAAkADQCAAA4ADgCAAAgADgAIAA8AEAARABIAEQAQABMAFAAQABIAFgAQABQAFwAQABYAEAAXABgAEAAYAIIAGQCCABgAGgCCABkAGgAVAIIAGwAcAB0AHgAdABwAGwAfABwAHwAbACAAgwABAAIAAgABAAMABAACAAMAgwAAAAEAAACDAAYABgCDAAUABgAFAAcAIQCEAIUAhAAjAIUAIgAjAIQAJAAiAIQAIQCGAIQAJACEAIYAhgAhACQAhwCIACcAJgAnAIgAhwCJAIgAJgCIAIkAJQCJAIcAKAAmAIkAJQCKAIkAKACJAIoAigAlACgAKQCLAIwAKgCMAIsAKgArAIwAKQCNAIsAjQAqAIsAjQApACwALAAqAI0AjgCPAJAAjwAvAJAAMAAvAI8AkQAwAI8AjgCSAI8AkQCPAJIALQCSAI4AkQCSAC4ALQCTAJIALgCSAJMAkwAtAC4AlACVAJYAQgCWAJUAlwCVAJQAQQCXAJQAQQCUAJgAlACZAJgAlgCZAJQARACYAJkARACZAJoAmQCWAJoAlgBDAJoAPACbAJwAnACdADwAnQCcAJ4AngCcAJsAngA5AJ0AngCbAJ8AmwA7AJ8APACgAJsAmwChADsAoAChAJsAoAA6AKEAPgCiAKMAowCkAD4AogCkAKMAPgClAKIApQBAAKIAPQCkAKIAPwA9AKIARQBGAEcARQBIAEYASQBFAEcASQBHAEoASwBMAE0ATgBMAEsATgBPAEwAUABRAFIAUgBRAFMAVABVAFYAVABXAFUAVABYAFcAWQBaAFsAXABZAFsAXQBeAF8AXQBgAF4AXwBeAGEAXwBhAGIAYwBkAGUAYwBmAGQAZQBkAGcAZQBnAGgAaQBqAGsAaQBsAGoAbQBuAG8AbQBwAG4AcQByAHMAcQB0AHIA"), 5.46025, PackedByteArray("AAABAAIAAgABAAMABAACAAMAAAACAAUAAAAFAAYABgAFAAcACAAJAAoACwAKAAkADAAKAAsACAANAAkADQAIAA4ADgAIAA8AEAARABIAEQAQABMAFAAQABIAFAAVABAAFgAVABQAFwAVABYAFQAXABgAGQAVABgAGgAVABkAGwAcAB0AHgAdABwAGwAfABwAHwAbACAAIQAiACMAJAAiACEAJQAmACcAJQAoACYAKQAqACsAKQAsACoALQAuAC8AMAAvAC4AMQAyADMAMwA0ADEANQA2ADcAOAA1ADcAOQA6ADsAOQA8ADoAPQA+AD8AQAA/AD4AQQBCAEMAQQBDAEQARQBGAEcARQBIAEYASQBFAEcASQBHAEoASwBMAE0ATgBMAEsATgBPAEwAUABRAFIAUgBRAFMAVABVAFYAVABXAFUAVABYAFcAWQBaAFsAXABZAFsAXQBeAF8AXQBgAF4AXwBeAGEAXwBhAGIAYwBkAGUAYwBmAGQAZQBkAGcAZQBnAGgAaQBqAGsAaQBsAGoAbQBuAG8AbQBwAG4AcQByAHMAcQB0AHIA")],
-"material": SubResource("StandardMaterial3D_xkeve"),
+"material": SubResource("StandardMaterial3D_6g0v1"),
 "name": "Photography-Type_2",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -464,7 +464,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_bjkhu")
 
 [node name="DeskSet" type="Node3D"]
-transform = Transform3D(-5.94175e-11, 0, 0.00135931, 0, 0.00135931, 0, -0.00135931, 0, -5.94175e-11, 0, 0, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="RootNode" type="StaticBody3D" parent="."]
 transform = Transform3D(1, -7.88861e-31, -3.55271e-15, 0, 1, -2.22045e-16, 3.55271e-15, 2.22045e-16, 1, 0, 0, 0)
@@ -476,10 +476,6 @@ shape = SubResource("BoxShape3D_gxepk")
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="RootNode"]
 transform = Transform3D(1, -2.21197e-27, -7.10543e-15, -1.01605e-27, 1, 4.24261e-31, 7.10543e-15, 4.24164e-31, 1, 1912.2, 854.483, 953.021)
 shape = SubResource("BoxShape3D_6g0v1")
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="RootNode"]
-transform = Transform3D(1, -7.05242e-28, -7.10543e-15, -3.25011e-28, 1, 4.24261e-31, 7.10543e-15, 4.2423e-31, 1, 1435.08, 477.952, 1518.93)
-shape = SubResource("CylinderShape3D_6g0v1")
 
 [node name="Desk" type="Node3D" parent="RootNode"]
 transform = Transform3D(1, 3.01992e-07, -2.64698e-23, -2.64698e-23, 2.22045e-16, 1, 3.01992e-07, -1, 2.22045e-16, 1287.77, 786.161, 833.715)
@@ -508,8 +504,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 360.062, 25.2103, 77.8998)
 mesh = SubResource("ArrayMesh_xsppk")
 skeleton = NodePath("")
 
-[node name="Office-Chair" type="Node3D" parent="RootNode"]
-transform = Transform3D(0.573576, -0.819152, -5.55112e-17, -5.55112e-17, 0, 1, -0.819152, -0.573576, 0, 1468.74, 0, 1477.19)
+[node name="Office-Chair" type="StaticBody3D" parent="RootNode"]
+transform = Transform3D(0.573576, -0.819152, -5.55112e-17, -5.55112e-17, -7.95063e-24, 1, -0.819152, -0.573576, -2.42648e-24, 1868.91, 1.81395e-20, 1477.19)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RootNode/Office-Chair"]
+transform = Transform3D(0.573576, 3.18399e-17, -0.819153, -0.819153, -4.54721e-17, -0.573576, 3.18399e-17, 1, -4.54721e-17, -53.498, 3.63159, 477.952)
+shape = SubResource("CylinderShape3D_6g0v1")
 
 [node name="Object_12" type="Node3D" parent="RootNode/Office-Chair"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8479, 2.91684, 461.853)
@@ -539,7 +539,7 @@ mesh = SubResource("ArrayMesh_qms6x")
 skeleton = NodePath("")
 
 [node name="Photography_Type1" type="Node3D" parent="RootNode"]
-transform = Transform3D(0.073749, 0.990799, 0.113483, -0.838494, 4.76377e-08, 0.544912, 0.539898, -0.135341, 0.830779, 850.093, 815.947, 645.349)
+transform = Transform3D(0.0859593, 1.15484, 0.132272, -0.97732, 5.55249e-08, 0.635131, 0.629287, -0.157749, 0.968328, 850.093, 815.947, 711.54)
 
 [node name="Photography_Type1_Photography-Type_1_0" type="MeshInstance3D" parent="RootNode/Photography_Type1"]
 mesh = SubResource("ArrayMesh_s1i6w")
@@ -556,11 +556,12 @@ skeleton = NodePath("")
 transform = Transform3D(1, 3.01992e-07, -2.64698e-23, -2.64698e-23, 2.22045e-16, 1, 3.01992e-07, -1, 2.22045e-16, 1902.7, 860.16, 947.855)
 
 [node name="Book-Type2_Book-Type_2_0" type="MeshInstance3D" parent="RootNode/Book-Type2"]
+transform = Transform3D(0.888056, -0.459735, 2.04164e-16, 0.459735, 0.888056, 4.97132e-17, -2.04164e-16, 4.97131e-17, 1, 12.1171, 0, 0)
 mesh = SubResource("ArrayMesh_i6kho")
 skeleton = NodePath("")
 
 [node name="Photography_Type2" type="Node3D" parent="RootNode"]
-transform = Transform3D(-1.16794, -0.0183489, -0.0684789, -1.46144e-16, 1.13022, -0.302842, 0.0708946, -0.302286, -1.12814, 681.144, 921.938, 581.522)
+transform = Transform3D(-1.52632, -0.0641075, -0.239252, -1.43745e-09, 1.4936, -0.40021, 0.247692, -0.395042, -1.47431, 665.425, 949.237, 640.33)
 
 [node name="Photography_Type2_Photography-Type_2_0" type="MeshInstance3D" parent="RootNode/Photography_Type2"]
 mesh = SubResource("ArrayMesh_t26ju")
