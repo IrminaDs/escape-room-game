@@ -58,7 +58,7 @@ material = ExtResource("3_my1t7")
 [node name="SecretDoorHole" type="CSGPolygon3D" parent="BaseBoard/SecretDoorWall"]
 transform = Transform3D(0.166667, 0, 0, 0, 0.4, 0, 0, 0, 20, -0.0788397, -0.432258, 0.586994)
 operation = 2
-polygon = PackedVector2Array(-0.299828, -0.200977, 1.05072, -0.178408, 1.27944, 0.0996102, 1.28159, 1.4858, 1.06426, 1.89485, -0.2896, 1.90339, -0.53, 1.64454, -0.526583, 0.110006)
+polygon = PackedVector2Array(-0.299828, -0.200977, 1.05072, -0.178408, 1.23099, 0.13124, 1.26543, 1.47804, 1.06426, 1.89485, -0.2896, 1.90339, -0.53, 1.64454, -0.526583, 0.110006)
 depth = 0.09
 
 [node name="Wall" type="CSGBox3D" parent="BaseBoard"]
