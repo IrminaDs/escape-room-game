@@ -1,27 +1,13 @@
-[gd_scene load_steps=9 format=4 uid="uid://wl3dp23skwjr"]
+[gd_scene load_steps=15 format=4 uid="uid://wl3dp23skwjr"]
 
-[ext_resource type="Texture2D" uid="uid://0cgwpdi3vhws" path="res://models/Room1/objects/pufferfish/pufferfish_0.png" id="1_8frw3"]
+[ext_resource type="Texture2D" uid="uid://beo30gq4gx78c" path="res://models/Room1/objects/pufferfish/pufferfish_0.png" id="1_8frw3"]
 [ext_resource type="Script" uid="uid://d2rb5y13w51hp" path="res://scripts/room1/blowfish.gd" id="2_ex42m"]
-[ext_resource type="PackedScene" uid="uid://1cl2enqre150" path="res://models/Room1/objects/pufferfish/simple_fish_bowl.glb" id="2_tu7op"]
+[ext_resource type="PackedScene" uid="uid://cl3nk7d25ndbb" path="res://models/Room1/objects/pufferfish/simple_fish_bowl.glb" id="2_tu7op"]
+[ext_resource type="Script" uid="uid://dg6pur3mldigo" path="res://scripts/room1/blowfish_area.gd" id="4_c2x72"]
+[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/Room1/photo.tscn" id="5_oo0d4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8frw3"]
-size = Vector3(0.4, 0.4, 0.4)
-
-[sub_resource type="Animation" id="Animation_imi6v"]
-resource_name = "Implode\\"
-length = 0.416667
-tracks/0/type = "blend_shape"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sketchfab_model/root/GLTF_SceneRootNode/PufferFish_0/mesh_0:morph_0")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.0416667, 1, 0.028, 0.0833333, 1, 0.104, 0.125, 1, 0.216, 0.166667, 1, 0.352, 0.25, 1, 0.648, 0.291667, 1, 0.784, 0.333333, 1, 0.896, 0.375, 1, 0.972, 0.416667, 1, 1)
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_lq5vv"]
-_data = {
-&"Implode\\": SubResource("Animation_imi6v")
-}
+size = Vector3(0.525, 0.45, 0.525)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8jmb"]
 resource_name = "MI_PufferBalloon"
@@ -49,19 +35,55 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
+[sub_resource type="Animation" id="Animation_oo0d4"]
+resource_name = "Blow"
+tracks/0/type = "scale_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.025, 0.025, 0.025, 0.166667, 1, 0.027, 0.027, 0.027, 0.433333, 1, 0.03, 0.03, 0.03, 0.733333, 1, 0.03, 0.03, 0.03, 0.866667, 1, 0.025, 0.025, 0.025)
+
+[sub_resource type="Animation" id="Animation_p4xir"]
+length = 0.001
+tracks/0/type = "scale_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.025, 0.025, 0.025)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ew0u8"]
+_data = {
+&"Blow": SubResource("Animation_oo0d4"),
+&"RESET": SubResource("Animation_p4xir")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ex42m"]
+size = Vector3(0.525, 0.45, 0.525)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ex42m"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.0784314)
+emission_enabled = true
+emission = Color(0.572988, 0.572988, 0.572988, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_c2x72"]
+material = SubResource("StandardMaterial3D_ex42m")
+radius = 0.3
+height = 0.475
+
 [node name="Blowfish" type="StaticBody3D"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, 0)
 shape = SubResource("BoxShape3D_8frw3")
 
 [node name="Fish" type="Node3D" parent="."]
 transform = Transform3D(-1.09278e-09, 0, 0.025, 0, 0.025, 0, -0.025, 0, -1.09278e-09, 0.05, 0, 0)
 script = ExtResource("2_ex42m")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish"]
-libraries = {
-&"": SubResource("AnimationLibrary_lq5vv")
-}
 
 [node name="PufferFish_0" type="Node3D" parent="Fish"]
 transform = Transform3D(5.69459e-05, 0, 0, 0, 5.69459e-05, 0, 0, 0, 5.69459e-05, 0, 0, 0)
@@ -72,5 +94,32 @@ mesh = SubResource("ArrayMesh_8oyw7")
 skeleton = NodePath("")
 blend_shapes/morph_0 = 0.0
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish"]
+libraries = {
+&"": SubResource("AnimationLibrary_ew0u8")
+}
+
 [node name="Bowl" parent="." instance=ExtResource("2_tu7op")]
 transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -0.75, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 1048576
+collision_mask = 0
+script = ExtResource("4_c2x72")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, 0)
+shape = SubResource("BoxShape3D_ex42m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 0, 0)
+mesh = SubResource("SphereMesh_c2x72")
+
+[node name="Photo" parent="." instance=ExtResource("5_oo0d4")]
+transform = Transform3D(-0.5, 0, -0.866026, 0, 1, 0, 0.866026, 0, -0.5, -0.1, 0, -0.1)
+visible = false
+
+[node name="PhotoLogic" parent="Photo" index="5"]
+sig_name = "photo3"
+
+[editable path="Photo"]

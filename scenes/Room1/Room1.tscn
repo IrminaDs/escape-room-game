@@ -15,13 +15,13 @@
 [ext_resource type="PackedScene" uid="uid://diqbe0b8v51us" path="res://scenes/Room1/desk.tscn" id="9_7bwvd"]
 [ext_resource type="Material" uid="uid://cen58xckm7y3d" path="res://models/Room1/textures/wall_tile.tres" id="9_y0e56"]
 [ext_resource type="PackedScene" uid="uid://dpkqptb18his1" path="res://scenes/Room1/bookshelf1.tscn" id="10_0e1ws"]
-[ext_resource type="Texture2D" uid="uid://d12klmm3pe64u" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="10_5e5h7"]
+[ext_resource type="Texture2D" uid="uid://dljo5f2k67ftv" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="10_5e5h7"]
 [ext_resource type="PackedScene" uid="uid://jkp1jxx5n811" path="res://scenes/Room1/desk_letter.tscn" id="10_dprwg"]
 [ext_resource type="PackedScene" uid="uid://bwd5j6iwefaio" path="res://scenes/Room1/painting.tscn" id="11_mhhkb"]
-[ext_resource type="Texture2D" uid="uid://b0xt4iw38w8ua" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_nor_gl_1k.jpg" id="11_us4hf"]
+[ext_resource type="Texture2D" uid="uid://b7dqh48fwfht5" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_nor_gl_1k.jpg" id="11_us4hf"]
 [ext_resource type="PackedScene" uid="uid://curyiydvedhpa" path="res://scenes/Room1/bookshelf2.tscn" id="11_vjalx"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
-[ext_resource type="Texture2D" uid="uid://dywyly4ubeheo" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_rough_1k.jpg" id="12_x5wvg"]
+[ext_resource type="Texture2D" uid="uid://bmwkkhwxn4xkx" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_rough_1k.jpg" id="12_x5wvg"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
 [ext_resource type="PackedScene" uid="uid://dti05nqqibg6x" path="res://scenes/Room1/clock_lock.tscn" id="15_4763k"]
 [ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
@@ -32,7 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://c07v6wee104gp" path="res://scenes/Room1/wall_shelf.tscn" id="21_20w1x"]
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
 [ext_resource type="PackedScene" uid="uid://chs60mukpdhpl" path="res://scenes/Room1/radio.tscn" id="24_5h5dv"]
-[ext_resource type="Texture2D" uid="uid://2h271ch8iw2r" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
+[ext_resource type="Texture2D" uid="uid://dn5iq8g83xbnl" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
 [ext_resource type="PackedScene" uid="uid://sgmtfe8i4c17" path="res://scenes/Room1/chest_message.tscn" id="25_y0e56"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 [ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="29_dprwg"]
@@ -633,7 +633,7 @@ transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 
 [node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
-transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 2.999)
 
 [node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
 

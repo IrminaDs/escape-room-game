@@ -28,4 +28,5 @@ func _on_ceasar_placed():
 	hours.rotation.z = deg_to_rad(-60)
 	
 	ticking.stop()
+	await get_tree().create_timer(0.5).timeout
 	bell.play()

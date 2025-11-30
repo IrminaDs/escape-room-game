@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://ds0w4t2j7brk" path="res://scripts/room1/chest.gd" id="1_e16p2"]
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="4_bpvxt"]
-[ext_resource type="Texture2D" uid="uid://cylp6ilgpvkxe" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Metallic.png" id="4_hjvjy"]
-[ext_resource type="Texture2D" uid="uid://bce3hgbp5o7fg" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Normal.png" id="5_kghx8"]
+[ext_resource type="Texture2D" uid="uid://bnnkyfo4towve" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Metallic.png" id="4_hjvjy"]
+[ext_resource type="Texture2D" uid="uid://wnl3t3mqyjrr" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Normal.png" id="5_kghx8"]
 [ext_resource type="PackedScene" uid="uid://dyqkrr88xjnwt" path="res://scenes/Room1/ui_lock_chest.tscn" id="5_westq"]
-[ext_resource type="Texture2D" uid="uid://cxwc16w4vfu3n" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_yrf4u"]
+[ext_resource type="Texture2D" uid="uid://it7qkogyf1yt" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_yrf4u"]
 [ext_resource type="Material" uid="uid://bnjt32daohc10" path="res://models/Room1/objects/chest/M_Chest_Wood.tres" id="7_3eabm"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="7_hjvjy"]
 
