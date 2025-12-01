@@ -1,20 +1,21 @@
-[gd_scene load_steps=116 format=4 uid="uid://dpkqptb18his1"]
+[gd_scene load_steps=117 format=4 uid="uid://dpkqptb18his1"]
 
-[ext_resource type="Texture2D" uid="uid://b0uwtt3rmwhpt" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
+[ext_resource type="Texture2D" uid="uid://4qkh1stdvxny" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_88mrq"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="1_uxd8u"]
-[ext_resource type="Texture2D" uid="uid://80ulpjbx2f0e" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_ejc8x"]
-[ext_resource type="Texture2D" uid="uid://nb8dof1q57kp" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_0gh3c"]
-[ext_resource type="Texture2D" uid="uid://dfxacjvcqtnx1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_2wevw"]
+[ext_resource type="Texture2D" uid="uid://bl4o2di3ndeuq" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_ejc8x"]
+[ext_resource type="Texture2D" uid="uid://cwkdykknx8kx7" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_0gh3c"]
+[ext_resource type="Texture2D" uid="uid://clmia1b3ljyn0" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_2wevw"]
 [ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="4_li15u"]
 [ext_resource type="PackedScene" uid="uid://27ryup17ssjr" path="res://scenes/Room1/ui_atbash.tscn" id="5_m7e7g"]
-[ext_resource type="Texture2D" uid="uid://d2w6wuwa81y8k" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_wsqjv"]
-[ext_resource type="Texture2D" uid="uid://bnovf5vbn71kk" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_ymvo7"]
-[ext_resource type="Texture2D" uid="uid://85w4trb4qjb2" path="res://models/Room1/textures/books/green.jpg" id="7_1jdum"]
-[ext_resource type="Texture2D" uid="uid://d3u3566uig6vb" path="res://models/Room1/objects/shelf/dusty_bookshelfs_5.png" id="8_6n3w4"]
-[ext_resource type="Texture2D" uid="uid://b4absk7r2tlpo" path="res://models/Room1/textures/books/blue.jpg" id="9_ncs31"]
-[ext_resource type="Texture2D" uid="uid://d3umfin8i57fa" path="res://models/Room1/textures/books/orange.jpg" id="10_uxd8u"]
+[ext_resource type="Texture2D" uid="uid://bijiuj0ujspe0" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_wsqjv"]
+[ext_resource type="Texture2D" uid="uid://bouhbxh53hwl0" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_ymvo7"]
+[ext_resource type="Texture2D" uid="uid://ckdkpldbx3vom" path="res://models/Room1/textures/books/green.jpg" id="7_1jdum"]
+[ext_resource type="Texture2D" uid="uid://df6nv0h0uw0lu" path="res://models/Room1/objects/shelf/dusty_bookshelfs_5.png" id="8_6n3w4"]
+[ext_resource type="Texture2D" uid="uid://b45g2rn0jr747" path="res://models/Room1/textures/books/blue.jpg" id="9_ncs31"]
+[ext_resource type="Texture2D" uid="uid://dqw1fwpneupns" path="res://models/Room1/textures/books/orange.jpg" id="10_uxd8u"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_6n3w4"]
 [ext_resource type="FontFile" uid="uid://ctaeyagdyucmm" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="11_xu2ar"]
+[ext_resource type="AudioStream" uid="uid://bqtymn28sdq2x" path="res://models/Room1/sounds/679074__aurelon__paging-through-book.mp3" id="12_m7e7g"]
 [ext_resource type="PackedScene" uid="uid://3hch6g6d0let" path="res://scenes/Room1/ui_pigpen.tscn" id="12_mfvyi"]
 [ext_resource type="PackedScene" uid="uid://cdiqk7c8wx6wc" path="res://scenes/Room1/ui_polibiusz.tscn" id="14_w5dia"]
 
@@ -1573,6 +1574,9 @@ text = "Cienie Babilonu"
 font = ExtResource("11_xu2ar")
 font_size = 48
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StaticBody3D/Books/Green"]
+stream = ExtResource("12_m7e7g")
+
 [node name="Blue" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, -0.5, 0.55)
 collision_layer = 1048576
@@ -1603,6 +1607,9 @@ text = "Zapiski Bracta Światła"
 font = ExtResource("11_xu2ar")
 font_size = 48
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StaticBody3D/Books/Blue"]
+stream = ExtResource("12_m7e7g")
+
 [node name="Orange" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, -0.57)
 collision_layer = 1048576
@@ -1632,6 +1639,9 @@ outline_modulate = Color(0.706552, 0.307696, 5.77569e-07, 1)
 text = "Starożytni Grecy"
 font = ExtResource("11_xu2ar")
 font_size = 48
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StaticBody3D/Books/Orange"]
+stream = ExtResource("12_m7e7g")
 
 [node name="book_012_Cube_016" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0.5, 0.6)

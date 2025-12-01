@@ -1,20 +1,21 @@
-[gd_scene load_steps=115 format=4 uid="uid://curyiydvedhpa"]
+[gd_scene load_steps=116 format=4 uid="uid://curyiydvedhpa"]
 
-[ext_resource type="Texture2D" uid="uid://b0uwtt3rmwhpt" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
-[ext_resource type="Texture2D" uid="uid://80ulpjbx2f0e" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
-[ext_resource type="Texture2D" uid="uid://nb8dof1q57kp" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_klhjw"]
+[ext_resource type="Texture2D" uid="uid://4qkh1stdvxny" path="res://models/Room1/objects/shelf/dusty_bookshelfs_6.png" id="1_jxup7"]
+[ext_resource type="Texture2D" uid="uid://bl4o2di3ndeuq" path="res://models/Room1/objects/shelf/dusty_bookshelfs_7.png" id="2_dxa2x"]
+[ext_resource type="Texture2D" uid="uid://cwkdykknx8kx7" path="res://models/Room1/objects/shelf/dusty_bookshelfs_8.png" id="3_klhjw"]
 [ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="4_b7qjb"]
-[ext_resource type="Texture2D" uid="uid://dfxacjvcqtnx1" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_m3ybm"]
+[ext_resource type="Texture2D" uid="uid://clmia1b3ljyn0" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="4_m3ybm"]
 [ext_resource type="PackedScene" uid="uid://cnxufynim25r" path="res://scenes/Room1/ui_ceasar.tscn" id="5_jrfvl"]
 [ext_resource type="PackedScene" uid="uid://cueoa5jv8bhll" path="res://scenes/Room1/ui_plotek.tscn" id="5_kffnr"]
-[ext_resource type="Texture2D" uid="uid://d2w6wuwa81y8k" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_ssm5c"]
-[ext_resource type="Texture2D" uid="uid://bnovf5vbn71kk" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_6kvop"]
-[ext_resource type="Texture2D" uid="uid://b85kjpl3e71s1" path="res://models/Room1/textures/books/purple.jpg" id="7_dxa2x"]
-[ext_resource type="Texture2D" uid="uid://c7rfh5sihdbfm" path="res://models/Room1/textures/books/red.jpg" id="7_klhjw"]
-[ext_resource type="Texture2D" uid="uid://b7hah0a4bgx30" path="res://models/Room1/textures/books/yellow.jpg" id="9_m3ybm"]
+[ext_resource type="Texture2D" uid="uid://bijiuj0ujspe0" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="5_ssm5c"]
+[ext_resource type="Texture2D" uid="uid://bouhbxh53hwl0" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="6_6kvop"]
+[ext_resource type="Texture2D" uid="uid://bb7t2b22bqmrw" path="res://models/Room1/textures/books/purple.jpg" id="7_dxa2x"]
+[ext_resource type="Texture2D" uid="uid://dvce3ddrtxhnt" path="res://models/Room1/textures/books/red.jpg" id="7_klhjw"]
+[ext_resource type="Texture2D" uid="uid://et1d46q26214" path="res://models/Room1/textures/books/yellow.jpg" id="9_m3ybm"]
 [ext_resource type="FontFile" uid="uid://ctaeyagdyucmm" path="res://models/Room1/fonts/Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf" id="10_4npbk"]
 [ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="10_6kvop"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="10_ssm5c"]
+[ext_resource type="AudioStream" uid="uid://bqtymn28sdq2x" path="res://models/Room1/sounds/679074__aurelon__paging-through-book.mp3" id="11_3t4xh"]
 [ext_resource type="PackedScene" uid="uid://cffkhpsyw5x8g" path="res://scenes/Room1/ui_skytale.tscn" id="13_3t4xh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rylox"]
@@ -1574,6 +1575,9 @@ font = ExtResource("10_4npbk")
 font_size = 48
 outline_size = 16
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StaticBody3D/Books/Purple"]
+stream = ExtResource("11_3t4xh")
+
 [node name="Red" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
@@ -1605,6 +1609,9 @@ font = ExtResource("10_4npbk")
 font_size = 48
 outline_size = 16
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StaticBody3D/Books/Red"]
+stream = ExtResource("11_3t4xh")
+
 [node name="Yellow" type="Area3D" parent="StaticBody3D/Books" node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)
 collision_layer = 1048576
@@ -1635,6 +1642,9 @@ text = "Sekrety wojny"
 font = ExtResource("10_4npbk")
 font_size = 48
 outline_size = 16
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StaticBody3D/Books/Yellow"]
+stream = ExtResource("11_3t4xh")
 
 [node name="book_002_Cube_006" type="Node3D" parent="StaticBody3D/Books"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.62921e-07, 0, 1.62921e-07, 1, 0, 0, 0)

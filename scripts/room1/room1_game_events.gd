@@ -11,3 +11,4 @@ signal photo_unlocked(photo_id : int)
 signal album_left
 signal album_right
 signal close_exit
+signal final

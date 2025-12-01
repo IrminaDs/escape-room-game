@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=4 uid="uid://wl3dp23skwjr"]
+[gd_scene load_steps=16 format=4 uid="uid://wl3dp23skwjr"]
 
 [ext_resource type="Texture2D" uid="uid://beo30gq4gx78c" path="res://models/Room1/objects/pufferfish/pufferfish_0.png" id="1_8frw3"]
 [ext_resource type="Script" uid="uid://d2rb5y13w51hp" path="res://scripts/room1/blowfish.gd" id="2_ex42m"]
 [ext_resource type="PackedScene" uid="uid://cl3nk7d25ndbb" path="res://models/Room1/objects/pufferfish/simple_fish_bowl.glb" id="2_tu7op"]
 [ext_resource type="Script" uid="uid://dg6pur3mldigo" path="res://scripts/room1/blowfish_area.gd" id="4_c2x72"]
 [ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/Room1/photo.tscn" id="5_oo0d4"]
+[ext_resource type="AudioStream" uid="uid://khqnigsanmek" path="res://models/Room1/sounds/786510__jheyns__bubble-wrap-single-pop-5.wav" id="6_p4xir"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8frw3"]
 size = Vector3(0.525, 0.45, 0.525)
@@ -121,5 +122,8 @@ visible = false
 
 [node name="PhotoLogic" parent="Photo" index="5"]
 sig_num = 3
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_p4xir")
 
 [editable path="Photo"]

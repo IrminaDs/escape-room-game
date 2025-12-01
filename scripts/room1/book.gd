@@ -4,8 +4,10 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 
 @export var viewport : XRToolsViewport2DIn3D
 @export var scene : PackedScene
+
 @onready var highlight = $Highlight
 @onready var label: Label3D = $Label3D
+@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
 
 var left_pointer: XRToolsFunctionPointer
 var right_pointer: XRToolsFunctionPointer
@@ -45,5 +47,6 @@ func _on_pointer_event(event):
 			else:
 				viewport.scene = scene
 				viewport.visible = true
+				audio.play()
 				if self.name == "Red":
 					Room1GameEvents.emit_signal("book_opened")

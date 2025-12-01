@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://diqbe0b8v51us"]
+[gd_scene load_steps=60 format=4 uid="uid://diqbe0b8v51us"]
 
 [ext_resource type="Script" uid="uid://bpra12wkcv5ji" path="res://scripts/room1/desk.gd" id="1_ktqyj"]
 [ext_resource type="Texture2D" uid="uid://cysforstl5fau" path="res://models/Room1/objects/desk/antique_desk_0.png" id="2_1ix83"]
@@ -10,8 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://d0buh7lvo1iuu" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="4_o2c3b"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="5_y2qhp"]
 [ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/Room1/photo.tscn" id="6_bmtlt"]
+[ext_resource type="AudioStream" uid="uid://bihcbqaawohxc" path="res://models/Room1/sounds/550373__mattruthsound__roller-cases_17.wav" id="6_f6byq"]
+[ext_resource type="PackedScene" uid="uid://dxo430j3881gu" path="res://scenes/Room1/file.tscn" id="6_j4lx6"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_o2c3b"]
 [ext_resource type="PackedScene" uid="uid://x2mls23q4l21" path="res://scenes/Room1/ui_lock_desk.tscn" id="7_hht3v"]
+[ext_resource type="AudioStream" uid="uid://bpwinddm0luui" path="res://models/Room1/sounds/787715__realsquink__drawer-e-signle.ogg" id="8_0kpkb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wluvv"]
 resource_name = "Desk"
@@ -241,6 +244,9 @@ emission = Color(0.544974, 0.544974, 0.544974, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_w1syx"]
 material = SubResource("StandardMaterial3D_jnkhb")
 size = Vector3(0.365, 0.23, 0.125)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j4lx6"]
+size = Vector3(0.325, 0.2, 0.02)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kruf3"]
 _surfaces = [{
@@ -668,7 +674,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 2.64698e-23, 0, -2.64698e-23, 1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_xd3eu")
 skeleton = NodePath("")
 
-[node name="Draw 3_low" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low"]
+[node name="Draw 3_low" type="StaticBody3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low"]
+collision_layer = 2
+collision_mask = 4
 
 [node name="Draw 3_low_Desk_0" type="MeshInstance3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 3_low"]
 mesh = SubResource("ArrayMesh_mcpjc")
@@ -695,6 +703,16 @@ shape = SubResource("BoxShape3D_ktqyj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.587, -0.21, 0.7)
 mesh = SubResource("BoxMesh_w1syx")
 skeleton = NodePath("../..")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 3_low/Area3D"]
+stream = ExtResource("6_f6byq")
+
+[node name="File" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 3_low" instance=ExtResource("6_j4lx6")]
+transform = Transform3D(-4.37114e-08, -1.1921e-07, 1, 1, -1.62921e-07, 4.37114e-08, 1.62921e-07, 1, 1.1921e-07, 0.59, -0.175, 0.675)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 3_low"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.585, -0.2, 0.655)
+shape = SubResource("BoxShape3D_j4lx6")
 
 [node name="Draw 1_low" type="Node3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low"]
 transform = Transform3D(1, 0, 0, 0, 1, 2.64698e-23, 0, -2.64698e-23, 1, 0, 0, 0)
@@ -723,6 +741,10 @@ shape = SubResource("BoxShape3D_ktqyj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.587, -0.2, 0.7)
 mesh = SubResource("BoxMesh_w1syx")
 skeleton = NodePath("../..")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 1_low/Area3D"]
+stream = ExtResource("8_0kpkb")
+volume_db = -30.0
 
 [node name="Photo" parent="StaticBody3D/Sketchfab_Scene/Sketchfab_model/f1bc8c6dbdca48a59913f281bf51c70b_fbx/RootNode/Desk_low/Draw 1_low" instance=ExtResource("6_bmtlt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.225, 0.67)

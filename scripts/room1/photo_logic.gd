@@ -4,6 +4,7 @@ extends Node
 @export var sig_num: int = 1
 
 @onready var parent = get_parent()
+@onready var audio: AudioStreamPlayer3D = $"../AudioStreamPlayer3D"
 
 func _ready():
 	parent.enabled = false
@@ -14,4 +15,9 @@ func _ready():
 func _on_released(pickable, by):
 	if pickable == get_parent():
 		Room1GameEvents.emit_signal("photo_unlocked", sig_num)
+		
+		audio.get_parent().remove_child(audio)
+		get_tree().root.add_child(audio)
+		audio.play()
+		
 		parent.queue_free()

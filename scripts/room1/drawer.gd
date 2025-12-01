@@ -5,10 +5,12 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 @export var anim_name: String = "Open_drawer"
 
 @onready var high = $Highlight
+@onready var audio = $AudioStreamPlayer3D
 @onready var anim: AnimationPlayer = self.get_owner().get_node("StaticBody3D/Sketchfab_Scene/AnimationPlayer")
 
 var can_open = false
 var is_open = false
+var desk = false
 var left_pointer: XRToolsFunctionPointer
 var right_pointer: XRToolsFunctionPointer
 
@@ -22,13 +24,20 @@ func _ready():
 	high.visible = false
 	
 	Room1GameEvents.connect("album_taken", Callable(self, "_on_album_taken"))
+	Room1GameEvents.connect("desk_unlocked", Callable(self, "_on_desk_unlocked"))
 	connect("pointer_event", Callable(self, "_on_pointer_event"))
 
 func _on_album_taken():
 	can_open = true
 
+func _on_desk_unlocked():
+	desk = true
+	var file = get_parent().get_node("File")
+	if file != null and desk:
+		file.enabled = true
+		is_open = true
+
 func _on_pointer_event(event):
-	print(event)
 	if !can_open:
 		return
 	
@@ -37,7 +46,7 @@ func _on_pointer_event(event):
 	if distance >= 2.0:
 		high.visible = false
 		return
-	print("hi")
+
 	match event.event_type:
 		XRToolsPointerEvent.Type.ENTERED:
 			high.visible = true
@@ -45,7 +54,11 @@ func _on_pointer_event(event):
 			high.visible = false
 		XRToolsPointerEvent.Type.PRESSED:
 			high.visible = false
+			audio.play()
 			if !is_open:
+				if desk:
+					anim_name = "Open"
+				
 				anim.play(anim_name)
 				is_open = !is_open
 				await anim.animation_finished

@@ -5,6 +5,7 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 @onready var mesh = $"MeshInstance3D"
 @onready var anim: AnimationPlayer = $"../Fish/AnimationPlayer"
 @onready var photo = $"../Photo"
+@onready var audio = $"../AudioStreamPlayer3D"
 
 var album = false
 var left_pointer: XRToolsFunctionPointer
@@ -44,6 +45,7 @@ func _on_pointer_event(event):
 		XRToolsPointerEvent.Type.PRESSED:
 			anim.play("Blow")
 			await anim.animation_finished
+			audio.play()
 			
 			photo.enabled = true
 			photo.visible = true

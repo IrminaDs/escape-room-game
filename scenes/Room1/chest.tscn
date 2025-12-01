@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://g52giiyj6f3h"]
+[gd_scene load_steps=26 format=4 uid="uid://g52giiyj6f3h"]
 
 [ext_resource type="Script" uid="uid://ds0w4t2j7brk" path="res://scripts/room1/chest.gd" id="1_e16p2"]
 [ext_resource type="Material" uid="uid://6lmyulfpieoq" path="res://models/Room1/objects/chest/M_Chest_Reinforcment.tres" id="1_tsus3"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://it7qkogyf1yt" path="res://models/Room1/textures/Poliigon_MetalGoldPaint_7253/1K/Poliigon_MetalGoldPaint_7253_Roughness.png" id="6_yrf4u"]
 [ext_resource type="Material" uid="uid://bnjt32daohc10" path="res://models/Room1/objects/chest/M_Chest_Wood.tres" id="7_3eabm"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="7_hjvjy"]
+[ext_resource type="AudioStream" uid="uid://ct7o4yducwk1w" path="res://models/Room1/sounds/771164__steprock__treasure-chest-open.mp3" id="10_kghx8"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gy8cq"]
 resource_name = "Sketchfab_Scene_SM_Chest_M_Chest_Reinforcment_0"
@@ -272,3 +273,6 @@ scene_properties_keys = PackedStringArray("ui_lock_4.gd", "correct_code", "color
 correct_code = "BBBB"
 color = Color(0.101961, 0.4, 0.701961, 1)
 signal_to_emit = "chest_unlocked"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("10_kghx8")
