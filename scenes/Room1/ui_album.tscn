@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://dms4vhvjwnnrq"]
+
+[ext_resource type="Script" uid="uid://dsx3re4cjbq0s" path="res://scripts/room1/ui_album.gd" id="1_sw1k8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f434b"]
+bg_color = Color(0.971614, 0.30354, 0.644508, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sw1k8"]
+bg_color = Color(0.438796, 0.583502, 0.945924, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e2hr"]
+bg_color = Color(0.213159, 0.706101, 0.393887, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1b8om"]
+bg_color = Color(0.892092, 0.470452, 0.154823, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_sw1k8")
+
+[node name="Photo0" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Photo0"]
+layout_mode = 0
+offset_right = 466.0
+offset_bottom = 332.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
+
+[node name="Photo1" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Photo1"]
+offset_right = 466.0
+offset_bottom = 332.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sw1k8")
+
+[node name="Photo2" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Photo2"]
+offset_right = 466.0
+offset_bottom = 332.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6e2hr")
+
+[node name="Photo3" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Photo3"]
+offset_right = 466.0
+offset_bottom = 332.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1b8om")

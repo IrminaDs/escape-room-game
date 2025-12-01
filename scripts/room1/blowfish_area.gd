@@ -25,7 +25,6 @@ func _ready():
 
 func _on_album_taken():
 	album = true
-	print(album)
 
 func _on_pointer_event(event):
 	if !album:
@@ -48,3 +47,4 @@ func _on_pointer_event(event):
 			
 			photo.enabled = true
 			photo.visible = true
+			disconnect("pointer_event", Callable(self, "_on_pointer_event"))

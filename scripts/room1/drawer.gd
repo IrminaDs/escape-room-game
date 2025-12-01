@@ -28,15 +28,16 @@ func _on_album_taken():
 	can_open = true
 
 func _on_pointer_event(event):
+	print(event)
 	if !can_open:
 		return
 	
 	var player = get_tree().get_current_scene().get_node("Player/XROrigin3D/PlayerBody")
 	var distance = global_transform.origin.distance_to(player.global_transform.origin)
-	if distance >= 1.0:
+	if distance >= 2.0:
 		high.visible = false
 		return
-	
+	print("hi")
 	match event.event_type:
 		XRToolsPointerEvent.Type.ENTERED:
 			high.visible = true
