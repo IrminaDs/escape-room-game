@@ -1,7 +1,7 @@
 extends Node
 
 
-@export var sig_num: int = 1
+@export var sig_num: int = 2
 
 @onready var parent = get_parent()
 @onready var audio: AudioStreamPlayer3D = $"../AudioStreamPlayer3D"

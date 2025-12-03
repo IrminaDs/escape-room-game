@@ -55,11 +55,13 @@ transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0.05, 
 hand_pose = SubResource("Resource_dk425")
 
 [node name="Viewport2Din3D" parent="." index="5" instance=ExtResource("11_usjni")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-screen_size = Vector2(0.2, 0.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+screen_size = Vector2(0.6, 0.4)
+enabled = false
 collision_layer = 5242880
 scene = ExtResource("10_knsye")
-scene_properties_keys = PackedStringArray()
+viewport_size = Vector2(1500, 1000)
+scene_properties_keys = PackedStringArray("ui_album.gd")
 
 [node name="EnableGrab" type="Node" parent="." index="6"]
 script = ExtResource("9_ag5ic")

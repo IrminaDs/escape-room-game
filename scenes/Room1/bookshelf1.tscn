@@ -1603,7 +1603,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_m7e7g")
 [node name="Label3D" type="Label3D" parent="StaticBody3D/Books/Blue"]
 transform = Transform3D(-1.09279e-08, 4.07302e-08, 0.25, -4.07302e-08, 0.25, -4.07303e-08, -0.25, -4.07303e-08, -1.09278e-08, 0.25, 0.75, -0.5)
 outline_modulate = Color(0, 0.2, 0.705882, 1)
-text = "Zapiski Bracta Światła"
+text = "Zapiski Bractwa Światła"
 font = ExtResource("11_xu2ar")
 font_size = 48
 

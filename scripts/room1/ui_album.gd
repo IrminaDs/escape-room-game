@@ -1,15 +1,16 @@
 extends CanvasLayer
 
 var photos : Array[Control] = []
-var unlocked_photos : Array[int] = [0]
+var unlocked_photos : Array[int] = [0, 1]
 var current_index : int = 0
 
 func _ready():
 	photos = [
-		$Photo0,
+		$Start,
 		$Photo1,
 		$Photo2,
-		$Photo3
+		$Photo3,
+		$Photo4
 	]
 	
 	_refresh_visibility()

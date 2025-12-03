@@ -43,6 +43,8 @@ func _on_pointer_event(event):
 		XRToolsPointerEvent.Type.EXITED:
 			mesh.visible = false
 		XRToolsPointerEvent.Type.PRESSED:
+			mesh.visible = false
+			
 			anim.play("Blow")
 			await anim.animation_finished
 			audio.play()

@@ -822,4 +822,4 @@ collision_layer = 5242880
 scene = ExtResource("7_hht3v")
 viewport_size = Vector2(768, 416)
 scene_properties_keys = PackedStringArray("ui_lock_7.gd", "correct_code")
-correct_code = "BBBBBBB"
+correct_code = "WMRPNWF"

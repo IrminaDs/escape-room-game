@@ -100,6 +100,6 @@ screen_size = Vector2(1, 0.7)
 scene = ExtResource("8_w3i1q")
 viewport_size = Vector2(640, 448)
 scene_properties_keys = PackedStringArray("ui_lock_4.gd", "correct_code", "color", "signal_to_emit")
-correct_code = "BBBB"
+correct_code = "DUCK"
 color = Color(0.8, 0.6, 0, 1)
 signal_to_emit = "clock_lock"

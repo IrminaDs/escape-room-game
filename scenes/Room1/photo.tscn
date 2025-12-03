@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dc24lp3x7pnay"]
+[gd_scene load_steps=20 format=3 uid="uid://dc24lp3x7pnay"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_or3bb"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="2_bw10y"]
@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="5_pxet4"]
 [ext_resource type="Animation" uid="uid://c8hn123uon74u" path="res://addons/godot-xr-tools/hands/animations/right/PingPong.res" id="7_cgftp"]
 [ext_resource type="AudioStream" uid="uid://ddncnyyap512i" path="res://models/Room1/sounds/463394__vilkas_sound__vs-pop_6.mp3" id="9_pxet4"]
+[ext_resource type="Texture2D" uid="uid://dtxf05uu7hdsl" path="res://models/Room1/textures/photos/photo3D.png" id="10_cgftp"]
+[ext_resource type="Texture2D" uid="uid://cpqs2b40jl8v" path="res://models/Room1/textures/photos/photo_back.png" id="11_gjege"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_or3bb"]
 size = Vector3(0.2, 0.15, 0.001)
@@ -27,6 +29,20 @@ script = ExtResource("5_pxet4")
 open_pose = ExtResource("7_cgftp")
 closed_pose = ExtResource("7_cgftp")
 metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v8u5q"]
+albedo_texture = ExtResource("10_cgftp")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1ok1v"]
+material = SubResource("StandardMaterial3D_v8u5q")
+size = Vector2(0.2, 0.15)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gjege"]
+albedo_texture = ExtResource("11_gjege")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v8u5q"]
+material = SubResource("StandardMaterial3D_gjege")
+size = Vector2(0.2, 0.15)
 
 [node name="Photo" instance=ExtResource("1_or3bb")]
 freeze = true
@@ -54,3 +70,11 @@ script = ExtResource("5_5wfyl")
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="6"]
 stream = ExtResource("9_pxet4")
 volume_db = 10.0
+
+[node name="TextureFront" type="MeshInstance3D" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.001)
+mesh = SubResource("PlaneMesh_1ok1v")
+
+[node name="TextureBack" type="MeshInstance3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -0.001)
+mesh = SubResource("PlaneMesh_v8u5q")

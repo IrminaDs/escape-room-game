@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=58 format=4 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
@@ -104,6 +104,9 @@ _surfaces = [{
 "vertex_count": 30,
 "vertex_data": PackedByteArray("zMzMPWZm5r4AAAA+zMzMPWZm5r6MmZm9zczMPmZm5r6MmZm9zMzMPczMTL2MmZm9zMzMPWZm5r6MmZm9zMzMPczMTL0AAAA+zMzMPWZm5r6MmZm9zMzMPczMTL2MmZm9zczMPmZm5r6MmZm9zMzMPWZm5r4AAAA+zMzMPczMTL0AAAA+zMzMPWZm5r6MmZm9zczMPszMTL0AAAA+zczMPmZm5r4AAAA+zczMPszMTL2MmZm9zMzMPczMTL0AAAA+zczMPszMTL0AAAA+zMzMPczMTL2MmZm9zMzMPWZm5r4AAAA+zczMPmZm5r6MmZm9zczMPmZm5r4AAAA+zczMPszMTL0AAAA+zczMPszMTL2MmZm9zMzMPczMTL2MmZm9zczMPmZm5r6MmZm9zczMPszMTL2MmZm9zczMPmZm5r4AAAA+zMzMPczMTL2MmZm9zczMPszMTL2MmZm9zczMPmZm5r6MmZm9/3//////////f/////////9/////////////f/9/AID///9//38AgP///3//fwCA/3//fwAA/7//f/9/AAD/v/9//38AAP+/////f/9/AID///9//38AgP///3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/38AAP//////fwAA//////9/AAD//////3//////////f/////////9//////////38AAP//////fwAA//////9/AAD/////AAD/f/9/AIAAAP9//38AgAAA/3//fwCA/3//fwAA/7//f/9/AAD/v/9//38AAP+/")
 }]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x5wvg"]
+size = Vector3(1.5, 1, 1.25)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_vjalx"]
 size = Vector2(1.7, 2)
@@ -522,6 +525,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 3.125)
 
 [node name="WallTile6" parent="Build/Walls/WallWest" instance=ExtResource("3_yo7fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
+
+[node name="BlockBehindChest" type="StaticBody3D" parent="Build"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 0.75, -2.5)
+collision_layer = 2147483648
+collision_mask = 524288
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Build/BlockBehindChest"]
+shape = SubResource("BoxShape3D_x5wvg")
 
 [node name="Objects" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)

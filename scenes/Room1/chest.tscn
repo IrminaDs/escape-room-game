@@ -270,7 +270,7 @@ collision_layer = 5242880
 scene = ExtResource("5_westq")
 viewport_size = Vector2(640, 512)
 scene_properties_keys = PackedStringArray("ui_lock_4.gd", "correct_code", "color", "signal_to_emit")
-correct_code = "BBBB"
+correct_code = "NOVA"
 color = Color(0.101961, 0.4, 0.701961, 1)
 signal_to_emit = "chest_unlocked"
 

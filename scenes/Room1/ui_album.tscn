@@ -1,36 +1,68 @@
-[gd_scene load_steps=6 format=3 uid="uid://dms4vhvjwnnrq"]
+[gd_scene load_steps=13 format=3 uid="uid://dms4vhvjwnnrq"]
 
 [ext_resource type="Script" uid="uid://dsx3re4cjbq0s" path="res://scripts/room1/ui_album.gd" id="1_sw1k8"]
+[ext_resource type="Texture2D" uid="uid://4jvmuf6soa7j" path="res://models/Room1/textures/photos/photo0.png" id="2_oy25m"]
+[ext_resource type="FontFile" uid="uid://6fgrnmbv7jkn" path="res://models/Room1/fonts/Mea_Culpa/MeaCulpa-Regular.ttf" id="3_8m0ur"]
+[ext_resource type="Texture2D" uid="uid://cq7xpmqy3l6v4" path="res://models/Room1/textures/photos/photo1.png" id="3_g6xgk"]
+[ext_resource type="Texture2D" uid="uid://j67rkhqwfqag" path="res://models/Room1/textures/photos/photo2.png" id="4_8m0ur"]
+[ext_resource type="Texture2D" uid="uid://1uwbdf1bnl1t" path="res://models/Room1/textures/photos/photo3.png" id="5_o85ut"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f434b"]
-bg_color = Color(0.971614, 0.30354, 0.644508, 1)
+bg_color = Color(0, 0, 0, 0.235294)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sw1k8"]
-bg_color = Color(0.438796, 0.583502, 0.945924, 1)
+[sub_resource type="LabelSettings" id="LabelSettings_g6xgk"]
+font_size = 56
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e2hr"]
-bg_color = Color(0.213159, 0.706101, 0.393887, 1)
+[sub_resource type="LabelSettings" id="LabelSettings_o85ut"]
+font = ExtResource("3_8m0ur")
+font_size = 64
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1b8om"]
-bg_color = Color(0.892092, 0.470452, 0.154823, 1)
+[sub_resource type="LabelSettings" id="LabelSettings_8m0ur"]
+font = ExtResource("3_8m0ur")
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_wcyuy"]
+font = ExtResource("3_8m0ur")
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_5eb8w"]
+font = ExtResource("3_8m0ur")
+font_size = 64
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_sw1k8")
 
-[node name="Photo0" type="Control" parent="."]
+[node name="Start" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Panel" type="Panel" parent="Photo0"]
+[node name="Panel" type="Panel" parent="Start"]
 layout_mode = 0
-offset_right = 466.0
-offset_bottom = 332.0
+offset_right = 1500.0
+offset_bottom = 1000.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
 
+[node name="Label" type="Label" parent="Start"]
+layout_mode = 0
+offset_top = 112.0
+offset_right = 1482.0
+offset_bottom = 829.0
+text = "Twoim zadaniem jest zaszyfrować tekst jawny, 
+z którego otrzymasz hasło do zamka na biurku. 
+W pokoju zostały ukyrte trzy zdjęcia, które musisz 
+odnaleźć, aby otrzymać tekst do zaszyfrowania. 
+Dodatkowo jedno zdjęcie znajduje już się w albumie. 
+Zdjęcia po znalezieniu same odnajdą drogę do albumu.
+
+Klucz do szyfrowania: VIGENERE
+Tekst jawny: nazwisko autora listu"
+label_settings = SubResource("LabelSettings_g6xgk")
+horizontal_alignment = 1
+
 [node name="Photo1" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -38,9 +70,34 @@ offset_bottom = 40.0
 
 [node name="Panel" type="Panel" parent="Photo1"]
 layout_mode = 0
-offset_right = 466.0
-offset_bottom = 332.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_sw1k8")
+offset_right = 1500.0
+offset_bottom = 1000.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
+
+[node name="TextureRect" type="TextureRect" parent="Photo1"]
+layout_mode = 0
+offset_top = 125.0
+offset_right = 1000.0
+offset_bottom = 875.0
+texture = ExtResource("2_oy25m")
+
+[node name="Label" type="Label" parent="Photo1"]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 106.0
+offset_right = 1490.0
+offset_bottom = 940.0
+text = "Wybrałem się dzisiaj
+ do Włoch na wakacje.
+ Spotkałem tam 
+interesującego 
+młodego mężczyznę. 
+Niestety jego nazwisko 
+mi umknęło. 
+Zaczynało się chyba od 
+B..."
+label_settings = SubResource("LabelSettings_o85ut")
+horizontal_alignment = 1
 
 [node name="Photo2" type="Control" parent="."]
 visible = false
@@ -51,9 +108,31 @@ offset_bottom = 40.0
 
 [node name="Panel" type="Panel" parent="Photo2"]
 layout_mode = 0
-offset_right = 466.0
-offset_bottom = 332.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_6e2hr")
+offset_right = 1500.0
+offset_bottom = 1000.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
+
+[node name="TextureRect" type="TextureRect" parent="Photo2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_g6xgk")
+
+[node name="Label" type="Label" parent="Photo2"]
+layout_mode = 0
+offset_left = 810.0
+offset_top = 190.0
+offset_right = 1459.0
+offset_bottom = 838.0
+text = "Udało mi się go znowu spotkać. 
+Odbyliśmy bardzo interesującą 
+rozmowę na temat kryptografii. 
+Doweidziałem się, 
+że mój rozmówca jest potomkiem 
+włoskiego kryptografa - 
+Giovana Battisty .el...."
+label_settings = SubResource("LabelSettings_8m0ur")
+horizontal_alignment = 1
 
 [node name="Photo3" type="Control" parent="."]
 visible = false
@@ -64,6 +143,66 @@ offset_bottom = 40.0
 
 [node name="Panel" type="Panel" parent="Photo3"]
 layout_mode = 0
-offset_right = 466.0
-offset_bottom = 332.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_1b8om")
+offset_right = 1500.0
+offset_bottom = 1000.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
+
+[node name="TextureRect" type="TextureRect" parent="Photo3"]
+layout_mode = 0
+offset_top = 125.0
+offset_right = 1000.0
+offset_bottom = 875.0
+texture = ExtResource("4_8m0ur")
+
+[node name="Label" type="Label" parent="Photo3"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 183.0
+offset_right = 1492.0
+offset_bottom = 819.0
+text = "Pan ...la.. powiedział mi, 
+że jego przodek wynalazł i opisał 
+szyfr, którego stworzenie 
+przypisano innemu kryptografowi - 
+Blaise de Vigenere. 
+Zaintrygowało mnie to. 
+W końcu szyfr Vignere'a to 
+jeden z klasycznych algorytmów 
+w kryptografii."
+label_settings = SubResource("LabelSettings_wcyuy")
+horizontal_alignment = 1
+
+[node name="Photo4" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Photo4"]
+layout_mode = 0
+offset_right = 1500.0
+offset_bottom = 1000.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
+
+[node name="TextureRect" type="TextureRect" parent="Photo4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_o85ut")
+
+[node name="Label" type="Label" parent="Photo4"]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 170.0
+offset_right = 1455.0
+offset_bottom = 818.0
+text = "Będąc historykiem i kryptografem, 
+zapytałem go czy mogę przyjrzeć 
+się tej sprawie. Z wielką 
+uprzejmością Pan .....so zaoferował, 
+że przyśle do mnie oryginalne skrypty 
+jego przodka na temat tego szyfru. 
+Już nie mogę się doczekać."
+label_settings = SubResource("LabelSettings_5eb8w")
+horizontal_alignment = 1

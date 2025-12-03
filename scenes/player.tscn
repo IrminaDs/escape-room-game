@@ -26,6 +26,7 @@ script = ExtResource("1_smehm")
 [node name="LeftHand" parent="XROrigin3D/LeftController" instance=ExtResource("2_fjrip")]
 
 [node name="MovementDirect" parent="XROrigin3D/LeftController" instance=ExtResource("3_smehm")]
+max_speed = 2.0
 
 [node name="FunctionPickup" parent="XROrigin3D/LeftController" instance=ExtResource("3_tuyoq")]
 
@@ -49,6 +50,7 @@ visible = false
 collide_with_areas = true
 
 [node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("4_dqkch")]
+collision_mask = 2147484671
 
 [node name="FootstepAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_y4r1p")
