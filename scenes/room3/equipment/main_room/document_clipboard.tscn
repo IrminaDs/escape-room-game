@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=4 uid="uid://byfvrmts8kgty"]
+[gd_scene load_steps=23 format=4 uid="uid://bgpec1eqrqgod"]
 
 [ext_resource type="Texture2D" uid="uid://dgsdumcddgr5a" path="res://models/room3/furniture/content/document_clipboard_0.png" id="1_4ormn"]
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_lt3rp"]
 [ext_resource type="Texture2D" uid="uid://bkj4xvjja16hg" path="res://models/room3/furniture/content/document_clipboard_1.png" id="2_lt3rp"]
 [ext_resource type="Texture2D" uid="uid://yly5iyaecwhb" path="res://models/room3/furniture/content/document_clipboard_2.png" id="3_efhso"]
 [ext_resource type="Texture2D" uid="uid://j1lrapesph1u" path="res://models/room3/textures/content/report.png" id="4_4ormn"]
@@ -9,6 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://cmqwiu3rxoc81" path="res://models/room3/furniture/content/document_clipboard_6.png" id="7_746m8"]
 [ext_resource type="Texture2D" uid="uid://b5ds6a4ybwlvb" path="res://models/room3/furniture/content/document_clipboard_7.png" id="8_jbdqi"]
 [ext_resource type="Texture2D" uid="uid://2vw13xxpwr57" path="res://models/room3/furniture/content/document_clipboard_8.png" id="9_0ftdw"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="11_opv13"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="12_k4jce"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_efhso"]
+size = Vector3(0.264339, 0.0327129, 0.374325)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pb8ff"]
 resource_name = "Tablet"
@@ -147,34 +153,47 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ryh0o")
 
-[node name="DocumentClipboard" type="Node3D"]
+[node name="DocumentClipboard" instance=ExtResource("1_lt3rp")]
 
-[node name="Sketchfab_model" type="Node3D" parent="."]
+[node name="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00224405, 0.00280114, 0.00651412)
+shape = SubResource("BoxShape3D_efhso")
+
+[node name="DocumentClipboard" type="Node3D" parent="." index="1"]
+transform = Transform3D(1.18587, 0, 0, 0, 1.18587, 0, 0, 0, 1.18587, 0.00183478, -0.000125692, 0.0101642)
+
+[node name="Sketchfab_model" type="Node3D" parent="DocumentClipboard" index="0"]
 transform = Transform3D(-2.22045e-16, 1, -1.60812e-16, -6.12323e-17, 1.60812e-16, 1, 1, 2.22045e-16, 6.12323e-17, 0, 0, 0)
 
-[node name="Clipboard_fbx" type="Node3D" parent="Sketchfab_model"]
+[node name="Clipboard_fbx" type="Node3D" parent="DocumentClipboard/Sketchfab_model" index="0"]
 transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
 
-[node name="RootNode" type="Node3D" parent="Sketchfab_model/Clipboard_fbx"]
+[node name="RootNode" type="Node3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx" index="0"]
 
-[node name="Tablet" type="Node3D" parent="Sketchfab_model/Clipboard_fbx/RootNode"]
+[node name="Tablet" type="Node3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx/RootNode" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85962e-15, 0)
 
-[node name="Tablet_Tablet_0" type="MeshInstance3D" parent="Sketchfab_model/Clipboard_fbx/RootNode/Tablet"]
+[node name="Tablet_Tablet_0" type="MeshInstance3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx/RootNode/Tablet" index="0"]
 mesh = SubResource("ArrayMesh_i2jhn")
 skeleton = NodePath("")
 
-[node name="Paper" type="Node3D" parent="Sketchfab_model/Clipboard_fbx/RootNode/Tablet"]
+[node name="Paper" type="Node3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx/RootNode/Tablet" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04336, 0.70717, 0)
 
-[node name="Paper_Paper_0" type="MeshInstance3D" parent="Sketchfab_model/Clipboard_fbx/RootNode/Tablet/Paper"]
+[node name="Paper_Paper_0" type="MeshInstance3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx/RootNode/Tablet/Paper" index="0"]
 mesh = SubResource("ArrayMesh_rjo4o")
 skeleton = NodePath("")
 
-[node name="Pen" type="Node3D" parent="Sketchfab_model/Clipboard_fbx/RootNode/Tablet"]
+[node name="Pen" type="Node3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx/RootNode/Tablet" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.2605, 1.25223, -5.90165)
 
-[node name="Pen_Pen_0" type="MeshInstance3D" parent="Sketchfab_model/Clipboard_fbx/RootNode/Tablet/Pen"]
+[node name="Pen_Pen_0" type="MeshInstance3D" parent="DocumentClipboard/Sketchfab_model/Clipboard_fbx/RootNode/Tablet/Pen" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.32349e-23, 0, 1.32349e-23, 1, 0, 0, 14.7982)
 mesh = SubResource("ArrayMesh_ec10j")
 skeleton = NodePath("")
+
+[node name="GrabPointHandLeft" parent="." index="2" instance=ExtResource("11_opv13")]
+transform = Transform3D(0.930833, -0.365445, 0, 0.365445, 0.930833, 0, 0, 0, 1, -0.13316, 0.0253096, -0.0658704)
+
+[node name="GrabPointHandRight" parent="." index="3" instance=ExtResource("12_k4jce")]
+transform = Transform3D(0.92591, 0.377744, 0, -0.377744, 0.92591, 0, 0, 0, 1, 0.131029, 0.019975, -0.0613851)

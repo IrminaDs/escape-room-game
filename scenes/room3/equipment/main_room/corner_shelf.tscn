@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://m5y3bfd7wy72"]
 
-[ext_resource type="Texture2D" uid="uid://bvly072pg2jp6" path="res://models/room3/furniture/shelves/corner_wall_shelf_0.jpg" id="1_lxjf3"]
-[ext_resource type="Texture2D" uid="uid://b2rwlvkdijav5" path="res://models/room3/furniture/shelves/corner_wall_shelf_1.png" id="2_4qtpp"]
+[ext_resource type="Texture2D" uid="uid://m8ejt56dynkb" path="res://models/room3/furniture/shelves/corner_wall_shelf_0.jpg" id="1_lxjf3"]
+[ext_resource type="Texture2D" uid="uid://dgwnamxa4a7mn" path="res://models/room3/furniture/shelves/corner_wall_shelf_1.png" id="2_4qtpp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lxjf3"]
 size = Vector3(0.191772, 0.0127258, 0.626373)
@@ -27,7 +27,7 @@ size = Vector3(0.188324, 0.24663, 0.014185)
 [sub_resource type="BoxShape3D" id="BoxShape3D_2lsc6"]
 size = Vector3(0.188324, 0.24663, 0.014185)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjqon"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ws6mp"]
 resource_name = "Scene_-_Root"
 cull_mode = 2
 albedo_color = Color(0, 0, 0, 1)
@@ -61,7 +61,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 402,
 "index_data": PackedByteArray("AAABAAIAAQADAAIABAAFAAYABQAHAAYACAAJAAoACQALAAoACAAKAAwACQANAAsACAAMAA4ACwANAA8AEAAIAA4ADQARAA8AEAAOABEADQAQABEAEgATABQAEgAUABUAEgAVABYAEwAXABQAGAASABYAGAAWABkAGgAYABkAGgAZABsAHAAaABsAGgAcABMAHAAdABMAFwATAB0AHAAeAB0AFwAdAB8AHgAgAB0AIQAXAB8AHgAiACAAIQAfACMAIgAjACAAIgAhACMAJAAlACYAJQAnACYAKAApACoAKQArACoALAAtAC4ALQAvAC4ALgAvADAALwAxADAALwAyADEAMgAzADEAMgA0ADMANAA1ADMANAA2ADUANgA0AC0ANgAtADcALQA4ADcALQAsADgANwA4ADkALAA6ADgAOwA3ADkALAA8ADoAOwA5AD0APAA9ADoAPAA7AD0APgA/AEAAPwBBAEAAQgBDAEQAQwBFAEQARgBHAEgARwBJAEgASgBLAEwASwBNAEwATgBPAFAATwBRAFAAUgBTAFQAUwBVAFQAVgBXAFgAVwBZAFgAVgBYAFoAVwBbAFkAVgBaAFwAWQBbAF0AXgBWAFwAWwBfAF0AXgBcAF8AWwBeAF8AYABhAGIAYQBjAGIAZABlAGYAZQBnAGYAaABpAGoAaQBrAGoAbABtAG4AbQBvAG4AcABxAHIAcQBzAHIAdAB1AHYAdQB3AHYAeAB5AHoAeQB7AHoAfAB9AH4AfQB/AH4AgAB9AHwAfQCBAH8AgAB8AIIAgQCDAH8AhACAAIIAgQCEAIMAhACCAIMAhQCGAIcAhgCIAIcAiQCKAIsAigCMAIsAjQCOAI8AjgCQAI8AkQCSAJMAkgCUAJMAlQCWAJcAlgCYAJcAmQCaAJsAmgCcAJsAnQCeAJ8AngCgAJ8AoQCiAKMAogCkAKMApQCiAKEAogCmAKQApQChAKcApgCoAKQAqQClAKcApgCpAKgAqQCnAKgAqgCrAKwAqwCtAKwArgCvALAArwCxALAAsgCzALQAswC1ALQAtgC3ALgAtwC5ALgA"),
-"material": SubResource("StandardMaterial3D_rjqon"),
+"material": SubResource("StandardMaterial3D_ws6mp"),
 "name": "Scene_-_Root",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -72,7 +72,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_tqt25")
 
 [node name="CornerShelf" type="Node3D"]
-transform = Transform3D(2.15775e-08, 0, -1.80945, 0, 1.80945, 0, 1.80945, 0, 2.15775e-08, 0, 0, 0)
 
 [node name="RootNode" type="StaticBody3D" parent="."]
 transform = Transform3D(1.25e-05, 0, 0, 0, 1.25e-05, -2.77556e-21, 0, 2.77556e-21, 1.25e-05, 0, 0, 0)
