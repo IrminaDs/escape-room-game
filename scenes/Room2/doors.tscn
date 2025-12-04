@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqpko2g6fmol4"]
+
+[ext_resource type="PackedScene" uid="uid://cctrfp4kjvibl" path="res://models/Room2/objects/doors/blue_metal_door.glb" id="1_5vy07"]
+
+[node name="doors" instance=ExtResource("1_5vy07")]
+
+[node name="Door" parent="Sketchfab_model/Door_fbx/Object_2/RootNode/DoorFrame" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.8, 105, 2.21)
