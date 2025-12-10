@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://d15r6b0j7ueva" path="res://scenes/Room2/wall_2_hole.tscn" id="2_qyg7m"]
 [ext_resource type="PackedScene" uid="uid://dyknts50cnr1d" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
-[ext_resource type="PackedScene" uid="uid://l164ps20gx5q" path="res://scenes/Room2/keypad.tscn" id="3_x55sq"]
 [ext_resource type="PackedScene" uid="uid://dltb2uh4gdrsd" path="res://scenes/Room2/desk.tscn" id="4_j5lkk"]
 [ext_resource type="PackedScene" uid="uid://db0pwqroo1gio" path="res://scenes/Room2/blackboard.tscn" id="5_uugd8"]
 [ext_resource type="PackedScene" uid="uid://dlll241pb8sv8" path="res://scenes/Room2/lamp.tscn" id="6_qyg7m"]
@@ -19,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dqpko2g6fmol4" path="res://scenes/Room2/doors.tscn" id="15_uugd8"]
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="15_x55sq"]
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="16_j5lkk"]
+[ext_resource type="PackedScene" uid="uid://cpml6hwjdpcpv" path="res://scenes/Room2/keypad2.tscn" id="16_qyg7m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -175,9 +175,6 @@ shape = SubResource("BoxShape3D_4tva4")
 
 [node name="Objects" type="Node3D" parent="Build"]
 
-[node name="keypad" parent="Build/Objects" instance=ExtResource("3_x55sq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.09171, 4.09295, -1.99594)
-
 [node name="desk1" parent="Build/Objects" instance=ExtResource("4_j5lkk")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.782376, 2.9876037, 1.8528)
 
@@ -258,6 +255,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22884, 3.68692, 2.28312)
 
 [node name="doors" parent="Build/Objects" instance=ExtResource("15_uugd8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 3.10576, 2.55543, -2.340816)
+
+[node name="keypad2" parent="Build/Objects" instance=ExtResource("16_qyg7m")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -1.9062636, 4.082947, 0.24304903)
 
 [node name="ceiling" type="StaticBody3D" parent="Build"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26649, 0)
