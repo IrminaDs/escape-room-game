@@ -1,6 +1,7 @@
-[gd_scene load_steps=51 format=4 uid="uid://chj5topknr0sq"]
+[gd_scene load_steps=52 format=4 uid="uid://chj5topknr0sq"]
 
 [ext_resource type="Texture2D" uid="uid://dtk7y75c5evhp" path="res://models/room3/furniture/display/warning.png" id="2_5q7xf"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="3_n4ndn"]
 [ext_resource type="Texture2D" uid="uid://dyylh6mmfv4k3" path="res://models/room3/furniture/display/sci_fi_monitor_2.png" id="3_uelup"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ierw"]
@@ -929,3 +930,9 @@ skeleton = NodePath("")
 transform = Transform3D(0.0338308, 0, 0, 0, 0.0341416, 0, 0, 0, 0.0341416, -0.000815857, 0.0603859, 0.000425965)
 material_override = SubResource("StandardMaterial3D_n4ndn")
 mesh = SubResource("PlaneMesh_luj4x")
+
+[node name="Viewport2Din3D" parent="." instance=ExtResource("3_n4ndn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00253027, 0.0620579, 0.00843603)
+screen_size = Vector2(0.15, 0.1)
+viewport_size = Vector2(1024, 512)
+scene_properties_keys = PackedStringArray()

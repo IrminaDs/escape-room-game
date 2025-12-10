@@ -1,9 +1,13 @@
-[gd_scene load_steps=13 format=4 uid="uid://cg25re431ms8i"]
+[gd_scene load_steps=15 format=4 uid="uid://cg25re431ms8i"]
 
 [ext_resource type="Texture2D" uid="uid://c4er1qq062eni" path="res://models/room3/furniture/door/sci-fi_door_prob_0.png" id="1_buq8p"]
+[ext_resource type="Script" path="res://scripts/room3/main_room/automatic_door.gd" id="1_w7pbe"]
 [ext_resource type="Texture2D" uid="uid://btgtvdlg6yxx6" path="res://models/room3/furniture/door/sci-fi_door_prob_2.jpg" id="2_w7pbe"]
 [ext_resource type="Texture2D" uid="uid://tfs0b6ih7tlf" path="res://models/room3/furniture/door/sci-fi_door_prob_1.png" id="3_2xk3i"]
 [ext_resource type="Texture2D" uid="uid://cyy2t3cn6u1sr" path="res://models/room3/furniture/door/sci-fi_door_prob_3.png" id="4_f106b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2xk3i"]
+size = Vector3(0.914063, 1.04791, 0.145752)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rmpqd"]
 resource_name = "default.001"
@@ -142,7 +146,12 @@ _data = {
 &"Armature|Open": SubResource("Animation_buq8p")
 }
 
-[node name="AutomaticDoor" type="Node3D"]
+[node name="AutomaticDoor" type="StaticBody3D"]
+script = ExtResource("1_w7pbe")
+
+[node name="LockArea" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.16523, 0, 0, 0, 1.16523, 0, 0, 0, 1.16523, -0.00910334, 0.0609853, 0.00583184)
+shape = SubResource("BoxShape3D_2xk3i")
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
 transform = Transform3D(0.623, 0, 0, 0, -3.59308e-08, 0.846, 0, -0.822, -3.69798e-08, 0, 0, 0)

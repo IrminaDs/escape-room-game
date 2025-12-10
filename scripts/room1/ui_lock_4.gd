@@ -1,5 +1,8 @@
 extends CanvasLayer
 
+enum RoomEvents { Room1, Room3 }
+@export var room_event: RoomEvents
+
 @export var correct_code := "BBBB"
 @export var color: Color
 @export var signal_to_emit: String
@@ -38,12 +41,24 @@ func _highlight_selected():
 		else:
 			label.modulate = Color(1, 1, 1)
 
+func _get_events_node() -> Node:
+	match room_event:
+		RoomEvents.Room1:
+			return Room1GameEvents
+		RoomEvents.Room3:
+			return Room3GameEvents
+		_:
+			return null
+
 func _check_code():
 	if "".join(current_code) == correct_code:
 		code_unlocked = true
 		await _flash_letters()
-		Room1GameEvents.emit_signal(signal_to_emit)
-
+		var emitter = _get_events_node()
+		if emitter:
+			emitter.emit_signal(signal_to_emit)
+			
+			
 func _flash_letters():
 	for i in range(2):
 		_set_letters_color(color)

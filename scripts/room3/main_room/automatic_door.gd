@@ -1,7 +1,7 @@
 extends Node3D
 
 @onready var anim_player: AnimationPlayer = $AnimationPlayer
-@onready var lock_area: Node3D = $DoorLocked
+@onready var lock_area: Node3D = $LockArea
 
 func _ready():
 	Room3GameEvents.connect("automatic_door_unlocked", Callable(self, "_automatic_door_unlocked"))

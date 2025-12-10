@@ -1,0 +1,280 @@
+[gd_scene load_steps=16 format=3 uid="uid://dy01gudbo4id2"]
+
+[ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/room1/ui_lock_4.gd" id="1_jby34"]
+[ext_resource type="FontFile" uid="uid://7t1kmkl5jnri" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_4wf32"]
+[ext_resource type="Texture2D" uid="uid://cyvj5agvsee5e" path="res://models/room3/icons/arrow_nor.png" id="3_w6r8w"]
+[ext_resource type="Texture2D" uid="uid://bqqsowdbajjdy" path="res://models/room3/icons/arrow_press.png" id="4_jby34"]
+[ext_resource type="Texture2D" uid="uid://2sa10wotcsws" path="res://models/room3/icons/arrow_hov.png" id="5_e6wna"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e6wna"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_poyqd"]
+bg_color = Color(0.0509804, 0.407843, 0.854902, 0.945098)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvode"]
+bg_color = Color(0.698039, 0.0509804, 0.0509804, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_htnk8"]
+bg_color = Color(0.0509804, 0.447059, 0.0509804, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f4uu3"]
+bg_color = Color(1, 0.623529, 0.0509804, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m546d"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.498039, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_poyqd"]
+font = ExtResource("2_4wf32")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_jvode"]
+font = ExtResource("2_4wf32")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_htnk8"]
+font = ExtResource("2_4wf32")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_f4uu3"]
+font = ExtResource("2_4wf32")
+font_size = 100
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_jby34")
+room_event = 1
+signal_to_emit = "modern_shelf_unlocked"
+
+[node name="Panel" type="Panel" parent="."]
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 640.0
+offset_bottom = 384.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_e6wna")
+
+[node name="Panel" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 56.0
+offset_right = 184.0
+offset_bottom = 200.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_poyqd")
+
+[node name="Panel2" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 56.0
+offset_right = 312.0
+offset_bottom = 200.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvode")
+
+[node name="Panel3" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 56.0
+offset_right = 440.0
+offset_bottom = 200.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_htnk8")
+
+[node name="Panel4" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 56.0
+offset_right = 568.0
+offset_bottom = 200.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f4uu3")
+
+[node name="Panel5" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 256.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m546d")
+
+[node name="Label1" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 128.0
+offset_right = 176.0
+offset_bottom = 384.0
+text = "1"
+label_settings = SubResource("LabelSettings_poyqd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 128.0
+offset_right = 304.0
+offset_bottom = 384.0
+text = "2"
+label_settings = SubResource("LabelSettings_jvode")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 128.0
+offset_right = 432.0
+offset_bottom = 384.0
+text = "3"
+label_settings = SubResource("LabelSettings_htnk8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 128.0
+offset_right = 560.0
+offset_bottom = 384.0
+text = "4"
+label_settings = SubResource("LabelSettings_f4uu3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Container" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonUp1" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 104.0
+offset_top = 29.0
+offset_right = 154.0
+offset_bottom = 79.0
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonUp2" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 232.0
+offset_top = 29.0
+offset_right = 282.0
+offset_bottom = 79.0
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonUp3" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 360.0
+offset_top = 29.0
+offset_right = 410.0
+offset_bottom = 79.0
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonUp4" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 488.0
+offset_top = 29.0
+offset_right = 538.0
+offset_bottom = 79.0
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonDown1" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 154.0
+offset_top = 483.0
+offset_right = 204.0
+offset_bottom = 533.0
+rotation = 3.14159
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonDown2" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 282.0
+offset_top = 483.0
+offset_right = 332.0
+offset_bottom = 533.0
+rotation = 3.14159
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonDown3" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 410.0
+offset_top = 483.0
+offset_right = 460.0
+offset_bottom = 533.0
+rotation = 3.14159
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ButtonDown4" type="TextureButton" parent="Container"]
+layout_mode = 2
+offset_left = 538.0
+offset_top = 483.0
+offset_right = 588.0
+offset_bottom = 533.0
+rotation = 3.14159
+focus_mode = 0
+texture_normal = ExtResource("3_w6r8w")
+texture_pressed = ExtResource("4_jby34")
+texture_hover = ExtResource("5_e6wna")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Container/ButtonUp1" to="." method="_on_button_up_1_pressed"]
+[connection signal="pressed" from="Container/ButtonUp2" to="." method="_on_button_up_2_pressed"]
+[connection signal="pressed" from="Container/ButtonUp3" to="." method="_on_button_up_3_pressed"]
+[connection signal="pressed" from="Container/ButtonUp4" to="." method="_on_button_up_4_pressed"]
+[connection signal="pressed" from="Container/ButtonDown1" to="." method="_on_button_down_1_pressed"]
+[connection signal="pressed" from="Container/ButtonDown2" to="." method="_on_button_down_2_pressed"]
+[connection signal="pressed" from="Container/ButtonDown3" to="." method="_on_button_down_3_pressed"]
+[connection signal="pressed" from="Container/ButtonDown4" to="." method="_on_button_down_4_pressed"]

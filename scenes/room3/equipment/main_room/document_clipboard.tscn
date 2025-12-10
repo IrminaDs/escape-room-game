@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://bgpec1eqrqgod"]
+[gd_scene load_steps=29 format=4 uid="uid://bgpec1eqrqgod"]
 
 [ext_resource type="Texture2D" uid="uid://dgsdumcddgr5a" path="res://models/room3/furniture/content/document_clipboard_0.png" id="1_4ormn"]
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_lt3rp"]
@@ -11,10 +11,14 @@
 [ext_resource type="Texture2D" uid="uid://b5ds6a4ybwlvb" path="res://models/room3/furniture/content/document_clipboard_7.png" id="8_jbdqi"]
 [ext_resource type="Texture2D" uid="uid://2vw13xxpwr57" path="res://models/room3/furniture/content/document_clipboard_8.png" id="9_0ftdw"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="11_opv13"]
+[ext_resource type="Animation" uid="uid://fi23m6i7orhw" path="res://addons/godot-xr-tools/hands/animations/left/Pinch Up.res" id="12_746m8"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="12_k4jce"]
+[ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="13_jbdqi"]
+[ext_resource type="Animation" uid="uid://c8dghcftg1thx" path="res://addons/godot-xr-tools/hands/animations/right/Grip Shaft.res" id="15_0ftdw"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="16_jbdqi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_efhso"]
-size = Vector3(0.264339, 0.0327129, 0.374325)
+size = Vector3(0.264339, 0.0410762, 0.374325)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pb8ff"]
 resource_name = "Tablet"
@@ -153,10 +157,21 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ryh0o")
 
+[sub_resource type="Resource" id="Resource_jbdqi"]
+script = ExtResource("13_jbdqi")
+closed_pose = ExtResource("12_746m8")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[sub_resource type="Resource" id="Resource_84lje"]
+script = ExtResource("13_jbdqi")
+closed_pose = ExtResource("15_0ftdw")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
 [node name="DocumentClipboard" instance=ExtResource("1_lt3rp")]
+second_hand_grab = 2
 
 [node name="CollisionShape3D" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00224405, 0.00280114, 0.00651412)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00224405, 0.00698278, 0.00651412)
 shape = SubResource("BoxShape3D_efhso")
 
 [node name="DocumentClipboard" type="Node3D" parent="." index="1"]
@@ -193,7 +208,12 @@ mesh = SubResource("ArrayMesh_ec10j")
 skeleton = NodePath("")
 
 [node name="GrabPointHandLeft" parent="." index="2" instance=ExtResource("11_opv13")]
-transform = Transform3D(0.930833, -0.365445, 0, 0.365445, 0.930833, 0, 0, 0, 1, -0.13316, 0.0253096, -0.0658704)
+transform = Transform3D(0.986034, 0, -0.166545, 0, 1, 0, 0.166545, 0, 0.986034, -0.105265, 0.0430521, -0.0658704)
+hand_pose = SubResource("Resource_jbdqi")
 
 [node name="GrabPointHandRight" parent="." index="3" instance=ExtResource("12_k4jce")]
-transform = Transform3D(0.92591, 0.377744, 0, -0.377744, 0.92591, 0, 0, 0, 1, 0.131029, 0.019975, -0.0613851)
+transform = Transform3D(0.92591, 0.377744, 0, -0.377744, 0.92591, 0, 0, 0, 1, 0.131029, 0.0306848, -0.0613851)
+hand_pose = SubResource("Resource_84lje")
+
+[node name="HighlightRing" parent="." index="4" instance=ExtResource("16_jbdqi")]
+transform = Transform3D(1, 0, 0, 0, -0.0524231, 0.998625, 0, -0.998625, -0.0524231, -0.00511551, 0.00494795, 0.00680383)

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bupufn7vk3su"]
+
+[ext_resource type="Texture2D" uid="uid://dync364h75inj" path="res://models/room3/textures/content/cipher_book.png" id="1_5rgr0"]
+
+[node name="UiSymmetrical" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_5rgr0")
