@@ -4,6 +4,7 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 
 @export var path: String = "res://scenes/Room1/Room1.tscn"
 @export var room_events: String = "/root/Room1GameEvents"
+@export var text: String = "Szyfry:\n- Tablica Polibiusz\n- Szyfr Cezara\n- Szyfr Vigenere'a"
 
 @onready var main_light = $"../MainLight"
 @onready var ilumination = $"../FakeIlumination"
@@ -26,12 +27,7 @@ func _ready():
 	events = get_node(room_events)
 	if events.room_finished:
 		room = true
-		label.text = """
-		Szyfry:
-		- Tablica Polibiusza
-		- Szyfr Cezara
-		- Szyfr Vignere'a
-		"""
+		label.text = text
 		main_light.light_energy = 16
 		sec_light.visible = true
 		ilumination.visible = true
