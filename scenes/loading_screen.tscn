@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://yqvlngyhitk1"]
+
+[sub_resource type="Environment" id="Environment_ndlxt"]
+background_mode = 1
+ambient_light_source = 1
+ambient_light_energy = 0.0
+reflected_light_source = 1
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5wbsp"]
+albedo_color = Color(0, 0, 0, 1)
+roughness = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ndlxt"]
+material = SubResource("StandardMaterial3D_5wbsp")
+size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ep5rh"]
+size = Vector3(50, 1, 50)
+
+[node name="LoadingScreen" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ndlxt")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_ndlxt")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_ep5rh")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, -2.25)
+text = "Loading..."
+font_size = 48
