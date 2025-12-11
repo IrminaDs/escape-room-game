@@ -6,7 +6,7 @@ extends Area3D
 
 var viewport: XRToolsViewport2DIn3D
 
-@export var original_position: Vector3 = Vector3(-0.1, 0.25, 0)
+@export var original_position: Vector3 = Vector3(0,-0.4, -0.5)
 var hidden_position: Vector3 = Vector3(0, -15, 0)
 
 func _ready():

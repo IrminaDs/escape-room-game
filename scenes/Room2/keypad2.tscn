@@ -4,13 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://d1fqwa4x63bhd" path="res://models/Room2/objects/keypad/cc0_-_keypad_door_lock.glb" id="1_tdcfb"]
 [ext_resource type="Script" uid="uid://bole866km00yi" path="res://scripts/room2/lock_keypad.gd" id="3_cfd1i"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="4_nefba"]
-[ext_resource type="PackedScene" uid="uid://dyqkrr88xjnwt" path="res://scenes/Room1/ui_lock_chest.tscn" id="5_ydgl7"]
+[ext_resource type="PackedScene" uid="uid://c2qu8ca112dci" path="res://scenes/Room2/ui_lock_keypad.tscn" id="5_8i55j"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kvtgs"]
 size = Vector3(0.11608887, 0.13964844, 0.061401367)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p6djn"]
-size = Vector3(2.5, 4.5502625, 1.7388916)
+size = Vector3(4.9996643, 3.797104, 2.2356567)
 
 [node name="Keypad" type="StaticBody3D"]
 script = ExtResource("1_8i55j")
@@ -28,16 +28,15 @@ transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0.6, 0.375)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -0.625)
 collision_mask = 524288
 script = ExtResource("3_cfd1i")
-original_position = Vector3(0, 1.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
-transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.023749312, -1.8841776, 0.96927595)
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0.21051882, -1.5075982, 1.2176582)
 shape = SubResource("BoxShape3D_p6djn")
 
 [node name="Viewport2Din3D" parent="Lock" instance=ExtResource("4_nefba")]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, -0.29232198, -0.5569147)
 screen_size = Vector2(1, 0.8)
-scene = ExtResource("5_ydgl7")
+scene = ExtResource("5_8i55j")
 viewport_size = Vector2(640, 512)
 scene_properties_keys = PackedStringArray("ui_lock_4.gd", "correct_code", "color", "signal_to_emit")
 correct_code = "BBBB"

@@ -179,7 +179,7 @@ shape = SubResource("BoxShape3D_4tva4")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.782376, 2.9876037, 1.8528)
 
 [node name="desk3" parent="Build/Objects" instance=ExtResource("4_j5lkk")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.449, 3.087, -1.67156)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.92433655, 2.988, -1.8126256)
 
 [node name="blackboard_right" parent="Build/Objects" instance=ExtResource("5_uugd8")]
 transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, 4.04934, 4.333, -0.423)
@@ -208,13 +208,13 @@ transform = Transform3D(-6, 0, -9.05975e-07, 0, 6, 0, 9.05975e-07, 0, -6, 1.2936
 transform = Transform3D(-6, 0, -9.05975e-07, 0, 6, 0, 9.05975e-07, 0, -6, 0.908368, 2.5397973, 1.9102)
 
 [node name="pc_tower3" parent="Build/Objects/pc_group" instance=ExtResource("7_bv1ei")]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.968606, 2.53532, -1.63983)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -1.4439425, 2.53532, -1.63983)
 
 [node name="pc_tower4" parent="Build/Objects/pc_group" instance=ExtResource("7_bv1ei")]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -0.594982, 2.53532, -1.63577)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -1.0703186, 2.53532, -1.63577)
 
 [node name="monitor1" parent="Build/Objects" instance=ExtResource("8_x55sq")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.9, 4.524, -0.955)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -1.9, 4.524, -0.8805981)
 
 [node name="monitor2" parent="Build/Objects" instance=ExtResource("8_x55sq")]
 transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-10, -1.738, 4.521, 2.316)
@@ -236,10 +236,10 @@ texture = ExtResource("12_438py")
 [node name="ondesk" type="Node3D" parent="Build/Objects"]
 
 [node name="document_file" parent="Build/Objects/ondesk" instance=ExtResource("13_j5lkk")]
-transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0.284184, 3.55488, -1.63272)
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -0.39531705, 3.4640536, -1.7036384)
 
 [node name="folders" parent="Build/Objects/ondesk" instance=ExtResource("14_k4i2i")]
-transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -1.14265, 3.53982, -1.77504)
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -1.824228, 3.424812, -2.0623252)
 
 [node name="radio" parent="Build/Objects/ondesk" instance=ExtResource("14_uugd8")]
 transform = Transform3D(-0.0124861, 0, -0.00831243, 0, 0.015, 0, 0.00831243, 0, -0.0124861, 1.46226, 3.60777, 1.95172)
