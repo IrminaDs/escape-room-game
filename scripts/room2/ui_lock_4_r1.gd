@@ -1,11 +1,11 @@
 extends CanvasLayer
 
-@export var correct_code := "BBBB"
+@export var correct_code := "1972"
 @export var color: Color
 @export var signal_to_emit: String
 
-var current_code := ["A","A","A","A"]
-var letters := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var current_code := ["1","2","3","4"]
+var letters := "1234567890"
 var code_unlocked := false
 var selected_letter := 0
 

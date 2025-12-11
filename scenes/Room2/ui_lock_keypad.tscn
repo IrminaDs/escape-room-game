@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://c2qu8ca112dci"]
 
-[ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/room1/ui_lock_4.gd" id="1_bsq66"]
+[ext_resource type="Script" uid="uid://dcdqv6l13g6ju" path="res://scripts/room2/ui_lock_4_r1.gd" id="1_am45t"]
 [ext_resource type="FontFile" uid="uid://bjcybttey5eam" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_6p54y"]
 [ext_resource type="Texture2D" uid="uid://dqvvrx3h40evu" path="res://models/Room1/textures/icons/arrow.png" id="3_6c1dj"]
 
@@ -66,8 +66,8 @@ font_size = 100
 font = ExtResource("2_6p54y")
 font_size = 100
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ux76"]
-bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a6ysn"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 0.705882)
 corner_radius_top_left = 50
 corner_radius_top_right = 50
 corner_radius_bottom_right = 50
@@ -93,8 +93,8 @@ expand_margin_top = 20.0
 expand_margin_right = 20.0
 expand_margin_bottom = 25.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a6ysn"]
-bg_color = Color(0.054902, 0.054902, 0.054902, 0.705882)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ux76"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
 corner_radius_top_left = 50
 corner_radius_top_right = 50
 corner_radius_bottom_right = 50
@@ -105,9 +105,7 @@ expand_margin_right = 20.0
 expand_margin_bottom = 25.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
-script = ExtResource("1_bsq66")
-color = Color(0.1, 0.4, 0.7, 1)
-signal_to_emit = "chest_unlocked"
+script = ExtResource("1_am45t")
 
 [node name="Panel" type="Panel" parent="."]
 
@@ -207,113 +205,113 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ButtonUp1" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 104.0
 offset_top = 29.0
 offset_right = 154.0
 offset_bottom = 79.0
 focus_mode = 0
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonUp2" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 232.0
 offset_top = 29.0
 offset_right = 282.0
 offset_bottom = 79.0
 focus_mode = 0
 theme_override_font_sizes/font_size = 64
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonUp3" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 360.0
 offset_top = 29.0
 offset_right = 410.0
 offset_bottom = 79.0
 focus_mode = 0
 theme_override_font_sizes/font_size = 64
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonUp4" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 488.0
 offset_top = 29.0
 offset_right = 538.0
 offset_bottom = 79.0
 focus_mode = 0
 theme_override_font_sizes/font_size = 64
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonDown1" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 154.0
 offset_top = 483.0
 offset_right = 204.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonDown2" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 282.0
 offset_top = 483.0
 offset_right = 332.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonDown3" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 410.0
 offset_top = 483.0
 offset_right = 460.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
 [node name="ButtonDown4" type="Button" parent="Container"]
-layout_mode = 2
+layout_mode = 0
 offset_left = 538.0
 offset_top = 483.0
 offset_right = 588.0
 offset_bottom = 533.0
 rotation = 3.14159
 focus_mode = 0
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
 icon = ExtResource("3_6c1dj")
 expand_icon = true
 
