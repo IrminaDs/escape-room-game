@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://b7ds5gefo6yei"]
 
-[ext_resource type="Texture2D" uid="uid://r1blk2pt5s1l" path="res://models/room3/furniture/content/card_tri.png" id="1_7qdxj"]
+[ext_resource type="Texture2D" uid="uid://dy6cuvj766uvt" path="res://models/room3/furniture/content/card_tri.png" id="1_7qdxj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_66ght"]
 resource_name = "Material.001"

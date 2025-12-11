@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bhns85yommkse"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_pgnra"]
-[ext_resource type="PackedScene" uid="uid://b34fesm85toi0" path="res://models/room3/furniture/content/RSA_crumbled.glb" id="2_0oasi"]
+[ext_resource type="PackedScene" uid="uid://bln6l23k7qtbj" path="res://models/room3/furniture/content/RSA_crumbled.glb" id="2_0oasi"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="3_8obcg"]
 [ext_resource type="Animation" uid="uid://fi23m6i7orhw" path="res://addons/godot-xr-tools/hands/animations/left/Pinch Up.res" id="4_3j2ii"]
 [ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="5_5h1g0"]
@@ -22,6 +22,7 @@ closed_pose = ExtResource("7_nmat3")
 metadata/_custom_type_script = "uid://cb65h51jcm0kt"
 
 [node name="RSA" instance=ExtResource("1_pgnra")]
+second_hand_grab = 2
 
 [node name="CollisionShape3D" parent="." index="0"]
 transform = Transform3D(-0.203145, 0, 0.0184269, 0, 0.203979, 0, -0.0184269, 0, -0.203145, 0.00960072, 0.00984699, -0.0123088)
@@ -35,5 +36,6 @@ transform = Transform3D(0.986034, 0, -0.166545, 0, 1, 0, 0.166545, 0, 0.986034, 
 hand_pose = SubResource("Resource_1ehj4")
 
 [node name="GrabPointHandRight" parent="." index="3" instance=ExtResource("6_gi6t3")]
-transform = Transform3D(0.92591, 0.377744, 0, -0.377744, 0.92591, 0, 0, 0, 1, 0.131029, 0.0306848, -0.0613851)
+transform = Transform3D(0.92591, 0.377744, 0, -0.377744, 0.92591, 0, 0, 0, 1, 0.131029, 0.0284406, -0.0613851)
+visible = true
 hand_pose = SubResource("Resource_72070")

@@ -1,10 +1,10 @@
 [gd_scene load_steps=25 format=4 uid="uid://lw7j6fu74byn"]
 
 [ext_resource type="Script" uid="uid://b2ocdjpwtr457" path="res://scripts/room3/main_room/modern_shelf.gd" id="1_w25gy"]
-[ext_resource type="Texture2D" uid="uid://b46d126lir6d8" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_0.png" id="1_yay64"]
-[ext_resource type="Texture2D" uid="uid://3ex0dhlnuvbn" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_1.png" id="2_77yrp"]
-[ext_resource type="Texture2D" uid="uid://ya16apl7c250" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_3.png" id="3_8day0"]
-[ext_resource type="Texture2D" uid="uid://cykesdrny51m7" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_2.png" id="4_l868n"]
+[ext_resource type="Texture2D" uid="uid://ok6frnrk22tq" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_0.png" id="1_yay64"]
+[ext_resource type="Texture2D" uid="uid://bhico6hfklldi" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_1.png" id="2_77yrp"]
+[ext_resource type="Texture2D" uid="uid://8nwbg03xebuu" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_3.png" id="3_8day0"]
+[ext_resource type="Texture2D" uid="uid://c7outwbvc5e4o" path="res://models/room3/furniture/shelves/modern_bathroom_cabinet_2.png" id="4_l868n"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="6_lf5ft"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="7_gf7hj"]
 [ext_resource type="PackedScene" uid="uid://dy01gudbo4id2" path="res://scenes/room3/equipment/main_room/ui_lock_shelf.tscn" id="8_w25gy"]
@@ -271,7 +271,7 @@ bones/3/parent = 2
 bones/3/rest = Transform3D(1, 2.35072e-07, 1.85759e-08, -6.03234e-08, 0.178869, 0.983873, 2.27958e-07, -0.983873, 0.178869, 0, 1.45575, 0)
 bones/3/enabled = true
 bones/3/position = Vector3(0, 1.45575, 0)
-bones/3/rotation = Quaternion(-0.640754, -6.81807e-08, -9.61889e-08, 0.767747)
+bones/3/rotation = Quaternion(0.251859, -1.17901e-07, -4.82832e-10, 0.967764)
 bones/3/scale = Vector3(1, 1, 1)
 bones/4/name = "Right_Cabinet_Hinge_03"
 bones/4/parent = 1
@@ -285,7 +285,7 @@ bones/5/parent = 4
 bones/5/rest = Transform3D(1, -2.12475e-07, 1.91551e-06, 1.92262e-06, 0.178869, -0.983873, -1.33577e-07, 0.983873, 0.178869, 5.55112e-17, 1.45575, 0)
 bones/5/enabled = true
 bones/5/position = Vector3(5.55112e-17, 1.45575, 0)
-bones/5/rotation = Quaternion(0.640754, 6.67239e-07, 6.95247e-07, 0.767747)
+bones/5/rotation = Quaternion(-0.251859, -1.77479e-07, 9.47142e-07, 0.967764)
 bones/5/scale = Vector3(1, 1, 1)
 
 [node name="Object_13" type="MeshInstance3D" parent="Sketchfab_model/Untitled_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
