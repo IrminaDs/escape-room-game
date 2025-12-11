@@ -6,14 +6,6 @@ extends Node3D
 
 func _ready():
 	var player = get_node("/root/Main/Player")
-	var origin = player.get_node("XROrigin3D")
-	var body = origin.get_node("PlayerBody")
-
-	var t = Transform3D()
-	t.origin = Vector3(0, 0, 0)
-	t.basis = Basis()
-	body.teleport(t)
-	
 	var point_l = contr_left.get_node("FunctionPointer")
 	var point_r = contr_right.get_node("FunctionPointer")
 	var move_l = contr_left.get_node("MovementDirect")

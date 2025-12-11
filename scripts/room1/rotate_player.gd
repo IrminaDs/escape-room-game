@@ -7,7 +7,7 @@ func _ready() -> void:
 	var body = origin.get_node("PlayerBody")
 
 	var t = Transform3D()
-	t.origin = Vector3(0, 0, 0)
+	t.origin = Vector3(0, 0, -0.25)
 	t.basis = Basis(Vector3.UP, deg_to_rad(180))
 	body.teleport(t)
 
