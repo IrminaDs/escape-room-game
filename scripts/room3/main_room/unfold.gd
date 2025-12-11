@@ -15,17 +15,15 @@ func _ready():
 		pickable = get_parent() as XRToolsPickable
 
 	pickable.grabbed.connect(_on_grabbed)
-	pickable.released.connect(_on_released)
 
-
-func _on_grabbed(controller: XRController3D):
+func _on_grabbed(controller: XRController3D, by_handle: bool):
 	if controller.is_left_hand():
 		left_hand = controller
 	else:
 		right_hand = controller
 
 
-func _on_released(controller: XRController3D):
+func _on_released(controller: XRController3D, by_handle: bool):
 	if controller == left_hand:
 		left_hand = null
 	elif controller == right_hand:

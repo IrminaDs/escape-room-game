@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cbj1hvpyboqju"]
+[gd_scene load_steps=13 format=3 uid="uid://cbj1hvpyboqju"]
 
 [ext_resource type="Script" uid="uid://0i1c54v3tc3t" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_p18l6"]
 [ext_resource type="PackedScene" uid="uid://b7ds5gefo6yei" path="res://models/room3/furniture/content/card.tscn" id="2_bak7m"]
@@ -8,6 +8,7 @@
 [ext_resource type="Animation" uid="uid://dhjb0e334tfwl" path="res://addons/godot-xr-tools/hands/animations/left/Pinch Flat.res" id="5_owh3m"]
 [ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="6_gnd4a"]
 [ext_resource type="Animation" uid="uid://dg4v7rqiaje2h" path="res://addons/godot-xr-tools/hands/animations/right/Pinch Flat.res" id="8_7324h"]
+[ext_resource type="Script" uid="uid://ckf8iatnt4fks" path="res://scripts/room3/enable_grab.gd" id="9_gnd4a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lwh0k"]
 size = Vector3(0.337219, 0.203125, 0.045166)
@@ -46,3 +47,8 @@ hand_pose = SubResource("Resource_4js1m")
 [node name="GrabPointHandRight" parent="." instance=ExtResource("5_eas1s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.155181, 0.0194287, -0.0691764)
 hand_pose = SubResource("Resource_lbsbk")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("9_gnd4a")
+room = 1
+signal_name = "drawer_2_unlocked"

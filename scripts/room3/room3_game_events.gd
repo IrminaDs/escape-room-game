@@ -2,3 +2,4 @@ extends Node
 
 signal automatic_door_unlocked
 signal modern_shelf_unlocked
+signal drawer_2_unlocked
