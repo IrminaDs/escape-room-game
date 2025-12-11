@@ -28,6 +28,7 @@ func _on_grabed(pickable, by):
 	if pickable == get_parent():
 		floor_check.set_collision_mask_value(1, true)
 		Room1GameEvents.emit_signal("final")
+		Room1GameEvents.room_finished = true
 		parent.disconnect("grabbed", Callable(self, "_on_grabed"))
 
 func _on_dropped(pickable):

@@ -1,5 +1,7 @@
 extends Node
 
+var room_finished := false
+
 signal chest_unlocked
 signal desk_unlocked
 signal book_opened

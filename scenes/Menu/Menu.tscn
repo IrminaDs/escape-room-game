@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://c10vhxulwdrnf"]
+
+[ext_resource type="Script" uid="uid://derjeyqqbatya" path="res://scripts/menu/menu.gd" id="1_6jkkg"]
+[ext_resource type="PackedScene" uid="uid://by3cueitml4xi" path="res://scenes/Menu/room_1_stack.tscn" id="3_y0e8m"]
+
+[sub_resource type="Environment" id="Environment_6jkkg"]
+background_mode = 1
+ambient_light_source = 1
+ambient_light_energy = 0.0
+reflected_light_source = 1
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6jkkg"]
+albedo_color = Color(0, 0, 0, 1)
+roughness = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6ocf5"]
+material = SubResource("StandardMaterial3D_6jkkg")
+size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5wbsp"]
+size = Vector3(50, 1, 50)
+
+[sub_resource type="BoxMesh" id="BoxMesh_y0e8m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3gjvt"]
+
+[node name="Menu" type="Node3D"]
+script = ExtResource("1_6jkkg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6jkkg")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_6ocf5")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_5wbsp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+mesh = SubResource("BoxMesh_y0e8m")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.25, 0)
+spot_angle = 15.0
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3.25)
+mesh = SubResource("BoxMesh_3gjvt")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.25, 0)
+spot_angle = 15.0
+
+[node name="Room1Stack" parent="." instance=ExtResource("3_y0e8m")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -3, 0, -3.25)
