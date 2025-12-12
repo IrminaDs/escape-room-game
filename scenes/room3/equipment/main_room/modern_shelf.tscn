@@ -131,7 +131,7 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bt577"]
-size = Vector3(1.52881, 0.48291, 1.5)
+size = Vector3(1.52881, 0.48291, 1.78796)
 
 [sub_resource type="Animation" id="Animation_77yrp"]
 resource_name = "Armature|Close"
@@ -316,7 +316,7 @@ script = ExtResource("6_lf5ft")
 original_position = Vector3(0, -0.442, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578613, 1.34644, 1.16667)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578613, 1.34644, 1.31065)
 shape = SubResource("BoxShape3D_bt577")
 
 [node name="Viewport2Din3D" parent="Lock" instance=ExtResource("7_gf7hj")]
