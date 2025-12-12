@@ -131,7 +131,7 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bt577"]
-size = Vector3(2.5, 0.48291, 1.5)
+size = Vector3(1.52881, 0.48291, 1.5)
 
 [sub_resource type="Animation" id="Animation_77yrp"]
 resource_name = "Armature|Close"
@@ -271,7 +271,7 @@ bones/3/parent = 2
 bones/3/rest = Transform3D(1, 2.35072e-07, 1.85759e-08, -6.03234e-08, 0.178869, 0.983873, 2.27958e-07, -0.983873, 0.178869, 0, 1.45575, 0)
 bones/3/enabled = true
 bones/3/position = Vector3(0, 1.45575, 0)
-bones/3/rotation = Quaternion(0.251859, -1.17901e-07, -4.82832e-10, 0.967764)
+bones/3/rotation = Quaternion(-0.640754, -6.81807e-08, -9.61889e-08, 0.767747)
 bones/3/scale = Vector3(1, 1, 1)
 bones/4/name = "Right_Cabinet_Hinge_03"
 bones/4/parent = 1
@@ -285,7 +285,7 @@ bones/5/parent = 4
 bones/5/rest = Transform3D(1, -2.12475e-07, 1.91551e-06, 1.92262e-06, 0.178869, -0.983873, -1.33577e-07, 0.983873, 0.178869, 5.55112e-17, 1.45575, 0)
 bones/5/enabled = true
 bones/5/position = Vector3(5.55112e-17, 1.45575, 0)
-bones/5/rotation = Quaternion(-0.251859, -1.77479e-07, 9.47142e-07, 0.967764)
+bones/5/rotation = Quaternion(0.640754, 6.67239e-07, 6.95247e-07, 0.767747)
 bones/5/scale = Vector3(1, 1, 1)
 
 [node name="Object_13" type="MeshInstance3D" parent="Sketchfab_model/Untitled_fbx/Object_2/RootNode/Armature/Object_5/Skeleton3D"]
@@ -316,7 +316,7 @@ script = ExtResource("6_lf5ft")
 original_position = Vector3(0, -0.442, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.34644, 1.16667)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578613, 1.34644, 1.16667)
 shape = SubResource("BoxShape3D_bt577")
 
 [node name="Viewport2Din3D" parent="Lock" instance=ExtResource("7_gf7hj")]

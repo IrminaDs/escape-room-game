@@ -1,6 +1,6 @@
 extends Node
 
-enum Rooms { Room1, Room3 }
+enum Rooms {Room1, Room3}
 
 @export var room: Rooms            
 @export var signal_name: String    

@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://ckf8iatnt4fks" path="res://scripts/room3/enable_grab.gd" id="9_gnd4a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lwh0k"]
-size = Vector3(0.337219, 0.203125, 0.045166)
+size = Vector3(0.302117, 0.206157, 0.0446661)
 
 [sub_resource type="Resource" id="Resource_4js1m"]
 script = ExtResource("6_gnd4a")
@@ -31,14 +31,14 @@ script = ExtResource("1_p18l6")
 second_hand_grab = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.59203, 0, 0, 0, 0.59203, 0, 0, 0, 0.59203, 0.0479333, 0.0105501, -0.0142229)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0421404, 0.00837366, -0.0198804)
 shape = SubResource("BoxShape3D_lwh0k")
 
 [node name="Card" parent="." instance=ExtResource("2_bak7m")]
-transform = Transform3D(0.0533535, 0, 9.61634e-40, 0, 0.0533535, 0, -9.61634e-40, 0, 0.0533535, 0.0514872, 0.00939381, 0.018922)
+transform = Transform3D(1, 0, 1.80238e-38, 0, 1, 0, -1.80238e-38, 0, 1, 0.0430112, 0.00939381, -0.0199648)
 
 [node name="HighlightRing" parent="." instance=ExtResource("3_mgv06")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0518585, 0.00494795, -0.0185381)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0439875, 0.00494795, -0.0185381)
 
 [node name="GrabPointHandLeft" parent="." instance=ExtResource("4_mgv06")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0533294, 0.0204317, -0.0674037)

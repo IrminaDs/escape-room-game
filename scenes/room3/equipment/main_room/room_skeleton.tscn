@@ -35,7 +35,7 @@ depth = 0.42
 use_collision = true
 
 [node name="GlassWall" type="CSGBox3D" parent="BaseBoard"]
-transform = Transform3D(0.1, 0, 0, 0, 2.45, 0, 0, 0, 4.7, -3.04935, 1.42926, 0.0134362)
+transform = Transform3D(0.1, 0, 0, 0, 2.45, 0, 0, 0, 4.7, -3.04935, 1.40479, 0.0134362)
 size = Vector3(1, 1.02912, 1.02308)
 material = ExtResource("2_jianc")
 
