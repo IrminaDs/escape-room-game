@@ -1,0 +1,176 @@
+[gd_scene load_steps=14 format=3 uid="uid://bqh6cftw1emh"]
+
+[ext_resource type="PackedScene" uid="uid://brs0qb7s4qf73" path="res://models/Room2/objects/monitory/retro_cyberpunk_computer_screens.glb" id="1_u4g2s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u4g2s"]
+size = Vector3(7.2227783, 1.8204346, 4.86792)
+
+[sub_resource type="Gradient" id="Gradient_u4g2s"]
+colors = PackedColorArray(1, 0, 0, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ubl4o"]
+gradient = SubResource("Gradient_u4g2s")
+
+[sub_resource type="Gradient" id="Gradient_mfqsk"]
+colors = PackedColorArray(0, 1, 0, 1, 0.116666794, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cqyvf"]
+gradient = SubResource("Gradient_mfqsk")
+
+[sub_resource type="Gradient" id="Gradient_ekpor"]
+colors = PackedColorArray(1, 1, 0, 1, 1, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_aiwac"]
+gradient = SubResource("Gradient_ekpor")
+
+[sub_resource type="Gradient" id="Gradient_7xpnn"]
+colors = PackedColorArray(0, 1, 1, 1, 0, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3pa84"]
+gradient = SubResource("Gradient_7xpnn")
+
+[sub_resource type="Animation" id="Animation_elo1l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("flashing lights/red:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("flashing lights/green:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("flashing lights/yellow:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("flashing lights/blue:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_j0044"]
+resource_name = "flashing"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("flashing lights/red:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.02),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("flashing lights/green:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("flashing lights/yellow:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2, 3.02),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("flashing lights/blue:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sjcr3"]
+_data = {
+&"RESET": SubResource("Animation_elo1l"),
+&"flashing": SubResource("Animation_j0044")
+}
+
+[node name="displays" instance=ExtResource("1_u4g2s")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/computerScreen01_obj_cleaner_materialmerger_gles" index="8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/computerScreen01_obj_cleaner_materialmerger_gles/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.090271, 0.4102173, 1.4622803)
+shape = SubResource("BoxShape3D_u4g2s")
+
+[node name="flashing lights" type="Node3D" parent="Sketchfab_model" index="1"]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, -1, 0, 1, 2.220446e-16, 0, 0, 0)
+
+[node name="red" type="Sprite3D" parent="Sketchfab_model/flashing lights" index="0"]
+transform = Transform3D(-1.2593907e-07, -5.5812535, 0, 2.8811498, -2.4396437e-07, -2.7564617e-08, 1.2593907e-07, -1.0664021e-14, 0.6306049, -0.018621922, 2.8062003, -0.95777154)
+visible = false
+texture = SubResource("GradientTexture2D_ubl4o")
+
+[node name="green" type="Sprite3D" parent="Sketchfab_model/flashing lights" index="1"]
+transform = Transform3D(-1.2593907e-07, -5.5812535, 0, 2.8811498, -2.4396437e-07, -2.7564617e-08, 1.2593907e-07, -1.0664021e-14, 0.6306049, -3.9862428, 2.7058792, -0.95777154)
+visible = false
+texture = SubResource("GradientTexture2D_cqyvf")
+
+[node name="yellow" type="Sprite3D" parent="Sketchfab_model/flashing lights" index="2"]
+transform = Transform3D(-1.2593907e-07, -5.5812535, 0, 2.8811498, -2.4396437e-07, -2.7564617e-08, 1.2593907e-07, -1.0664021e-14, 0.6306049, -0.018621922, -0.0074169636, -0.95777154)
+visible = false
+texture = SubResource("GradientTexture2D_aiwac")
+
+[node name="blue" type="Sprite3D" parent="Sketchfab_model/flashing lights" index="3"]
+transform = Transform3D(-1.2593907e-07, -5.5812535, 0, 2.8811498, -2.4396437e-07, -2.7564617e-08, 1.2593907e-07, -1.0664021e-14, 0.6306049, -4.0076027, 0.0370214, -0.95777154)
+visible = false
+texture = SubResource("GradientTexture2D_3pa84")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sketchfab_model" index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_sjcr3")
+}

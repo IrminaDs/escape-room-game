@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5al7eidfvr7d"]
+
+[ext_resource type="PackedScene" uid="uid://brs0qb7s4qf73" path="res://models/Room2/objects/monitory/retro_cyberpunk_computer_screens.glb" id="1_f1vvi"]
+
+[node name="screens" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_f1vvi")]

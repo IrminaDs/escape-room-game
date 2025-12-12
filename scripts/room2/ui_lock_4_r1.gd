@@ -42,7 +42,7 @@ func _check_code():
 	if "".join(current_code) == correct_code:
 		code_unlocked = true
 		await _flash_letters()
-		Room1GameEvents.emit_signal(signal_to_emit)
+		Room2GameEvents.emit_signal(signal_to_emit)
 
 func _flash_letters():
 	for i in range(2):
