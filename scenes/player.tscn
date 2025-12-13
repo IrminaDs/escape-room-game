@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://c664tfpk5ohkb"]
+[gd_scene load_steps=10 format=3 uid="uid://c664tfpk5ohkb"]
 
-[ext_resource type="Script" uid="uid://d111e5dw1njvw" path="res://scripts/controller.gd" id="1_smehm"]
+[ext_resource type="Script" uid="uid://d111e5dw1njvw" path="res://scripts/room1/controller.gd" id="1_smehm"]
 [ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_fjrip"]
 [ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="3_smehm"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_tuyoq"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="4_fjrip"]
 [ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="4_ur7pv"]
 [ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="5_y4r1p"]
+[ext_resource type="AudioStream" uid="uid://h2g27m7wo5vg" path="res://models/Room1/sounds/273367__sturmankin__wood_16a_trekkingshoes_walk.wav" id="10_y4r1p"]
 
 [node name="Player" type="Node3D"]
 
@@ -50,6 +51,9 @@ collide_with_areas = true
 
 [node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("4_dqkch")]
 collision_mask = 2147484671
+
+[node name="FootstepAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_y4r1p")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4, 0)

@@ -35,5 +35,5 @@ shape = SubResource("BoxShape3D_ep5rh")
 
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, -2.25)
-text = "Ładowanie..."
+text = "Loading..."
 font_size = 48

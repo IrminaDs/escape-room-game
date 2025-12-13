@@ -17,9 +17,3 @@ func _ready():
 	move_l.enabled = false
 	move_r.enabled = false
 	light.visible = true
-	
-	var audio = $AudioStreamPlayer
-	var stream = load("res://models/menu/sounds/Ossuary 6 - Air.mp3")
-	stream.loop = true
-	audio.stream = stream
-	audio.play()

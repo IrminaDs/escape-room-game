@@ -1,7 +1,7 @@
 [gd_scene load_steps=58 format=4 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
-[ext_resource type="Script" uid="uid://dtfq2w2npp40c" path="res://scripts/room.gd" id="1_e8w0b"]
+[ext_resource type="Script" uid="uid://dtfq2w2npp40c" path="res://scripts/room1/room1.gd" id="1_e8w0b"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
@@ -43,7 +43,7 @@
 [ext_resource type="PackedScene" uid="uid://lr3gjisxvpdm" path="res://scenes/Room1/stand.tscn" id="34_ryx7d"]
 [ext_resource type="PackedScene" uid="uid://cs6u3b2406b11" path="res://scenes/Room1/scroll.tscn" id="37_5e5h7"]
 [ext_resource type="PackedScene" uid="uid://d1fsggjkn6snx" path="res://scenes/Room1/exit.tscn" id="44_us4hf"]
-[ext_resource type="Script" uid="uid://bbsg1fdx30q60" path="res://scripts/set_player.gd" id="45_e8w0b"]
+[ext_resource type="Script" uid="uid://bbsg1fdx30q60" path="res://scripts/room1/rotate_player.gd" id="45_e8w0b"]
 [ext_resource type="Script" uid="uid://c8tdncyq1uuuh" path="res://scripts/room1/final_message.gd" id="45_x5wvg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
@@ -656,10 +656,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41, 1.05, -3.045)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25, 0)
 script = ExtResource("45_x5wvg")
 
-[node name="SetPlayer" type="Node" parent="."]
+[node name="RotatePlayer" type="Node" parent="."]
 script = ExtResource("45_e8w0b")
-position = Vector3(0, 0, -0.25)
-degrees = 180
 
 [editable path="Build/Walls/WallEast/WallTile5"]
 [editable path="Objects/ChestMessage"]
