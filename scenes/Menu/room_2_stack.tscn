@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bexqblynqorpg"]
+[gd_scene load_steps=7 format=3 uid="uid://bexqblynqorpg"]
 
 [ext_resource type="Script" uid="uid://01ii3xkepn8c" path="res://scripts/menu/stack_logic.gd" id="1_qnrw8"]
+[ext_resource type="AudioStream" uid="uid://b30e4vqn5ljxa" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="2_npr36"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_f4dfs"]
 
@@ -56,3 +57,7 @@ text = "Szyfry:/n- Tablica Polibiusz/n- SzyfrCezara/n- Szyfr Vigenere'a"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
 shape = SubResource("CylinderShape3D_npr36")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+stream = ExtResource("2_npr36")

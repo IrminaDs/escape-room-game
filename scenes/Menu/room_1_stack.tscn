@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://by3cueitml4xi"]
+[gd_scene load_steps=32 format=4 uid="uid://by3cueitml4xi"]
 
 [ext_resource type="Texture2D" uid="uid://t30oe81b4t61" path="res://models/menu/objects/pedestal/classical_museum_pedestals_-_asset_pack_3.jpg" id="1_633y7"]
 [ext_resource type="Texture2D" uid="uid://b2r2yj3w3dayk" path="res://models/menu/objects/pedestal/classical_museum_pedestals_-_asset_pack_4.png" id="2_8k5ss"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://e6k5a10lst6n" path="res://models/Room1/objects/letter/letter__envelope_assets_4.png" id="11_1ic0x"]
 [ext_resource type="Texture2D" uid="uid://c44k3vxxw1j11" path="res://models/Room1/objects/letter/letter__envelope_assets_5.png" id="12_cwg5v"]
 [ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="12_g3n2r"]
+[ext_resource type="AudioStream" uid="uid://b30e4vqn5ljxa" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="15_neo3q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yubxg"]
 resource_name = "MuseumPlinthe02_BAKED"
@@ -305,8 +306,11 @@ text = "Szyfry:
 collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("3_8k5ss")
-text = null
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
 shape = SubResource("CylinderShape3D_633y7")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+stream = ExtResource("15_neo3q")
