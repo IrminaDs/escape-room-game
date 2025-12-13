@@ -4,7 +4,8 @@ extends StaticBody3D
 @export var item_name: String = "Ceasar"
 @onready var snap_zone: XRToolsSnapZone = $"SnapZone"
 @onready var collision: CollisionShape3D = $"CollisionShape3D"
-@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
+@onready var audio: AudioStreamPlayer3D = $AudioStreamPlayer
+@onready var move_audio: AudioStreamPlayer3D = $MovingSound
 
 func _ready():
 	if snap_zone.has_signal("has_picked_up"):
@@ -47,6 +48,7 @@ func _on_picked_up(pickable: XRToolsPickable):
 			static_copy.rotation.y + deg_to_rad(30),
 			1
 		).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+		move_audio.play()
 		
 		Room1GameEvents.emit_signal("ceasar_placed")
 

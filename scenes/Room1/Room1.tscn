@@ -1,27 +1,28 @@
-[gd_scene load_steps=55 format=4 uid="uid://bvdp223xlqrkl"]
+[gd_scene load_steps=58 format=4 uid="uid://bvdp223xlqrkl"]
 
 [ext_resource type="PackedScene" uid="uid://cio73n8qirde5" path="res://scenes/Room1/floor_tile.tscn" id="1_1tlri"]
+[ext_resource type="Script" uid="uid://dtfq2w2npp40c" path="res://scripts/room1/room1.gd" id="1_e8w0b"]
 [ext_resource type="PackedScene" uid="uid://dcnjl4atqt0fq" path="res://scenes/Room1/ceiling_tile.tscn" id="2_kec3l"]
 [ext_resource type="PackedScene" uid="uid://cjf61g55qsv02" path="res://scenes/Room1/clock.tscn" id="3_75n1p"]
 [ext_resource type="PackedScene" uid="uid://dssfh1ecy3sn2" path="res://scenes/Room1/wall_tile.tscn" id="3_yo7fj"]
 [ext_resource type="PackedScene" uid="uid://bqh6qnke2e5oi" path="res://scenes/Room1/wall_with_door.tscn" id="4_3qgkt"]
-[ext_resource type="Texture2D" uid="uid://dkfh1bbukmfmg" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_diff_1k.jpg" id="5_r538a"]
-[ext_resource type="Texture2D" uid="uid://dmwf8sarvrm78" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_nor_gl_1k.jpg" id="6_5h5dv"]
+[ext_resource type="Texture2D" uid="uid://dk44ksnqf0auu" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_diff_1k.jpg" id="5_r538a"]
+[ext_resource type="Texture2D" uid="uid://cxxpre04dyts3" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_nor_gl_1k.jpg" id="6_5h5dv"]
 [ext_resource type="PackedScene" uid="uid://cavsvwbhkq8ku" path="res://scenes/Room1/ceiling_lamp.tscn" id="6_ht3nn"]
-[ext_resource type="Texture2D" uid="uid://i8ksfnoaqsuk" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_rough_1k.jpg" id="7_qqr2f"]
+[ext_resource type="Texture2D" uid="uid://dqrjkxpeh5adr" path="res://models/Room1/textures/grey_plaster_02_1k.gltf/textures/grey_plaster_02_rough_1k.jpg" id="7_qqr2f"]
 [ext_resource type="PackedScene" uid="uid://d2hnqwhnkrji4" path="res://scenes/Room1/door.tscn" id="7_t3n42"]
 [ext_resource type="PackedScene" uid="uid://bb4gv22ydqjwc" path="res://scenes/Room1/chair.tscn" id="8_eh12f"]
 [ext_resource type="Script" uid="uid://bav8lib4g6rtn" path="res://scripts/room1/wall_hole.gd" id="8_fqerl"]
 [ext_resource type="PackedScene" uid="uid://diqbe0b8v51us" path="res://scenes/Room1/desk.tscn" id="9_7bwvd"]
 [ext_resource type="Material" uid="uid://cen58xckm7y3d" path="res://models/Room1/textures/wall_tile.tres" id="9_y0e56"]
 [ext_resource type="PackedScene" uid="uid://dpkqptb18his1" path="res://scenes/Room1/bookshelf1.tscn" id="10_0e1ws"]
-[ext_resource type="Texture2D" uid="uid://b6nchf76ln6jq" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="10_5e5h7"]
+[ext_resource type="Texture2D" uid="uid://dljo5f2k67ftv" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="10_5e5h7"]
 [ext_resource type="PackedScene" uid="uid://jkp1jxx5n811" path="res://scenes/Room1/desk_letter.tscn" id="10_dprwg"]
 [ext_resource type="PackedScene" uid="uid://bwd5j6iwefaio" path="res://scenes/Room1/painting.tscn" id="11_mhhkb"]
-[ext_resource type="Texture2D" uid="uid://bdy2fp5xx6xk1" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_nor_gl_1k.jpg" id="11_us4hf"]
+[ext_resource type="Texture2D" uid="uid://b7dqh48fwfht5" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_nor_gl_1k.jpg" id="11_us4hf"]
 [ext_resource type="PackedScene" uid="uid://curyiydvedhpa" path="res://scenes/Room1/bookshelf2.tscn" id="11_vjalx"]
 [ext_resource type="PackedScene" uid="uid://ba2dr3g652whm" path="res://scenes/Room1/desk_lamp.tscn" id="12_s215m"]
-[ext_resource type="Texture2D" uid="uid://blnjfneu3ygsd" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_rough_1k.jpg" id="12_x5wvg"]
+[ext_resource type="Texture2D" uid="uid://bmwkkhwxn4xkx" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_rough_1k.jpg" id="12_x5wvg"]
 [ext_resource type="PackedScene" uid="uid://g52giiyj6f3h" path="res://scenes/Room1/chest.tscn" id="13_5da8r"]
 [ext_resource type="PackedScene" uid="uid://dti05nqqibg6x" path="res://scenes/Room1/clock_lock.tscn" id="15_4763k"]
 [ext_resource type="Material" uid="uid://bmuy7cso70jxk" path="res://models/Room1/objects/paintings/duck.tres" id="16_4y5xy"]
@@ -32,17 +33,18 @@
 [ext_resource type="PackedScene" uid="uid://c07v6wee104gp" path="res://scenes/Room1/wall_shelf.tscn" id="21_20w1x"]
 [ext_resource type="PackedScene" uid="uid://juc16lkxmsc4" path="res://scenes/Room1/carpet.tscn" id="22_0c67s"]
 [ext_resource type="PackedScene" uid="uid://chs60mukpdhpl" path="res://scenes/Room1/radio.tscn" id="24_5h5dv"]
-[ext_resource type="Texture2D" uid="uid://763d6lao3of3" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
+[ext_resource type="Texture2D" uid="uid://dn5iq8g83xbnl" path="res://models/Room1/textures/boards/vigenre.jpg" id="24_quxoa"]
 [ext_resource type="PackedScene" uid="uid://sgmtfe8i4c17" path="res://scenes/Room1/chest_message.tscn" id="25_y0e56"]
 [ext_resource type="PackedScene" uid="uid://wl3dp23skwjr" path="res://scenes/Room1/blowfish.tscn" id="26_55bmt"]
 [ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="29_dprwg"]
 [ext_resource type="PackedScene" uid="uid://bdvcwpeafwx8r" path="res://scenes/Room1/ceasar.tscn" id="30_4763k"]
 [ext_resource type="PackedScene" uid="uid://dhmifnm1s13sc" path="res://scenes/Room1/picture.tscn" id="30_ryx7d"]
-[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="31_4763k"]
-[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="31_ew1ad"]
 [ext_resource type="PackedScene" uid="uid://c3wk8plljjbr2" path="res://scenes/Room1/album.tscn" id="31_qqr2f"]
 [ext_resource type="PackedScene" uid="uid://lr3gjisxvpdm" path="res://scenes/Room1/stand.tscn" id="34_ryx7d"]
 [ext_resource type="PackedScene" uid="uid://cs6u3b2406b11" path="res://scenes/Room1/scroll.tscn" id="37_5e5h7"]
+[ext_resource type="PackedScene" uid="uid://d1fsggjkn6snx" path="res://scenes/Room1/exit.tscn" id="44_us4hf"]
+[ext_resource type="Script" uid="uid://bbsg1fdx30q60" path="res://scripts/room1/rotate_player.gd" id="45_e8w0b"]
+[ext_resource type="Script" uid="uid://c8tdncyq1uuuh" path="res://scripts/room1/final_message.gd" id="45_x5wvg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_skvqx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -103,6 +105,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray("zMzMPWZm5r4AAAA+zMzMPWZm5r6MmZm9zczMPmZm5r6MmZm9zMzMPczMTL2MmZm9zMzMPWZm5r6MmZm9zMzMPczMTL0AAAA+zMzMPWZm5r6MmZm9zMzMPczMTL2MmZm9zczMPmZm5r6MmZm9zMzMPWZm5r4AAAA+zMzMPczMTL0AAAA+zMzMPWZm5r6MmZm9zczMPszMTL0AAAA+zczMPmZm5r4AAAA+zczMPszMTL2MmZm9zMzMPczMTL0AAAA+zczMPszMTL0AAAA+zMzMPczMTL2MmZm9zMzMPWZm5r4AAAA+zczMPmZm5r6MmZm9zczMPmZm5r4AAAA+zczMPszMTL0AAAA+zczMPszMTL2MmZm9zMzMPczMTL2MmZm9zczMPmZm5r6MmZm9zczMPszMTL2MmZm9zczMPmZm5r4AAAA+zMzMPczMTL2MmZm9zczMPszMTL2MmZm9zczMPmZm5r6MmZm9/3//////////f/////////9/////////////f/9/AID///9//38AgP///3//fwCA/3//fwAA/7//f/9/AAD/v/9//38AAP+/////f/9/AID///9//38AgP///3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/38AAP//////fwAA//////9/AAD//////3//////////f/////////9//////////38AAP//////fwAA//////9/AAD/////AAD/f/9/AIAAAP9//38AgAAA/3//fwCA/3//fwAA/7//f/9/AAD/v/9//38AAP+/")
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_x5wvg"]
+size = Vector3(1.5, 1, 1.25)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_vjalx"]
 size = Vector2(1.7, 2)
 
@@ -117,6 +122,7 @@ albedo_color = Color(0.564962, 0.564962, 0.564962, 1)
 metallic = 1.0
 
 [node name="Room1" type="Node3D"]
+script = ExtResource("1_e8w0b")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2dtu0")
@@ -521,6 +527,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.25, 3.125)
 [node name="WallTile6" parent="Build/Walls/WallWest" instance=ExtResource("3_yo7fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.25, 3.125)
 
+[node name="BlockBehindChest" type="StaticBody3D" parent="Build"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25, 0.75, -2.5)
+collision_layer = 2147483648
+collision_mask = 524288
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Build/BlockBehindChest"]
+shape = SubResource("BoxShape3D_x5wvg")
+
 [node name="Objects" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 
@@ -633,12 +647,17 @@ transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.24, 0.75)
 
 [node name="Painting" parent="Objects" instance=ExtResource("11_mhhkb")]
-transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 3)
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 2.5, 2.999)
 
-[node name="StartXR" parent="." instance=ExtResource("31_ew1ad")]
+[node name="Exit" parent="." instance=ExtResource("44_us4hf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41, 1.05, -3.045)
 
-[node name="Player" parent="." instance=ExtResource("31_4763k")]
-transform = Transform3D(-1, 0, -1.19209e-07, 0, 1, 0, 1.19209e-07, 0, -1, 0, 0, -0.25)
+[node name="FinalMessage" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25, 0)
+script = ExtResource("45_x5wvg")
+
+[node name="RotatePlayer" type="Node" parent="."]
+script = ExtResource("45_e8w0b")
 
 [editable path="Build/Walls/WallEast/WallTile5"]
 [editable path="Objects/ChestMessage"]
