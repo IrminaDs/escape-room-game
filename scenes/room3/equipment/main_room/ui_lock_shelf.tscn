@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=3 uid="uid://dy01gudbo4id2"]
 
 [ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/room1/ui_lock_4.gd" id="1_jby34"]
-[ext_resource type="FontFile" uid="uid://7t1kmkl5jnri" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_4wf32"]
-[ext_resource type="Texture2D" uid="uid://cyvj5agvsee5e" path="res://models/room3/icons/arrow_nor.png" id="3_w6r8w"]
-[ext_resource type="Texture2D" uid="uid://bqqsowdbajjdy" path="res://models/room3/icons/arrow_press.png" id="4_jby34"]
-[ext_resource type="Texture2D" uid="uid://2sa10wotcsws" path="res://models/room3/icons/arrow_hov.png" id="5_e6wna"]
+[ext_resource type="FontFile" uid="uid://cbosva45uvhdg" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_4wf32"]
+[ext_resource type="Texture2D" uid="uid://cpu2nmmxpd5qe" path="res://models/room3/icons/arrow_nor.png" id="3_w6r8w"]
+[ext_resource type="Texture2D" uid="uid://bx7blagck3k3a" path="res://models/room3/icons/arrow_press.png" id="4_jby34"]
+[ext_resource type="Texture2D" uid="uid://dqkhcdvtixwbr" path="res://models/room3/icons/arrow_hov.png" id="5_e6wna"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e6wna"]
 
@@ -63,6 +63,8 @@ font_size = 100
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_jby34")
 room_event = 1
+correct_code = "TRID"
+color = Color(0.498039, 1, 1, 1)
 signal_to_emit = "modern_shelf_unlocked"
 
 [node name="Panel" type="Panel" parent="."]
