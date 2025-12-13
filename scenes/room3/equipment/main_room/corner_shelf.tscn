@@ -1,15 +1,16 @@
-[gd_scene load_steps=29 format=4 uid="uid://m5y3bfd7wy72"]
+[gd_scene load_steps=31 format=4 uid="uid://m5y3bfd7wy72"]
 
-[ext_resource type="Texture2D" uid="uid://m8ejt56dynkb" path="res://models/room3/furniture/shelves/corner_wall_shelf_0.jpg" id="1_lxjf3"]
-[ext_resource type="Texture2D" uid="uid://dgwnamxa4a7mn" path="res://models/room3/furniture/shelves/corner_wall_shelf_1.png" id="2_4qtpp"]
+[ext_resource type="Texture2D" uid="uid://c7uup2qdrnfbx" path="res://models/room3/furniture/shelves/corner_wall_shelf_0.jpg" id="1_lxjf3"]
+[ext_resource type="Texture2D" uid="uid://cukk72hr7tgcg" path="res://models/room3/furniture/shelves/corner_wall_shelf_1.png" id="2_4qtpp"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="3_ws6mp"]
 [ext_resource type="PackedScene" uid="uid://bupufn7vk3su" path="res://scenes/room3/equipment/main_room/ui_symmetrical.tscn" id="4_t7nyp"]
 [ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="5_62qx6"]
-[ext_resource type="Texture2D" uid="uid://cwso0c3i2diw2" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="7_cllwy"]
-[ext_resource type="Texture2D" uid="uid://38hn1kbel8g5" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="8_w2jrj"]
-[ext_resource type="Texture2D" uid="uid://dlo1offhfxtin" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="9_rqy6q"]
-[ext_resource type="Texture2D" uid="uid://n74l0xbc0h3s" path="res://models/room3/textures/books/black.png" id="10_m0rjm"]
-[ext_resource type="FontFile" uid="uid://7t1kmkl5jnri" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="10_qqxiv"]
+[ext_resource type="Texture2D" uid="uid://146bjs7jqmnj" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="7_cllwy"]
+[ext_resource type="Texture2D" uid="uid://cl4w37ki1h6kh" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="8_w2jrj"]
+[ext_resource type="Texture2D" uid="uid://46dvdbepb4i7" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="9_rqy6q"]
+[ext_resource type="Texture2D" uid="uid://c35bsq02idva8" path="res://models/room3/textures/books/black.png" id="10_m0rjm"]
+[ext_resource type="FontFile" uid="uid://cbosva45uvhdg" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="10_qqxiv"]
+[ext_resource type="Script" uid="uid://b7r2ev73nc5df" path="res://scripts/room1/bookshelf.gd" id="11_62qx6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lxjf3"]
 size = Vector3(0.191772, 0.0127258, 0.626373)
@@ -135,7 +136,7 @@ normal_texture = ExtResource("9_rqy6q")
 uv1_offset = Vector3(0, 0.32, 0)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sfewm"]
-size = Vector3(0.5, 0.5, 0.3)
+size = Vector3(0.5, 0.333923, 0.0925781)
 
 [sub_resource type="BoxMesh" id="BoxMesh_bpk2l"]
 size = Vector3(0.3, 0.375, 0.09)
@@ -145,6 +146,9 @@ transparency = 1
 albedo_color = Color(0.504258, 0.533459, 0.600425, 0.0784314)
 emission_enabled = true
 emission = Color(0.466667, 0.466667, 0.466667, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_13lo3"]
+size = Vector3(0.859314, 0.431885, 0.91613)
 
 [node name="CornerShelf" type="Node3D"]
 
@@ -198,41 +202,34 @@ transform = Transform3D(100, 0, 0, 0, 100, -1.62921e-05, 0, 1.62921e-05, 100, 0,
 mesh = SubResource("ArrayMesh_s3434")
 skeleton = NodePath("")
 
-[node name="Viewport2Din3D" parent="." instance=ExtResource("3_ws6mp")]
-transform = Transform3D(0.498424, -0.0704127, 0.262784, 2.07492e-09, 0.548489, 0.146967, -0.272054, -0.129001, 0.48144, 0.349808, 0.503089, 0.319033)
-screen_size = Vector2(0.6, 0.45)
-scene = ExtResource("4_t7nyp")
-viewport_size = Vector2(3068, 2183)
-scene_properties_keys = PackedStringArray()
+[node name="Books" type="Node3D" parent="RootNode"]
+transform = Transform3D(80000, 0, 0, 0, 80000, 1.77636e-11, 0, -1.77636e-11, 80000, 0, 0, 0)
 
-[node name="Books" type="Node3D" parent="."]
-
-[node name="Black" type="Area3D" parent="Books" node_paths=PackedStringArray("viewport")]
-transform = Transform3D(0.65605, 0, 0, 0, 0.65605, -1.06884e-07, 0, 1.06884e-07, 0.65605, 0, -0.228115, 0.755446)
+[node name="Black" type="Area3D" parent="RootNode/Books" node_paths=PackedStringArray("viewport")]
+transform = Transform3D(0.510279, -3.80446e-08, -0.233516, -4.9449e-23, 0.561173, -9.14266e-08, 0.233516, 8.3135e-08, 0.510279, -0.170355, -0.158959, 0.607848)
 collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("5_62qx6")
-viewport = NodePath("../../Viewport2Din3D")
+viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("4_t7nyp")
 
-[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="Books/Black"]
+[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="RootNode/Books/Black"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0853591, 0.379546, -1.81996)
 mesh = SubResource("ArrayMesh_gsmb4")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_5g6r1")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Books/Black"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0853591, 0.798246, -0.846728)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Books/Black"]
+transform = Transform3D(1, 0, 8.52651e-13, -2.65743e-12, -4.37165e-08, -1.00002, 0, 1, -4.37111e-08, 0.0853593, 0.798834, -0.860492)
 shape = SubResource("BoxShape3D_sfewm")
 
-[node name="Highlight" type="MeshInstance3D" parent="Books/Black"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0853591, 0.850705, -0.925568)
-visible = false
+[node name="Highlight" type="MeshInstance3D" parent="RootNode/Books/Black"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0868211, 0.785238, -0.891026)
 mesh = SubResource("BoxMesh_bpk2l")
 surface_material_override/0 = SubResource("StandardMaterial3D_24w72")
 
-[node name="Label3D" type="Label3D" parent="Books/Black"]
-transform = Transform3D(0.130077, 3.47827e-08, 0.213494, -3.47827e-08, 0.25, -1.9538e-08, -0.213494, -1.9538e-08, 0.130077, 0.408724, 0.774716, -0.679398)
+[node name="Label3D" type="Label3D" parent="RootNode/Books/Black"]
+transform = Transform3D(0.0656524, 3.93006e-08, 0.241225, -3.93006e-08, 0.25, -3.0034e-08, -0.241225, -3.00342e-08, 0.0656524, 0.51527, 0.714422, -0.783579)
 modulate = Color(0.67451, 1, 1, 1)
 outline_modulate = Color(3.65794e-06, 0.911982, 0.920848, 1)
 text = "Szyfrowanie danych:
@@ -241,35 +238,18 @@ font = ExtResource("10_qqxiv")
 font_size = 28
 outline_size = 8
 
-[node name="Green" type="Area3D" parent="Books" node_paths=PackedStringArray("viewport")]
-transform = Transform3D(0.65605, 0, 0, 0, 0.65605, -1.06884e-07, 0, 1.06884e-07, 0.65605, 0, -0.228115, 0.755446)
-collision_layer = 1048576
-collision_mask = 0
-script = ExtResource("5_62qx6")
-viewport = NodePath("../../Viewport2Din3D")
+[node name="InteractionZone" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.475672, -1.14781, -0.625)
+collision_mask = 524288
+script = ExtResource("11_62qx6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionZone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0570376, 1.37195, 1.08906)
+shape = SubResource("BoxShape3D_13lo3")
+
+[node name="Viewport2Din3D" parent="." instance=ExtResource("3_ws6mp")]
+transform = Transform3D(0.498424, -0.0704127, 0.262784, 2.07492e-09, 0.548489, 0.146967, -0.272054, -0.129001, 0.48144, 0.349808, 0.503089, 0.319033)
+screen_size = Vector2(0.6, 0.45)
 scene = ExtResource("4_t7nyp")
-
-[node name="book_005_Cube_009_Material_005_0" type="MeshInstance3D" parent="Books/Green"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0853591, 0.379546, -1.81996)
-mesh = SubResource("ArrayMesh_gsmb4")
-skeleton = NodePath("")
-surface_material_override/0 = SubResource("StandardMaterial3D_5g6r1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Books/Green"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0853591, 0.798246, -0.846728)
-shape = SubResource("BoxShape3D_sfewm")
-
-[node name="Highlight" type="MeshInstance3D" parent="Books/Green"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0853591, 0.850705, -0.925568)
-visible = false
-mesh = SubResource("BoxMesh_bpk2l")
-surface_material_override/0 = SubResource("StandardMaterial3D_24w72")
-
-[node name="Label3D" type="Label3D" parent="Books/Green"]
-transform = Transform3D(0.130077, 3.47827e-08, 0.213494, -3.47827e-08, 0.25, -1.9538e-08, -0.213494, -1.9538e-08, 0.130077, 0.408724, 0.774716, -0.679398)
-modulate = Color(0.67451, 1, 1, 1)
-outline_modulate = Color(3.65794e-06, 0.911982, 0.920848, 1)
-text = "Szyfrowanie kwantowe"
-font = ExtResource("10_qqxiv")
-font_size = 28
-outline_size = 8
+viewport_size = Vector2(3068, 2183)
+scene_properties_keys = PackedStringArray()

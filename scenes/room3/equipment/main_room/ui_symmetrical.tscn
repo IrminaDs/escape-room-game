@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bupufn7vk3su"]
 
-[ext_resource type="Texture2D" uid="uid://dync364h75inj" path="res://models/room3/textures/content/cipher_book.png" id="1_5rgr0"]
+[ext_resource type="Texture2D" uid="uid://e37cp4xfqih2" path="res://models/room3/textures/content/cipher_book.png" id="1_5rgr0"]
 
 [node name="UiSymmetrical" type="CanvasLayer"]
 
