@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=4 uid="uid://c6cynkf8yhmqy"]
 
-[ext_resource type="Texture2D" uid="uid://cgj06drk30bc2" path="res://models/room3/furniture/table/holo-table_0.png" id="1_4igx4"]
-[ext_resource type="Texture2D" uid="uid://bb2ne22eauur4" path="res://models/room3/furniture/table/holo-table_2.png" id="2_3tgnh"]
-[ext_resource type="Texture2D" uid="uid://ib8eg8meni2p" path="res://models/room3/furniture/table/holo-table_1.png" id="3_ewdqu"]
-[ext_resource type="Texture2D" uid="uid://er5xt1fwu3uk" path="res://models/room3/furniture/table/holo-table_3.png" id="4_vruwu"]
-[ext_resource type="Texture2D" uid="uid://eyemlaqy6m4t" path="res://models/room3/furniture/display/holo_trident.png" id="5_vruwu"]
+[ext_resource type="Texture2D" uid="uid://cry24f53vwsvc" path="res://models/room3/furniture/table/holo-table_0.png" id="1_4igx4"]
+[ext_resource type="Texture2D" uid="uid://6r6ahlr7axs3" path="res://models/room3/furniture/table/holo-table_2.png" id="2_3tgnh"]
+[ext_resource type="Texture2D" uid="uid://dhm2quhw6wvr" path="res://models/room3/furniture/table/holo-table_1.png" id="3_ewdqu"]
+[ext_resource type="Texture2D" uid="uid://c7aba8dlclmyt" path="res://models/room3/furniture/table/holo-table_3.png" id="4_vruwu"]
+[ext_resource type="Texture2D" uid="uid://d0m85jwijg5u0" path="res://models/room3/furniture/display/holo_trident.png" id="5_vruwu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yvtgi"]
 resource_name = "Table"

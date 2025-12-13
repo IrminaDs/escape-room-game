@@ -325,11 +325,7 @@ screen_size = Vector2(1, 0.8)
 scene = ExtResource("8_w25gy")
 viewport_size = Vector2(640, 512)
 unshaded = true
-scene_properties_keys = PackedStringArray("ui_lock_4.gd", "room_event", "correct_code", "color", "signal_to_emit")
-room_event = 1
-correct_code = "TRID"
-color = Color(3.65794e-06, 0.911982, 0.920848, 1)
-signal_to_emit = "modern_shelf_unlocked"
+scene_properties_keys = PackedStringArray("ui_lock_4.gd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
