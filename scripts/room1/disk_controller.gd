@@ -1,7 +1,7 @@
 extends Node
 
 @onready var parent_pickable = get_parent()
-@onready var inner_disk = $"../CSGCombiner3D/InnerDisk"
+@onready var inner_disk = $"../DiskModel/InnerDisk"
 @onready var label = $"../Label3D"
 @onready var audio = $"../AudioStreamPlayer3D"
 @onready var left_controller: XRController3D = get_tree().get_current_scene().get_node("Player/XROrigin3D/LeftController")

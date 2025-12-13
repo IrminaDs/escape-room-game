@@ -11,6 +11,7 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 @onready var sec_light = $"../SecondaryLight"
 @onready var stack = $"../Stack"
 @onready var label = $"../Label3D"
+@onready var audio = $"../AudioStreamPlayer3D"
 
 var left_pointer: XRToolsFunctionPointer
 var right_pointer: XRToolsFunctionPointer
@@ -52,6 +53,7 @@ func _on_pointer_event(event):
 				sec_light.visible = true
 				ilumination.visible = true
 				label.visible = true
+				audio.play()
 		XRToolsPointerEvent.Type.EXITED:
 			if room:
 				label.visible = false
