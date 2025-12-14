@@ -9,7 +9,7 @@ extends StaticBody3D
 @onready var bell: AudioStreamPlayer = $BellAudio
 
 func _ready() -> void:
-	var stream = load("res://models/Room1/sounds/256477__rollo145__ticking-clock-large.ogg")
+	var stream = load("res://models/room1/sounds/256477__rollo145__ticking-clock-large.ogg")
 	stream.loop = true
 	ticking.stream = stream
 	ticking.play()

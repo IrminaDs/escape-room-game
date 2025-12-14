@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c8hha12ohi4qk" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame.glb" id="2_h2lho"]
 [ext_resource type="AudioStream" uid="uid://bim5j3xapbg0k" path="res://models/Room1/sounds/607226__d4xx__ducks_single.ogg" id="3_h2lho"]
 
+
 [sub_resource type="BoxMesh" id="BoxMesh_658pi"]
 size = Vector3(0.47, 0.62, 0.001)
 

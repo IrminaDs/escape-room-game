@@ -6,12 +6,12 @@ func _ready():
 
 func _on_final():
 	await get_tree().create_timer(1).timeout
-	var stream = load("res://models/Room1/sounds/173262__toam__scificlass-short-single.ogg")
+	var stream = load("res://models/room1/sounds/173262__toam__scificlass-short-single.ogg")
 	self.stream = stream
 	self.play()
 	
 	await self.finished
 	await get_tree().create_timer(1).timeout
-	stream = load("res://models/Room1/sounds/final_message.ogg")
+	stream = load("res://models/room1/sounds/final_message.ogg")
 	self.stream = stream
 	self.play()

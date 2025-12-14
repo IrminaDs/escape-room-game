@@ -4,7 +4,7 @@ var current_scene: Node = null
 var loading_scene := preload("res://scenes/loading_screen.tscn")  
 
 func _ready():
-	load_scene("res://scenes/Menu/Menu.tscn")
+	load_scene("res://scenes/menu/Menu.tscn")
 
 func load_scene(path: String) -> void:
 	var load_scr = loading_scene.instantiate()

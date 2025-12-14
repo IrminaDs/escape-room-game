@@ -9,11 +9,12 @@
 [ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="6_jbf4k"]
 [ext_resource type="Animation" uid="uid://ky28birj4su6" path="res://addons/godot-xr-tools/hands/animations/right/Default pose.res" id="8_jbf4k"]
 [ext_resource type="Script" uid="uid://cb1yhiedj1uxy" path="res://scripts/room1/enable_grab_secret.gd" id="9_ag5ic"]
-[ext_resource type="PackedScene" uid="uid://dms4vhvjwnnrq" path="res://scenes/Room1/ui_album.tscn" id="10_knsye"]
+[ext_resource type="PackedScene" uid="uid://dms4vhvjwnnrq" path="res://scenes/room1/ui_album.tscn" id="10_knsye"]
 [ext_resource type="Script" uid="uid://gv85c3yyhkf1" path="res://scripts/room1/show_viewport.gd" id="10_p4ft5"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_usjni"]
 [ext_resource type="Script" uid="uid://37fd2h8ninft" path="res://scripts/room1/animation_change.gd" id="13_knsye"]
 [ext_resource type="Script" uid="uid://d1b6th7urjhbf" path="res://scripts/room1/album_contoller.gd" id="14_4rmdu"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o0v6u"]
 size = Vector3(0.07, 0.28, 0.39)
