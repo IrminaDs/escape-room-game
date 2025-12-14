@@ -20,7 +20,7 @@ func _ready():
 	
 	mesh.visible = false
 	
-	var stream = load("res://models/Room1/sounds/Canon in D for Two Harps.mp3")
+	var stream = load("res://models/room1/sounds/Canon in D for Two Harps.mp3")
 	stream.loop = true
 	music_player.stream = stream
 	toggle_radio()

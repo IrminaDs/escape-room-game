@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dtxf05uu7hdsl" path="res://models/Room1/textures/photos/photo3D.png" id="10_cgftp"]
 [ext_resource type="Texture2D" uid="uid://cpqs2b40jl8v" path="res://models/Room1/textures/photos/photo_back.png" id="11_gjege"]
 
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_or3bb"]
 size = Vector3(0.2, 0.15, 0.001)
 

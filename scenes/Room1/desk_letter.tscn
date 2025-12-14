@@ -14,8 +14,9 @@
 [ext_resource type="Animation" uid="uid://c8hn123uon74u" path="res://addons/godot-xr-tools/hands/animations/right/PingPong.res" id="12_sqvar"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="13_amk21"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="14_76dgt"]
-[ext_resource type="PackedScene" uid="uid://b6cfn3axrgnig" path="res://scenes/Room1/ui_letter.tscn" id="15_sqvar"]
+[ext_resource type="PackedScene" uid="uid://b6cfn3axrgnig" path="res://scenes/room1/ui_letter.tscn" id="15_sqvar"]
 [ext_resource type="Script" uid="uid://bsqnac6x8cqxl" path="res://scripts/room1/list_logic.gd" id="16_sqvar"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1lfyh"]
 size = Vector3(0.3, 0.03, 0.15)

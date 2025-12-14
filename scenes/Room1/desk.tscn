@@ -9,12 +9,13 @@
 [ext_resource type="Texture2D" uid="uid://twa44cdmcfa8" path="res://models/Room1/objects/desk/antique_desk_2.png" id="4_j4lx6"]
 [ext_resource type="Texture2D" uid="uid://d0buh7lvo1iuu" path="res://models/Room1/textures/fine_grained_wood_1k.gltf/textures/fine_grained_wood_rough_1k.jpg" id="4_o2c3b"]
 [ext_resource type="Script" uid="uid://bq3i1us4cox3x" path="res://scripts/room1/lock.gd" id="5_y2qhp"]
-[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/Room1/photo.tscn" id="6_bmtlt"]
+[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/room1/photo.tscn" id="6_bmtlt"]
 [ext_resource type="AudioStream" uid="uid://bihcbqaawohxc" path="res://models/Room1/sounds/550373__mattruthsound__roller-cases_17.wav" id="6_f6byq"]
-[ext_resource type="PackedScene" uid="uid://dxo430j3881gu" path="res://scenes/Room1/file.tscn" id="6_j4lx6"]
+[ext_resource type="PackedScene" uid="uid://dxo430j3881gu" path="res://scenes/room1/file.tscn" id="6_j4lx6"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="6_o2c3b"]
-[ext_resource type="PackedScene" uid="uid://x2mls23q4l21" path="res://scenes/Room1/ui_lock_desk.tscn" id="7_hht3v"]
+[ext_resource type="PackedScene" uid="uid://x2mls23q4l21" path="res://scenes/room1/ui_lock_desk.tscn" id="7_hht3v"]
 [ext_resource type="AudioStream" uid="uid://bpwinddm0luui" path="res://models/Room1/sounds/787715__realsquink__drawer-e-signle.ogg" id="8_0kpkb"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wluvv"]
 resource_name = "Desk"

@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://37bggw1bdir7" path="res://scripts/room1/file_controller.gd" id="7_6ft2p"]
 [ext_resource type="Animation" uid="uid://d1xnpyc08njjx" path="res://addons/godot-xr-tools/hands/animations/right/Grip 4.res" id="9_5o70j"]
 
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_w7b4c"]
 size = Vector3(0.2, 0.02, 0.275)
 

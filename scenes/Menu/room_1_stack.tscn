@@ -13,8 +13,9 @@
 [ext_resource type="Texture2D" uid="uid://bnq7eofb8xtuj" path="res://models/Room1/objects/letter/letter__envelope_assets_3.png" id="10_iiv73"]
 [ext_resource type="Texture2D" uid="uid://e6k5a10lst6n" path="res://models/Room1/objects/letter/letter__envelope_assets_4.png" id="11_1ic0x"]
 [ext_resource type="Texture2D" uid="uid://c44k3vxxw1j11" path="res://models/Room1/objects/letter/letter__envelope_assets_5.png" id="12_cwg5v"]
-[ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="12_g3n2r"]
+[ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/room1/cipher_disk.tscn" id="12_g3n2r"]
 [ext_resource type="AudioStream" uid="uid://b30e4vqn5ljxa" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="15_neo3q"]
+
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yubxg"]
 resource_name = "MuseumPlinthe02_BAKED"

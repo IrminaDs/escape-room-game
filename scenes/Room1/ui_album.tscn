@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=3 uid="uid://dms4vhvjwnnrq"]
 
 [ext_resource type="Script" uid="uid://dsx3re4cjbq0s" path="res://scripts/room1/ui_album.gd" id="1_sw1k8"]
-[ext_resource type="Texture2D" uid="uid://4jvmuf6soa7j" path="res://models/Room1/textures/photos/photo0.png" id="2_oy25m"]
-[ext_resource type="FontFile" uid="uid://6fgrnmbv7jkn" path="res://models/Room1/fonts/Mea_Culpa/MeaCulpa-Regular.ttf" id="3_8m0ur"]
-[ext_resource type="Texture2D" uid="uid://cq7xpmqy3l6v4" path="res://models/Room1/textures/photos/photo1.png" id="3_g6xgk"]
-[ext_resource type="Texture2D" uid="uid://j67rkhqwfqag" path="res://models/Room1/textures/photos/photo2.png" id="4_8m0ur"]
-[ext_resource type="Texture2D" uid="uid://1uwbdf1bnl1t" path="res://models/Room1/textures/photos/photo3.png" id="5_o85ut"]
+[ext_resource type="Texture2D" uid="uid://4jvmuf6soa7j" path="res://models/room1/textures/photos/photo0.png" id="2_oy25m"]
+[ext_resource type="FontFile" uid="uid://6fgrnmbv7jkn" path="res://models/room1/fonts/Mea_Culpa/MeaCulpa-Regular.ttf" id="3_8m0ur"]
+[ext_resource type="Texture2D" uid="uid://cq7xpmqy3l6v4" path="res://models/room1/textures/photos/photo1.png" id="3_g6xgk"]
+[ext_resource type="Texture2D" uid="uid://j67rkhqwfqag" path="res://models/room1/textures/photos/photo2.png" id="4_8m0ur"]
+[ext_resource type="Texture2D" uid="uid://1uwbdf1bnl1t" path="res://models/room1/textures/photos/photo3.png" id="5_o85ut"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f434b"]
-bg_color = Color(0, 0, 0, 0.235294)
+bg_color = Color(0, 0, 0, 0.392157)
 
 [sub_resource type="LabelSettings" id="LabelSettings_g6xgk"]
 font_size = 56
@@ -63,6 +63,7 @@ label_settings = SubResource("LabelSettings_g6xgk")
 horizontal_alignment = 1
 
 [node name="Photo1" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
