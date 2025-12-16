@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk0r1kncr42hj"]
+
+[ext_resource type="PackedScene" uid="uid://bu5msqisxrytc" path="res://models/Room2/objects/tv_screen/led_tv_free.glb" id="1_sjusr"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_sjusr")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
