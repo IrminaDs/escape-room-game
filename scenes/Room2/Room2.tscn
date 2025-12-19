@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=34 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://d15r6b0j7ueva" path="res://scenes/Room2/wall_2_hole.tscn" id="2_qyg7m"]
 [ext_resource type="PackedScene" uid="uid://dyknts50cnr1d" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bll1dmcrjnrhi" path="res://scenes/Room2/file_folder2.tscn" id="17_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://qet1santll7t" path="res://scenes/Room2/blowfish_room2.tscn" id="18_mj8od"]
 [ext_resource type="Script" uid="uid://dy1008u8bmn1b" path="res://scripts/room2/blowfishr2.gd" id="19_p52e4"]
+[ext_resource type="PackedScene" uid="uid://bcwxh23j8pybq" path="res://scenes/Room2/lever_snap.tscn" id="23_6swx4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -272,6 +273,7 @@ path = "res://models/Room2/textures/personal_file3.png"
 
 [node name="lever" parent="Build/Objects" instance=ExtResource("13_mj8od")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1036835, 4.1728992, 2.2831197)
+visible = false
 
 [node name="doors" parent="Build/Objects" instance=ExtResource("15_uugd8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 3.10576, 2.55543, -2.340816)
@@ -341,6 +343,9 @@ shape = SubResource("BoxShape3D_fx4mq")
 transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 5, 1.00138, 2, -0.0112414)
 mesh = SubResource("BoxMesh_n8qcn")
 surface_material_override/0 = ExtResource("10_wapua")
+
+[node name="LeverSnap" parent="Build" instance=ExtResource("23_6swx4")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.102454, 4.177511, 2.3080537)
 
 [node name="StartXR" parent="." instance=ExtResource("15_x55sq")]
 
