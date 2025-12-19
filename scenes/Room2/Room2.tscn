@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://d15r6b0j7ueva" path="res://scenes/Room2/wall_2_hole.tscn" id="2_qyg7m"]
-[ext_resource type="PackedScene" uid="uid://ysgjsosgmubf" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
+[ext_resource type="PackedScene" uid="uid://dyknts50cnr1d" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
 [ext_resource type="PackedScene" uid="uid://d1tist78lnwfk" path="res://scenes/Room2/printer.tscn" id="3_p52e4"]
 [ext_resource type="PackedScene" uid="uid://dltb2uh4gdrsd" path="res://scenes/Room2/desk.tscn" id="4_j5lkk"]
 [ext_resource type="PackedScene" uid="uid://db0pwqroo1gio" path="res://scenes/Room2/blackboard.tscn" id="5_uugd8"]
@@ -10,9 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://cobo32mwpx72q" path="res://scenes/Room2/pc_tower.tscn" id="7_bv1ei"]
 [ext_resource type="PackedScene" uid="uid://bl4yypba6jl4r" path="res://scenes/Room2/empty_pad.tscn" id="9_j5lkk"]
 [ext_resource type="Material" uid="uid://m8tyfikh1h13" path="res://models/Room2/textures/metal_texture/material_floor.tres" id="10_wapua"]
-[ext_resource type="Texture2D" uid="uid://c5gglprqvxrjq" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
-[ext_resource type="Texture2D" uid="uid://bcpejtk8vaaf3" path="res://models/Room2/objects/note/Hexadecimal-and-Binary-Number-System-Representation.jpg" id="12_438py"]
-[ext_resource type="PackedScene" uid="uid://buv2sqf8cvkce" path="res://models/Room2/objects/document/document_file_folder.glb" id="13_j5lkk"]
+[ext_resource type="Texture2D" uid="uid://8cib1asjpfls" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
+[ext_resource type="Texture2D" uid="uid://btipt5ih3dhle" path="res://models/Room2/objects/note/Hexadecimal-and-Binary-Number-System-Representation.jpg" id="12_438py"]
 [ext_resource type="PackedScene" uid="uid://o4lcjedqored" path="res://scenes/Room2/lever2.tscn" id="13_mj8od"]
 [ext_resource type="PackedScene" uid="uid://c5tmrqo3pdohd" path="res://scenes/Room2/folders.tscn" id="14_k4i2i"]
 [ext_resource type="PackedScene" uid="uid://bw8qw7hsvbdmt" path="res://scenes/Room2/radio.tscn" id="14_uugd8"]
@@ -22,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="16_j5lkk"]
 [ext_resource type="Script" uid="uid://vyxoqyud40df" path="res://scripts/room2/displays.gd" id="16_k4i2i"]
 [ext_resource type="PackedScene" uid="uid://cpml6hwjdpcpv" path="res://scenes/Room2/keypad2.tscn" id="16_qyg7m"]
+[ext_resource type="PackedScene" uid="uid://bll1dmcrjnrhi" path="res://scenes/Room2/file_folder2.tscn" id="17_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://qet1santll7t" path="res://scenes/Room2/blowfish_room2.tscn" id="18_mj8od"]
 [ext_resource type="Script" uid="uid://dy1008u8bmn1b" path="res://scripts/room2/blowfishr2.gd" id="19_p52e4"]
 
@@ -248,15 +248,27 @@ texture = ExtResource("12_438py")
 
 [node name="ondesk3" type="Node3D" parent="Build/Objects"]
 
-[node name="document_file" parent="Build/Objects/ondesk3" instance=ExtResource("13_j5lkk")]
-transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -0.39531705, 3.4640536, -1.7036384)
-
 [node name="folders" parent="Build/Objects/ondesk3" instance=ExtResource("14_k4i2i")]
-transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, -1.824228, 3.424812, -2.0623252)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.824228, 3.424812, -2.0623252)
 
 [node name="radio" parent="Build/Objects/ondesk3" instance=ExtResource("14_uugd8")]
 transform = Transform3D(-0.014999974, 0, 1.3113394e-09, 0, 0.015, 0, -1.3113394e-09, 0, -0.014999974, 0.73255, 3.60777, 2.0995557)
 visible = false
+
+[node name="File_folder" parent="Build/Objects/ondesk3" instance=ExtResource("17_mnuuc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18896239, 3.4542801, -1.6446931)
+
+[node name="File_folder2" parent="Build/Objects/ondesk3" instance=ExtResource("17_mnuuc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9896767, 3.4542801, -1.6446931)
+
+[node name="Viewport2Din3D" parent="Build/Objects/ondesk3/File_folder2" index="5"]
+path = "res://models/Room2/textures/personal_file2.png"
+
+[node name="File_folder3" parent="Build/Objects/ondesk3" instance=ExtResource("17_mnuuc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5934193, 3.4542801, -1.6446931)
+
+[node name="Viewport2Din3D" parent="Build/Objects/ondesk3/File_folder3" index="5"]
+path = "res://models/Room2/textures/personal_file3.png"
 
 [node name="lever" parent="Build/Objects" instance=ExtResource("13_mj8od")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1036835, 4.1728992, 2.2831197)
@@ -334,3 +346,6 @@ surface_material_override/0 = ExtResource("10_wapua")
 
 [node name="Player" parent="." instance=ExtResource("16_j5lkk")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.22542, -0.0485847, 0.698716)
+
+[editable path="Build/Objects/ondesk3/File_folder2"]
+[editable path="Build/Objects/ondesk3/File_folder3"]
