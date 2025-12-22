@@ -14,7 +14,7 @@ var right_was_pressed = false
 
 const DISTANCE_THRESHOLD := 0.25
 
-var paper_sheet_scene: PackedScene = preload("res://scenes/room3/equipment/main_room/rsa.tscn")
+var paper_sheet_scene: PackedScene = preload("res://scenes/room3/main_room/rsa.tscn")
 
 func _ready():
 	parent_pickable.connect("picked_up", Callable(self, "_on_picked_up"))

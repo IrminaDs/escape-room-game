@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://mnnyoisingso"]
+
+[ext_resource type="PackedScene" uid="uid://cewwmfundrrn1" path="res://scenes/room3/main_room/wire_connection/pin_code.tscn" id="1_g05pm"]
+
+[node name="DoorPanel" type="CanvasLayer"]
+
+[node name="pin_code" parent="." instance=ExtResource("1_g05pm")]
