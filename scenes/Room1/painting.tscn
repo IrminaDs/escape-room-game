@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://pxmwkco8jlcd" path="res://models/Room1/objects/paintings/horror_paintings_-_zdzislaw_beksinski_3.png" id="1_lq4td"]
 [ext_resource type="Texture2D" uid="uid://b8i6i85mgod7s" path="res://models/Room1/objects/paintings/horror_paintings_-_zdzislaw_beksinski_2.png" id="2_8vfpk"]
 [ext_resource type="Script" uid="uid://5pqgnsknm61n" path="res://scripts/room1/painting.gd" id="3_8vfpk"]
-[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/Room1/photo.tscn" id="4_6sjfq"]
+[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/room1/photo.tscn" id="4_6sjfq"]
+
 
 [sub_resource type="Image" id="Image_6sjfq"]
 data = {

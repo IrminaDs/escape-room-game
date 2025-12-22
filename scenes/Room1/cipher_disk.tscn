@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/enable_grab.gd" id="16_totro"]
 [ext_resource type="AudioStream" uid="uid://b41l3e7m8yb2h" path="res://models/Room1/sounds/113093__edgardedition__click3.wav" id="17_hthnu"]
 
+
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_mejc7"]
 height = 0.075
 radius = 0.25

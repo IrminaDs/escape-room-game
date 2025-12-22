@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1d6yxvfp57b7"
-path.s3tc="res://.godot/imported/old_metal_table_low_poly_0.jpg-47099325c2e19805154855bfe21c0b3e.s3tc.ctex"
+path.s3tc="res://.godot/imported/old_metal_table_low_poly_0.jpg-8a94e503b9e2bb283c72a39a7ee889b7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/Room2/objects/desk/old_metal_table_low_poly_0.jpg"
-dest_files=["res://.godot/imported/old_metal_table_low_poly_0.jpg-47099325c2e19805154855bfe21c0b3e.s3tc.ctex"]
+source_file="res://models/room2/objects/desk/old_metal_table_low_poly_0.jpg"
+dest_files=["res://.godot/imported/old_metal_table_low_poly_0.jpg-8a94e503b9e2bb283c72a39a7ee889b7.s3tc.ctex"]
 
 [params]
 

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://d2rb5y13w51hp" path="res://scripts/room1/blowfish.gd" id="2_ex42m"]
 [ext_resource type="PackedScene" uid="uid://cl3nk7d25ndbb" path="res://models/Room1/objects/pufferfish/simple_fish_bowl.glb" id="2_tu7op"]
 [ext_resource type="Script" uid="uid://dg6pur3mldigo" path="res://scripts/room1/blowfish_area.gd" id="4_c2x72"]
-[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/Room1/photo.tscn" id="5_oo0d4"]
+[ext_resource type="PackedScene" uid="uid://dc24lp3x7pnay" path="res://scenes/room1/photo.tscn" id="5_oo0d4"]
 [ext_resource type="AudioStream" uid="uid://khqnigsanmek" path="res://models/Room1/sounds/786510__jheyns__bubble-wrap-single-pop-5.wav" id="6_p4xir"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8frw3"]

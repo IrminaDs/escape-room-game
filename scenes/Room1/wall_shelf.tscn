@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bchsvpm35ypf2" path="res://models/Room1/objects/shelf/wooden_wall_shelf.glb" id="1_i5cp3"]
 
+
 [node name="WallShelf" type="Node3D"]
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_i5cp3")]
