@@ -37,4 +37,11 @@ shape = SubResource("BoxShape3D_olbcw")
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 1.25, 2, 0)
 screen_size = Vector2(6.5, 4)
 scene = ExtResource("3_6xpyw")
+viewport_size = Vector2(3250, 2000)
 scene_properties_keys = PackedStringArray()
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Viewport2Din3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.282885, 0, 4.70639)
+light_energy = 10.0
+spot_range = 7.0
+spot_angle_attenuation = 0.03983

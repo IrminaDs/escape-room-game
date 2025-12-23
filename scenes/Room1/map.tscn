@@ -1,11 +1,11 @@
 [gd_scene load_steps=16 format=4 uid="uid://0tvnoii853oi"]
 
-[ext_resource type="Texture2D" uid="uid://iqyg3mdyogsd" path="res://models/Room1/textures/boards/europe.jpg" id="1_f7w8k"]
-[ext_resource type="Texture2D" uid="uid://dlebmjf4jo6cr" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="2_vrvfi"]
-[ext_resource type="Texture2D" uid="uid://ci2igv1qtkhgo" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="3_dmj32"]
-[ext_resource type="Texture2D" uid="uid://d12klmm3pe64u" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="4_dmj32"]
-[ext_resource type="Texture2D" uid="uid://cstdifwle1yij" path="res://models/Room1/textures/boards/scale_up.png" id="5_01sg1"]
-[ext_resource type="Texture2D" uid="uid://xscnvv3bm3i4" path="res://models/Room1/textures/boards/scale_side.png" id="6_3joba"]
+[ext_resource type="Texture2D" uid="uid://cqdtvdt6lgbee" path="res://models/Room1/textures/boards/europe.jpg" id="1_f7w8k"]
+[ext_resource type="Texture2D" uid="uid://dv2jyc2igx5e0" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_1.png" id="2_vrvfi"]
+[ext_resource type="Texture2D" uid="uid://bsdjpr0nui523" path="res://models/Room1/objects/paintings/schopenhauer_picture_with_frame_2.png" id="3_dmj32"]
+[ext_resource type="Texture2D" uid="uid://dljo5f2k67ftv" path="res://models/Room1/textures/wood_table_001_1k.gltf/textures/wood_table_001_diff_1k.jpg" id="4_dmj32"]
+[ext_resource type="Texture2D" uid="uid://7temnyfjb5n2" path="res://models/Room1/textures/boards/scale_up.png" id="5_01sg1"]
+[ext_resource type="Texture2D" uid="uid://dp2cl8brm75kd" path="res://models/Room1/textures/boards/scale_side.png" id="6_3joba"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_pbabw"]
 size = Vector2(0.75, 0.5)
@@ -83,6 +83,6 @@ mesh = SubResource("PlaneMesh_6sn22")
 surface_material_override/0 = SubResource("StandardMaterial3D_1npcn")
 
 [node name="ScaleSide" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.7, 0, 0, 0, -3.0598e-08, -0.7, 0, 0.7, -3.0598e-08, 0.15, 0.015, -0.005)
+transform = Transform3D(0.7, 0, 0, 0, -3.0598e-08, -0.7, 0, 0.7, -3.0598e-08, 0.15, 0.022864, -0.005)
 mesh = SubResource("PlaneMesh_o0gsu")
 surface_material_override/0 = SubResource("StandardMaterial3D_uemqp")
