@@ -1,7 +1,35 @@
-[gd_scene load_steps=9 format=3 uid="uid://bc6ney83sf1ua"]
+[gd_scene load_steps=18 format=3 uid="uid://bc6ney83sf1ua"]
+
+[ext_resource type="Script" uid="uid://57j0215ik40h" path="res://scripts/menu/ui_credits.gd" id="1_wbbus"]
+[ext_resource type="Texture2D" uid="uid://bb5wulqyxrlbq" path="res://models/menu/textures/Znak_graficzny_AGH.svg.png" id="2_4rpde"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qp8ag"]
 bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3p7t"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="LabelSettings" id="LabelSettings_4mwex"]
+font_size = 36
+
+[sub_resource type="LabelSettings" id="LabelSettings_4fc8n"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_l1o1b"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_4ndrl"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhej4"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_e7ppd"]
+font_size = 36
 
 [sub_resource type="LabelSettings" id="LabelSettings_ql2rs"]
 font_size = 64
@@ -25,9 +53,10 @@ font_size = 12
 font_size = 12
 
 [node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_wbbus")
 
 [node name="Panel" type="Panel" parent="."]
-offset_right = 3250.0
+offset_right = 900.0
 offset_bottom = 2000.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_qp8ag")
 
@@ -37,31 +66,107 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="AGH" type="Control" parent="Texts"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="Menu" type="Control" parent="Texts"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="AGH" type="Control" parent="Texts/Menu"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Texts/Menu/AGH"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 24.0
+offset_right = 440.0
+offset_bottom = 424.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_j3p7t")
+
+[node name="Logo" type="TextureRect" parent="Texts/Menu/AGH/Panel"]
+offset_top = -8.0
+offset_right = 400.0
+offset_bottom = 392.0
+texture = ExtResource("2_4rpde")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Texts/Menu/AGH"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 32.0
+offset_right = 848.0
+offset_bottom = 400.0
+text = "Gra została stwona na potrzeby pracy inżynierskiej na Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie"
+label_settings = SubResource("LabelSettings_4mwex")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Autors" type="Label" parent="Texts/Menu/AGH"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 384.0
+offset_right = 648.0
+offset_bottom = 521.0
+text = "Autorzy:"
+label_settings = SubResource("LabelSettings_4fc8n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Texts/Menu/AGH/Autors"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 112.0
+offset_right = 130.0
+offset_bottom = 179.0
+text = "Irmina Drabas"
+label_settings = SubResource("LabelSettings_l1o1b")
+
+[node name="Label2" type="Label" parent="Texts/Menu/AGH/Autors"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 112.0
+offset_right = 626.0
+offset_bottom = 179.0
+text = "Aleksandra Gorazda"
+label_settings = SubResource("LabelSettings_4ndrl")
+
+[node name="Label3" type="Label" parent="Texts/Menu/AGH/Autors"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 184.0
+offset_right = 371.0
+offset_bottom = 251.0
+text = "Zuzanna Śliwa"
+label_settings = SubResource("LabelSettings_mhej4")
+
+[node name="Label" type="Label" parent="Texts/Menu"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 672.0
+offset_right = 856.0
+offset_bottom = 828.0
+text = "Gra powstała przy użyciu darmowych materiałów udostępnionych przez twórców."
+label_settings = SubResource("LabelSettings_e7ppd")
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="Name" type="Label" parent="Texts/Menu"]
 layout_mode = 0
-offset_left = 296.0
-offset_top = 808.0
-offset_right = 473.0
-offset_bottom = 896.0
+offset_left = 352.0
+offset_top = 824.0
+offset_right = 529.0
+offset_bottom = 912.0
 text = "Menu"
 label_settings = SubResource("LabelSettings_ql2rs")
 
 [node name="Models" type="Label" parent="Texts/Menu"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 904.0
-offset_right = 832.0
-offset_bottom = 1576.0
+offset_left = 72.0
+offset_top = 920.0
+offset_right = 840.0
+offset_bottom = 1592.0
 text = "Modele: 
 \"Classical Museum Pedestals - Asset Pack\" (https://skfb.ly/oQuSx) by Samuel F. Johanns (Oneironauticus) is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 \"Exit Sign\" (https://skfb.ly/onoTv) by ZachWilkins1997 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -85,25 +190,26 @@ label_settings = SubResource("LabelSettings_4rpde")
 autowrap_mode = 2
 
 [node name="Room1" type="Control" parent="Texts"]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Name" type="Label" parent="Texts/Room1"]
 layout_mode = 0
-offset_left = 1144.0
-offset_top = 48.0
-offset_right = 1369.0
-offset_bottom = 136.0
+offset_left = 336.0
+offset_top = 64.0
+offset_right = 561.0
+offset_bottom = 152.0
 text = "Pokój 1"
 label_settings = SubResource("LabelSettings_j3p7t")
 
 [node name="Models" type="Label" parent="Texts/Room1"]
 layout_mode = 0
-offset_left = 896.0
-offset_top = 160.0
-offset_right = 1664.0
-offset_bottom = 1056.0
+offset_left = 72.0
+offset_top = 192.0
+offset_right = 840.0
+offset_bottom = 1088.0
 text = "Modele:
 \"Old Radio\" (https://skfb.ly/oVBDP) by Seifurt is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 \"Horror Paintings - Zdzislaw Beksinski\" (https://skfb.ly/oxUW9) by FrodoUndead is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -132,10 +238,10 @@ autowrap_mode = 2
 
 [node name="Textures" type="Label" parent="Texts/Room1"]
 layout_mode = 0
-offset_left = 896.0
-offset_top = 1064.0
-offset_right = 1664.0
-offset_bottom = 1576.0
+offset_left = 64.0
+offset_top = 1096.0
+offset_right = 832.0
+offset_bottom = 1608.0
 text = "Tekstury:
 \"Backrooms Wallpapers\" (https://skfb.ly/o9KZM) by Huuxloc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 Poly Haven - Wood Table 001, Wood Floor Deck, Fine Grained Wood, Wooden Garage Door, Grey Plaster 02
@@ -157,10 +263,10 @@ autowrap_mode = 2
 
 [node name="Sounds" type="Label" parent="Texts/Room1"]
 layout_mode = 0
-offset_left = 896.0
-offset_top = 1608.0
-offset_right = 1664.0
-offset_bottom = 1960.0
+offset_left = 64.0
+offset_top = 1632.0
+offset_right = 832.0
+offset_bottom = 1984.0
 text = "Audio:
 Ticking Clock - Large by Rollo145 -- https://freesound.org/s/256477/ -- License: Attribution 3.0
 Click3.wav by EdgardEdition -- https://freesound.org/s/113093/ -- License: Attribution 3.0
@@ -180,17 +286,85 @@ label_settings = SubResource("LabelSettings_1ylll")
 autowrap_mode = 2
 
 [node name="Room2" type="Control" parent="Texts"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="Name" type="Label" parent="Texts/Room2"]
+offset_left = 336.0
+offset_top = 64.0
+offset_right = 561.0
+offset_bottom = 152.0
+text = "Pokój 2"
+label_settings = SubResource("LabelSettings_j3p7t")
+
+[node name="Models" type="Label" parent="Texts/Room2"]
+offset_left = 72.0
+offset_top = 192.0
+offset_right = 840.0
+offset_bottom = 1088.0
+text = "Modele:"
+label_settings = SubResource("LabelSettings_gmg5p")
+autowrap_mode = 2
+
+[node name="Textures" type="Label" parent="Texts/Room2"]
+offset_left = 64.0
+offset_top = 1096.0
+offset_right = 832.0
+offset_bottom = 1608.0
+text = "Tekstury:"
+label_settings = SubResource("LabelSettings_uqjg0")
+autowrap_mode = 2
+
+[node name="Sounds" type="Label" parent="Texts/Room2"]
+offset_left = 64.0
+offset_top = 1632.0
+offset_right = 832.0
+offset_bottom = 1984.0
+text = "Audio:"
+label_settings = SubResource("LabelSettings_1ylll")
+autowrap_mode = 2
 
 [node name="Room3" type="Control" parent="Texts"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Logo" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Name" type="Label" parent="Texts/Room3"]
+offset_left = 336.0
+offset_top = 64.0
+offset_right = 561.0
+offset_bottom = 152.0
+text = "Pokój 3"
+label_settings = SubResource("LabelSettings_j3p7t")
+
+[node name="Models" type="Label" parent="Texts/Room3"]
+offset_left = 72.0
+offset_top = 192.0
+offset_right = 840.0
+offset_bottom = 1088.0
+text = "Modele:"
+label_settings = SubResource("LabelSettings_gmg5p")
+autowrap_mode = 2
+
+[node name="Textures" type="Label" parent="Texts/Room3"]
+offset_left = 64.0
+offset_top = 1096.0
+offset_right = 832.0
+offset_bottom = 1608.0
+text = "Tekstury:"
+label_settings = SubResource("LabelSettings_uqjg0")
+autowrap_mode = 2
+
+[node name="Sounds" type="Label" parent="Texts/Room3"]
+offset_left = 64.0
+offset_top = 1632.0
+offset_right = 832.0
+offset_bottom = 1984.0
+text = "Audio:"
+label_settings = SubResource("LabelSettings_1ylll")
+autowrap_mode = 2
