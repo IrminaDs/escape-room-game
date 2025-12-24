@@ -33,8 +33,44 @@ script = ExtResource("2_lhvqg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("BoxShape3D_olbcw")
 
-[node name="Viewport2Din3D" parent="." instance=ExtResource("2_fxijl")]
-transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 1.25, 2, 0)
-screen_size = Vector2(6.5, 4)
+[node name="Viewports" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Viewports"]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -1.10821, 2.25, 4.21729)
+light_energy = 10.0
+spot_range = 7.0
+spot_angle = 50.0
+spot_angle_attenuation = 0.03983
+
+[node name="Menu" parent="Viewports" instance=ExtResource("2_fxijl")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.11195, 2.25, -0.391987)
+screen_size = Vector2(1.8, 4)
 scene = ExtResource("3_6xpyw")
-scene_properties_keys = PackedStringArray()
+viewport_size = Vector2(900, 2000)
+scene_properties_keys = PackedStringArray("ui_credits.gd", "element")
+element = "Menu"
+
+[node name="Room1" parent="Viewports" instance=ExtResource("2_fxijl")]
+transform = Transform3D(0.965925, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965925, 0.513878, 2.25, -0.608013)
+screen_size = Vector2(1.8, 4)
+scene = ExtResource("3_6xpyw")
+viewport_size = Vector2(900, 2000)
+scene_properties_keys = PackedStringArray("ui_credits.gd", "element")
+element = "Room1"
+
+[node name="Room2" parent="Viewports" instance=ExtResource("2_fxijl")]
+transform = Transform3D(0.707106, 0, -0.707106, 0, 1, 0, 0.707106, 0, 0.707106, 1.98612, 2.25, 0.241987)
+screen_size = Vector2(1.8, 4)
+scene = ExtResource("3_6xpyw")
+viewport_size = Vector2(900, 2000)
+scene_properties_keys = PackedStringArray("ui_credits.gd", "element")
+element = "Room2"
+
+[node name="Room3" parent="Viewports" instance=ExtResource("2_fxijl")]
+transform = Transform3D(-2.98023e-08, 0, -1, 0, 1, 0, 1, 0, -2.98023e-08, 2.61195, 2.25, 1.75801)
+screen_size = Vector2(1.8, 4)
+scene = ExtResource("3_6xpyw")
+viewport_size = Vector2(900, 2000)
+scene_properties_keys = PackedStringArray("ui_credits.gd", "element")
+element = "Room3"
