@@ -1,8 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://c2qu8ca112dci"]
+[gd_scene load_steps=19 format=3 uid="uid://cgcvnyycuwv77"]
 
-[ext_resource type="Script" uid="uid://dcdqv6l13g6ju" path="res://scripts/room2/ui_lock_4_r1.gd" id="1_am45t"]
-[ext_resource type="FontFile" uid="uid://jxs2i8ycm8ol" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_6p54y"]
-[ext_resource type="Texture2D" uid="uid://dearkn422abqd" path="res://models/Room1/textures/icons/arrow.png" id="3_6c1dj"]
+[ext_resource type="Script" uid="uid://b4hq420rlfw4d" path="res://scripts/room2/ui_lock_alpha_num.gd" id="1_totwt"]
+[ext_resource type="FontFile" uid="uid://jxs2i8ycm8ol" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_au5tb"]
+[ext_resource type="Texture2D" uid="uid://dearkn422abqd" path="res://models/Room1/textures/icons/arrow.png" id="3_imakv"]
 
 [sub_resource type="Gradient" id="Gradient_poyqd"]
 offsets = PackedFloat32Array(0.0152672, 0.0610687, 0.129771, 0.282443, 0.572519, 0.763359, 0.877863, 0.977099)
@@ -51,19 +51,19 @@ border_width_bottom = 3
 border_color = Color(0.0964538, 0.0993988, 0.171727, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_poyqd"]
-font = ExtResource("2_6p54y")
+font = ExtResource("2_au5tb")
 font_size = 100
 
 [sub_resource type="LabelSettings" id="LabelSettings_jvode"]
-font = ExtResource("2_6p54y")
+font = ExtResource("2_au5tb")
 font_size = 100
 
 [sub_resource type="LabelSettings" id="LabelSettings_htnk8"]
-font = ExtResource("2_6p54y")
+font = ExtResource("2_au5tb")
 font_size = 100
 
 [sub_resource type="LabelSettings" id="LabelSettings_f4uu3"]
-font = ExtResource("2_6p54y")
+font = ExtResource("2_au5tb")
 font_size = 100
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a6ysn"]
@@ -105,7 +105,7 @@ expand_margin_right = 20.0
 expand_margin_bottom = 25.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
-script = ExtResource("1_am45t")
+script = ExtResource("1_totwt")
 
 [node name="Panel" type="Panel" parent="."]
 
@@ -214,7 +214,7 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonUp2" type="Button" parent="Container"]
@@ -228,7 +228,7 @@ theme_override_font_sizes/font_size = 64
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonUp3" type="Button" parent="Container"]
@@ -242,7 +242,7 @@ theme_override_font_sizes/font_size = 64
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonUp4" type="Button" parent="Container"]
@@ -256,7 +256,7 @@ theme_override_font_sizes/font_size = 64
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonDown1" type="Button" parent="Container"]
@@ -270,7 +270,7 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonDown2" type="Button" parent="Container"]
@@ -284,7 +284,7 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonDown3" type="Button" parent="Container"]
@@ -298,7 +298,7 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [node name="ButtonDown4" type="Button" parent="Container"]
@@ -312,7 +312,7 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6ysn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m0dc1")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8ux76")
-icon = ExtResource("3_6c1dj")
+icon = ExtResource("3_imakv")
 expand_icon = true
 
 [connection signal="pressed" from="Container/ButtonUp1" to="." method="_on_button_up_1_pressed"]

@@ -1,8 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk0r1kncr42hj"]
+[gd_scene load_steps=7 format=3 uid="uid://bk0r1kncr42hj"]
 
 [ext_resource type="PackedScene" uid="uid://bu5msqisxrytc" path="res://models/Room2/objects/tv_screen/led_tv_free.glb" id="1_sjusr"]
+[ext_resource type="Script" uid="uid://bole866km00yi" path="res://scripts/room2/lock_keypad.gd" id="2_p7xpx"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="3_fdm68"]
+[ext_resource type="PackedScene" uid="uid://cgcvnyycuwv77" path="res://scenes/Room2/ui_lock_alpha_num.tscn" id="4_p7xpx"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_0hngo"]
+size = Vector3(0.12073926, 0.99400616, 1.5802841)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5i7t0"]
+size = Vector3(7.8359776, 4.813591, 4.5314026)
+
+[node name="Node3D" type="StaticBody3D"]
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_sjusr")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019172579, 0.46528322, -0.0030896962)
+shape = SubResource("BoxShape3D_0hngo")
+
+[node name="Lock" type="Node3D" parent="."]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0.6, 0.375)
+
+[node name="InteractionZone" type="Area3D" parent="Lock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -0.625)
+collision_mask = 524288
+script = ExtResource("2_p7xpx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -3.4737425, -2.0158417, 0.069785506)
+shape = SubResource("BoxShape3D_5i7t0")
+
+[node name="Viewport2Din3D" parent="Lock" instance=ExtResource("3_fdm68")]
+transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 0, 1.226433, -0.5569147)
+screen_size = Vector2(1, 0.8)
+scene = ExtResource("4_p7xpx")
+viewport_size = Vector2(640, 512)
+scene_properties_keys = PackedStringArray("ui_lock_alpha_num.gd", "correct_code", "highlight_color", "signal_to_emit")
+correct_code = "A9F2"
+highlight_color = Color(0, 0.43146813, 1, 1)
+signal_to_emit = "computer_unlocked"
