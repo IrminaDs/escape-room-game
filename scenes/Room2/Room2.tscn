@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=36 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="PackedScene" uid="uid://d15r6b0j7ueva" path="res://scenes/Room2/wall_2_hole.tscn" id="2_qyg7m"]
 [ext_resource type="PackedScene" uid="uid://dyknts50cnr1d" path="res://models/Room2/objects/wall2/wall_2.glb" id="2_wapua"]
@@ -24,7 +24,9 @@
 [ext_resource type="PackedScene" uid="uid://bll1dmcrjnrhi" path="res://scenes/Room2/file_folder2.tscn" id="17_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://qet1santll7t" path="res://scenes/Room2/blowfish_room2.tscn" id="18_mj8od"]
 [ext_resource type="Script" uid="uid://dy1008u8bmn1b" path="res://scripts/room2/blowfishr2.gd" id="19_p52e4"]
+[ext_resource type="Script" uid="uid://b4wiijgkpo0r2" path="res://scripts/room2/cipher_wall.gd" id="22_ebguw"]
 [ext_resource type="PackedScene" uid="uid://bcwxh23j8pybq" path="res://scenes/Room2/lever_snap.tscn" id="23_6swx4"]
+[ext_resource type="Script" uid="uid://bglqmk4h8m2sd" path="res://scenes/Room2/lever_snap.gd" id="24_mnuuc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -294,9 +296,11 @@ font_size = 60
 
 [node name="cipher_wall" type="Node3D" parent="Build/Objects"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8663173, 0, 0)
+script = ExtResource("22_ebguw")
 
 [node name="cipher_yellow" type="Label3D" parent="Build/Objects/cipher_wall"]
 transform = Transform3D(-0.88468677, -0.46618593, 7.7341795e-08, -0.46618593, 0.88468677, 4.075528e-08, -8.74228e-08, 0, -1, 2.3623366, 4.7899966, 2.38173)
+visible = false
 modulate = Color(1, 0.9333334, 0, 1)
 outline_modulate = Color(0, 0, 0, 0)
 text = "0001 "
@@ -346,6 +350,7 @@ surface_material_override/0 = ExtResource("10_wapua")
 
 [node name="LeverSnap" parent="Build" instance=ExtResource("23_6swx4")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.102454, 4.177511, 2.3080537)
+script = ExtResource("24_mnuuc")
 
 [node name="StartXR" parent="." instance=ExtResource("15_x55sq")]
 
