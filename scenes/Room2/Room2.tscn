@@ -1,5 +1,6 @@
-[gd_scene load_steps=38 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=40 format=3 uid="uid://cff7h38fahrpi"]
 
+[ext_resource type="Script" uid="uid://dtfq2w2npp40c" path="res://scripts/room.gd" id="1_5q6wp"]
 [ext_resource type="Script" uid="uid://c8dc7tkyl0gic" path="res://scripts/room2/printer.gd" id="2_vueoo"]
 [ext_resource type="PackedScene" uid="uid://d1tist78lnwfk" path="res://scenes/Room2/printer.tscn" id="3_p52e4"]
 [ext_resource type="PackedScene" uid="uid://dltb2uh4gdrsd" path="res://scenes/Room2/desk.tscn" id="4_j5lkk"]
@@ -34,6 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://bj7387daq4a7c" path="res://scenes/Room2/szkielet.tscn" id="23_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://cuxhyanfaxkd3" path="res://scenes/Room2/seven_angles.tscn" id="24_ebguw"]
 [ext_resource type="PackedScene" uid="uid://dhox50t1qhjsl" path="res://scenes/Room2/letter.tscn" id="28_vm886"]
+[ext_resource type="Script" uid="uid://bbsg1fdx30q60" path="res://scripts/set_player.gd" id="36_2eums"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -48,6 +50,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="Room2" type="Node3D"]
+script = ExtResource("1_5q6wp")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p6krx")
@@ -334,7 +337,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3496083, 3.4645796, 1.61593
 [node name="StartXR" parent="." instance=ExtResource("15_x55sq")]
 
 [node name="Player" parent="." instance=ExtResource("16_j5lkk")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.22542, -0.0485847, 0.698716)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.5511608, -0.0485847, 0.698716)
+script = ExtResource("36_2eums")
 
 [editable path="Build/Objects/ondesk3/File_folder2"]
 [editable path="Build/Objects/ondesk3/File_folder3"]

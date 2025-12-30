@@ -70,7 +70,7 @@ expand_margin_bottom = 25.0
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_qggu3")
 color = Color(0.43128255, 0.6115835, 1, 1)
-signal_to_emit = "game_over"
+signal_to_emit = "room_finished"
 
 [node name="Panel" type="Panel" parent="."]
 offset_top = 1.0
