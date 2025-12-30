@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=38 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="Script" uid="uid://c8dc7tkyl0gic" path="res://scripts/room2/printer.gd" id="2_vueoo"]
 [ext_resource type="PackedScene" uid="uid://d1tist78lnwfk" path="res://scenes/Room2/printer.tscn" id="3_p52e4"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://cobo32mwpx72q" path="res://scenes/Room2/pc_tower.tscn" id="7_bv1ei"]
 [ext_resource type="Script" uid="uid://cc8p8y40t5hpi" path="res://scripts/room2/directional_light_3d.gd" id="7_ebguw"]
 [ext_resource type="PackedScene" uid="uid://7eetunbf3a56" path="res://scenes/Room2/keys_base.tscn" id="7_vm886"]
-[ext_resource type="Script" uid="uid://cylewgnpglrp7" path="res://scripts/room2/keys_base.gd" id="8_vyd4f"]
 [ext_resource type="PackedScene" uid="uid://bl4yypba6jl4r" path="res://scenes/Room2/empty_pad.tscn" id="9_j5lkk"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_mlxov"]
 [ext_resource type="Texture2D" uid="uid://8cib1asjpfls" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
@@ -77,9 +76,8 @@ transform = Transform3D(-0.03441451, 0, -0.6991535, 0, 0.7, 0, 0.6991535, 0, -0.
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.28490543, 3.4334474, 1.6664683)
 
 [node name="keys_base" parent="Build/Objects/ondesk1" instance=ExtResource("7_vm886")]
-transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 1.2858865, 3.4441853, 1.5971482)
+transform = Transform3D(-1.2, 0, -1.8119498e-07, 0, 1.2, 0, 1.8119498e-07, 0, -1.2, 1.2858865, 3.3555617, 1.6185037)
 visible = false
-script = ExtResource("8_vyd4f")
 
 [node name="desk1" parent="Build/Objects" instance=ExtResource("4_j5lkk")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.9247575, 2.9876037, 1.8528)

@@ -7,3 +7,4 @@ signal lever_picked_up
 signal computer_unlocked
 
 signal game_over
+signal snapzone_entered

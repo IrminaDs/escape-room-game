@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://budxjbk3n0k3u"]
+[gd_scene load_steps=16 format=3 uid="uid://budxjbk3n0k3u"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_4q871"]
 [ext_resource type="Texture2D" uid="uid://che7h3nyr32us" path="res://models/Room2/textures/letter_p_2.png" id="1_n0tv3"]
@@ -10,9 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="9_4x75j"]
 [ext_resource type="PackedScene" uid="uid://dh8grd7s3n8kg" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_snap.tscn" id="9_8gct5"]
 [ext_resource type="Script" uid="uid://d0u4wv5q1mgqc" path="res://scripts/room2/enable_grab_folder.gd" id="10_8gct5"]
+[ext_resource type="Script" uid="uid://b0ye5sn2kury4" path="res://scripts/room2/snap_zone.gd" id="11_3hg0i"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tfp2i"]
-size = Vector3(0.23348999, 0.033309937, 0.33940506)
+size = Vector3(0.23348999, 0.037672043, 0.33940506)
 
 [sub_resource type="PrismMesh" id="PrismMesh_mw33l"]
 
@@ -31,11 +32,11 @@ metadata/_custom_type_script = "uid://cb65h51jcm0kt"
 [node name="MissingPiece" instance=ExtResource("1_4q871")]
 
 [node name="CollisionShape3D" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.048059344, -0.07575464, 0.00087696314)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.048059344, -0.04861784, 0.00087696314)
 shape = SubResource("BoxShape3D_tfp2i")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1" groups=["missing_piece"]]
-transform = Transform3D(0.22598776, 0, 0, 0, -1.3790657e-08, -0.03131833, 0, 0.3154934, -1.3689677e-09, 0.052900314, -0.07238078, -0.0018235445)
+transform = Transform3D(0.22598776, 0, 0, 0, -1.3790657e-08, -0.016591493, 0, 0.3154934, -7.2523726e-10, 0.052900314, -0.059648097, -0.0018235445)
 mesh = SubResource("PrismMesh_mw33l")
 
 [node name="Sprite3D" type="Sprite3D" parent="." index="2"]
@@ -54,8 +55,11 @@ hand_pose = SubResource("Resource_py7sn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04782009, 0, 0)
 
 [node name="GrabPointSnap" parent="." index="6" instance=ExtResource("9_8gct5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.044187836, -0.059099674, -0.037905097)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016279839, -0.059099674, -0.037905097)
 
 [node name="EnableGrab" type="Node" parent="." index="7"]
 script = ExtResource("10_8gct5")
 sig_name = "computer_unlocked"
+
+[node name="SnapZone" type="Node" parent="." index="8"]
+script = ExtResource("11_3hg0i")
