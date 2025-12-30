@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ey4nll32educ"]
+[gd_scene load_steps=8 format=3 uid="uid://ey4nll32educ"]
 
-[ext_resource type="FontFile" uid="uid://jxs2i8ycm8ol" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="1_ooh34"]
+[ext_resource type="FontFile" uid="uid://bjcybttey5eam" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="1_ooh34"]
+[ext_resource type="Script" uid="uid://cm76q285vlhhq" path="res://scenes/Room2/bin_panel_single.gd" id="1_unral"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_unral"]
 bg_color = Color(0.051971, 0.051971, 0.051971, 1)
@@ -14,7 +15,7 @@ font = ExtResource("1_ooh34")
 font_size = 100
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xtjl"]
-bg_color = Color(0.054902, 0.054902, 0.054902, 0.705882)
+bg_color = Color(0.84613574, 0.050708726, 0.050708726, 0.70600003)
 corner_radius_top_left = 50
 corner_radius_top_right = 50
 corner_radius_bottom_right = 50
@@ -52,6 +53,7 @@ expand_margin_right = 20.0
 expand_margin_bottom = 25.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_unral")
 
 [node name="Panel" type="Panel" parent="."]
 
@@ -91,3 +93,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7xtjl")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cj3q4")
 theme_override_styles/hover = SubResource("StyleBoxFlat_iv70v")
 expand_icon = true
+
+[connection signal="pressed" from="Container/ButtonUp1" to="." method="_on_button_up_1_pressed"]

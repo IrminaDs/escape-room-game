@@ -1,16 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://7eetunbf3a56"]
+[gd_scene load_steps=4 format=3 uid="uid://7eetunbf3a56"]
 
 [ext_resource type="Texture2D" uid="uid://dhgs814dbp8y7" path="res://models/Room2/textures/letter_p_1.png" id="1_lnl4k"]
-[ext_resource type="Script" uid="uid://0i1c54v3tc3t" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_sellc"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_sellc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vd1b1"]
 size = Vector3(0.2980957, 0.012130737, 0.40667725)
 
-[node name="keys_base" type="RigidBody3D"]
-script = ExtResource("1_sellc")
-metadata/_custom_type_script = "uid://0i1c54v3tc3t"
+[node name="keys_base" type="StaticBody3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.3, 0, 0, 0, 0.01, 0, 0, 0, 0.41, 0, 0, 0)

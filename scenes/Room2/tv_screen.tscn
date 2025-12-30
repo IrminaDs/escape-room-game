@@ -59,8 +59,8 @@ transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -3
 shape = SubResource("BoxShape3D_5i7t0")
 
 [node name="Viewport2Din3D" parent="Lock2" instance=ExtResource("3_fdm68")]
-transform = Transform3D(-1.201708e-07, 0, -1.4999998, 0, 2.7475002, 0, 2.749187, 0, -6.556705e-08, 0, 1.8126135, -0.64630204)
-screen_size = Vector2(1, 0.8)
+transform = Transform3D(-1.201708e-07, 0, -1.4999998, 0, 2.7475002, 0, 2.749187, 0, -6.556705e-08, 0, 1.3630152, -0.646302)
+screen_size = Vector2(1, 0.6)
 scene = ExtResource("6_g67m7")
 viewport_size = Vector2(800, 600)
 scene_properties_keys = PackedStringArray("ui_rsa.gd", "correct_code", "color", "signal_to_emit")
