@@ -1,0 +1,59 @@
+[gd_scene load_steps=11 format=3 uid="uid://c10vhxulwdrnf"]
+
+[ext_resource type="Script" uid="uid://derjeyqqbatya" path="res://scripts/menu/menu.gd" id="1_6jkkg"]
+[ext_resource type="PackedScene" uid="uid://bexqblynqorpg" path="res://scenes/menu/room_2_stack.tscn" id="3_3gjvt"]
+[ext_resource type="PackedScene" uid="uid://by3cueitml4xi" path="res://scenes/menu/room_1_stack.tscn" id="3_y0e8m"]
+[ext_resource type="PackedScene" uid="uid://da8g06037xldx" path="res://scenes/menu/room_3_stack.tscn" id="4_3gjvt"]
+[ext_resource type="PackedScene" uid="uid://c3lkyr5xa6auk" path="res://scenes/menu/exit.tscn" id="5_qey7r"]
+[ext_resource type="PackedScene" uid="uid://cmqfiyr1jd5h5" path="res://scenes/menu/credits.tscn" id="6_d2jjm"]
+
+[sub_resource type="Environment" id="Environment_6jkkg"]
+background_mode = 1
+ambient_light_source = 1
+ambient_light_energy = 0.0
+reflected_light_source = 1
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6jkkg"]
+albedo_color = Color(0, 0, 0, 1)
+roughness = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6ocf5"]
+material = SubResource("StandardMaterial3D_6jkkg")
+size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5wbsp"]
+size = Vector3(50, 1, 50)
+
+[node name="Menu" type="Node3D"]
+script = ExtResource("1_6jkkg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6jkkg")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("PlaneMesh_6ocf5")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_5wbsp")
+
+[node name="Room1Stack" parent="." instance=ExtResource("3_y0e8m")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -3, 0, -3.25)
+
+[node name="Room2Stack" parent="." instance=ExtResource("3_3gjvt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Room3Stack" parent="." instance=ExtResource("4_3gjvt")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 3, 0, -3.25)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="Exit" parent="." instance=ExtResource("5_qey7r")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 1, 0, -1.4)
+
+[node name="Credits" parent="." instance=ExtResource("6_d2jjm")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1, 0, -1.4)

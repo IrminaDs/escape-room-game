@@ -12,9 +12,12 @@ var controller_near : bool = false
 @onready var highlight_mesh : MeshInstance3D = $Highlight
 @onready var start_transform : Transform3D = global_transform
 @onready var target_transform : Transform3D = get_target_transform()
+@onready var audio: AudioStreamPlayer3D = $AudioStreamPlayer3D
 
 func _ready():
 	highlight_mesh.visible = false
+	
+	Room1GameEvents.connect("clock_lock", Callable(self, "_on_clock_lock"))
 
 func _process(delta):
 	var was_near = controller_near
@@ -38,13 +41,14 @@ func _process(delta):
 		toggle_picture()
 	was_pressed = pressed
 
+func _on_clock_lock():
+	audio.play()
 
 func get_target_transform() -> Transform3D:
 	var t = start_transform
 	t.origin += move_offset
 	t.basis = Basis.from_euler(rotation_offset * deg_to_rad(1)) * start_transform.basis
 	return t
-
 
 func toggle_picture():
 	var tween = get_tree().create_tween()

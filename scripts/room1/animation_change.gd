@@ -3,6 +3,8 @@ extends Node
 @onready var parent = get_parent()
 @onready var anim_player: AnimationPlayer = $"../Sketchfab_Scene/AnimationPlayer"
 
+var first_grab = true
+
 func _ready():	
 	if parent.has_signal("grabbed"):
 		parent.connect("grabbed", Callable(self, "_on_grabbed"))
@@ -11,6 +13,9 @@ func _ready():
 		parent.connect("released", Callable(self, "_on_released"))
 
 func _on_grabbed(pickable, by):
+	if first_grab:
+		Room1GameEvents.emit_signal("album_taken")
+		first_grab = false
 	if pickable == get_parent():
 		var duration = 1.7 - 0.8
 		anim_player.play("Demo")

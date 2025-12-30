@@ -1,0 +1,370 @@
+[gd_scene load_steps=18 format=3 uid="uid://bc6ney83sf1ua"]
+
+[ext_resource type="Script" uid="uid://57j0215ik40h" path="res://scripts/menu/ui_credits.gd" id="1_wbbus"]
+[ext_resource type="Texture2D" uid="uid://bb5wulqyxrlbq" path="res://models/menu/textures/Znak_graficzny_AGH.svg.png" id="2_4rpde"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qp8ag"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3p7t"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="LabelSettings" id="LabelSettings_4mwex"]
+font_size = 36
+
+[sub_resource type="LabelSettings" id="LabelSettings_4fc8n"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_l1o1b"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_4ndrl"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhej4"]
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_e7ppd"]
+font_size = 36
+
+[sub_resource type="LabelSettings" id="LabelSettings_ql2rs"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_wbbus"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_4rpde"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_j3p7t"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_gmg5p"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_uqjg0"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ylll"]
+font_size = 12
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_wbbus")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 900.0
+offset_bottom = 2000.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qp8ag")
+
+[node name="Texts" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Menu" type="Control" parent="Texts"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AGH" type="Control" parent="Texts/Menu"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Texts/Menu/AGH"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 24.0
+offset_right = 440.0
+offset_bottom = 424.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_j3p7t")
+
+[node name="Logo" type="TextureRect" parent="Texts/Menu/AGH/Panel"]
+offset_top = -8.0
+offset_right = 400.0
+offset_bottom = 392.0
+texture = ExtResource("2_4rpde")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Texts/Menu/AGH"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 32.0
+offset_right = 848.0
+offset_bottom = 400.0
+text = "Gra została stwona na potrzeby pracy inżynierskiej na Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie"
+label_settings = SubResource("LabelSettings_4mwex")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Autors" type="Label" parent="Texts/Menu/AGH"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 384.0
+offset_right = 648.0
+offset_bottom = 521.0
+text = "Autorzy:"
+label_settings = SubResource("LabelSettings_4fc8n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Texts/Menu/AGH/Autors"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 112.0
+offset_right = 130.0
+offset_bottom = 179.0
+text = "Irmina Drabas"
+label_settings = SubResource("LabelSettings_l1o1b")
+
+[node name="Label2" type="Label" parent="Texts/Menu/AGH/Autors"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 112.0
+offset_right = 626.0
+offset_bottom = 179.0
+text = "Aleksandra Gorazda"
+label_settings = SubResource("LabelSettings_4ndrl")
+
+[node name="Label3" type="Label" parent="Texts/Menu/AGH/Autors"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 184.0
+offset_right = 371.0
+offset_bottom = 251.0
+text = "Zuzanna Śliwa"
+label_settings = SubResource("LabelSettings_mhej4")
+
+[node name="Label" type="Label" parent="Texts/Menu"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 672.0
+offset_right = 856.0
+offset_bottom = 828.0
+text = "Gra powstała przy użyciu darmowych materiałów udostępnionych przez twórców."
+label_settings = SubResource("LabelSettings_e7ppd")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Name" type="Label" parent="Texts/Menu"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 824.0
+offset_right = 529.0
+offset_bottom = 912.0
+text = "Menu"
+label_settings = SubResource("LabelSettings_ql2rs")
+
+[node name="Models" type="Label" parent="Texts/Menu"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 920.0
+offset_right = 840.0
+offset_bottom = 1592.0
+text = "Modele: 
+\"Classical Museum Pedestals - Asset Pack\" (https://skfb.ly/oQuSx) by Samuel F. Johanns (Oneironauticus) is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Exit Sign\" (https://skfb.ly/onoTv) by ZachWilkins1997 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Black film slate or clapperboard\" (https://skfb.ly/pDGnF) by Bendar Multimedia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"
+label_settings = SubResource("LabelSettings_wbbus")
+autowrap_mode = 2
+
+[node name="Sounds" type="Label" parent="Texts/Menu"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 1584.0
+offset_right = 832.0
+offset_bottom = 1960.0
+text = "Audio:
+\"Ossuary 6 - Air\" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+S_Spotlight_On.wav by Grubzyy -- https://freesound.org/s/422736/ -- License: Creative Commons 0"
+label_settings = SubResource("LabelSettings_4rpde")
+autowrap_mode = 2
+
+[node name="Room1" type="Control" parent="Texts"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Label" parent="Texts/Room1"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 64.0
+offset_right = 561.0
+offset_bottom = 152.0
+text = "Pokój 1"
+label_settings = SubResource("LabelSettings_j3p7t")
+
+[node name="Models" type="Label" parent="Texts/Room1"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 192.0
+offset_right = 840.0
+offset_bottom = 1088.0
+text = "Modele:
+\"Old Radio\" (https://skfb.ly/oVBDP) by Seifurt is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Horror Paintings - Zdzislaw Beksinski\" (https://skfb.ly/oxUW9) by FrodoUndead is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Simple animated book\" (https://skfb.ly/6WUJO) by ZIFS is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Scroll\" (https://skfb.ly/6pIAU) by FlukierJupiter is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Document File Folder\" (https://skfb.ly/oIpnR) by Kami Rapacz is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Carpet\" (https://skfb.ly/6xOvC) by Lucas Garnier is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Gaius Julius Caesar\" (https://skfb.ly/ptHnS) by yugengen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Victorian Chairs\" (https://skfb.ly/oDuwZ) by Matthew Collings is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Treasure Chest\" (https://skfb.ly/6wyVD) by Multipainkiller Studio is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Old wall clock\" (https://skfb.ly/6Y7S7) by AndreiVNK is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Antique Desk\" (https://skfb.ly/o8Ptu) by Matthew Collings is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Old Wood Door (Free)\" (https://skfb.ly/pvrqD) by inheritan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"lamp_low  an old Soviet ceiling lamp\" (https://skfb.ly/oQIxE) by dkotkinfilms is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Old rusty desk lamp\" (https://skfb.ly/oy6Sx) by Sousinho is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Letter & Envelope Assets\" (https://skfb.ly/o6wSE) by WaajaaH is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Schopenhauer Picture With Frame\" (https://skfb.ly/6XtGO) by object_sect is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Pufferfish\" (https://skfb.ly/pswSv) by Dean Satine is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"SIMPLE fish bowl\" (https://skfb.ly/o9Uwt) by YouniqueĪdeaStudio is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Dusty bookshelfs\" (https://skfb.ly/orv9K) by Meanphrog is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Wooden wall shelf\" (https://skfb.ly/oEHUU) by Valo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+\"Statue Base Round1\" (https://skfb.ly/6WVMH) by alireza.loghmani is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+"
+label_settings = SubResource("LabelSettings_gmg5p")
+autowrap_mode = 2
+
+[node name="Textures" type="Label" parent="Texts/Room1"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 1096.0
+offset_right = 832.0
+offset_bottom = 1608.0
+text = "Tekstury:
+\"Backrooms Wallpapers\" (https://skfb.ly/o9KZM) by Huuxloc is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+Poly Haven - Wood Table 001, Wood Floor Deck, Fine Grained Wood, Wooden Garage Door, Grey Plaster 02
+Poliigon - Adobe Plaster Wall Texture, Beige; Gold Paint Metal Texture
+Freepik - 3 tekstury książek:
+https://www.freepik.com/free-photo/open-book-old-antique-off-white-pages-with-design-space_21631116.htm#fromView=keyword&page=1&position=4&uuid=9e04aae1-0e4c-45f2-aeab-0fd4504d349b&query=Open+book+texture
+https://www.freepik.com/free-photo/old-book-open-dark-wood-background_1273906.htm#fromView=keyword&page=1&position=0&uuid=9e04aae1-0e4c-45f2-aeab-0fd4504d349b&query=Open+book+texture
+https://www.freepik.com/free-photo/old-book-open-wooden-table-seen-from_988011.htm#fromView=keyword&page=1&position=2&uuid=9e04aae1-0e4c-45f2-aeab-0fd4504d349b&query=Open+book+texture
+Vigenere - https://cdw.edu.pl/wp-content/uploads/2019/09/szyfry-vigenerea.png
+Adobe Stock - https://stock.adobe.com/pl/search?k=europe+map&search_type=recentsearch&asset_id=158139512
+Mapa - https://stock.adobe.com/images/map-of-europe-with-capitals-vintage-texture-english-us-language-vector-cmyk/158139512?prev_url=detail
+Zwierzęta:
+https://pixabay.com/photos/fallow-deer-animal-forest-deer-5749914/
+https://pixabay.com/photos/fox-animal-red-fox-omnivore-1842565/
+https://pixabay.com/photos/australian-wood-duck-duck-bird-7110836/
+https://pixabay.com/photos/irish-hare-hare-mountain-hare-7785267/"
+label_settings = SubResource("LabelSettings_uqjg0")
+autowrap_mode = 2
+
+[node name="Sounds" type="Label" parent="Texts/Room1"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 1632.0
+offset_right = 832.0
+offset_bottom = 1984.0
+text = "Audio:
+Ticking Clock - Large by Rollo145 -- https://freesound.org/s/256477/ -- License: Attribution 3.0
+Click3.wav by EdgardEdition -- https://freesound.org/s/113093/ -- License: Attribution 3.0
+antique clock 1x gong by Jay_You -- https://freesound.org/s/384089/ -- License: Attribution 4.0
+\"Canon in D for Two Harps\" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/
+analogpop.wav by cubis2324 -- https://freesound.org/s/173161/ -- License: Creative Commons 0
+Treasure Chest Open by steprock -- https://freesound.org/s/771164/ -- License: Creative Commons 0
+Ducks by D4XX -- https://freesound.org/s/607226/ -- License: Creative Commons 0
+Drawer E by RealSquink -- https://freesound.org/s/787715/ -- License: Creative Commons 0
+Roller cases_17 by MattRuthSound -- https://freesound.org/s/550373/ -- License: Attribution 4.0
+Bubble wrap single pop 5 by jheyns -- https://freesound.org/s/786510/ -- License: Attribution 4.0
+Paging through book by Aurelon -- https://freesound.org/s/679074/ -- License: Creative Commons 0
+VS Pop_6.mp3 by Vilkas_Sound -- https://freesound.org/s/463394/ -- License: Attribution 4.0
+Scrape 5 by AntumDeluge -- https://freesound.org/s/188055/ -- License: Creative Commons 0
+SciFiClass-short.wav by toam -- https://freesound.org/s/173262/ -- License: Attribution 3.0"
+label_settings = SubResource("LabelSettings_1ylll")
+autowrap_mode = 2
+
+[node name="Room2" type="Control" parent="Texts"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Label" parent="Texts/Room2"]
+offset_left = 336.0
+offset_top = 64.0
+offset_right = 561.0
+offset_bottom = 152.0
+text = "Pokój 2"
+label_settings = SubResource("LabelSettings_j3p7t")
+
+[node name="Models" type="Label" parent="Texts/Room2"]
+offset_left = 72.0
+offset_top = 192.0
+offset_right = 840.0
+offset_bottom = 1088.0
+text = "Modele:"
+label_settings = SubResource("LabelSettings_gmg5p")
+autowrap_mode = 2
+
+[node name="Textures" type="Label" parent="Texts/Room2"]
+offset_left = 64.0
+offset_top = 1096.0
+offset_right = 832.0
+offset_bottom = 1608.0
+text = "Tekstury:"
+label_settings = SubResource("LabelSettings_uqjg0")
+autowrap_mode = 2
+
+[node name="Sounds" type="Label" parent="Texts/Room2"]
+offset_left = 64.0
+offset_top = 1632.0
+offset_right = 832.0
+offset_bottom = 1984.0
+text = "Audio:"
+label_settings = SubResource("LabelSettings_1ylll")
+autowrap_mode = 2
+
+[node name="Room3" type="Control" parent="Texts"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Label" parent="Texts/Room3"]
+offset_left = 336.0
+offset_top = 64.0
+offset_right = 561.0
+offset_bottom = 152.0
+text = "Pokój 3"
+label_settings = SubResource("LabelSettings_j3p7t")
+
+[node name="Models" type="Label" parent="Texts/Room3"]
+offset_left = 72.0
+offset_top = 192.0
+offset_right = 840.0
+offset_bottom = 1088.0
+text = "Modele:"
+label_settings = SubResource("LabelSettings_gmg5p")
+autowrap_mode = 2
+
+[node name="Textures" type="Label" parent="Texts/Room3"]
+offset_left = 64.0
+offset_top = 1096.0
+offset_right = 832.0
+offset_bottom = 1608.0
+text = "Tekstury:"
+label_settings = SubResource("LabelSettings_uqjg0")
+autowrap_mode = 2
+
+[node name="Sounds" type="Label" parent="Texts/Room3"]
+offset_left = 64.0
+offset_top = 1632.0
+offset_right = 832.0
+offset_bottom = 1984.0
+text = "Audio:"
+label_settings = SubResource("LabelSettings_1ylll")
+autowrap_mode = 2

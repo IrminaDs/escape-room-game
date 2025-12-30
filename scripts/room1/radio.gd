@@ -20,12 +20,13 @@ func _ready():
 	
 	mesh.visible = false
 	
-	var stream = load("res://models/Room1/sounds/Canon in D for Two Harps.mp3")
+	var stream = load("res://models/room1/sounds/Canon in D for Two Harps.mp3")
 	stream.loop = true
 	music_player.stream = stream
 	toggle_radio()
 	
 	connect("pointer_event", Callable(self, "_on_pointer_event"))
+	Room1GameEvents.connect("final", Callable(self, "_on_final"))
 
 func toggle_radio():
 	sfx_player.play()
@@ -55,3 +56,7 @@ func _on_pointer_event(event):
 			mesh.visible = false
 		XRToolsPointerEvent.Type.PRESSED:
 			toggle_radio()
+
+func _on_final():
+	music_player.stop()
+	radio_on = false

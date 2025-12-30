@@ -4,7 +4,9 @@ extends Node3D
 var camera: Camera3D
 
 func _ready():
-	camera = get_viewport().get_camera_3d()
+	var main = get_tree().root.get_node("Main")
+	var player = main.get_node("Player")
+	camera = player.find_child("XRCamera3D", true, false)
 	
 func _process(delta):
 	if camera:
