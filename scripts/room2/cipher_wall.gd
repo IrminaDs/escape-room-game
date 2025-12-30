@@ -8,3 +8,4 @@ func _on_lever_up():
 	$cipher_green.visible=true
 	$cipher_blue.visible=true
 	$cipher_red.visible=true
+	$label.visible=true
