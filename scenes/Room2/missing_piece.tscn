@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://budxjbk3n0k3u"]
+
+[ext_resource type="Texture2D" uid="uid://che7h3nyr32us" path="res://models/Room2/textures/letter_p_2.png" id="1_n0tv3"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_fgew7"]
+
+[node name="missing_piece" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.4273362, 0, 0, 0, -1.3614645e-07, -0.12475675, 0, 3.1146677, -5.4532907e-09, -0.7003188, -0.107111454, -0.4094637)
+mesh = SubResource("PrismMesh_fgew7")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-0.3, 2.6226834e-08, 1.1464113e-15, 0, -1.3113417e-08, 0.3, 2.6226834e-08, 0.3, 1.3113417e-08, 0, 0, 0)
+texture = ExtResource("1_n0tv3")

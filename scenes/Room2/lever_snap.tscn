@@ -1,9 +1,9 @@
 [gd_scene load_steps=26 format=4 uid="uid://bcwxh23j8pybq"]
 
-[ext_resource type="Texture2D" uid="uid://bi11l1xgjuio2" path="res://models/Room2/objects/lever/rusty_wall_lever_0.png" id="1_c3mce"]
+[ext_resource type="Texture2D" uid="uid://b8u3qqpwhlhkp" path="res://models/Room2/objects/lever/rusty_wall_lever_0.png" id="1_c3mce"]
 [ext_resource type="Script" uid="uid://c1v4tvsgghicg" path="res://addons/godot-xr-tools/interactables/interactable_hinge.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://x744vdkg5jpv" path="res://models/Room2/objects/lever/rusty_wall_lever_1.png" id="2_mawmh"]
-[ext_resource type="Texture2D" uid="uid://cu1b46fhgidq" path="res://models/Room2/objects/lever/rusty_wall_lever_2.png" id="3_4ynkw"]
+[ext_resource type="Texture2D" uid="uid://h80i4x8mmuyi" path="res://models/Room2/objects/lever/rusty_wall_lever_1.png" id="2_mawmh"]
+[ext_resource type="Texture2D" uid="uid://iiklcwudh4ih" path="res://models/Room2/objects/lever/rusty_wall_lever_2.png" id="3_4ynkw"]
 [ext_resource type="Script" uid="uid://b55o5popnybws" path="res://addons/godot-xr-tools/interactables/interactable_handle.gd" id="4"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="4_ia5nn"]
 [ext_resource type="Animation" uid="uid://db62hs5s4n2b3" path="res://addons/godot-xr-tools/hands/animations/left/Grip 4.res" id="5_likau"]
