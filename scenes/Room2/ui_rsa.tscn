@@ -1,0 +1,185 @@
+[gd_scene load_steps=12 format=3 uid="uid://cpaimuh8i8kif"]
+
+[ext_resource type="FontFile" uid="uid://bjcybttey5eam" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="1_2pf7m"]
+[ext_resource type="Script" uid="uid://sd4o7032pcsa" path="res://scripts/room2/ui_rsa.gd" id="1_qggu3"]
+[ext_resource type="Texture2D" uid="uid://dqvvrx3h40evu" path="res://models/Room1/textures/icons/arrow.png" id="2_qggu3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lifcj"]
+bg_color = Color(0.55439997, 0.62874, 0.63, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_papia"]
+bg_color = Color(0.051971, 0.051971, 0.051971, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dunfi"]
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_xd8t8"]
+font = ExtResource("1_2pf7m")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_m6u2y"]
+font = ExtResource("1_2pf7m")
+font_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2h35r"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 0.705882)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgvtc"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lid2"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_qggu3")
+color = Color(0.43128255, 0.6115835, 1, 1)
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = 1.0
+offset_right = 703.0
+offset_bottom = 508.0
+scale = Vector2(1.2503054, 1.2772037)
+theme_override_styles/panel = SubResource("StyleBoxFlat_lifcj")
+
+[node name="description" type="Label" parent="."]
+offset_left = 192.0
+offset_top = 36.0
+offset_right = 687.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Pliki na tym komputerze zostaly 
+zaszyfrowane przy uzyciu RSA. 
+Znajdz brakujacy fragment klucza."
+horizontal_alignment = 1
+
+[node name="key3" type="Label" parent="."]
+offset_top = 350.0
+offset_right = 495.0
+offset_bottom = 482.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "n="
+horizontal_alignment = 1
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 306.0
+offset_top = 308.0
+offset_right = 418.0
+offset_bottom = 452.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_papia")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 434.0
+offset_top = 312.0
+offset_right = 546.0
+offset_bottom = 456.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dunfi")
+
+[node name="Label1" type="Label" parent="."]
+offset_left = 312.0
+offset_top = 256.0
+offset_right = 408.0
+offset_bottom = 512.0
+text = "1"
+label_settings = SubResource("LabelSettings_xd8t8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 442.0
+offset_top = 255.0
+offset_right = 538.0
+offset_bottom = 511.0
+text = "2"
+label_settings = SubResource("LabelSettings_m6u2y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonUp1" type="Button" parent="."]
+offset_left = 333.0
+offset_top = 217.0
+offset_right = 383.0
+offset_bottom = 267.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[node name="ButtonUp2" type="Button" parent="."]
+offset_left = 461.0
+offset_top = 217.0
+offset_right = 511.0
+offset_bottom = 267.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[node name="ButtonDown1" type="Button" parent="."]
+offset_left = 393.00012
+offset_top = 546.0
+offset_right = 443.00012
+offset_bottom = 596.0
+rotation = 3.14159
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[node name="ButtonDown2" type="Button" parent="."]
+offset_left = 521.0001
+offset_top = 546.0
+offset_right = 571.0001
+offset_bottom = 596.0
+rotation = 3.14159
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true

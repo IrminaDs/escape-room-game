@@ -1,22 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://7eetunbf3a56"]
+[gd_scene load_steps=5 format=3 uid="uid://7eetunbf3a56"]
 
 [ext_resource type="Texture2D" uid="uid://dhgs814dbp8y7" path="res://models/Room2/textures/letter_p_1.png" id="1_lnl4k"]
+[ext_resource type="Script" uid="uid://0i1c54v3tc3t" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_sellc"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_sellc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vd1b1"]
-size = Vector3(1, 0.050628662, 1.3649902)
+size = Vector3(0.2980957, 0.012130737, 0.40667725)
 
-[node name="keys_base" type="StaticBody3D"]
+[node name="keys_base" type="RigidBody3D"]
+script = ExtResource("1_sellc")
+metadata/_custom_type_script = "uid://0i1c54v3tc3t"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.042405784, 0, 0, 0, 1.3689083, 0, 0, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.01, 0, 0, 0, 0.41, 0, 0, 0)
 mesh = SubResource("BoxMesh_sellc")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(0.08, 0, 0, 0, -3.496911e-09, 0.08, 0, -0.08, -3.496911e-09, 0, 0.049930453, 0)
+transform = Transform3D(0.024, 0, 0, 0, -1.0490733e-09, 0.024, 0, -0.024, -1.0490733e-09, 0, 0.0072208643, 0)
 texture = ExtResource("1_lnl4k")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0027008057, -0.0013427734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0035192966, -0.0004375279, 0.00046017766)
 shape = SubResource("BoxShape3D_vd1b1")

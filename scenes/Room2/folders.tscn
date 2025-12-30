@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://btibteylt4t01" path="res://models/Room2/objects/folder/folder_-_3mb_2.png" id="4_17srb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ropu5"]
-size = Vector3(0.548584, 0.4107666, 0.27471924)
+size = Vector3(0.35839844, 0.4107666, 0.27471924)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tb4qu"]
 resource_name = "Scene_-_Root"
@@ -223,21 +223,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_1js0p")
 
-[sub_resource type="Animation" id="Animation_344go"]
-resource_name = "take_folder"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner/Cube_2_5:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(60, 0, 0), Vector3(59.999996, 0, 45.15561)]
-}
-
 [sub_resource type="Animation" id="Animation_uadua"]
 length = 0.001
 tracks/0/type = "value"
@@ -253,6 +238,21 @@ tracks/0/keys = {
 "values": [Vector3(60, 0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_344go"]
+resource_name = "take_folder"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner/Cube_2_5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(60, 0, 0), Vector3(59.999996, 0, 45.15561)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ropu5"]
 _data = {
 &"RESET": SubResource("Animation_uadua"),
@@ -262,7 +262,7 @@ _data = {
 [node name="folders" type="StaticBody3D"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2490387, 0.19793701, 0.015838623)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.111953735, 0.19793701, 0.015838623)
 shape = SubResource("BoxShape3D_ropu5")
 
 [node name="Sketchfab_Scene" type="Node3D" parent="."]
@@ -306,6 +306,7 @@ skeleton = NodePath("")
 
 [node name="Cube_2_3" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
+visible = false
 
 [node name="Cube_2_3__0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner/Cube_2_3"]
 mesh = SubResource("ArrayMesh_54sxo")
@@ -313,6 +314,7 @@ skeleton = NodePath("")
 
 [node name="Cube_2_4" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 0)
+visible = false
 
 [node name="Cube_2_4__0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner/Cube_2_4"]
 mesh = SubResource("ArrayMesh_7x5f7")
@@ -320,6 +322,7 @@ skeleton = NodePath("")
 
 [node name="Cube_2_5" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+visible = false
 
 [node name="Cube_2_5__0" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/65d7c1e4e58642f491b810212346c8c7_fbx/RootNode/Cloner/Cube_2_5"]
 mesh = SubResource("ArrayMesh_ku47u")

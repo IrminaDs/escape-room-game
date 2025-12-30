@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=37 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="Script" uid="uid://c8dc7tkyl0gic" path="res://scripts/room2/printer.gd" id="2_vueoo"]
 [ext_resource type="PackedScene" uid="uid://d1tist78lnwfk" path="res://scenes/Room2/printer.tscn" id="3_p52e4"]
@@ -26,7 +26,9 @@
 [ext_resource type="PackedScene" uid="uid://bll1dmcrjnrhi" path="res://scenes/Room2/file_folder2.tscn" id="17_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://qet1santll7t" path="res://scenes/Room2/blowfish_room2.tscn" id="18_mj8od"]
 [ext_resource type="Script" uid="uid://dy1008u8bmn1b" path="res://scripts/room2/blowfishr2.gd" id="19_p52e4"]
+[ext_resource type="PackedScene" uid="uid://bckrpwqjh2fcr" path="res://scenes/Room2/folder_pick.tscn" id="20_1cxc8"]
 [ext_resource type="Script" uid="uid://xu4vdum4hgtd" path="res://scripts/room2/cipher_wall.gd" id="20_mnuuc"]
+[ext_resource type="PackedScene" uid="uid://budxjbk3n0k3u" path="res://scenes/Room2/missing_piece.tscn" id="21_orv7b"]
 [ext_resource type="PackedScene" uid="uid://bcwxh23j8pybq" path="res://scenes/Room2/lever_snap.tscn" id="23_6swx4"]
 [ext_resource type="PackedScene" uid="uid://bj7387daq4a7c" path="res://scenes/Room2/szkielet.tscn" id="23_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://cuxhyanfaxkd3" path="res://scenes/Room2/seven_angles.tscn" id="24_ebguw"]
@@ -73,7 +75,7 @@ transform = Transform3D(-0.03441451, 0, -0.6991535, 0, 0.7, 0, 0.6991535, 0, -0.
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.28490543, 3.4334474, 1.6664683)
 
 [node name="keys_base" parent="Build/Objects/ondesk1" instance=ExtResource("7_vm886")]
-transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, 1.2858865, 3.4441853, 1.5971482)
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 1.2858865, 3.4441853, 1.5971482)
 visible = false
 script = ExtResource("8_vyd4f")
 
@@ -94,7 +96,7 @@ transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0.022, 4.59688, -2.2732
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Build/Objects"]
 transform = Transform3D(1, 2.97984e-08, -4.79036e-10, 0, 0.0160738, 0.999871, 2.98023e-08, -0.999871, 0.0160738, -0.223622, 5.07619, 0.00203348)
-light_color = Color(0.75, 0.75, 0.75, 1)
+light_color = Color(0.7490196, 0.7490196, 0.7490196, 1)
 light_energy = 1.654
 script = ExtResource("7_ebguw")
 
@@ -155,6 +157,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5934193, 3.4542801, -1.644
 
 [node name="Viewport2Din3D" parent="Build/Objects/ondesk3/File_folder3" index="5"]
 path = "res://models/Room2/textures/personal_file3.png"
+
+[node name="folder_pick" parent="Build/Objects/ondesk3" instance=ExtResource("20_1cxc8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3934474, 3.6676211, -2.0302448)
+
+[node name="MissingPiece" parent="Build/Objects/ondesk3" instance=ExtResource("21_orv7b")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.3851173, 3.6110396, -2.1702335)
 
 [node name="doors" parent="Build/Objects" instance=ExtResource("15_uugd8")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 3.10576, 2.55543, -2.340816)
