@@ -11,7 +11,7 @@ var selected_letter := 0
 
 func _ready():
 	_update_display()
-	_highlight_selected()
+	#_highlight_selected()
 
 func _process(delta):
 	if code_unlocked:
@@ -25,16 +25,16 @@ func change_letter(index: int, step: int):
 	_check_code()
 
 func _update_display():
-	$Panel/Label1.text = current_code[0]
-	$Panel/Label2.text = current_code[1]
+	$Label1.text = current_code[0]
+	$Label2.text = current_code[1]
 
-func _highlight_selected():
-	for i in range(4):
-		var label = $Panel.get_node("Label%d" % (i+1))
-		if i == selected_letter:
-			label.modulate = color
-		else:
-			label.modulate = Color(1, 1, 1)
+#func _highlight_selected():
+	#for i in range(2):
+		#var label = $Panel.get_node("Label%d" % (i+1))
+		#if i == selected_letter:
+			#label.modulate = color
+		#else:
+			#label.modulate = Color(1, 1, 1)
 
 func _check_code():
 	if "".join(current_code) == correct_code:
@@ -62,7 +62,7 @@ func _on_button_up_1_pressed() -> void:
 	if code_unlocked:
 		return
 	selected_letter = 0
-	_highlight_selected()
+#	_highlight_selected()
 	change_letter(0, 1)
 
 
@@ -70,7 +70,7 @@ func _on_button_up_2_pressed() -> void:
 	if code_unlocked:
 		return
 	selected_letter = 1
-	_highlight_selected()
+#	_highlight_selected()
 	change_letter(1, 1)
 
 
@@ -78,7 +78,7 @@ func _on_button_down_1_pressed() -> void:
 	if code_unlocked:
 		return
 	selected_letter = 0
-	_highlight_selected()
+#	_highlight_selected()
 	change_letter(0, -1)
 
 
@@ -86,5 +86,5 @@ func _on_button_down_2_pressed() -> void:
 	if code_unlocked:
 		return
 	selected_letter = 1
-	_highlight_selected()
+#	_highlight_selected()
 	change_letter(1, -1)
