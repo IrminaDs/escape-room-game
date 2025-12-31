@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq2jv7fd3cf4h"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_vlru5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hi6tr"]
+albedo_color = Color(0.9017709, 0.83212227, 0.6269159, 1)
+
+[node name="Triangle" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.079664886, 0, 0, -0.09374964)
+mesh = SubResource("PrismMesh_vlru5")
+surface_material_override/0 = SubResource("StandardMaterial3D_hi6tr")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08043945, -0.047499657)
+modulate = Color(0, 0, 0, 1)
+text = "p"
+font_size = 60

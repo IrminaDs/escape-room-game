@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuxhyanfaxkd3"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_686nq"]
+
+[node name="seven_angles" type="Node3D"]
+
+[node name="meshes" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.10064715, 0, 0, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(0.6039177, -0.7970468, 0, 0.7970468, 0.6039177, 0, 0, 0, 0.10064714, 0.40868407, 0.18582666, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(-0.27563736, -0.9612617, 0, 0.9612617, -0.27563736, 0, 0, 0, 0.10064715, 0.48414832, 0.6230086, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(-0.93358046, -0.35836792, 0, 0.35836792, -0.93358046, 0, 0, 0, 0.10064715, 0.19503194, 0.9563256, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(-0.81486064, 0.44289333, 0, -0.41038474, -0.8794097, 0, 0, 0, 0.100647144, -0.26778102, 0.9689679, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(-0.9668976, 0.6138789, 0, -0.48695448, -1.2189189, 0, 0, 0, 0.100647144, -0.048741102, 0.56196153, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(-0.24234521, 0.9701903, 0, -0.9701903, -0.24234521, 0, 0, 0, 0.10064715, -0.4988295, 0.6180028, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="meshes"]
+transform = Transform3D(0.6018151, 0.79863566, 0, -0.79863566, 0.6018151, 0, 0, 0, 0.10064715, -0.4014064, 0.19220883, 0)
+mesh = SubResource("PrismMesh_686nq")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.041704476, 0.73400533, 0.17253423)
+modulate = Color(0, 0, 0, 1)
+text = "q"
+font_size = 125
