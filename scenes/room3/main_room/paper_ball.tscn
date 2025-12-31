@@ -1,7 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://bbmo48u6nl3jh"]
+[gd_scene load_steps=14 format=3 uid="uid://bbmo48u6nl3jh"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_eu0rg"]
-[ext_resource type="PackedScene" uid="uid://cpov8ckvfl2es" path="res://models/room3/furniture/content/paper_ball2.tscn" id="2_ut7l3"]
+[ext_resource type="PackedScene" uid="uid://cpov8ckvfl2es" path="res://models/room3/objects/content/paper_ball2.tscn" id="2_ut7l3"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="3_sf04a"]
 [ext_resource type="Animation" uid="uid://di384xtde8ydf" path="res://addons/godot-xr-tools/hands/animations/left/Grip 2.res" id="4_2d6ki"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="4_72hfd"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="5_sf04a"]
 [ext_resource type="Animation" uid="uid://r8hleealhrqt" path="res://addons/godot-xr-tools/hands/animations/right/Grip 2.res" id="7_e6vci"]
 [ext_resource type="Script" uid="uid://dk5jm4a83oue7" path="res://scripts/room3/main_room/unfold.gd" id="9_2d6ki"]
+[ext_resource type="PackedScene" uid="uid://bhns85yommkse" path="res://scenes/room3/main_room/rsa.tscn" id="10_7gyof"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pf1yo"]
 points = PackedVector3Array(4.58318, 0.557678, -0.810745, 1.48764, -4.0104, 1.39908, -0.870331, -0.473056, -4.644, 0.156085, 4.2841, -0.620076, 1.48764, 0.116786, 4.79, -1.9547, -3.25997, 2.04424, -0.870331, -4.15765, -1.99, -3.81801, 1.58926, -1.99, -1.16519, 4.09503, 1.84049, 3.55075, -2.24173, -1.84224, 0.602188, 1.29477, -4.49533, 2.81405, 3.94863, 0.366659, -2.63947, -3.42056, -1.99, -1.60791, 0.262331, 4.4945, 2.98402, -2.56553, 2.47479, 3.40376, 1.73736, 2.87291, -0.428487, -2.83072, 3.90533, -3.67102, -1.50464, 2.43058, 3.25589, 2.1791, -2.72691, 1.78249, 3.06344, 3.31525, -3.52315, 2.47445, 2.136, 2.81405, -1.35739, -3.16832, -3.23318, -1.57503, -2.89374, -2.09566, 3.07589, -1.75678, -0.123555, -2.41188, -3.86569, 2.37132, 0.263183, -4.05392, -4.4086, 1.29477, 1.10358, 0.308212, -4.00955, -2.13775, -1.7549, 0.41043, -4.20075, 2.66618, 2.6217, -2.87467, 4.58318, -0.0304616, -1.25308, -1.7549, 3.35794, 2.57833)
@@ -46,3 +47,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00189705, 0.00711512, 0.00
 
 [node name="Node" type="Node" parent="." index="5"]
 script = ExtResource("9_2d6ki")
+target_scene = ExtResource("10_7gyof")

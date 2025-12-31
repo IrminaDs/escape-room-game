@@ -1,15 +1,18 @@
 [gd_scene load_steps=22 format=4 uid="uid://cg25re431ms8i"]
 
-[ext_resource type="Texture2D" uid="uid://bfac3k583njk" path="res://models/room3/furniture/door/sci-fi_door_prob_0.png" id="1_buq8p"]
+[ext_resource type="Texture2D" uid="uid://bfac3k583njk" path="res://models/room3/objects/door/sci-fi_door_prob_0.png" id="1_buq8p"]
 [ext_resource type="Script" uid="uid://c5wl3y51tb1id" path="res://scripts/room3/main_room/automatic_door.gd" id="1_w7pbe"]
-[ext_resource type="Texture2D" uid="uid://dlla2x1tkiyur" path="res://models/room3/furniture/door/sci-fi_door_prob_2.jpg" id="2_w7pbe"]
-[ext_resource type="Texture2D" uid="uid://byvo7l4gidwgq" path="res://models/room3/furniture/door/sci-fi_door_prob_1.png" id="3_2xk3i"]
-[ext_resource type="Texture2D" uid="uid://u5d7vlu3po6p" path="res://models/room3/furniture/door/sci-fi_door_prob_3.png" id="4_f106b"]
+[ext_resource type="Texture2D" uid="uid://dlla2x1tkiyur" path="res://models/room3/objects/door/sci-fi_door_prob_2.jpg" id="2_w7pbe"]
+[ext_resource type="Texture2D" uid="uid://byvo7l4gidwgq" path="res://models/room3/objects/door/sci-fi_door_prob_1.png" id="3_2xk3i"]
+[ext_resource type="Texture2D" uid="uid://u5d7vlu3po6p" path="res://models/room3/objects/door/sci-fi_door_prob_3.png" id="4_f106b"]
 [ext_resource type="AudioStream" uid="uid://cd6ame3aal5it" path="res://models/room3/sounds/slide-door-sound-221389.mp3" id="6_qcu18"]
 [ext_resource type="PackedScene" uid="uid://cy6ms377s7nhi" path="res://scenes/room3/main_room/door_panel.tscn" id="7_2sdtc"]
-[ext_resource type="Script" uid="uid://c87l45jrwpma0" path="res://scenes/room3/viewport_visible.gd" id="8_fxhmf"]
+[ext_resource type="Script" uid="uid://c87l45jrwpma0" path="res://scripts/room3/viewport_visible.gd" id="8_fxhmf"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="9_xg8fq"]
 [ext_resource type="PackedScene" uid="uid://mnnyoisingso" path="res://scenes/room3/main_room/ui_door_panel.tscn" id="10_fxhmf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2xk3i"]
+size = Vector3(0.914063, 1.04791, 0.175476)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rmpqd"]
 resource_name = "default.001"
@@ -160,9 +163,6 @@ _data = {
 &"Armature|Open": SubResource("Animation_buq8p")
 }
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_2xk3i"]
-size = Vector3(0.914063, 1.04791, 0.175476)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_28hts"]
 size = Vector3(1.52881, 0.48291, 1.36163)
 
@@ -171,8 +171,12 @@ transparency = 1
 cull_mode = 2
 shading_mode = 0
 
-[node name="AutomaticDoor" type="Node3D"]
+[node name="AutomaticDoor" type="StaticBody3D"]
 script = ExtResource("1_w7pbe")
+
+[node name="CollisionArea" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.16523, 0, -2.98428e-13, 0, 1.16523, 0, 2.98428e-13, 0, 1.16523, -0.00910345, 0.0609829, 0.00280985)
+shape = SubResource("BoxShape3D_2xk3i")
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
 transform = Transform3D(0.623, 0, 0, 0, -3.59308e-08, 0.846, 0, -0.822, -3.69798e-08, 0, 0, 0)
@@ -267,7 +271,7 @@ stream = ExtResource("6_qcu18")
 volume_db = 6.0
 
 [node name="Panel" parent="." instance=ExtResource("7_2sdtc")]
-transform = Transform3D(-1, -2.75862e-08, 8.29563e-08, 0, 0.948909, 0.31555, -8.74228e-08, 0.31555, -0.948909, -0.619084, 0.0898948, -0.280613)
+transform = Transform3D(-1.13551, -2.75862e-08, 8.29563e-08, 0, 0.948909, 0.31555, -9.92698e-08, 0.31555, -0.948909, -0.623195, 0.0898948, -0.280613)
 
 [node name="Lock" type="Node3D" parent="."]
 transform = Transform3D(-0.6, 0, 5.24537e-08, 0, 0.6, 0, -5.24537e-08, 0, -0.6, 0.00917259, 0.360971, -0.292698)
@@ -277,10 +281,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.732418, -2.40774, -1.05173)
 collision_mask = 524288
 script = ExtResource("8_fxhmf")
 original_position = Vector3(1.095, -0.32, -0.074)
-
-[node name="LockArea" type="CollisionShape3D" parent="Lock/InteractionZone"]
-transform = Transform3D(-1.94205, 0, -1.69779e-07, 0, 1.94205, 0, 1.69779e-07, 0, -1.94205, -0.701958, 1.90776, 0.559217)
-shape = SubResource("BoxShape3D_2xk3i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lock/InteractionZone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0578613, 1.34644, 1.09749)
