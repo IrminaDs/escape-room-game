@@ -1,0 +1,209 @@
+[gd_scene load_steps=12 format=3 uid="uid://cpaimuh8i8kif"]
+
+[ext_resource type="FontFile" uid="uid://bjcybttey5eam" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="1_2pf7m"]
+[ext_resource type="Script" uid="uid://sd4o7032pcsa" path="res://scripts/room2/ui_rsa.gd" id="1_qggu3"]
+[ext_resource type="Texture2D" uid="uid://dqvvrx3h40evu" path="res://models/Room1/textures/icons/arrow.png" id="2_qggu3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lifcj"]
+bg_color = Color(0.55439997, 0.62874, 0.63, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_papia"]
+bg_color = Color(0.051971, 0.051971, 0.051971, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dunfi"]
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_xd8t8"]
+font = ExtResource("1_2pf7m")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_m6u2y"]
+font = ExtResource("1_2pf7m")
+font_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2h35r"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 0.705882)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgvtc"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lid2"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_qggu3")
+color = Color(0.43128255, 0.6115835, 1, 1)
+signal_to_emit = "room_finished"
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = 1.0
+offset_right = 703.0
+offset_bottom = 508.0
+scale = Vector2(1.1752483, 0.98377174)
+theme_override_styles/panel = SubResource("StyleBoxFlat_lifcj")
+
+[node name="description" type="Label" parent="."]
+offset_left = 166.0
+offset_top = 13.0
+offset_right = 661.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Pliki na tym komputerze zostaly 
+zaszyfrowane przy uzyciu RSA. 
+Znajdz brakujacy fragment klucza."
+horizontal_alignment = 1
+
+[node name="key3" type="Label" parent="."]
+offset_left = -2.0
+offset_top = 278.0
+offset_right = 493.0
+offset_bottom = 410.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "n="
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 51.0
+offset_top = 39.0
+offset_right = 91.0
+offset_bottom = 79.0
+scale = Vector2(0.8634917, 0.88686126)
+
+[node name="Panel2" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 308.0
+offset_top = 236.0
+offset_right = 420.0
+offset_bottom = 380.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_papia")
+
+[node name="Panel3" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 240.0
+offset_right = 548.0
+offset_bottom = 384.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_dunfi")
+
+[node name="Label1" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 184.0
+offset_right = 410.0
+offset_bottom = 440.0
+text = "1"
+label_settings = SubResource("LabelSettings_xd8t8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 183.0
+offset_right = 540.0
+offset_bottom = 439.0
+text = "2"
+label_settings = SubResource("LabelSettings_m6u2y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonUp1" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 145.0
+offset_right = 385.0
+offset_bottom = 195.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[node name="ButtonUp2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 145.0
+offset_right = 513.0
+offset_bottom = 195.0
+focus_mode = 0
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[node name="ButtonDown1" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 395.00012
+offset_top = 474.0
+offset_right = 445.00012
+offset_bottom = 524.0
+rotation = 3.14159
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[node name="ButtonDown2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 523.0001
+offset_top = 474.0
+offset_right = 573.0001
+offset_bottom = 524.0
+rotation = 3.14159
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2h35r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jgvtc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lid2")
+icon = ExtResource("2_qggu3")
+expand_icon = true
+
+[connection signal="pressed" from="Control/ButtonUp1" to="." method="_on_button_up_1_pressed"]
+[connection signal="pressed" from="Control/ButtonUp2" to="." method="_on_button_up_2_pressed"]
+[connection signal="pressed" from="Control/ButtonDown1" to="." method="_on_button_down_1_pressed"]
+[connection signal="pressed" from="Control/ButtonDown2" to="." method="_on_button_down_2_pressed"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3a24m847apl4"]
+
+[ext_resource type="PackedScene" uid="uid://ce7vysyvondf8" path="res://addons/godot-xr-tools/objects/snap_zone.tscn" id="1_pn4nr"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="2_apjau"]
+[ext_resource type="Script" uid="uid://cwrc6h5eksmd3" path="res://scripts/room2/snap_zone_pick.gd" id="3_apjau"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pn4nr"]
+size = Vector3(0.2164917, 0.020141602, 0.29490662)
+
+[sub_resource type="PrismMesh" id="PrismMesh_ja1s8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m5a23"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="SnapZone" instance=ExtResource("1_pn4nr")]
+snap_mode = 1
+snap_require = "missing_piece"
+
+[node name="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0489839, -0.077809274, -0.014165312)
+shape = SubResource("BoxShape3D_pn4nr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2" groups=["missing_piece"]]
+transform = Transform3D(0.226, 0, 0, 0, -1.3769087e-08, -0.001, 0, 0.315, -4.371139e-11, 0.052900314, -0.07238078, -0.0018235445)
+mesh = SubResource("PrismMesh_ja1s8")
+surface_material_override/0 = SubResource("StandardMaterial3D_m5a23")
+
+[node name="HighlightRing" parent="." index="3" instance=ExtResource("2_apjau")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.055767864, -0.10565412, -0.017007232)
+
+[node name="Entered" type="Node" parent="." index="4"]
+script = ExtResource("3_apjau")
+
+[connection signal="has_picked_up" from="." to="Entered" method="_on_snap_zone_has_picked_up"]
