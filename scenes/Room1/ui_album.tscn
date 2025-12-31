@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://1uwbdf1bnl1t" path="res://models/room1/textures/photos/photo3.png" id="5_o85ut"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f434b"]
-bg_color = Color(0, 0, 0, 0.392157)
+bg_color = Color(0, 0, 0, 0.588235)
 
 [sub_resource type="LabelSettings" id="LabelSettings_g6xgk"]
 font_size = 56
@@ -33,7 +33,6 @@ font_size = 64
 script = ExtResource("1_sw1k8")
 
 [node name="Start" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -47,8 +46,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_f434b")
 
 [node name="Label" type="Label" parent="Start"]
 layout_mode = 0
+offset_left = 10.0
 offset_top = 112.0
-offset_right = 1482.0
+offset_right = 1492.0
 offset_bottom = 829.0
 text = "Twoim zadaniem jest zaszyfrować tekst jawny, 
 z którego otrzymasz hasło do zamka na biurku. 
