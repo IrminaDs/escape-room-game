@@ -1,10 +1,10 @@
-[gd_scene load_steps=32 format=4 uid="uid://m5y3bfd7wy72"]
+[gd_scene load_steps=33 format=4 uid="uid://m5y3bfd7wy72"]
 
-[ext_resource type="Texture2D" uid="uid://c7uup2qdrnfbx" path="res://models/room3/furniture/shelves/corner_wall_shelf_0.jpg" id="1_lxjf3"]
-[ext_resource type="Texture2D" uid="uid://cukk72hr7tgcg" path="res://models/room3/furniture/shelves/corner_wall_shelf_1.png" id="2_4qtpp"]
+[ext_resource type="Texture2D" uid="uid://c7uup2qdrnfbx" path="res://models/room3/objects/shelves/corner_wall_shelf_0.jpg" id="1_lxjf3"]
+[ext_resource type="Texture2D" uid="uid://cukk72hr7tgcg" path="res://models/room3/objects/shelves/corner_wall_shelf_1.png" id="2_4qtpp"]
+[ext_resource type="Script" uid="uid://bpotdmjb4j3l5" path="res://scripts/room3/book.gd" id="3_pdmj2"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="3_ws6mp"]
 [ext_resource type="PackedScene" uid="uid://bupufn7vk3su" path="res://scenes/room3/main_room/ui_symmetrical.tscn" id="4_t7nyp"]
-[ext_resource type="Script" uid="uid://cps38va1rok5m" path="res://scripts/room1/book.gd" id="5_62qx6"]
 [ext_resource type="Texture2D" uid="uid://146bjs7jqmnj" path="res://models/Room1/objects/shelf/dusty_bookshelfs_9.png" id="7_cllwy"]
 [ext_resource type="Texture2D" uid="uid://cl4w37ki1h6kh" path="res://models/Room1/objects/shelf/dusty_bookshelfs_10.png" id="8_w2jrj"]
 [ext_resource type="Texture2D" uid="uid://46dvdbepb4i7" path="res://models/Room1/objects/shelf/dusty_bookshelfs_11.png" id="9_rqy6q"]
@@ -94,7 +94,7 @@ normal_texture = ExtResource("9_rqy6q")
 ao_enabled = true
 ao_texture = ExtResource("8_w2jrj")
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_sbhr6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pdmj2"]
 _surfaces = [{
 "aabb": AABB(-0.128844, 0.749775, -0.450177, 0.27836, 0.361107, 0.086351),
 "format": 34896613377,
@@ -126,7 +126,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("4wJPBLUicZfjAq/7tSIc0+wLr/taUbzoSeqv+7UiWPrjAq/7SN2S+OwLTwSkrl3OUvNPBFpRMrnjAk8ESN3W9An8DAECyNL3nu7w/i74ff7///L+/39G9Z7uDgEu+O7/4wKv+0jdk/YAAKT9//9c+0nqr/u1Ij2hnu4OAc8HFPKe7vD+zwfv8QAAWgL//1f94wKv+0jdr/jjAk8ESN35/eMCTwRI3Zb2UvNPBFpRDLjjAk8EtSL4iwAAWgIAAK7xAACk/QAAZfLjAq/7tSL6i+MCTwS1IiT/4wKv+7UiZ9nsC08EWlGHu0nqTwRI3Qzj7Auv+6Su4+9J6q/7SN0F8dXw8v649Hr6M+v//5fh5vUIALr+mOFX50nqr/tI3bTvSerp/rUiwJsIALr+Zh70sgn88v77N0zy1fAMAUUL8vEIAEQBZh674wgAuv5mHrDvM+sAAGceo7cIAEQBZh79sknqFQFI3cTtSepPBEjdRO0z6wAAl+Hy9QgARAGY4UnnCAC6/pjhRO8IAEQBmOGy5xnvAAABDHbU1fDy/kULUfEZ7///AQx01AEATAEvBDnsAQCy/i8Eh9MBALL+LwQ27AwBWAK1IgHhDAGm/bUiIvwz6///Zx6itwwBpv21IqiT7fr//zc7Itpx9P//GE5zw1Lz6v5aUZS0UvOv+1pRL7lz9ev+/394wXP1r/v/f9bFufb///9/Ts20/v///3/K4FLz6v6krvzOUvOv+6Su5NJx9P//5bHc2e36///GxGboCfzy/gLIyPZJ6un+SN3G7QwBpv1I3RHxAQCy/s77mvAZ7////PO9+9XwDAG59DX8Ge8AAPzzz/sBALL+zvtI5AEATAHO+3/wAQBMAc77P+QMAab9SN3T+gwBWAJI3dX0DAFYAkjdFPHt+gAAxsSR53H0AADlsSjZUvMUAaSu9M5S808EpK6Y0f//DAH/f9n1tP4AAP9/LOAJ/AwB+zek8+36AAA3O4zZufYAAP9/s8xx9AAAGE7hwnP1EwH/f3LBc/VPBP9/6sRS8xQBWlGMtAEATAEvBJLTSeoVAbUiwJtJ6k8EtSL6oAwBWAK1IqWTUvOv+1pRZ+5J6k8EtSJvoXP1TwT/f6HG1w9PBP9/rMRS808EpK4y09cPr/v/f07sc/Wv+/9/eOhS86/7pK4M5mRf9ZmIef+QYW9hsNdvwJ5XaDvdCTJ4nUpAK6YMNFmvtA2h03qKXZHAupSKkhHT9cV+PfR4YqOP6cNksCQCEI4X9B2AGfEA4sz+b473M35Y6Iud/nNCFdnASorEuSWIhcT8UKTzu/7KZPai8/b8mhFFOu6XmBuWh3BpobtZefrXJp5Vj8OEq8SfcB7HUX2N223D7buO1wPAbMksiIQGB6cCU2BuG+inJvkTuJwDQE+oAmXH/+ZamPq0REv7yri08Bbl4TtaOslucwZRmLPalYTQ51qGUEVlZansiK9p5bM6b2cueY/yDRNx4+iTK8DFyky9wpllsJ2ux5mV1QSjj8K+kVzctpowyEykkbZesOWe3ozF3jWSg84pm/66faTWo8isFI0tgAflpXzQ659p9KlpjGmr9w9P4nArn/Oo61Yt+9Wu6aNSrWtB4L1MdBkBe0uUiPxsI+ranDrb47le7/J/TUTqHwufxXgeDc9ACja4HhnWwUA2tdo/LmfOWlwa7shHseKdVQPmfS80k/M7frwcMxGtsUoUwPBm0anINf2m5zvznYw1xZpIND2VfWw+tuxodbS4bSTB")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_sbhr6")
+shadow_mesh = SubResource("ArrayMesh_pdmj2")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5g6r1"]
 albedo_color = Color(0.412152, 0.412152, 0.412152, 1)
@@ -150,6 +150,9 @@ emission = Color(0.466667, 0.466667, 0.466667, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_13lo3"]
 size = Vector3(0.759613, 0.431885, 0.731014)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdmj2"]
+transparency = 1
 
 [node name="CornerShelf" type="Node3D"]
 
@@ -210,7 +213,7 @@ transform = Transform3D(80000, 0, 0, 0, 80000, 1.77636e-11, 0, -1.77636e-11, 800
 transform = Transform3D(0.510279, -3.80446e-08, -0.233516, -4.9449e-23, 0.561173, -9.14265e-08, 0.233516, 8.3135e-08, 0.510279, -0.170355, -0.158959, 0.607848)
 collision_layer = 1048576
 collision_mask = 0
-script = ExtResource("5_62qx6")
+script = ExtResource("3_pdmj2")
 viewport = NodePath("../../../Viewport2Din3D")
 scene = ExtResource("4_t7nyp")
 
@@ -256,4 +259,5 @@ transform = Transform3D(0.498424, -0.0704127, 0.262784, 2.07492e-09, 0.548489, 0
 screen_size = Vector2(0.6, 0.45)
 scene = ExtResource("4_t7nyp")
 viewport_size = Vector2(3068, 2183)
+material = SubResource("StandardMaterial3D_pdmj2")
 scene_properties_keys = PackedStringArray()

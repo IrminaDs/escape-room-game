@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=4 uid="uid://5f5qk3v3susd"]
 
-[ext_resource type="Texture2D" uid="uid://dwkcfsj4jtc66" path="res://models/room3/furniture/plants/dried_house_plant_0.jpg" id="1_me7oe"]
+[ext_resource type="Texture2D" uid="uid://r7aadnqkyxpb" path="res://models/room3/objects/plants/dried_house_plant_0.jpg" id="1_me7oe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_he7ax"]
 resource_name = "Flowerpot_MAT"

@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=4 uid="uid://cy6ms377s7nhi"]
+[gd_scene load_steps=4 format=4 uid="uid://cy6ms377s7nhi"]
 
-[ext_resource type="Texture2D" uid="uid://jfo06o80dj6k" path="res://models/room3/furniture/display/sci_fi_monitor_2.png" id="1_t3tvx"]
-[ext_resource type="Texture2D" uid="uid://myo1bji83o1w" path="res://models/room3/furniture/display/warning.png" id="2_3ofoh"]
+[ext_resource type="Texture2D" uid="uid://jfo06o80dj6k" path="res://models/room3/objects/display/sci_fi_monitor_2.png" id="1_t3tvx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5q7xf"]
 resource_name = "TV_MTL"
@@ -30,15 +29,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ofoh"]
-transparency = 1
-cull_mode = 2
-shading_mode = 0
-albedo_texture = ExtResource("2_3ofoh")
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_khnrb"]
-orientation = 2
-
 [node name="Panel" type="Node3D"]
 
 [node name="TV_ALL" type="Node3D" parent="."]
@@ -56,9 +46,3 @@ skeleton = NodePath("")
 
 [node name="Display" type="Node3D" parent="."]
 transform = Transform3D(1.16807, 0, 0, 0, 1.16807, 0, 0, 0, 1.16807, 0, 0.0619728, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Display"]
-transform = Transform3D(0.0430273, 0, 0, 0, 0.0434226, 0, 0, 0, 0.0341416, -0.000139224, 0.0603859, 0.000425965)
-visible = false
-material_override = SubResource("StandardMaterial3D_3ofoh")
-mesh = SubResource("PlaneMesh_khnrb")

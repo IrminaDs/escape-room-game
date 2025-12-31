@@ -1,14 +1,14 @@
 [gd_scene load_steps=22 format=4 uid="uid://d3y2mms6x1o2b"]
 
-[ext_resource type="Texture2D" uid="uid://crx0kqsavtvne" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_0.png" id="1_8cylm"]
-[ext_resource type="Texture2D" uid="uid://fw0bp0dhrgr5" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_1.png" id="2_gp11a"]
-[ext_resource type="Texture2D" uid="uid://dphqx71cv185v" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_2.png" id="3_3hynx"]
-[ext_resource type="Texture2D" uid="uid://xhn5yw0ev4wt" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_3.png" id="4_juc2f"]
-[ext_resource type="Texture2D" uid="uid://jvbhlo0q56bi" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_4.png" id="5_y3r17"]
-[ext_resource type="Texture2D" uid="uid://0bm61a2ysedt" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_5.png" id="6_6ecgp"]
-[ext_resource type="Texture2D" uid="uid://cvbn7kwv35pn4" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_6.png" id="7_sbm1a"]
-[ext_resource type="Texture2D" uid="uid://dgu2o0cg558od" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_7.png" id="8_hjbuo"]
-[ext_resource type="Texture2D" uid="uid://68ywhtb8dtag" path="res://models/room3/furniture/plants/monstera_deliciosa_potted_mid-century_plant_8.png" id="9_ckprt"]
+[ext_resource type="Texture2D" uid="uid://bahwwein5n76m" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_0.png" id="1_8cylm"]
+[ext_resource type="Texture2D" uid="uid://cjyq8kpfxtba" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_1.png" id="2_gp11a"]
+[ext_resource type="Texture2D" uid="uid://bmj80swnr1rp4" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_2.png" id="3_3hynx"]
+[ext_resource type="Texture2D" uid="uid://b1nb0bmttyny0" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_3.png" id="4_juc2f"]
+[ext_resource type="Texture2D" uid="uid://d3piga4y8tb6f" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_4.png" id="5_y3r17"]
+[ext_resource type="Texture2D" uid="uid://c5a7lnobosjgq" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_5.png" id="6_6ecgp"]
+[ext_resource type="Texture2D" uid="uid://6piptfq4ebgn" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_6.png" id="7_sbm1a"]
+[ext_resource type="Texture2D" uid="uid://cjtco7gnw4yr7" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_7.png" id="8_hjbuo"]
+[ext_resource type="Texture2D" uid="uid://bl1etle0lvus0" path="res://models/room3/objects/plants/monstera_deliciosa_potted_mid-century_plant_8.png" id="9_ckprt"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_8cylm"]
 height = 73.4183

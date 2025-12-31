@@ -1,7 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://cbj1hvpyboqju"]
+[gd_scene load_steps=14 format=3 uid="uid://cbj1hvpyboqju"]
 
 [ext_resource type="Script" uid="uid://0i1c54v3tc3t" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_p18l6"]
-[ext_resource type="PackedScene" uid="uid://b7ds5gefo6yei" path="res://models/room3/furniture/content/card.tscn" id="2_bak7m"]
+[ext_resource type="PackedScene" uid="uid://b7ds5gefo6yei" path="res://models/room3/objects/content/card.tscn" id="2_bak7m"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="3_mgv06"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="4_mgv06"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_eas1s"]
@@ -9,6 +9,9 @@
 [ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="6_gnd4a"]
 [ext_resource type="Animation" uid="uid://dg4v7rqiaje2h" path="res://addons/godot-xr-tools/hands/animations/right/Pinch Flat.res" id="8_7324h"]
 [ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/enable_grab.gd" id="9_gnd4a"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kahy1"]
+rough = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lwh0k"]
 size = Vector3(0.302117, 0.206157, 0.0446661)
@@ -26,26 +29,28 @@ metadata/_custom_type_script = "uid://cb65h51jcm0kt"
 [node name="Card" type="RigidBody3D"]
 collision_layer = 4
 collision_mask = 196615
-freeze_mode = 1
+physics_material_override = SubResource("PhysicsMaterial_kahy1")
+can_sleep = false
+continuous_cd = true
 script = ExtResource("1_p18l6")
 second_hand_grab = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0421404, 0.00837366, -0.0198804)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00118441, 0.00837366, -0.0198804)
 shape = SubResource("BoxShape3D_lwh0k")
 
 [node name="Card" parent="." instance=ExtResource("2_bak7m")]
-transform = Transform3D(1, 0, 1.80238e-38, 0, 1, 0, -1.80238e-38, 0, 1, 0.0430112, 0.00939381, -0.0199648)
+transform = Transform3D(1, 0, 1.80238e-38, 0, 1, 0, -1.80238e-38, 0, 1, 0.00205521, 0.00939381, -0.0199648)
 
 [node name="HighlightRing" parent="." instance=ExtResource("3_mgv06")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0439875, 0.00494795, -0.0185381)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00303151, 0.00494795, -0.0185381)
 
 [node name="GrabPointHandLeft" parent="." instance=ExtResource("4_mgv06")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0533294, 0.0204317, -0.0674037)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0942854, 0.0204317, -0.0674037)
 hand_pose = SubResource("Resource_4js1m")
 
 [node name="GrabPointHandRight" parent="." instance=ExtResource("5_eas1s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.155181, 0.0194287, -0.0691764)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114225, 0.0194287, -0.0691764)
 hand_pose = SubResource("Resource_lbsbk")
 
 [node name="Node" type="Node" parent="."]

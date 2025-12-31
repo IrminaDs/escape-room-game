@@ -1,7 +1,7 @@
 [gd_scene load_steps=54 format=4 uid="uid://cihryyc4wtn7j"]
 
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="3_n4ndn"]
-[ext_resource type="Texture2D" uid="uid://jfo06o80dj6k" path="res://models/room3/furniture/display/sci_fi_monitor_2.png" id="3_uelup"]
+[ext_resource type="Texture2D" uid="uid://jfo06o80dj6k" path="res://models/room3/objects/display/sci_fi_monitor_2.png" id="3_uelup"]
 [ext_resource type="Script" uid="uid://u75nhpguoa3k" path="res://scripts/room3/main_room/screens/display.gd" id="4_4kiey"]
 [ext_resource type="Script" uid="uid://bilu40bgdylsv" path="res://scripts/room3/main_room/screens/change_scene.gd" id="5_fn8ov"]
 [ext_resource type="PackedScene" uid="uid://dgdb1texynduw" path="res://addons/godot-xr-tools/objects/virtual_keyboard.tscn" id="5_wcb4f"]
@@ -935,9 +935,8 @@ scene_properties_keys = PackedStringArray()
 script = ExtResource("5_fn8ov")
 
 [node name="VirtualKeyboard" parent="." instance=ExtResource("5_wcb4f")]
-transform = Transform3D(0.039369, 0, 0, 0, 0.0202806, 0.0337433, 0, -0.0337433, 0.0202806, 0.0187713, 0.0311317, 0.0851197)
-screen_size = Vector2(4.5, 2)
-viewport_size = Vector2(450, 200)
+transform = Transform3D(0.039369, 0, 0, 0, 0.0202806, 0.0337433, 0, -0.0337433, 0.0202806, 0.0187713, 0.0311317, 0.139402)
+screen_size = Vector2(4, 2)
 transparent = 1
 scene_properties_keys = PackedStringArray("virtual_keyboard_2d.gd")
 

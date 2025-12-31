@@ -7,8 +7,6 @@ extends Node2D
 @onready var left_controller: XRController3D = get_node("/root/Main/Player/XROrigin3D/LeftController")
 @onready var right_controller: XRController3D = get_node("/root/Main/Player/XROrigin3D/RightController")
 
-const Circle = preload("res://scenes/room3/main_room/wire_connection/circle.gd")
-
 var circles: Array[Circle] = []
 var correct_sequence = Line2D.new()
 var is_correct = false
@@ -41,7 +39,7 @@ func _ready() -> void:
 	for i in [0, 1, 4, 2, 5, 8, 7, 3, 6]:
 		correct_sequence.add_point(circles[i].pos)
 	
-	reset_circle = Circle.new(Vector2(spacing+side_offset, 3*spacing+side_offset), radius, Color.ROYAL_BLUE)
+	reset_circle = Circle.new(Vector2(spacing+side_offset, 3*spacing+side_offset), radius, Color.DARK_ORCHID)
 	circles.append(reset_circle)
 	
 	var reset_label := Label.new()
@@ -57,7 +55,7 @@ func _ready() -> void:
 	reset_label.position = reset_circle.pos - reset_label.size / 2
 	add_child(reset_label)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var left_pressed = left_controller.is_button_pressed("trigger")
 	var right_pressed = right_controller.is_button_pressed("trigger")
 	if left_pressed or right_pressed:

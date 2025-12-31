@@ -1,8 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://dgo8muw6cvvh4"]
+[gd_scene load_steps=14 format=3 uid="uid://dgo8muw6cvvh4"]
 
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_u5ukq"]
-[ext_resource type="PackedScene" uid="uid://dnjqkxmc6265v" path="res://models/room3/furniture/extra/triton.glb" id="2_s7o0l"]
-[ext_resource type="FontFile" uid="uid://moiquy3vtj0q" path="res://models/room3/fonts/Lavishly_Yours/LavishlyYours-Regular.ttf" id="3_hdi60"]
+[ext_resource type="PackedScene" uid="uid://cne06th7kntw3" path="res://models/room3/objects/extra/triton.glb" id="2_s7o0l"]
+[ext_resource type="FontFile" uid="uid://b6tg7n5avs5l5" path="res://models/room3/fonts/Lavishly_Yours/LavishlyYours-Regular.ttf" id="3_hdi60"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="4_20815"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_maxa4"]
 [ext_resource type="Animation" uid="uid://cnng6xumhw7cx" path="res://addons/godot-xr-tools/hands/animations/left/Rounded.res" id="5_uvkvw"]
@@ -10,8 +10,12 @@
 [ext_resource type="Animation" uid="uid://wcwa3p1qrhwr" path="res://addons/godot-xr-tools/hands/animations/right/Rounded.res" id="8_4otrw"]
 [ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="9_i3omn"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_84bx7"]
-points = PackedVector3Array(-5.55893, -20.3164, 0.168405, -3.31633, -1.48863, -1.14506, 12.9322, -11.7863, -2.05067, -16.6612, -2.91193, -5.00959, 9.97196, -14.7477, -5.50322, 10.7286, -1.9196, -4.41675, -6.79774, -20.1737, -4.0229, -18.6357, -4.39265, -0.0778697, 12.4378, -14.2528, 0.415766, 11.4521, -1.92611, -0.570926, 7.01169, -21.1615, -2.05067, -18.1413, -9.32374, -3.03679, -14.6897, -12.2792, 0.415766, -16.1668, -1.4332, -5.00959, 7.5061, -6.85918, -5.50322, 5.2297, -20.2546, 0.15032, 5.04024, -18.2001, -5.00959, -17.191, -2.31341, -0.751495, -18.6357, -3.40484, -4.51653, 10.4633, -1.4332, -0.570926, -6.58057, -20.605, -0.6795, 11.4521, -5.87138, -0.0778697, 10.9577, -10.8045, -5.50322, 7.5061, -15.7355, -5.50322, 0.599836, -5.37847, -5.50322, -10.7437, -8.83083, -5.00959, 12.4378, -12.7761, 0.415766, 9.15516, -2.37798, -4.76733, 6.02596, -21.1615, -2.54373, -17.9246, -1.86649, -3.01457, -13.2096, -11.2954, 0.415766, -5.80584, -20.6666, -3.52984)
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_juwxw"]
+rough = true
+absorbent = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_juwxw"]
+size = Vector3(31.9663, 21.6375, 5.4336)
 
 [sub_resource type="Resource" id="Resource_vpc75"]
 script = ExtResource("6_i3omn")
@@ -24,14 +28,18 @@ closed_pose = ExtResource("8_4otrw")
 metadata/_custom_type_script = "uid://cb65h51jcm0kt"
 
 [node name="Triton" instance=ExtResource("1_u5ukq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0382163, -0.00863132, 0)
+collision_mask = 7
+physics_material_override = SubResource("PhysicsMaterial_juwxw")
+continuous_cd = true
 second_hand_grab = 1
 
 [node name="CollisionShape3D" parent="." index="0"]
-transform = Transform3D(0.0160088, -1.39953e-09, 1.4313e-09, -1.39953e-09, -0.0160088, 0, 1.4313e-09, -8.5312e-17, -0.0160088, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_84bx7")
+transform = Transform3D(0.0160088, -1.39953e-09, 1.4313e-09, -1.39953e-09, -0.0160088, 0, 1.4313e-09, -8.5312e-17, -0.0160088, -0.0147641, 0.00675805, -0.00404675)
+shape = SubResource("BoxShape3D_juwxw")
 
 [node name="Sketchfab_Scene" parent="." index="1" instance=ExtResource("2_s7o0l")]
-transform = Transform3D(0.0160088, 0, 0, 0, 0.0160088, 0, 0, 0, 0.0160088, 0, 0, 0)
+transform = Transform3D(0.0160088, 0, 0, 0, 0.0160088, 0, 0, 0, 0.0160088, 0.0339892, -0.158432, -0.0489655)
 
 [node name="Label3D" type="Label3D" parent="Sketchfab_Scene" index="1"]
 transform = Transform3D(-11.7987, 0, 0, 0, 18.4175, 0, 0, 0, 10.3151, -5.42772, 6.78315, 0.615709)
@@ -50,12 +58,12 @@ font = ExtResource("3_hdi60")
 font_size = 72
 
 [node name="GrabPointHandLeft" parent="." index="2" instance=ExtResource("4_20815")]
-transform = Transform3D(0.985424, 0.0852121, -0.147235, -0.138481, 0.904504, -0.403354, 0.0988044, 0.417864, 0.903121, -0.24631, 0.169387, -0.00637102)
+transform = Transform3D(0.985424, 0.0852121, -0.147235, -0.138481, 0.904504, -0.403354, 0.0988044, 0.417864, 0.903121, -0.212321, 0.0109551, -0.0553365)
 hand_pose = SubResource("Resource_vpc75")
 
 [node name="GrabPointHandRight" parent="." index="3" instance=ExtResource("5_maxa4")]
-transform = Transform3D(0.954103, 0.0279277, 0.298175, 0.0835078, 0.931342, -0.354443, -0.287601, 0.363074, 0.886263, 0.140672, 0.272723, -0.0109877)
+transform = Transform3D(0.954103, 0.0279277, 0.298175, 0.0835078, 0.931342, -0.354443, -0.287601, 0.363074, 0.886263, 0.174661, 0.114291, -0.0599532)
 hand_pose = SubResource("Resource_qy8xu")
 
 [node name="HighlightRing" parent="." index="4" instance=ExtResource("9_i3omn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0213492, 0.195503, 0.043415)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01264, 0.037071, -0.00555046)

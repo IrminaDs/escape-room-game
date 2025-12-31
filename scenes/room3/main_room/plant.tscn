@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=4 uid="uid://bh77kdlisidt5"]
 
-[ext_resource type="Texture2D" uid="uid://bhj5yexhv4xj5" path="res://models/room3/furniture/plants/rosa_chinensis_0.jpg" id="1_jed2j"]
+[ext_resource type="Texture2D" uid="uid://b3qrujwgjb4rs" path="res://models/room3/objects/plants/rosa_chinensis_0.jpg" id="1_jed2j"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jed2j"]
 height = 2.4908

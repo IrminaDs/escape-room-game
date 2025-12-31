@@ -1,8 +1,8 @@
 [gd_scene load_steps=34 format=4 uid="uid://s6de1df2qown"]
 
-[ext_resource type="Texture2D" uid="uid://jfo06o80dj6k" path="res://models/room3/furniture/display/sci_fi_monitor_2.png" id="1_nq21c"]
+[ext_resource type="Texture2D" uid="uid://jfo06o80dj6k" path="res://models/room3/objects/display/sci_fi_monitor_2.png" id="1_nq21c"]
 [ext_resource type="Script" uid="uid://i4gtajys4qev" path="res://scripts/room3/main_room/screens/display2.gd" id="1_ujbtr"]
-[ext_resource type="Texture2D" uid="uid://ce2ju3muj5177" path="res://models/room3/furniture/display/warning_red.png" id="2_rrquu"]
+[ext_resource type="Texture2D" uid="uid://ce2ju3muj5177" path="res://models/room3/objects/display/warning_red.png" id="2_rrquu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2rs8"]
 resource_name = "TV_MTL"
