@@ -1,5 +1,7 @@
 extends Node
 
+@export var target_scene: PackedScene 
+
 @onready var parent_pickable = get_parent()
 @onready var left_controller: XRController3D = get_tree().get_current_scene().get_node("Player/XROrigin3D/LeftController")
 @onready var right_controller: XRController3D = get_tree().get_current_scene().get_node("Player/XROrigin3D/RightController")
@@ -14,11 +16,11 @@ var right_was_pressed = false
 
 const DISTANCE_THRESHOLD := 0.25
 
-var paper_sheet_scene: PackedScene = preload("res://scenes/room3/main_room/rsa.tscn")
-
 func _ready():
-	parent_pickable.connect("picked_up", Callable(self, "_on_picked_up"))
-	parent_pickable.connect("dropped", Callable(self, "_on_dropped"))
+	if parent_pickable.has_signal("picked_up"):
+		parent_pickable.connect("picked_up", Callable(self, "_on_picked_up"))
+	if parent_pickable.has_signal("dropped"):
+		parent_pickable.connect("dropped", Callable(self, "_on_dropped"))
 
 func _on_picked_up(_by):
 	is_held = true
@@ -28,7 +30,7 @@ func _on_dropped(_by):
 	triggers_pressed = false
 	initial_distance = 0.0
 
-func _process(delta):
+func _process(_delta):
 	if transformed or not is_held:
 		return
 
@@ -59,12 +61,17 @@ func _process(delta):
 func _transform_to_sheet():
 	if transformed:
 		return
+	
+	if target_scene == null:
+		printerr("Target Scene not assigned for: ", parent_pickable.name)
+		return
+
 	transformed = true
 
-	var sheet = paper_sheet_scene.instantiate() as Node3D
+	var sheet = target_scene.instantiate() as Node3D
 	sheet.scale = Vector3.ONE
+	
 	get_tree().get_current_scene().add_child(sheet)
-
 	sheet.global_transform = parent_pickable.global_transform
 
 	if sheet.has_signal("picked_up"):

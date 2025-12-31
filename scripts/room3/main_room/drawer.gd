@@ -4,6 +4,8 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 @export var anim_name: String = "Open"
 @export var anim: AnimationPlayer
 @export var audio: AudioStreamPlayer3D
+@export var max_interaction_distance := 1.2
+
 
 @onready var event_emitter := Room3GameEvents
 const OPEN_SIGNAL_NAME := "drawer_2_unlocked"
@@ -28,6 +30,12 @@ func _on_pointer_event(event: XRToolsPointerEvent):
 			highlight.visible = false
 
 		XRToolsPointerEvent.Type.PRESSED:
+			var pointer_pos = event.pointer.global_position
+			var my_pos = global_position
+
+			if pointer_pos.distance_to(my_pos) > max_interaction_distance:
+				return
+				
 			highlight.visible = false
 
 			if audio:

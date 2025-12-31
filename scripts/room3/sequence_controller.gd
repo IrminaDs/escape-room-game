@@ -13,8 +13,9 @@ enum State {
 var state: State
 
 func _ready():
-	_set_state(State.INTRO_LOCKED)
+	_set_state(State.GLITCH)
 	Room3GameEvents.answer_correct.connect(_on_answer_correct)
+	Room3GameEvents.correct_schema.connect(_enter_last_screen)
 
 func _set_state(new_state: State) -> void:
 	state = new_state
@@ -43,19 +44,23 @@ func _set_state(new_state: State) -> void:
 			
 			
 func _enter_intro_locked():
-	await get_tree().create_timer(12).timeout
+	await get_tree().create_timer(11).timeout
 	_set_state(State.GLITCH)
 	
 func _enter_glitch():
 	Room3GameEvents.emit_signal("glitch")
-	await get_tree().create_timer(11).timeout
+	await get_tree().create_timer(6).timeout
+	Room3GameEvents.emit_signal("unlock_player")
+	await get_tree().create_timer(6).timeout
 	Room3GameEvents.emit_signal("glitch_finished")
+	await get_tree().create_timer(1.5).timeout
 	_set_state(State.SECOND_MESSAGE)
+	pass
+	
 	
 func _enter_second_message():
 	Room3GameEvents.emit_signal("show_screen", "second_message")
-	Room3GameEvents.emit_signal("unlock_player")
-	await get_tree().create_timer(40).timeout
+	await get_tree().create_timer(33).timeout
 	_set_state(State.CONFIGURATION)
 	
 func _enter_configuration():

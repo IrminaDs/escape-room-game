@@ -11,13 +11,13 @@ func _ready():
 	if parent_node.has_signal("released"):
 		parent_node.connect("released", Callable(self, "_on_released"))
 
-func _on_grabbed(pickable, by):
+func _on_grabbed(pickable, _by):
 	if pickable != parent_node:
 		return
 
 	anim_player.play("Scene")
 
-func _on_released(pickable, by):
+func _on_released(pickable, _by):
 	if pickable != parent_node:
 		return
 

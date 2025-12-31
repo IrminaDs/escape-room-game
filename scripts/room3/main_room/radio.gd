@@ -2,15 +2,12 @@
 extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 
 
-@export var original_position: Vector3 = Vector3(-0.1, 0.25, 0)
-
-
+@onready var sfx_player = $"../SfxPlayer"
 @onready var mesh = $"../MeshInstance3D"
-@onready var viewport = $"../Viewport2Din3D"
 
+var radio_on = false
 var left_pointer: XRToolsFunctionPointer
 var right_pointer: XRToolsFunctionPointer
-var hidden_position: Vector3 = Vector3(0, -15, 0)
 
 func _ready():
 	if Engine.is_editor_hint():
@@ -20,15 +17,21 @@ func _ready():
 	right_pointer = get_tree().get_current_scene().get_node("Player/XROrigin3D/RightController/FunctionPointer")
 	
 	mesh.visible = false
-	viewport.transform.origin = hidden_position
+	#toggle_radio()
 	
 	connect("pointer_event", Callable(self, "_on_pointer_event"))
-	Room1GameEvents.connect("close_exit", Callable(self, "_on_close_exit"))
 
-func _on_close_exit():
-	viewport.transform.origin = hidden_position
-		
-	connect("pointer_event", Callable(self, "_on_pointer_event"))
+func toggle_radio():
+	sfx_player.play()
+
+	if not radio_on:
+		await sfx_player.finished
+		await get_tree().create_timer(1).timeout
+		Room3GameEvents.emit_signal("start_music")
+		radio_on = true
+	else:
+		Room3GameEvents.emit_signal("stop_music")
+		radio_on = false
 
 func _on_pointer_event(event):
 	var player = get_tree().get_current_scene().get_node("Player/XROrigin3D/PlayerBody")
@@ -43,7 +46,8 @@ func _on_pointer_event(event):
 		XRToolsPointerEvent.Type.EXITED:
 			mesh.visible = false
 		XRToolsPointerEvent.Type.PRESSED:
-			mesh.visible = false
-			viewport.transform.origin = original_position
-			
-			disconnect("pointer_event", Callable(self, "_on_pointer_event"))
+			toggle_radio()
+
+func _on_final():
+	Room3GameEvents.emit_signal("stop_music")
+	radio_on = false
