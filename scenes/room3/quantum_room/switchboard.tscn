@@ -1,9 +1,9 @@
 [gd_scene load_steps=115 format=4 uid="uid://c0pbd1tsa1ec1"]
 
-[ext_resource type="Texture2D" uid="uid://7qf5tvg8h4uk" path="res://models/room3/furniture/extra/switchboard_0.png" id="1_tilks"]
-[ext_resource type="Texture2D" uid="uid://ko4bif2tr3kl" path="res://models/room3/furniture/extra/switchboard_1.png" id="2_3rhff"]
-[ext_resource type="Texture2D" uid="uid://irms2yl4xy4f" path="res://models/room3/furniture/extra/switchboard_2.png" id="3_3qtd6"]
-[ext_resource type="Texture2D" uid="uid://ccavdb8qnd3iw" path="res://models/room3/furniture/extra/switchboard_3.png" id="4_1cqwa"]
+[ext_resource type="Texture2D" uid="uid://bw4t0m6wf4co6" path="res://models/room3/objects/extra/switchboard_0.png" id="1_tilks"]
+[ext_resource type="Texture2D" uid="uid://cvgc6v6vdj4ei" path="res://models/room3/objects/extra/switchboard_1.png" id="2_3rhff"]
+[ext_resource type="Texture2D" uid="uid://ceqap7veve3mt" path="res://models/room3/objects/extra/switchboard_2.png" id="3_3qtd6"]
+[ext_resource type="Texture2D" uid="uid://b27x78fbeqruu" path="res://models/room3/objects/extra/switchboard_3.png" id="4_1cqwa"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tilks"]
 size = Vector3(1.27089, 2.01794, 1.00903)

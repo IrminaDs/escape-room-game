@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=4 uid="uid://ql2ne683w4no"]
 
-[ext_resource type="Texture2D" uid="uid://drsg1286bbcm" path="res://models/room3/furniture/board/white_board_0.png" id="1_od0v2"]
-[ext_resource type="Texture2D" uid="uid://c3c6rhr4xpihf" path="res://models/room3/furniture/board/white_board_1.png" id="2_w2pbv"]
-[ext_resource type="Texture2D" uid="uid://djcwngtsmpchp" path="res://models/room3/furniture/board/white_board_2.png" id="3_j1ytu"]
+[ext_resource type="Texture2D" uid="uid://cpdw0ufyl4iwy" path="res://models/room3/textures/content/white_board_custom.png" id="1_vg10v"]
+[ext_resource type="Texture2D" uid="uid://d0ox3ui0ygxmj" path="res://models/room3/objects/board/white_board_1.png" id="2_w2pbv"]
+[ext_resource type="Texture2D" uid="uid://2sise0tuww6d" path="res://models/room3/objects/board/white_board_2.png" id="3_j1ytu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ruumj"]
 resource_name = "Scene_-_Root"
 cull_mode = 2
-albedo_texture = ExtResource("1_od0v2")
+albedo_texture = ExtResource("1_vg10v")
 metallic = 1.0
 metallic_texture = ExtResource("2_w2pbv")
 metallic_texture_channel = 2
@@ -153,7 +153,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_y0ue1")
 
 [node name="Whiteboard" type="Node3D"]
-transform = Transform3D(0.714286, 0, 0, 0, 0.714286, 0, 0, 0, 0.714286, 0, 0, 0)
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
@@ -164,9 +163,10 @@ transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
 [node name="RootNode" type="Node3D" parent="Sketchfab_model/0daa118bf61942be856acd1abcc06670_fbx"]
 
 [node name="Marker_low" type="Node3D" parent="Sketchfab_model/0daa118bf61942be856acd1abcc06670_fbx/RootNode"]
-transform = Transform3D(100, 0, 0, 0, -1.62921e-05, 100, 0, -100, -1.62921e-05, 46.4601, 90.682, -10.9762)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 46.4601, 91.2208, -10.9762)
 
 [node name="Marker_low__0" type="MeshInstance3D" parent="Sketchfab_model/0daa118bf61942be856acd1abcc06670_fbx/RootNode/Marker_low"]
+transform = Transform3D(79.8134, 0, 0, 0, 79.8134, 2.27374e-12, 0, -2.27374e-12, 79.8134, -0.0930061, 0.0309229, 0)
 mesh = SubResource("ArrayMesh_8id02")
 skeleton = NodePath("")
 

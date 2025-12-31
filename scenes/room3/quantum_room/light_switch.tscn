@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=4 uid="uid://bt7wbugpacpmm"]
 
-[ext_resource type="Texture2D" uid="uid://ca7r0folbli84" path="res://models/room3/furniture/light/light_switch_and_bulb_0.png" id="1_5qg6w"]
-[ext_resource type="Texture2D" uid="uid://cotibf7y2b5t0" path="res://models/room3/furniture/light/light_switch_and_bulb_2.png" id="2_p7gsq"]
-[ext_resource type="Texture2D" uid="uid://bamajw0df8buh" path="res://models/room3/furniture/light/light_switch_and_bulb_1.png" id="3_mf8dp"]
-[ext_resource type="Texture2D" uid="uid://ckbs6mgu3omoo" path="res://models/room3/furniture/light/light_switch_and_bulb_3.png" id="4_008mv"]
+[ext_resource type="Texture2D" uid="uid://cbuo1me33x4gq" path="res://models/room3/objects/light/light_switch_and_bulb_0.png" id="1_5qg6w"]
+[ext_resource type="Texture2D" uid="uid://bn8s18di0owm2" path="res://models/room3/objects/light/light_switch_and_bulb_2.png" id="2_p7gsq"]
+[ext_resource type="Texture2D" uid="uid://b8xo6oxw62sl1" path="res://models/room3/objects/light/light_switch_and_bulb_1.png" id="3_mf8dp"]
+[ext_resource type="Texture2D" uid="uid://ccu7k0loaln4m" path="res://models/room3/objects/light/light_switch_and_bulb_3.png" id="4_008mv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtjfx"]
 resource_name = "Material.001"
