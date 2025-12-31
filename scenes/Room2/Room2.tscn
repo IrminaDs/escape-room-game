@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=39 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="Script" uid="uid://dtfq2w2npp40c" path="res://scripts/room.gd" id="1_5q6wp"]
 [ext_resource type="Script" uid="uid://c8dc7tkyl0gic" path="res://scripts/room2/printer.gd" id="2_vueoo"]
@@ -21,8 +21,6 @@
 [ext_resource type="PackedScene" uid="uid://bw8qw7hsvbdmt" path="res://scenes/Room2/radio.tscn" id="14_uugd8"]
 [ext_resource type="PackedScene" uid="uid://bqh6cftw1emh" path="res://scenes/Room2/displays.tscn" id="15_qyg7m"]
 [ext_resource type="PackedScene" uid="uid://dqpko2g6fmol4" path="res://scenes/Room2/doors.tscn" id="15_uugd8"]
-[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="15_x55sq"]
-[ext_resource type="PackedScene" uid="uid://c664tfpk5ohkb" path="res://scenes/player.tscn" id="16_j5lkk"]
 [ext_resource type="Script" uid="uid://vyxoqyud40df" path="res://scripts/room2/displays.gd" id="16_k4i2i"]
 [ext_resource type="PackedScene" uid="uid://cpml6hwjdpcpv" path="res://scenes/Room2/keypad2.tscn" id="16_qyg7m"]
 [ext_resource type="PackedScene" uid="uid://bll1dmcrjnrhi" path="res://scenes/Room2/file_folder2.tscn" id="17_mnuuc"]
@@ -35,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://bj7387daq4a7c" path="res://scenes/Room2/szkielet.tscn" id="23_mnuuc"]
 [ext_resource type="PackedScene" uid="uid://cuxhyanfaxkd3" path="res://scenes/Room2/seven_angles.tscn" id="24_ebguw"]
 [ext_resource type="PackedScene" uid="uid://dhox50t1qhjsl" path="res://scenes/Room2/letter.tscn" id="28_vm886"]
+[ext_resource type="PackedScene" uid="uid://dxey7oh8j4bc8" path="res://scenes/Room2/exit.tscn" id="35_mlxov"]
 [ext_resource type="Script" uid="uid://bbsg1fdx30q60" path="res://scripts/set_player.gd" id="36_2eums"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6lgvw"]
@@ -334,11 +333,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3496083, 3.4645796, 1.61593
 
 [node name="room_construction" parent="Build" instance=ExtResource("23_mnuuc")]
 
-[node name="StartXR" parent="." instance=ExtResource("15_x55sq")]
-
-[node name="Player" parent="." instance=ExtResource("16_j5lkk")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.5511608, -0.0485847, 0.698716)
+[node name="Player" type="Node" parent="."]
 script = ExtResource("36_2eums")
+
+[node name="Exit" parent="." instance=ExtResource("35_mlxov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5575655, 0.6599425, -2.3547118)
 
 [editable path="Build/Objects/ondesk3/File_folder2"]
 [editable path="Build/Objects/ondesk3/File_folder3"]

@@ -51,9 +51,9 @@ text = "Szyfry:
 collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("1_qnrw8")
-path = "res://scenes/room2/Room2.tscn"
+path = "res://scenes/Room2/Room2.tscn"
 room_events = "/root/Room2GameEvents"
-text = "Szyfry:/n- Tablica Polibiusz/n- SzyfrCezara/n- Szyfr Vigenere'a"
+text = "Szyfry:/n- XOR/n- RSA"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
