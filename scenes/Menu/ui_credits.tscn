@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://bc6ney83sf1ua"]
 
 [ext_resource type="Script" uid="uid://57j0215ik40h" path="res://scripts/menu/ui_credits.gd" id="1_wbbus"]
-[ext_resource type="Texture2D" uid="uid://ckrn0w3uxb8q7" path="res://models/menu/textures/Znak_graficzny_AGH.svg.png" id="2_4rpde"]
+[ext_resource type="Texture2D" uid="uid://bb5wulqyxrlbq" path="res://models/menu/textures/Znak_graficzny_AGH.svg.png" id="2_4rpde"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qp8ag"]
 bg_color = Color(0, 0, 0, 1)

@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://basf06y1tnefr" path="res://scripts/menu/credits.gd" id="2_lhvqg"]
 [ext_resource type="PackedScene" uid="uid://bc6ney83sf1ua" path="res://scenes/menu/ui_credits.tscn" id="3_6xpyw"]
 
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_olbcw"]
 size = Vector3(0.6, 0.5, 0.1)
 
