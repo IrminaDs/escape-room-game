@@ -1,34 +1,44 @@
 [gd_scene load_steps=115 format=4 uid="uid://cbj7i8ixuyd4d"]
 
 [ext_resource type="Script" uid="uid://ddohgjpu23isg" path="res://scripts/room3/main_room/drawer.gd" id="1_460gw"]
-[ext_resource type="Texture2D" uid="uid://ccn3fl7x3xrk4" path="res://models/room3/objects/trash/clutter_2.png" id="1_hegnt"]
-[ext_resource type="Texture2D" uid="uid://dqyo8c2p752sq" path="res://models/room3/objects/posters/beksinski.png" id="2_h3r73"]
-[ext_resource type="Texture2D" uid="uid://xu1o2arxfkyg" path="res://models/room3/objects/trash/clutter_3.png" id="2_ovo0v"]
-[ext_resource type="AudioStream" uid="uid://btabgjy23syp2" path="res://models/Room1/sounds/787715__realsquink__drawer-e-signle.ogg" id="2_uiifv"]
-[ext_resource type="Texture2D" uid="uid://cyimi0wlpyg1" path="res://models/room3/objects/trash/clutter_4.png" id="3_ola6h"]
-[ext_resource type="Texture2D" uid="uid://cbckrdlihdo65" path="res://models/room3/objects/posters/photo2.png" id="4_plfh5"]
-[ext_resource type="Texture2D" uid="uid://deo85mkl32e14" path="res://models/room3/objects/trash/clutter_5.png" id="4_q3sph"]
-[ext_resource type="Texture2D" uid="uid://dk5qi2hj4t1h1" path="res://models/room3/objects/trash/clutter_6.png" id="5_qi2dq"]
+[ext_resource type="Texture2D" uid="uid://driury7n7g43k" path="res://models/room3/objects/desk/desk_set_0.png" id="1_3006h"]
+[ext_resource type="Texture2D" uid="uid://cnpbf1hegatgm" path="res://models/room3/objects/trash/clutter_2.png" id="1_hegnt"]
+[ext_resource type="Texture2D" uid="uid://cvwhihoxv5gvu" path="res://models/room3/objects/posters/beksinski.png" id="2_h3r73"]
+[ext_resource type="Texture2D" uid="uid://b6yoad2hrjigi" path="res://models/room3/objects/desk/desk_set_1.png" id="2_nvd71"]
+[ext_resource type="Texture2D" uid="uid://ck122v6yb7ckx" path="res://models/room3/objects/trash/clutter_3.png" id="2_ovo0v"]
+[ext_resource type="AudioStream" uid="uid://coibwdx36q252" path="res://models/Room1/sounds/787715__realsquink__drawer-e-signle.ogg" id="2_uiifv"]
+[ext_resource type="Texture2D" uid="uid://ngmxv1pw2wfj" path="res://models/room3/objects/trash/clutter_4.png" id="3_ola6h"]
+[ext_resource type="Texture2D" uid="uid://crgjxk5vuxh5n" path="res://models/room3/objects/posters/photo2.png" id="4_plfh5"]
+[ext_resource type="Texture2D" uid="uid://cji2wv1roed5p" path="res://models/room3/objects/trash/clutter_5.png" id="4_q3sph"]
+[ext_resource type="Texture2D" uid="uid://ds843cr1wpyhv" path="res://models/room3/objects/trash/clutter_6.png" id="5_qi2dq"]
+[ext_resource type="Texture2D" uid="uid://btkkhaurcq8pu" path="res://models/room3/objects/desk/desk_set_2.png" id="9_mm1lv"]
+[ext_resource type="Texture2D" uid="uid://b8dtpe3a3qgn7" path="res://models/room3/objects/desk/desk_set_3.png" id="10_fm3ol"]
+[ext_resource type="Texture2D" uid="uid://oq0yv3jbfy6q" path="res://models/room3/objects/desk/desk_set_4.png" id="11_kh2mv"]
+[ext_resource type="Texture2D" uid="uid://y0k8eexr7ndq" path="res://models/room3/objects/desk/desk_set_5.png" id="12_3mftx"]
+[ext_resource type="Texture2D" uid="uid://crmpcdnwhjev1" path="res://models/room3/objects/desk/desk_set_6.png" id="13_dqlys"]
+[ext_resource type="Texture2D" uid="uid://c0wmluikuhpk6" path="res://models/room3/objects/desk/desk_set_7.png" id="14_b45fe"]
+[ext_resource type="Texture2D" uid="uid://s6ibgdr5q8o3" path="res://models/room3/objects/desk/desk_set_9.png" id="15_845g1"]
+[ext_resource type="Texture2D" uid="uid://dl7a5hbqfxkhk" path="res://models/room3/objects/desk/desk_set_8.png" id="16_a3sbh"]
+[ext_resource type="Texture2D" uid="uid://c3s4fohk2qgjj" path="res://models/room3/objects/desk/desk_set_14.png" id="18_nybr8"]
+[ext_resource type="Texture2D" uid="uid://2jec4r54tqnw" path="res://models/room3/objects/desk/desk_set_15.png" id="19_lepit"]
+[ext_resource type="Texture2D" uid="uid://dkp7acfjf7avo" path="res://models/room3/objects/desk/desk_set_16.png" id="20_1wtux"]
+[ext_resource type="Texture2D" uid="uid://ct34n7op0p5de" path="res://models/room3/objects/desk/desk_set_17.png" id="21_grkco"]
+[ext_resource type="Texture2D" uid="uid://c3sgq8xn05bpj" path="res://models/room3/objects/desk/desk_set_18.png" id="22_fomvk"]
+[ext_resource type="Texture2D" uid="uid://whreobve1d" path="res://models/room3/objects/desk/desk_set_19.png" id="23_4nw8o"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_plfh5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hehy8"]
 size = Vector3(1505.34, 611.278, 36.6786)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hehy8"]
-load_path = "res://.godot/imported/desk_set_0.png-1d1b0a2f8a94d0191dfe86ef49db41ab.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_460gw"]
-load_path = "res://.godot/imported/desk_set_1.png-cebae49939501be605bf8030fab85c03.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2px6a"]
-resource_name = "Desk"
+resource_name = "Desk_Desk_0"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_hehy8")
+albedo_texture = ExtResource("1_3006h")
 metallic = 1.0
-metallic_texture = SubResource("CompressedTexture2D_460gw")
+metallic_texture = ExtResource("2_nvd71")
 metallic_texture_channel = 2
-roughness_texture = SubResource("CompressedTexture2D_460gw")
+roughness_texture = ExtResource("2_nvd71")
 roughness_texture_channel = 1
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mkrsd"]
@@ -713,26 +723,17 @@ radius = 225.148
 [sub_resource type="BoxShape3D" id="BoxShape3D_460gw"]
 size = Vector3(360.669, 95.9263, 478.321)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t5p12"]
-load_path = "res://.godot/imported/desk_set_2.png-14e4fcbe9d2d91f640cc247f306d40f0.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sgxm1"]
-load_path = "res://.godot/imported/desk_set_3.png-667999712b2b285ad8df2cb1439653a5.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jv8ay"]
-load_path = "res://.godot/imported/desk_set_4.png-2f1fc437e6bbc27ff930050ab0cee048.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5r05"]
 resource_name = "Office-Chair"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_t5p12")
+albedo_texture = ExtResource("9_mm1lv")
 metallic = 1.0
-metallic_texture = SubResource("CompressedTexture2D_sgxm1")
+metallic_texture = ExtResource("10_fm3ol")
 metallic_texture_channel = 2
-roughness_texture = SubResource("CompressedTexture2D_sgxm1")
+roughness_texture = ExtResource("10_fm3ol")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_jv8ay")
+normal_texture = ExtResource("11_kh2mv")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xkyr8"]
 _surfaces = [{
@@ -768,20 +769,14 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_xkyr8")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gnmrs"]
-load_path = "res://.godot/imported/desk_set_5.png-80c05300f0454ffe584a3932ee3d1d05.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rrglg"]
-load_path = "res://.godot/imported/desk_set_6.png-7f92e21bac078b4990c992f9841cd627.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6a8i6"]
 resource_name = "Table-Lamp"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_gnmrs")
+albedo_texture = ExtResource("12_3mftx")
 metallic = 0.384761
-metallic_texture = SubResource("CompressedTexture2D_rrglg")
+metallic_texture = ExtResource("13_dqlys")
 metallic_texture_channel = 2
-roughness_texture = SubResource("CompressedTexture2D_rrglg")
+roughness_texture = ExtResource("13_dqlys")
 roughness_texture_channel = 1
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_haio3"]
@@ -818,29 +813,20 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_haio3")
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fnu1f"]
-load_path = "res://.godot/imported/desk_set_7.png-3c0e534e20d2939ce141fa4cc99e5871.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yo2kj"]
-load_path = "res://.godot/imported/desk_set_9.png-16f18b5efe1e4242cd5796b0bd3faab2.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nm2sr"]
-load_path = "res://.godot/imported/desk_set_8.png-dba1189ea4ca8d9f72512edfebdf2b51.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vre67"]
 resource_name = "Lamp_Decorative"
 transparency = 4
 cull_mode = 2
 albedo_color = Color(1, 0.870624, 0.752212, 1)
-albedo_texture = SubResource("CompressedTexture2D_fnu1f")
+albedo_texture = ExtResource("14_b45fe")
 metallic = 1.0
-metallic_texture = SubResource("CompressedTexture2D_nm2sr")
+metallic_texture = ExtResource("16_a3sbh")
 metallic_texture_channel = 2
-roughness_texture = SubResource("CompressedTexture2D_nm2sr")
+roughness_texture = ExtResource("16_a3sbh")
 roughness_texture_channel = 1
 emission_enabled = true
 emission_energy_multiplier = 1.23314
-emission_texture = SubResource("CompressedTexture2D_yo2kj")
+emission_texture = ExtResource("15_845g1")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2q6u3"]
 _surfaces = [{
@@ -877,10 +863,8 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2q6u3")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_udbj2"]
-load_path = "res://.godot/imported/desk_set_12.png-e03677990125e1e2788f89b9cbca283a.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kby33"]
-load_path = "res://.godot/imported/desk_set_13.png-a3a45590dced14f3ad53f61c492c3553.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qj4r"]
 resource_name = "Photography-Type_1"
@@ -931,25 +915,16 @@ shadow_mesh = SubResource("ArrayMesh_rpd26")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h3r73"]
 points = PackedVector3Array(-148.5, -104.609, -0.00392151, -148.456, -104.753, -0.00392151, -148.471, -104.733, 10.8748, -148.5, -104.589, 10.9047, -148.5, 104.589, -0.00392151, -40.352, 31.204, -64.0649, -148.253, -104.959, -0.00392151, -148.238, -104.979, 10.8748, -148.078, -105, 10.9047, -145.099, -102.081, 11.9589, -145.564, -101.608, 11.9589, -148.5, 104.568, 10.9047, -148.471, 104.712, 10.8748, -148.456, 104.733, -0.00392151, -148.253, 104.938, -0.00392151, -148.108, 105, -0.00392151, -0.407013, 105, -0.00392151, -0.261642, 104.938, -0.00392151, -0.058136, 104.733, -0.00392151, -39.8578, 31.4507, -63.6462, -0.0145264, -104.609, -0.00392151, -0.058136, -104.753, -0.00392151, -0.261642, -104.959, -0.00392151, -37.9972, 7.48238, -53.8741, -148.108, -105, -0.00392151, -0.436081, -105, 10.9047, -3.41597, -102.081, 11.9589, -142.162, -99.121, 12.3103, -142.627, -98.6688, 12.3103, -145.564, 101.588, 11.9589, -148.078, 105, 10.9047, -148.238, 104.959, 10.8748, -0.29071, 104.959, 10.8748, -0.436081, 105, 10.9047, -0.0436096, 104.712, 10.8748, -0.0145264, 104.589, -0.00392151, -0.0145264, -104.589, 10.9047, -0.0436096, -104.733, 10.8748, -0.29071, -104.979, 10.8748, -0.407013, -105, -0.00392151, -2.95081, -101.608, 11.9589, -5.88708, -98.6688, 12.3103, -6.35223, -99.121, 12.3103, -142.627, 98.6482, 12.3103, -145.099, 102.04, 11.9589, -3.41597, 102.04, 11.9589, -2.95081, 101.588, 11.9589, -0.0145264, 104.568, 10.9047, -5.88708, 98.6482, 12.3103, -142.162, 99.1004, 12.3103, -6.35223, 99.1004, 12.3103)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2v71e"]
-load_path = "res://.godot/imported/desk_set_14.png-a71dbec5459c27b3923800c3fc99b1b6.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_su1ld"]
-load_path = "res://.godot/imported/desk_set_15.png-07d248ddc2de6702321d2731842faf10.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bduss"]
-load_path = "res://.godot/imported/desk_set_16.png-5150df0338a31e327e094281f52329c0.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hk1up"]
 resource_name = "Book-Type_1"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_2v71e")
-metallic_texture = SubResource("CompressedTexture2D_su1ld")
+albedo_texture = ExtResource("18_nybr8")
+metallic_texture = ExtResource("19_lepit")
 metallic_texture_channel = 2
-roughness_texture = SubResource("CompressedTexture2D_su1ld")
+roughness_texture = ExtResource("19_lepit")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_bduss")
+normal_texture = ExtResource("20_1wtux")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hehy8"]
 _surfaces = [{
@@ -988,25 +963,16 @@ shadow_mesh = SubResource("ArrayMesh_hehy8")
 [sub_resource type="BoxShape3D" id="BoxShape3D_p2x8h"]
 size = Vector3(218.915, 169.715, 79.5029)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y5kse"]
-load_path = "res://.godot/imported/desk_set_17.png-b82e2998b840fc9cf8f0aabd9b1e1ab9.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t7mw7"]
-load_path = "res://.godot/imported/desk_set_18.png-6e968982535b1860dd96794edf787b34.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xsq8g"]
-load_path = "res://.godot/imported/desk_set_19.png-9c67a863e992dce3ac26335cd3721fdb.s3tc.ctex"
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57hyv"]
 resource_name = "Book-Type_2"
 cull_mode = 2
-albedo_texture = SubResource("CompressedTexture2D_y5kse")
-metallic_texture = SubResource("CompressedTexture2D_t7mw7")
+albedo_texture = ExtResource("21_grkco")
+metallic_texture = ExtResource("22_fomvk")
 metallic_texture_channel = 2
-roughness_texture = SubResource("CompressedTexture2D_t7mw7")
+roughness_texture = ExtResource("22_fomvk")
 roughness_texture_channel = 1
 normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_xsq8g")
+normal_texture = ExtResource("23_4nw8o")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_460gw"]
 _surfaces = [{
@@ -1043,7 +1009,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_460gw")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qlw07"]
-load_path = "res://.godot/imported/desk_set_21.png-9f7be7d4cae9b9f734c784b5a23c9ea7.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkeve"]
 resource_name = "Photography-Type_2"
