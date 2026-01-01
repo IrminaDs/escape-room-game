@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bexqblynqorpg"]
 
 [ext_resource type="Script" uid="uid://01ii3xkepn8c" path="res://scripts/menu/stack_logic.gd" id="1_qnrw8"]
-[ext_resource type="AudioStream" uid="uid://bgs51ulbujruh" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="2_npr36"]
+[ext_resource type="AudioStream" uid="uid://beqff2t6r7qme" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="2_npr36"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_f4dfs"]
 
@@ -44,8 +44,8 @@ mesh = SubResource("CylinderMesh_f4dfs")
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0)
 text = "Szyfry:
-- XOR
-- RSA"
+- ???
+- ???"
 
 [node name="Area3D" type="Area3D" parent="."]
 collision_layer = 1048576
@@ -53,7 +53,9 @@ collision_mask = 0
 script = ExtResource("1_qnrw8")
 path = "res://scenes/Room2/Room2.tscn"
 room_events = "/root/Room2GameEvents"
-text = "Szyfry:/n- XOR/n- RSA"
+text = "Szyfry:
+- XOR
+- RSA"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)

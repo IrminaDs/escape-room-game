@@ -1,21 +1,20 @@
 [gd_scene load_steps=32 format=4 uid="uid://by3cueitml4xi"]
 
-[ext_resource type="Texture2D" uid="uid://t30oe81b4t61" path="res://models/menu/objects/pedestal/classical_museum_pedestals_-_asset_pack_3.jpg" id="1_633y7"]
-[ext_resource type="Texture2D" uid="uid://b2r2yj3w3dayk" path="res://models/menu/objects/pedestal/classical_museum_pedestals_-_asset_pack_4.png" id="2_8k5ss"]
+[ext_resource type="Texture2D" uid="uid://dd04a2qfktbs5" path="res://models/menu/objects/pedestal/classical_museum_pedestals_-_asset_pack_3.jpg" id="1_633y7"]
+[ext_resource type="Texture2D" uid="uid://c85etfns0tguy" path="res://models/menu/objects/pedestal/classical_museum_pedestals_-_asset_pack_4.png" id="2_8k5ss"]
 [ext_resource type="Script" uid="uid://01ii3xkepn8c" path="res://scripts/menu/stack_logic.gd" id="3_8k5ss"]
-[ext_resource type="PackedScene" uid="uid://8lbtorwmvxqb" path="res://models/Room1/objects/book/simple_animated_book.glb" id="4_x0f43"]
-[ext_resource type="PackedScene" uid="uid://cpoxri6u8rage" path="res://models/Room1/objects/ceasar/gaius_julius_caesar.glb" id="5_78vma"]
-[ext_resource type="PackedScene" uid="uid://v4k8lh1wa6ch" path="res://models/Room1/objects/letter/scroll.glb" id="5_gl8cj"]
-[ext_resource type="PackedScene" uid="uid://jdyvu12aid36" path="res://models/Room1/objects/radio/old_radio.glb" id="6_h5e7d"]
-[ext_resource type="Texture2D" uid="uid://4ilju6xqory0" path="res://models/Room1/objects/letter/letter__envelope_assets_0.png" id="7_g3n2r"]
-[ext_resource type="Texture2D" uid="uid://bxi06wwo5yrqy" path="res://models/Room1/objects/letter/letter__envelope_assets_1.png" id="8_38eab"]
-[ext_resource type="Texture2D" uid="uid://cpnrhd2irkdmu" path="res://models/Room1/objects/letter/letter__envelope_assets_2.png" id="9_neo3q"]
-[ext_resource type="Texture2D" uid="uid://bnq7eofb8xtuj" path="res://models/Room1/objects/letter/letter__envelope_assets_3.png" id="10_iiv73"]
-[ext_resource type="Texture2D" uid="uid://e6k5a10lst6n" path="res://models/Room1/objects/letter/letter__envelope_assets_4.png" id="11_1ic0x"]
-[ext_resource type="Texture2D" uid="uid://c44k3vxxw1j11" path="res://models/Room1/objects/letter/letter__envelope_assets_5.png" id="12_cwg5v"]
-[ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/room1/cipher_disk.tscn" id="12_g3n2r"]
-[ext_resource type="AudioStream" uid="uid://b30e4vqn5ljxa" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="15_neo3q"]
-
+[ext_resource type="PackedScene" uid="uid://bkxf8nvbsdnon" path="res://models/Room1/objects/book/simple_animated_book.glb" id="4_x0f43"]
+[ext_resource type="PackedScene" uid="uid://b01oquumfi3tu" path="res://models/Room1/objects/ceasar/gaius_julius_caesar.glb" id="5_78vma"]
+[ext_resource type="PackedScene" uid="uid://dwph8y6rli5mn" path="res://models/Room1/objects/letter/scroll.glb" id="5_gl8cj"]
+[ext_resource type="PackedScene" uid="uid://c5olvs6skrwg2" path="res://models/Room1/objects/radio/old_radio.glb" id="6_h5e7d"]
+[ext_resource type="Texture2D" uid="uid://c8kkbisx7fwbv" path="res://models/Room1/objects/letter/letter__envelope_assets_0.png" id="7_g3n2r"]
+[ext_resource type="Texture2D" uid="uid://co10v2s2rnm8v" path="res://models/Room1/objects/letter/letter__envelope_assets_1.png" id="8_38eab"]
+[ext_resource type="Texture2D" uid="uid://bwxkpn6uuvkw7" path="res://models/Room1/objects/letter/letter__envelope_assets_2.png" id="9_neo3q"]
+[ext_resource type="Texture2D" uid="uid://blu8l5vnvtwun" path="res://models/Room1/objects/letter/letter__envelope_assets_3.png" id="10_iiv73"]
+[ext_resource type="Texture2D" uid="uid://dlvnh26mh3j2a" path="res://models/Room1/objects/letter/letter__envelope_assets_4.png" id="11_1ic0x"]
+[ext_resource type="Texture2D" uid="uid://c7fr0wm2w0pnv" path="res://models/Room1/objects/letter/letter__envelope_assets_5.png" id="12_cwg5v"]
+[ext_resource type="PackedScene" uid="uid://cal0tlif24cjp" path="res://scenes/Room1/cipher_disk.tscn" id="12_g3n2r"]
+[ext_resource type="AudioStream" uid="uid://beqff2t6r7qme" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="15_neo3q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yubxg"]
 resource_name = "MuseumPlinthe02_BAKED"
@@ -307,6 +306,10 @@ text = "Szyfry:
 collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("3_8k5ss")
+text = "Szyfry:
+- Tablica Polibiusza
+- Szyfr Cezara
+- Szyfr Vigenere'a"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
