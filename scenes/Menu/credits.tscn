@@ -1,9 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://cmqfiyr1jd5h5"]
 
-[ext_resource type="PackedScene" uid="uid://6pf7jfdqxftl" path="res://models/menu/objects/clapperboard/black_film_slate_or_clapperboard.glb" id="1_olbcw"]
+[ext_resource type="PackedScene" uid="uid://dbproudr3wlhs" path="res://models/menu/objects/clapperboard/black_film_slate_or_clapperboard.glb" id="1_olbcw"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="2_fxijl"]
 [ext_resource type="Script" uid="uid://basf06y1tnefr" path="res://scripts/menu/credits.gd" id="2_lhvqg"]
-[ext_resource type="PackedScene" uid="uid://bc6ney83sf1ua" path="res://scenes/Menu/ui_credits.tscn" id="3_6xpyw"]
+[ext_resource type="PackedScene" uid="uid://bc6ney83sf1ua" path="res://scenes/menu/ui_credits.tscn" id="3_6xpyw"]
+
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_olbcw"]
 size = Vector3(0.6, 0.5, 0.1)

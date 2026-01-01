@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bexqblynqorpg"]
 
 [ext_resource type="Script" uid="uid://01ii3xkepn8c" path="res://scripts/menu/stack_logic.gd" id="1_qnrw8"]
-[ext_resource type="AudioStream" uid="uid://beqff2t6r7qme" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="2_npr36"]
+[ext_resource type="AudioStream" uid="uid://b30e4vqn5ljxa" path="res://models/menu/sounds/422736__grubzyy__s_spotlight_on.ogg" id="2_npr36"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_f4dfs"]
 
@@ -51,7 +51,7 @@ text = "Szyfry:
 collision_layer = 1048576
 collision_mask = 0
 script = ExtResource("1_qnrw8")
-path = "res://scenes/Room2/Room2.tscn"
+path = "res://scenes/room2/Room2.tscn"
 room_events = "/root/Room2GameEvents"
 text = "Szyfry:
 - XOR
