@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=3 uid="uid://ey4nll32educ"]
+
+[ext_resource type="FontFile" uid="uid://bjcybttey5eam" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="1_ooh34"]
+[ext_resource type="Script" uid="uid://cm76q285vlhhq" path="res://scenes/Room2/bin_panel_single.gd" id="1_unral"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_unral"]
+bg_color = Color(0.051971, 0.051971, 0.051971, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_qk7wd"]
+font = ExtResource("1_ooh34")
+font_size = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xtjl"]
+bg_color = Color(0.84613574, 0.050708726, 0.050708726, 0.70600003)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cj3q4"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iv70v"]
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 25.0
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_unral")
+
+[node name="Panel" type="Panel" parent="."]
+
+[node name="Panel2" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 125.0
+offset_right = 184.0
+offset_bottom = 269.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_unral")
+
+[node name="Label1" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 69.0
+offset_right = 176.0
+offset_bottom = 325.0
+text = "1"
+label_settings = SubResource("LabelSettings_qk7wd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Container" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonUp1" type="Button" parent="Container"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 29.0
+offset_right = 154.0
+offset_bottom = 79.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_7xtjl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cj3q4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iv70v")
+expand_icon = true
+
+[connection signal="pressed" from="Container/ButtonUp1" to="." method="_on_button_up_1_pressed"]

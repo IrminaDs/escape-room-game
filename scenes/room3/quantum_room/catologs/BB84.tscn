@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw7ldau6ducfq"]
+
+[ext_resource type="Texture2D" uid="uid://takb31kj6dbn" path="res://models/room3/textures/content/BB84.png" id="1_y27i4"]
+[ext_resource type="Texture2D" uid="uid://d37a4tssf5ss6" path="res://models/room3/textures/content/BB84_2.png" id="2_a5k2y"]
+
+[node name="BB84" type="CanvasLayer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_y27i4")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_a5k2y")

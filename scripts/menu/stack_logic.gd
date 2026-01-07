@@ -4,7 +4,7 @@ extends "res://addons/godot-xr-tools/objects/interactable_area.gd"
 
 @export var path: String = "res://scenes/room1/Room1.tscn"
 @export var room_events: String = "/root/Room1GameEvents"
-@export var text: String = "Szyfry:\n- Tablica Polibiusz\n- Szyfr Cezara\n- Szyfr Vigenere'a"
+@export_multiline var text: String = "Szyfry:\n- Tablica Polibiusz\n- Szyfr Cezara\n- Szyfr Vigenere'a"
 
 @onready var main_light = $"../MainLight"
 @onready var ilumination = $"../FakeIlumination"

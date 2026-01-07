@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhhkhhs41qtmy"]
+
+[ext_resource type="Texture2D" uid="uid://chfscec6h15g0" path="res://models/room3/textures/content/incident.png" id="1_q13jw"]
+
+[node name="Incident" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q13jw")

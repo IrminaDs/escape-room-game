@@ -97,7 +97,7 @@ offset_bottom = 40.0
 
 [node name="Button1" type="Button" parent="Control"]
 layout_mode = 0
-offset_left = 143.0
+offset_left = 125.0
 offset_top = 96.0
 offset_right = 225.0
 offset_bottom = 163.0
@@ -109,9 +109,9 @@ text = "Tak"
 
 [node name="Button2" type="Button" parent="Control"]
 layout_mode = 0
-offset_left = 271.0
+offset_left = 275.0
 offset_top = 96.0
-offset_right = 350.0
+offset_right = 375.0
 offset_bottom = 163.0
 theme_override_font_sizes/font_size = 48
 theme_override_styles/hover = SubResource("StyleBoxFlat_7ibfg")

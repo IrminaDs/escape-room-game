@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=3 uid="uid://dyqkrr88xjnwt"]
 
 [ext_resource type="Script" uid="uid://ytfwnhhx5eeg" path="res://scripts/room1/ui_lock_4.gd" id="1_poyqd"]
-[ext_resource type="FontFile" uid="uid://ikgxoc6bfj1y" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_poyqd"]
-[ext_resource type="Texture2D" uid="uid://d24tq1k55j8jv" path="res://models/Room1/textures/icons/arrow.png" id="3_jvode"]
+[ext_resource type="FontFile" uid="uid://doqpypk3tjk4w" path="res://models/Room1/fonts/Tektur/Tektur-VariableFont_wdth,wght.ttf" id="2_poyqd"]
+[ext_resource type="Texture2D" uid="uid://bf0dk8ruyrji0" path="res://models/Room1/textures/icons/arrow.png" id="3_jvode"]
 
 [sub_resource type="Gradient" id="Gradient_poyqd"]
 offsets = PackedFloat32Array(0.0152672, 0.0610687, 0.129771, 0.282443, 0.572519, 0.763359, 0.877863, 0.977099)
@@ -106,6 +106,7 @@ expand_margin_bottom = 25.0
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_poyqd")
+correct_code = "NOVA"
 color = Color(0.1, 0.4, 0.7, 1)
 signal_to_emit = "chest_unlocked"
 

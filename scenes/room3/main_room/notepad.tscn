@@ -1,0 +1,56 @@
+[gd_scene load_steps=14 format=3 uid="uid://dds0rbf5yvn7h"]
+
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_ao0x6"]
+[ext_resource type="PackedScene" uid="uid://d3rooo6aicbtp" path="res://models/room3/objects/content/notepad_customized.tscn" id="2_mxeom"]
+[ext_resource type="PackedScene" uid="uid://da2qgxxwwitl6" path="res://addons/godot-xr-tools/objects/highlight/highlight_ring.tscn" id="3_xjs8h"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="4_rv4hs"]
+[ext_resource type="Animation" uid="uid://di384xtde8ydf" path="res://addons/godot-xr-tools/hands/animations/left/Grip 2.res" id="5_xjwfu"]
+[ext_resource type="Script" uid="uid://cb65h51jcm0kt" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="6_opyg3"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="7_yhknl"]
+[ext_resource type="Animation" uid="uid://r8hleealhrqt" path="res://addons/godot-xr-tools/hands/animations/right/Grip 2.res" id="8_yl537"]
+[ext_resource type="Script" uid="uid://cboyfxbpxignq" path="res://scripts/room1/enable_grab.gd" id="9_opyg3"]
+[ext_resource type="Script" uid="uid://bk6bsryu0xve1" path="res://scripts/room3/main_room/notepad.gd" id="10_opyg3"]
+
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rv4hs"]
+size = Vector3(0.28302, 0.0873413, 0.589172)
+
+[sub_resource type="Resource" id="Resource_lvcty"]
+script = ExtResource("6_opyg3")
+closed_pose = ExtResource("5_xjwfu")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[sub_resource type="Resource" id="Resource_fwk1v"]
+script = ExtResource("6_opyg3")
+closed_pose = ExtResource("8_yl537")
+metadata/_custom_type_script = "uid://cb65h51jcm0kt"
+
+[node name="Notepad" instance=ExtResource("1_ao0x6")]
+
+[node name="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(0.672263, 0, 0, 0, 0.672263, 0, 0, 0, 0.672263, -0.204399, 0.0141663, 0.129638)
+shape = SubResource("BoxShape3D_rv4hs")
+
+[node name="Sketchfab_Scene" parent="." index="1" instance=ExtResource("2_mxeom")]
+transform = Transform3D(0.672263, 0, 0, 0, 0.672263, 0, 0, 0, 0.672263, -0.208824, 0.00470847, 0.0454561)
+
+[node name="HighlightRing" parent="." index="2" instance=ExtResource("3_xjs8h")]
+transform = Transform3D(0.672263, 0, 0, 0, 0.672263, 0, 0, 0, 0.672263, -0.195119, 0.00470847, 0.0407537)
+
+[node name="GrabPointHandLeft" parent="." index="3" instance=ExtResource("4_rv4hs")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.268744, 0.0314226, 0.309958)
+hand_pose = SubResource("Resource_lvcty")
+
+[node name="GrabPointHandRight" parent="." index="4" instance=ExtResource("7_yhknl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.263106, 0.0168272, -0.0513251)
+hand_pose = SubResource("Resource_fwk1v")
+
+[node name="Node" type="Node" parent="." index="5"]
+script = ExtResource("9_opyg3")
+room = 1
+signal_name = "modern_shelf_unlocked"
+
+[node name="Animation" type="Node" parent="." index="6"]
+script = ExtResource("10_opyg3")
+
+[editable path="Sketchfab_Scene"]

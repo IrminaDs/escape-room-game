@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://3kxf4tx4mabt"]
+
+[ext_resource type="PackedScene" uid="uid://b83v4a1wx6g56" path="res://models/Room2/objects/keyboard/ibm_model_m_keyboard.glb" id="1_yb1lk"]
+
+[node name="keyboard" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_yb1lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009650588, 0, 0.05000615)

@@ -19,3 +19,5 @@ mono_crash.*.json
 
 # Addons
 addons/godot-git-plugin/
+models/.DS_Store
+models/Room2/textures/.DS_Store

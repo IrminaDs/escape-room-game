@@ -1,0 +1,679 @@
+[gd_scene load_steps=17 format=3 uid="uid://ctvk8gbhmcmtk"]
+
+[ext_resource type="Script" uid="uid://dnuar31cc5nro" path="res://scripts/room3/quantum_room/work_station/last_task.gd" id="1_6euyd"]
+[ext_resource type="FontFile" uid="uid://cbosva45uvhdg" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_hawww"]
+[ext_resource type="FontFile" uid="uid://dcpm2gbktx48c" path="res://models/room3/fonts/Science_Gothic/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf" id="3_hawww"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nnnxd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_aqr3p"]
+font = ExtResource("2_hawww")
+font_size = 42
+
+[sub_resource type="LabelSettings" id="LabelSettings_ql5ro"]
+font = ExtResource("2_hawww")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_6euyd"]
+font = ExtResource("2_hawww")
+font_size = 31
+
+[sub_resource type="LabelSettings" id="LabelSettings_w22np"]
+font = ExtResource("2_hawww")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_hawww"]
+font = ExtResource("2_hawww")
+font_size = 31
+
+[sub_resource type="LabelSettings" id="LabelSettings_vlo80"]
+font = ExtResource("2_hawww")
+font_size = 31
+
+[sub_resource type="LabelSettings" id="LabelSettings_m4bix"]
+font = ExtResource("3_hawww")
+font_size = 46
+font_color = Color(0, 0.796833, 0.894009, 1)
+
+[sub_resource type="Animation" id="Animation_6euyd"]
+resource_name = "Transmission"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/Transmission/Label2:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.633333, 1.2, 1.66667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": ["", ".", "..", "..."]
+}
+
+[sub_resource type="Animation" id="Animation_ql5ro"]
+resource_name = "TransmissionSuccessful"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/SendCubits/HBoxContainer/First:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.143333, 0.733333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel/SendCubits/HBoxContainer/Second:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.143333, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/SendCubits/HBoxContainer/Third:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.333333, 0.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel/SendCubits/HBoxContainer/Fourth:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.266667, 0.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel/SendCubits/HBoxContainer/Fifth:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.166667, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel/SendCubits/HBoxContainer2/First:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.266667, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/SendCubits/HBoxContainer2/Second:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.143333, 0.833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Panel/SendCubits/HBoxContainer2/Third:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.333333, 0.566667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Panel/SendCubits/HBoxContainer2/Fourth:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.133333, 0.143333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.309804, 0, 1, 1), Color(0.309804, 0, 0.427451, 1), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Panel/SendCubits/HBoxContainer2/Fifth:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.3, 0.833333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.309804, 0.160784, 0.694118, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_w22np"]
+resource_name = "TransmissionSuccessfulEnd"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/SendCubits/HBoxContainer/First:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.366667),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel/SendCubits/HBoxContainer/Second:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.333333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/SendCubits/HBoxContainer/Third:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel/SendCubits/HBoxContainer/Fourth:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.333333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel/SendCubits/HBoxContainer/Fifth:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.333333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel/SendCubits/HBoxContainer2/First:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.333333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/SendCubits/HBoxContainer2/Second:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.333333),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Panel/SendCubits/HBoxContainer2/Third:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Panel/SendCubits/HBoxContainer2/Fourth:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Panel/SendCubits/HBoxContainer2/Fifth:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.366667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hawww"]
+resource_name = "Wire"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/Wire/Label:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.5, 0.866667, 1.26667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w22np"]
+_data = {
+&"Transmission": SubResource("Animation_6euyd"),
+&"TransmissionSuccessful": SubResource("Animation_ql5ro"),
+&"TransmissionSuccessfulEnd": SubResource("Animation_w22np"),
+&"Wire": SubResource("Animation_hawww")
+}
+
+[node name="UiLastTask" type="CanvasLayer"]
+script = ExtResource("1_6euyd")
+
+[node name="Panel" type="Panel" parent="."]
+theme_override_styles/panel = SubResource("StyleBoxEmpty_nnnxd")
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 500.0
+color = Color(0.215686, 0.215686, 0.215686, 0.886275)
+
+[node name="SendCubits" type="VBoxContainer" parent="Panel"]
+visible = false
+custom_minimum_size = Vector2(650, 450)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 673.0
+offset_bottom = 472.0
+
+[node name="Label" type="Label" parent="Panel/SendCubits"]
+custom_minimum_size = Vector2(550, 75)
+layout_mode = 2
+text = "WYBIERZ STANY POLARYZACJI 10 FOTONÓW"
+label_settings = SubResource("LabelSettings_aqr3p")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Control2" type="Control" parent="Panel/SendCubits"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/SendCubits"]
+custom_minimum_size = Vector2(350, 120)
+layout_mode = 2
+alignment = 1
+
+[node name="First" type="TextureRect" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="First2" type="Label" parent="Panel/SendCubits/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control3" type="Control" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Second" type="TextureRect" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Second2" type="Label" parent="Panel/SendCubits/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Third" type="TextureRect" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Third2" type="Label" parent="Panel/SendCubits/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Fourth" type="TextureRect" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Fourth2" type="Label" parent="Panel/SendCubits/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control4" type="Control" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Fifth" type="TextureRect" parent="Panel/SendCubits/HBoxContainer"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Fifth2" type="Label" parent="Panel/SendCubits/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/SendCubits"]
+custom_minimum_size = Vector2(350, 120)
+layout_mode = 2
+alignment = 1
+
+[node name="First" type="TextureRect" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="First2" type="Label" parent="Panel/SendCubits/HBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control3" type="Control" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Second" type="TextureRect" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Second2" type="Label" parent="Panel/SendCubits/HBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Third" type="TextureRect" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Third2" type="Label" parent="Panel/SendCubits/HBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Fourth" type="TextureRect" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Fourth2" type="Label" parent="Panel/SendCubits/HBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control4" type="Control" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="Fifth" type="TextureRect" parent="Panel/SendCubits/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Fifth2" type="Label" parent="Panel/SendCubits/HBoxContainer2"]
+visible = false
+custom_minimum_size = Vector2(100, 80)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ql5ro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="Panel/SendCubits"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Send" type="Button" parent="Panel/SendCubits"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_hawww")
+theme_override_font_sizes/font_size = 35
+text = "ROZPOCZNIJ TRANSMISJĘ"
+
+[node name="Intro" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(650, 450)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 17.0
+offset_right = 673.0
+offset_bottom = 467.0
+alignment = 1
+
+[node name="Control3" type="Control" parent="Panel/Intro"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Intro"]
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+text = "Aby nawiązać bezpieczne połączenie
+z drugą placówką, musisz
+przesłać serię dziesięciu
+pojedynczych fotonów.
+
+Każdy foton może zostać wysłany 
+w jednym z czterech
+stanów polaryzacji."
+label_settings = SubResource("LabelSettings_6euyd")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Label2" type="Label" parent="Panel/Intro"]
+visible = false
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+text = "Wybierz stany polaryzacji 
+i rozpocznij transmisję.
+
+⚠ Uwaga:
+Jeśli linia jest podsłuchiwana, pomiary zostaną zaburzone."
+label_settings = SubResource("LabelSettings_w22np")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Transmission" type="VBoxContainer" parent="Panel"]
+visible = false
+custom_minimum_size = Vector2(650, 450)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 17.0
+offset_right = 673.0
+offset_bottom = 467.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Transmission"]
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+text = "Trwa transmisja do placówki #7"
+label_settings = SubResource("LabelSettings_w22np")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Label2" type="Label" parent="Panel/Transmission"]
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_w22np")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Wire" type="VBoxContainer" parent="Panel"]
+visible = false
+custom_minimum_size = Vector2(650, 450)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 17.0
+offset_right = 673.0
+offset_bottom = 467.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Wire"]
+visible = false
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+text = "WYKRYTO PODSŁUCH!"
+label_settings = SubResource("LabelSettings_w22np")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="SafeConnection" type="VBoxContainer" parent="Panel"]
+visible = false
+custom_minimum_size = Vector2(650, 450)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 17.0
+offset_right = 673.0
+offset_bottom = 467.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/SafeConnection"]
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+text = "TRANSMISJA ZAKOŃCZONA SUKCESEM"
+label_settings = SubResource("LabelSettings_hawww")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Label2" type="Label" parent="Panel/SafeConnection"]
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+text = "WSPÓLNY KLUCZ ZOSTAŁ UZGODNIONY"
+label_settings = SubResource("LabelSettings_vlo80")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="Control" type="Control" parent="Panel/SafeConnection"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Panel/SafeConnection"]
+custom_minimum_size = Vector2(650, 0)
+layout_mode = 2
+label_settings = SubResource("LabelSettings_m4bix")
+horizontal_alignment = 1
+autowrap_mode = 2
+uppercase = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_w22np")
+}
+
+[connection signal="pressed" from="Panel/SendCubits/Send" to="." method="_on_send_pressed"]

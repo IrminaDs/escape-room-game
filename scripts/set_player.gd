@@ -13,6 +13,3 @@ func _ready() -> void:
 	t.origin = position
 	t.basis = Basis(Vector3.UP, deg_to_rad(degrees))
 	body.teleport(t)
-
-func _process(delta: float) -> void:
-	var player = get_node("/root/Main/Player")

@@ -32,4 +32,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0, 0.03)
 
 [node name="EnableGrab" type="Node" parent="." index="5"]
 script = ExtResource("6_we0g3")
-sig_name = "chest_unlocked"
+signal_name = "chest_unlocked"

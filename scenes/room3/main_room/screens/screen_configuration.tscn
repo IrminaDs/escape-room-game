@@ -1,0 +1,297 @@
+[gd_scene load_steps=20 format=3 uid="uid://c4wlra6psqqgf"]
+
+[ext_resource type="Script" uid="uid://cks3wynd0mgtc" path="res://scripts/room3/main_room/screens/screen_configuration.gd" id="1_ees5a"]
+[ext_resource type="FontFile" uid="uid://cbosva45uvhdg" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_rgs8l"]
+[ext_resource type="FontFile" uid="uid://b6eujpmb606be" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothicCustom.ttf" id="3_k4aql"]
+[ext_resource type="Script" uid="uid://ceupi3xngf8mp" path="res://scripts/room3/main_room/screens/config_menu.gd" id="4_v0fbm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5xvct"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_5xvct"]
+default_font = ExtResource("3_k4aql")
+default_font_size = 30
+MenuButton/colors/font_color = Color(0.396078, 0.992157, 0.992157, 1)
+MenuButton/colors/font_disabled_color = Color(0.462745, 1, 1, 0.878431)
+MenuButton/colors/font_focus_color = Color(0.619608, 0.94902, 0.94902, 1)
+MenuButton/colors/font_hover_color = Color(0.572549, 0.858824, 0.858824, 1)
+MenuButton/colors/font_hover_pressed_color = Color(0.572549, 0.854902, 0.854902, 1)
+MenuButton/colors/font_outline_color = Color(0.462745, 1, 1, 0.878431)
+MenuButton/colors/font_pressed_color = Color(0.176471, 0.537255, 0.537255, 1)
+MenuButton/colors/icon_disabled_color = Color(0, 0, 0, 0)
+MenuButton/colors/icon_focus_color = Color(0, 0, 0, 0)
+MenuButton/colors/icon_hover_color = Color(0, 0, 0, 0)
+MenuButton/colors/icon_hover_pressed_color = Color(0.462745, 1, 1, 0)
+MenuButton/colors/icon_normal_color = Color(0.462745, 1, 1, 0)
+MenuButton/colors/icon_pressed_color = Color(0.462745, 1, 1, 0)
+MenuButton/fonts/font = ExtResource("3_k4aql")
+
+[sub_resource type="LabelSettings" id="LabelSettings_ees5a"]
+font = ExtResource("2_rgs8l")
+font_size = 28
+font_color = Color(0.396078, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgs8l"]
+bg_color = Color(0.6, 0.6, 0.6, 0.462745)
+border_width_bottom = 4
+border_color = Color(0.396078, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4aql"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 4
+border_color = Color(0.396078, 1, 1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k4aql"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v0fbm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7bmw8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8qgap"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5bis5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fahss"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wufcj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_crsi2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1l56t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bsnym"]
+
+[node name="ScreenConfiguration" type="CanvasLayer"]
+script = ExtResource("1_ees5a")
+
+[node name="ConfigurationOption" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5xvct")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ConfigurationOption"]
+layout_mode = 0
+offset_left = -535.0
+offset_top = -255.0
+offset_right = 583.0
+offset_bottom = 211.0
+
+[node name="Label" type="Label" parent="ConfigurationOption/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.396078, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 50
+text = "KONFIGURACJA"
+horizontal_alignment = 1
+
+[node name="MenuButton" type="MenuButton" parent="ConfigurationOption/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_5xvct")
+theme_override_colors/font_disabled_color = Color(0.537011, 0.537011, 0.537011, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.572549, 0.854902, 0.854902, 1)
+theme_override_colors/font_hover_color = Color(0.572549, 0.858824, 0.858824, 1)
+theme_override_colors/font_color = Color(0.396078, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.607843, 0.858824, 0.858824, 1)
+theme_override_colors/font_pressed_color = Color(0.572549, 0.858824, 0.858824, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 38
+text = "WYBIERZ ALGORYTM SZYFRUJĄCY"
+switch_on_hover = true
+script = ExtResource("4_v0fbm")
+
+[node name="PanelConfiguration" type="Panel" parent="ConfigurationOption"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5xvct")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ConfigurationOption/PanelConfiguration"]
+layout_mode = 0
+offset_left = -469.0
+offset_top = -251.0
+offset_right = 649.0
+offset_bottom = 215.0
+scale = Vector2(0.88, 1)
+
+[node name="Title" type="Label" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.396078, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+
+[node name="Instruction2" type="Label" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.396078, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 32
+text = "UZUPEŁNIJ BRAKUJĄCE INFORMACJE"
+horizontal_alignment = 1
+
+[node name="PlaceHolder" type="Label" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ees5a")
+horizontal_alignment = 1
+
+[node name="Year" type="HBoxContainer" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Year" type="Label" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/Year"]
+layout_mode = 2
+text = "ROK POWSTANIA:             "
+label_settings = SubResource("LabelSettings_ees5a")
+
+[node name="LineEdit" type="LineEdit" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/Year"]
+layout_mode = 2
+theme_override_colors/clear_button_color_pressed = Color(0.396078, 1, 1, 1)
+theme_override_colors/clear_button_color = Color(0.396078, 1, 1, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0.588235, 1, 1, 0.717647)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0.396078, 1, 1, 1)
+theme_override_colors/font_color = Color(0.0627451, 0.694118, 0.694118, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/focus = SubResource("StyleBoxFlat_rgs8l")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_k4aql")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k4aql")
+placeholder_text = "DCED"
+alignment = 1
+max_length = 4
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+caret_blink = true
+
+[node name="KeyLength" type="HBoxContainer" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="KeyLength" type="Label" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/KeyLength"]
+layout_mode = 2
+text = "DŁUGOŚĆ KLUCZA:         "
+label_settings = SubResource("LabelSettings_ees5a")
+
+[node name="LineEdit" type="LineEdit" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/KeyLength"]
+layout_mode = 2
+theme_override_colors/clear_button_color_pressed = Color(0.396078, 1, 1, 1)
+theme_override_colors/clear_button_color = Color(0.396078, 1, 1, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0.588235, 1, 1, 0.717647)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0.396078, 1, 1, 1)
+theme_override_colors/font_color = Color(0.0627451, 0.694118, 0.694118, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/focus = SubResource("StyleBoxFlat_rgs8l")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_k4aql")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k4aql")
+alignment = 1
+max_length = 4
+emoji_menu_enabled = false
+virtual_keyboard_type = 2
+clear_button_enabled = true
+caret_blink = true
+
+[node name="Type" type="HBoxContainer" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Type" type="Label" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/Type"]
+layout_mode = 2
+text = "TYP SZYFRU:  "
+label_settings = SubResource("LabelSettings_ees5a")
+
+[node name="OptionButton" type="OptionButton" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/Type"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0627451, 0.694118, 0.694118, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/focus = SubResource("StyleBoxFlat_rgs8l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k4aql")
+alignment = 1
+item_count = 2
+popup/item_0/text = "ASYMETRYCZNY"
+popup/item_0/id = 0
+popup/item_1/text = "SYMETRYCZNY"
+popup/item_1/id = 1
+
+[node name="Control" type="Control" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BackNextButtons" type="HBoxContainer" parent="ConfigurationOption/PanelConfiguration/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ButtonBack" type="Button" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/BackNextButtons"]
+layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(0.572549, 0.854902, 0.854902, 1)
+theme_override_colors/font_hover_color = Color(0.572549, 0.858824, 0.858824, 1)
+theme_override_colors/font_color = Color(0.407843, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.572549, 0.858824, 0.858824, 1)
+theme_override_colors/font_pressed_color = Color(0.172549, 0.521569, 0.521569, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k4aql")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v0fbm")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7bmw8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_8qgap")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5bis5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fahss")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wufcj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_crsi2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_1l56t")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bsnym")
+text = "POWRÓT"
+
+[node name="Control" type="Control" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/BackNextButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ButtonNext" type="Button" parent="ConfigurationOption/PanelConfiguration/VBoxContainer/BackNextButtons"]
+layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(0.572549, 0.854902, 0.854902, 1)
+theme_override_colors/font_hover_color = Color(0.572549, 0.858824, 0.858824, 1)
+theme_override_colors/font_color = Color(0.407843, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.572549, 0.858824, 0.858824, 1)
+theme_override_colors/font_pressed_color = Color(0.172549, 0.521569, 0.521569, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k4aql")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v0fbm")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7bmw8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_8qgap")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5bis5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fahss")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wufcj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_crsi2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_1l56t")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bsnym")
+text = "DALEJ"
+
+[node name="Message" type="Label" parent="ConfigurationOption"]
+layout_mode = 2
+offset_left = -369.0
+offset_top = -46.0
+offset_right = 432.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0.979322, 0, 0.411158, 1)
+theme_override_fonts/font = ExtResource("2_rgs8l")
+theme_override_font_sizes/font_size = 50
+text = "WPROWADZONO BŁĘDNE DANE!"
+horizontal_alignment = 1

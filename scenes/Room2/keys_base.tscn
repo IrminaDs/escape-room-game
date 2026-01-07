@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://7eetunbf3a56"]
+
+[ext_resource type="Script" uid="uid://cylewgnpglrp7" path="res://scripts/room2/keys_base.gd" id="1_33pui"]
+[ext_resource type="Texture2D" uid="uid://dhgs814dbp8y7" path="res://models/Room2/textures/letter_p_1.png" id="1_lnl4k"]
+[ext_resource type="PackedScene" uid="uid://b3a24m847apl4" path="res://scenes/Room2/snap_zone.tscn" id="2_sellc"]
+[ext_resource type="Texture2D" uid="uid://che7h3nyr32us" path="res://models/Room2/textures/letter_p_2.png" id="4_y2xlq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sellc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vd1b1"]
+size = Vector3(0.2980957, 0.012130737, 0.40667725)
+
+[node name="keys_base" type="StaticBody3D"]
+script = ExtResource("1_33pui")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3240835, 0, 0, 0, 0.01, 0, 0, 0, 0.44154721, 0.005454898, 0.090052396, 0.00933218)
+mesh = SubResource("BoxMesh_sellc")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.026, 0, 0, 0, -1.1364961e-09, 0.026, 0, -0.026, -1.1364961e-09, -0.007141538, 0.10144833, 0.012453288)
+texture = ExtResource("1_lnl4k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0035192966, -0.0004375279, 0.00046017766)
+shape = SubResource("BoxShape3D_vd1b1")
+
+[node name="SnapZone" parent="." instance=ExtResource("2_sellc")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.09586872, 0.12604792, 0.07248832)
+snap_require = ""
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(0.026, 0, 0, 0, -1.1364961e-09, 0.026, 0, -0.026, -1.1364961e-09, -0.009160534, 0.09639785, 0.009772718)
+visible = false
+texture = ExtResource("4_y2xlq")
