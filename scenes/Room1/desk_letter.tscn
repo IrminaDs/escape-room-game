@@ -180,6 +180,7 @@ path = "res://models/room1/textures/letters/first_letter.png"
 
 [node name="LetterLogic" type="Node" parent="." index="6"]
 script = ExtResource("16_sqvar")
+path = "res://models/room1/textures/letters/first_letter.png"
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="." index="7"]
 shape = SubResource("BoxShape3D_sqvar")
