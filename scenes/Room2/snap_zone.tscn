@@ -27,6 +27,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_m5a23")
 
 [node name="HighlightRing" parent="." index="3" instance=ExtResource("2_apjau")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.055767864, -0.10565412, -0.017007232)
+visible = false
 
 [node name="Entered" type="Node" parent="." index="4"]
 script = ExtResource("3_apjau")
