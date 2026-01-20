@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cff7h38fahrpi"]
+[gd_scene load_steps=41 format=3 uid="uid://cff7h38fahrpi"]
 
 [ext_resource type="Script" uid="uid://dtfq2w2npp40c" path="res://scripts/room.gd" id="1_5q6wp"]
 [ext_resource type="Script" uid="uid://c8dc7tkyl0gic" path="res://scripts/room2/printer.gd" id="2_vueoo"]
@@ -12,7 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://cobo32mwpx72q" path="res://scenes/Room2/pc_tower.tscn" id="7_bv1ei"]
 [ext_resource type="Script" uid="uid://cc8p8y40t5hpi" path="res://scripts/room2/directional_light_3d.gd" id="7_ebguw"]
 [ext_resource type="PackedScene" uid="uid://7eetunbf3a56" path="res://scenes/Room2/keys_base.tscn" id="7_vm886"]
+[ext_resource type="PackedScene" uid="uid://chs60mukpdhpl" path="res://scenes/Room1/radio.tscn" id="9_2eums"]
 [ext_resource type="PackedScene" uid="uid://bl4yypba6jl4r" path="res://scenes/Room2/empty_pad.tscn" id="9_j5lkk"]
+[ext_resource type="AudioStream" uid="uid://buqn66tmd8be7" path="res://models/Room2/objects/sounds/Symmetry.mp3" id="10_i0eau"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="11_mlxov"]
 [ext_resource type="Texture2D" uid="uid://c5gglprqvxrjq" path="res://models/Room2/objects/note/XOR_table_Truth-table-XOR-gate-417x500.png" id="11_n8qcn"]
 [ext_resource type="PackedScene" uid="uid://ey4nll32educ" path="res://scenes/Room2/bin_panel_single.tscn" id="12_5q6wp"]
@@ -80,6 +82,12 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.2849
 [node name="keys_base" parent="Build/Objects/ondesk1" instance=ExtResource("7_vm886")]
 transform = Transform3D(-1.2, 0, -1.81195e-07, 0, 1.2, 0, 1.81195e-07, 0, -1.2, 1.28589, 3.35556, 1.6185)
 visible = false
+
+[node name="Radio" parent="Build/Objects/ondesk1" instance=ExtResource("9_2eums")]
+transform = Transform3D(-0.9944175, 0, 0.105517834, 0, 1, 0, -0.105517834, 0, -0.9944175, -1.082815, 3.6113396, 2.1015213)
+
+[node name="MusicPlayer" parent="Build/Objects/ondesk1/Radio" index="1"]
+stream = ExtResource("10_i0eau")
 
 [node name="desk1" parent="Build/Objects" instance=ExtResource("4_j5lkk")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.92476, 2.9876, 1.8528)
@@ -345,5 +353,7 @@ script = ExtResource("36_2eums")
 [node name="Exit" parent="." instance=ExtResource("35_mlxov")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.55757, 1.1972007, -2.35471)
 
+[editable path="Build/Objects/ondesk1/Radio"]
+[editable path="Build/Objects/ondesk1/Radio/Sketchfab_Scene"]
 [editable path="Build/Objects/ondesk3/File_folder2"]
 [editable path="Build/Objects/ondesk3/File_folder3"]
