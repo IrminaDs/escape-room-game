@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdl57iif3txi5"]
+
+[ext_resource type="PackedScene" uid="uid://ciwwq2e3roxan" path="res://models/menu/objects/pedestal2/pedestal.glb" id="1_3vpdj"]
+
+[node name="pedestal2" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_3vpdj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4775343, -1.1920929e-07, -0.8094795)
