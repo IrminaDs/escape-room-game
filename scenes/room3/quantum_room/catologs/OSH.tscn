@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfjiecx27g13x"]
+
+[ext_resource type="Texture2D" uid="uid://b2uuiwftkpwam" path="res://models/room3/textures/content/OSH.png" id="1_6buxa"]
+
+[node name="OSH" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_6buxa")

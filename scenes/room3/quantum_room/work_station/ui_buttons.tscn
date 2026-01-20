@@ -1,0 +1,120 @@
+[gd_scene load_steps=4 format=3 uid="uid://di27lngqtdv2q"]
+
+[ext_resource type="Script" uid="uid://ba15114qvrte" path="res://scripts/room3/quantum_room/work_station/buttons.gd" id="1_pyvks"]
+[ext_resource type="FontFile" uid="uid://cbosva45uvhdg" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_0de46"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e6wna"]
+
+[node name="UiButtons" type="CanvasLayer"]
+script = ExtResource("1_pyvks")
+
+[node name="Panel" type="Panel" parent="."]
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 640.0
+offset_bottom = 384.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_e6wna")
+
+[node name="Panel5" type="Panel" parent="Panel/Panel"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 256.0
+
+[node name="A" type="Button" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 56.0
+offset_right = 184.0
+offset_bottom = 200.0
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_0de46")
+theme_override_font_sizes/font_size = 94
+text = "A"
+
+[node name="B" type="Button" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 56.0
+offset_right = 312.0
+offset_bottom = 200.0
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_0de46")
+theme_override_font_sizes/font_size = 94
+text = "B"
+
+[node name="C" type="Button" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 56.0
+offset_right = 440.0
+offset_bottom = 200.0
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_0de46")
+theme_override_font_sizes/font_size = 94
+text = "C"
+
+[node name="D" type="Button" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 56.0
+offset_right = 568.0
+offset_bottom = 200.0
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_0de46")
+theme_override_font_sizes/font_size = 94
+text = "D"
+
+[connection signal="pressed" from="Panel/Panel/A" to="." method="_on_a_pressed"]
+[connection signal="pressed" from="Panel/Panel/B" to="." method="_on_b_pressed"]
+[connection signal="pressed" from="Panel/Panel/C" to="." method="_on_c_pressed"]
+[connection signal="pressed" from="Panel/Panel/D" to="." method="_on_d_pressed"]

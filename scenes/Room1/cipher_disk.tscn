@@ -161,7 +161,7 @@ script = ExtResource("14_rsjvq")
 
 [node name="EnableGrab" type="Node" parent="." index="7"]
 script = ExtResource("16_totro")
-sig_name = "chest_unlocked"
+signal_name = "chest_unlocked"
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="8"]
 stream = ExtResource("17_hthnu")

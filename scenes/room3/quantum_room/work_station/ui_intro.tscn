@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://baeiy3epdun5f"]
+
+[ext_resource type="Script" uid="uid://doeymikokg3b3" path="res://scripts/room3/quantum_room/work_station/ui_intro.gd" id="1_3cqcm"]
+[ext_resource type="FontFile" uid="uid://cbosva45uvhdg" path="res://models/room3/fonts/Science_Gothic/static/ScienceGothic_SemiCondensed-Light.ttf" id="2_i80d3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hwwef"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hwwef"]
+font = ExtResource("2_i80d3")
+font_size = 43
+
+[node name="UiIntro" type="CanvasLayer"]
+script = ExtResource("1_3cqcm")
+
+[node name="Panel" type="Panel" parent="."]
+
+[node name="Panel" type="Panel" parent="Panel"]
+custom_minimum_size = Vector2(600, 400)
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 200.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_hwwef")
+
+[node name="ColorRect" type="ColorRect" parent="Panel/Panel"]
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.215686, 0.215686, 0.215686, 0.886275)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Panel"]
+custom_minimum_size = Vector2(650, 460)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 22.0
+offset_right = 573.0
+offset_bottom = 372.0
+
+[node name="Control" type="Control" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(550, 125)
+layout_mode = 2
+text = "ABY ODBLOKOWAĆ DOSTĘP
+DO KOMPUTERA, ODPOWIEDZ PRAWIDŁOWO NA WSZYSTKIE PYTANIA"
+label_settings = SubResource("LabelSettings_hwwef")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Control2" type="Control" parent="Panel/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Panel/Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_i80d3")
+theme_override_font_sizes/font_size = 43
+text = "PRZEJDŹ DALEJ"
+
+[connection signal="pressed" from="Panel/Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]

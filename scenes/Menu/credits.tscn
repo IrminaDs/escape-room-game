@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmqfiyr1jd5h5"]
+[gd_scene load_steps=7 format=3 uid="uid://cmqfiyr1jd5h5"]
 
 [ext_resource type="PackedScene" uid="uid://dbproudr3wlhs" path="res://models/menu/objects/clapperboard/black_film_slate_or_clapperboard.glb" id="1_olbcw"]
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="2_fxijl"]
 [ext_resource type="Script" uid="uid://basf06y1tnefr" path="res://scripts/menu/credits.gd" id="2_lhvqg"]
+[ext_resource type="Script" uid="uid://bmb6ldi2nwdk0" path="res://scripts/menu/set_credits.gd" id="3_0s65u"]
 [ext_resource type="PackedScene" uid="uid://bc6ney83sf1ua" path="res://scenes/menu/ui_credits.tscn" id="3_6xpyw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_olbcw"]
@@ -35,6 +36,7 @@ shape = SubResource("BoxShape3D_olbcw")
 
 [node name="Viewports" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+script = ExtResource("3_0s65u")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Viewports"]
 transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -1.10821, 2.25, 4.21729)

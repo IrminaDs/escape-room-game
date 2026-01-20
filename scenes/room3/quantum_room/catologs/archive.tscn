@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c632hhc3huunj"]
+
+[ext_resource type="Texture2D" uid="uid://pf3hmd43a27v" path="res://models/room3/textures/content/archive.png" id="1_ghkii"]
+
+[node name="Archive" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ghkii")

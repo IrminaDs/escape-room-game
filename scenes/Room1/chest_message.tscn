@@ -79,7 +79,7 @@ script = ExtResource("5_p6byh")
 
 [node name="EnableGrab" type="Node" parent="." index="7"]
 script = ExtResource("9_i1thn")
-sig_name = "chest_unlocked"
+signal_name = "chest_unlocked"
 
 [node name="Text" type="MeshInstance3D" parent="." index="8"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.006)

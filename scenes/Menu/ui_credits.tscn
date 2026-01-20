@@ -168,7 +168,7 @@ offset_left = 72.0
 offset_top = 920.0
 offset_right = 840.0
 offset_bottom = 1592.0
-text = "Modele: 
+text = "Modele:
 \"Classical Museum Pedestals - Asset Pack\" (https://skfb.ly/oQuSx) by Samuel F. Johanns (Oneironauticus) is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 \"Exit Sign\" (https://skfb.ly/onoTv) by ZachWilkins1997 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 \"Black film slate or clapperboard\" (https://skfb.ly/pDGnF) by Bendar Multimedia is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -308,23 +308,23 @@ offset_top = 192.0
 offset_right = 840.0
 offset_bottom = 1088.0
 text = "Modele:
-Modele udostępnione na licencji Creative Commons Attribution 4.0 (http://creativecommons.org/licenses/by/4.0/): 
-1.	“Old Metal Table (Low Poly)” (autor: Berk Gedik) — https://skfb.ly/6Runw 
-2.	“Old Glass Ceilling Lamp” (autor: TomasKiniulis) — https://skfb.ly/o6ZHR 
-3.	“Rusty Wall Lever” (autor: Jimmy Johansson) — https://skfb.ly/pxNyR 
-4.	“Blue Metal Door” (autor: AspectStudios) — https://skfb.ly/pyXHH 
-5.	“Wall Ready For Construction” (autor: Mehdi Shahsavan) — https://skfb.ly/oRTDy 
-6.	“Document File Folder” (autor: Kami Rapacz) — https://skfb.ly/oIpnR 
-7.	“Folder - 3MB” (autor: Mehdi Shahsavan) — https://skfb.ly/oXNAr 
-8.	„CC0 - Keypad Door Lock” (autor: plaggy) — https://skfb.ly/oRwzH 
-9.	„Legal Pad” (autor: Tomations) — https://skfb.ly/6TUGw 
-10.	“Old Radio” (autor: gorzi) — https://skfb.ly/6VKNJ 
-11.	„IBM Model M Keyboard” (autor: timblewee) — https://skfb.ly/6ZFM6 
-12.	„retro cyberpunk computer screens” (autor: ribot02) — https://skfb.ly/6UxG6 
-13.	„ HP PRINTER DESKJET 3787 AIO WIFI 5 5-8ppm 1DT61A” (autor: Mstr Ananas) — https://skfb.ly/6wQ9M 
-14.	„LED TV (FREE)” (autor: VX-Designs) — https://skfb.ly/6wvBt 
-Modele udostępnione na licencji Free Standard License (https://sketchfab.com/licenses): 
-1.	“Realistic Blackboard” (autor: deviant.phi) — https://skfb.ly/prFRx 
+Modele udostępnione na licencji Creative Commons Attribution 4.0 (http://creativecommons.org/licenses/by/4.0/):
+1.	“Old Metal Table (Low Poly)” (autor: Berk Gedik) — https://skfb.ly/6Runw
+2.	“Old Glass Ceilling Lamp” (autor: TomasKiniulis) — https://skfb.ly/o6ZHR
+3.	“Rusty Wall Lever” (autor: Jimmy Johansson) — https://skfb.ly/pxNyR
+4.	“Blue Metal Door” (autor: AspectStudios) — https://skfb.ly/pyXHH
+5.	“Wall Ready For Construction” (autor: Mehdi Shahsavan) — https://skfb.ly/oRTDy
+6.	“Document File Folder” (autor: Kami Rapacz) — https://skfb.ly/oIpnR
+7.	“Folder - 3MB” (autor: Mehdi Shahsavan) — https://skfb.ly/oXNAr
+8.	„CC0 - Keypad Door Lock” (autor: plaggy) — https://skfb.ly/oRwzH
+9.	„Legal Pad” (autor: Tomations) — https://skfb.ly/6TUGw
+10.	“Old Radio” (autor: gorzi) — https://skfb.ly/6VKNJ
+11.	„IBM Model M Keyboard” (autor: timblewee) — https://skfb.ly/6ZFM6
+12.	„retro cyberpunk computer screens” (autor: ribot02) — https://skfb.ly/6UxG6
+13.	„ HP PRINTER DESKJET 3787 AIO WIFI 5 5-8ppm 1DT61A” (autor: Mstr Ananas) — https://skfb.ly/6wQ9M
+14.	„LED TV (FREE)” (autor: VX-Designs) — https://skfb.ly/6wvBt
+Modele udostępnione na licencji Free Standard License (https://sketchfab.com/licenses):
+1.	“Realistic Blackboard” (autor: deviant.phi) — https://skfb.ly/prFRx
 2.	“Old PC Tower” (autor: Myles Griffen) — https://skfb.ly/pwP7T "
 label_settings = SubResource("LabelSettings_gmg5p")
 autowrap_mode = 2
@@ -371,26 +371,86 @@ offset_left = 72.0
 offset_top = 192.0
 offset_right = 840.0
 offset_bottom = 1088.0
-text = "Modele:"
+text = "Wszystkie poniższe modele zostały zmodyfikowane na potrzeby projektu.
+Modele udostępnione na licencji Creative Commons Attribution 4.0 (http://creativecommons.org/licenses/by/4.0/):
+Silverback Gorilla Figurine (Autor: Tyler Jackson) – https://skfb.ly/6SKNW
+Copy of Aztec god (Autor: Världskulturmuseerna) – https://skfb.ly/ovAqs
+3D Origami crane (Autor: JuanG3D) – https://skfb.ly/m5lih20ba
+Low Poly Stack of Papers (Autor: ZAKAT) – https://skfb.ly/pBF9V
+Case boxes (Autor: YJ_) – https://skfb.ly/oLs9y
+Beer Bottle (Autor: gelmi.com.br) – https://skfb.ly/6SKTV
+Spray Can (Autor: Deshan) – https://skfb.ly/6TXBw
+Cameraman Lens (Autor: ASP) – https://skfb.ly/oQsqA
+Several Folders (Autor: janexx) – https://skfb.ly/6W7GV
+The Reef Speaker (Autor: re1monsen) – https://skfb.ly/orvuo
+Triton on a frieze (Autor: Migo's Workshop) – https://skfb.ly/6WS79
+key card lvl 1 (Autor: Oguzok) – https://skfb.ly/oFt6X
+Notepad Copy Animated Gameready (Autor: Shah@NarsunStudios) – https://skfb.ly/pqGPJ
+Plain Mug (Autor: LightSwitch) – https://skfb.ly/6UxQ7
+PaperBall (Autor: eirikso) – https://skfb.ly/oOzVX
+Document Clipboard with Pen (Autor: Kami Rapacz) – https://skfb.ly/oIqts
+Whiteboard (Autor: Darren McNerney 3D) – https://skfb.ly/puvAF
+sci fi monitor🖥️ (Autor: carlin.chu) – https://skfb.ly/oOXqz
+UNIVAC Computer (Autor: sudreyskr) – https://skfb.ly/6Sxzz
+Plant | Rosa chinensis (Autor: Overhead4D) – https://skfb.ly/6soAC
+Worn Sci-Fi Retro Travel Poster (Autor: Kami Rapacz) – https://skfb.ly/oKPqM
+Desk Set (Autor: Ren Viro Store) – https://skfb.ly/6UuEP
+Dried House Plant (Autor: Christian Rehm) – https://skfb.ly/6uuJn
+Monstera Deliciosa Potted (Autor: Giora) – https://skfb.ly/oAEoM
+Office Bin (Autor: Bryan) – https://skfb.ly/6uAzA
+Metal Wire Shelf (Autor: Tsawodi) – https://skfb.ly/o8xyT
+Carpet (Autor: 1111) – https://skfb.ly/popsq
+Door-anim (Autor: blackanon) – https://skfb.ly/6YYH7
+Sci-fi door prob (Autor: Lizaveta Lubskaya) – https://skfb.ly/oNFOD
+Quantum computer (Autor: RULE34) – https://skfb.ly/p9trs
+Switchboard (Autor: 2met7cen) – https://skfb.ly/oVOuT
+Chandelier (Autor: GeneGrad) – https://skfb.ly/6Z6NJ
+Modern Bathroom Cabinet (Autor: Jimmy Johansson) – https://skfb.ly/pxXFH
+Stair Shelf (Autor: BlackCube) – https://skfb.ly/oJQ9M
+Modele udostępnione na licencji Creative Commons Attribution-NonCommercial 4.0 (http://creativecommons.org/licenses/by-nc/4.0/):
+PICA PICA - Floor Junk Clutter 02 (Autor: SEED.EA) – https://skfb.ly/6DvpO
+Holo-Table (Autor: Brandon Baldwin) – https://skfb.ly/6tTsO
+CORNER WALL SHELF (Autor: kakou3991) – https://skfb.ly/onpnM
+
+Modele udostępnione na licencji Free Standard License (https://sketchfab.com/licenses):
+Ceiling light with metal grills (Autor: Sousinho) – https://skfb.ly/oTS9H
+Light switch and Bulb (Autor: Sousinho) – https://skfb.ly/oRBzD"
 label_settings = SubResource("LabelSettings_gmg5p")
 autowrap_mode = 2
 
 [node name="Textures" type="Label" parent="Texts/Room3"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 1096.0
-offset_right = 832.0
-offset_bottom = 1608.0
-text = "Tekstury:"
+offset_left = 70.0
+offset_top = 1134.0
+offset_right = 838.0
+offset_bottom = 1646.0
+text = "Tekstury i ikony:
+Futuristic Dubai landscape (Autor: Freepik) – https://br.freepik.com/imagem-ia-gratis/paisagem-futurista-de-dubai_152530595.htm
+Opposite icons (Autor: Nuricon - Flaticon) – https://www.flaticon.com/free-icons/opposite
+Width icons (Autor: Rahul Kaklotar - Flaticon) – https://www.flaticon.com/free-icons/width
+Tekstury udostępnione na licencji CC0 (Public Domain):
+Agra Red Stone (Autor: Share Textures) – https://cc0-textures.com/t/st-agra-red-stone
+Beige Wall 001 (Autor: Texture Haven) – https://cc0-textures.com/t/th-beige-wall-001
+Brushed Concrete (Autor: Texture Haven) – https://cc0-textures.com/t/th-brushed-concrete
+Corrugated Steel 006 A (Autor: CC0 Textures) – https://cc0-textures.com/t/cc0t-corrugated-steel-006-a
+Wallpaper 2 (Autor: Share Textures) – https://cc0-textures.com/t/st-wallpaper-2"
 label_settings = SubResource("LabelSettings_uqjg0")
 autowrap_mode = 2
 
 [node name="Sounds" type="Label" parent="Texts/Room3"]
 layout_mode = 0
-offset_left = 64.0
-offset_top = 1632.0
-offset_right = 832.0
-offset_bottom = 1984.0
-text = "Audio:"
+offset_left = 68.0
+offset_top = 1373.0
+offset_right = 836.0
+offset_bottom = 1725.0
+text = "Audio:
+Control Room Alarms (It's all kicking off!) by Jeff.Sergeant -- https://freesound.org/s/647575/ -- License: Attribution 4.0
+Level Up 02 by mokasza -- https://freesound.org/s/810754/ -- License: Attribution 4.0
+game start by mokasza -- https://freesound.org/s/810178/ -- License: Attribution 4.0
+https://pixabay.com/sound-effects/slide-door-sound-221389/
+Licencja Envato Free Files (https://mixkit.co/):
+Sci Fi high tech sounds
+Piano reflections
+"
 label_settings = SubResource("LabelSettings_1ylll")
 autowrap_mode = 2
