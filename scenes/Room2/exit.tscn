@@ -25,10 +25,11 @@ script = ExtResource("1_sdpgf")
 original_position = Vector3(-0.5, 0.5, 0.25)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.68771774, 0, 0.6255357)
 shape = SubResource("BoxShape3D_6v5ne")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.8604026, 0, 0.38381678)
 mesh = SubResource("PlaneMesh_c2b3t")
 
 [node name="Viewport2Din3D" parent="." instance=ExtResource("2_7ha3j")]
